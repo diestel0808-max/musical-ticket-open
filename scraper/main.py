@@ -8,10 +8,10 @@ import traceback
 from pathlib import Path
 
 from .common import is_kids, now_kst
-from .sources import nol, ticketlink, yes24
+from .sources import melon, nol, ticketlink, yes24
 
 DATA = Path(__file__).resolve().parent.parent / "data" / "items.json"
-SOURCES = {"nol": nol.fetch, "ticketlink": ticketlink.fetch, "yes24": yes24.fetch}
+SOURCES = {"nol": nol.fetch, "ticketlink": ticketlink.fetch, "yes24": yes24.fetch, "melon": melon.fetch}
 # 다시 수집될 때 최신 값으로 덮어쓸 필드. 나머지(기간·회차·이미지 등)는 비어 있지 않을 때만 덮어쓴다.
 TRACKED = ("title", "label", "openAt")
 

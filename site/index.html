@@ -13,7 +13,7 @@
   --text: #1f1f1f; --muted: #6b6b6b; --faint: #a3a3a3;
   --accent: #14a99a; --accent-soft: #e4f6f4; --accent-text: #0e7f74;
   --sun: #e5483f; --sat: #3a6fd8;
-  --nol: #7c4ddb; --ticketlink: #ec4561; --yes24: #3a6fd8;
+  --nol: #7c4ddb; --ticketlink: #ec4561; --yes24: #3a6fd8; --melon: #00b33c;
   --radius: 10px;
 }
 @media (prefers-color-scheme: dark) {
@@ -23,7 +23,7 @@
     --text: #f0f0f0; --muted: #a6a6a6; --faint: #6c6c6c;
     --accent: #3cc8b9; --accent-soft: #15302d; --accent-text: #6fdccf;
     --sun: #ff7a72; --sat: #7aa2ff;
-    --nol: #a98bff; --ticketlink: #ff7d93; --yes24: #7aa2ff;
+    --nol: #a98bff; --ticketlink: #ff7d93; --yes24: #7aa2ff; --melon: #3ddc72;
   }
 }
 * { box-sizing: border-box; }
@@ -71,7 +71,7 @@ h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; }
 
 /* 사이트 색 점 */
 .sb { display: inline-block; width: 10px; height: 10px; border-radius: 50%; flex: none; }
-.sb.nol { background: var(--nol); } .sb.ticketlink { background: var(--ticketlink); } .sb.yes24 { background: var(--yes24); }
+.sb.nol { background: var(--nol); } .sb.ticketlink { background: var(--ticketlink); } .sb.yes24 { background: var(--yes24); } .sb.melon { background: var(--melon); }
 
 /* ── 회차·기간 ── */
 .rnd { display: inline-block; white-space: nowrap; font-size: 12px; font-weight: 700; color: var(--accent-text); background: var(--accent-soft); padding: 1px 8px; border-radius: 4px; }
@@ -173,7 +173,7 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
   <header class="top">
     <div>
       <h1>뮤지컬 티켓오픈</h1>
-      <p class="sub-title">NOL · 티켓링크 · 예스24의 뮤지컬 티켓오픈 공지를 매일 아침 8시에 업데이트해요.<br>기간을 확인할 수 없는 경우 사이트로 이동해 확인해주세요.</p>
+      <p class="sub-title">NOL · 티켓링크 · 예스24 · 멜론티켓의 뮤지컬 티켓오픈 공지를 매일 아침 8시에 업데이트해요.<br>기간을 확인할 수 없는 경우 사이트로 이동해 확인해주세요.</p>
     </div>
     <div class="status">
       <div class="status-row"><span id="meta">불러오는 중…</span><button class="refresh" id="refresh" title="세 사이트에서 지금 다시 가져오기">↻ 지금 업데이트</button></div>
@@ -200,15 +200,20 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
 </div>
 
 <script>
-const SOURCES = { nol: "NOL", ticketlink: "티켓링크", yes24: "예스24" };
+const SOURCES = { nol: "NOL", ticketlink: "티켓링크", yes24: "예스24", melon: "멜론티켓" };
 const DOW = ["일", "월", "화", "수", "목", "금", "토"];
 const DOW_FULL = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
 const state = {
   items: [], view: "list", sort: "open", past: false, q: "",
   on: new Set(Object.keys(SOURCES)),
-  month: null, selected: null, firstBatch: null,
+  month: null, selected: null, firstBatch: {},
 };
-try { Object.assign(state, JSON.parse(localStorage.getItem("mto-prefs") || "{}"), { on: new Set(JSON.parse(localStorage.getItem("mto-on") || "null") || Object.keys(SOURCES)) }); } catch {}
+// 끈 사이트만 기억한다(사이트가 새로 추가돼도 기본으로 켜지도록)
+try {
+  Object.assign(state, JSON.parse(localStorage.getItem("mto-prefs") || "{}"));
+  const off = JSON.parse(localStorage.getItem("mto-off") || "[]");
+  state.on = new Set(Object.keys(SOURCES).filter((k) => !off.includes(k)));
+} catch {}
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -223,8 +228,8 @@ function fmtDay(k) { const dt = keyToDate(k); return { md: `${dt.getUTCMonth() +
 // 캘린더 칸처럼 좁은 곳에서는 "[링크스페셜데이…] 뮤지컬" 같은 머리말을 떼고 작품명 위주로
 const shortTitle = (t) => t.replace(/^(\s*\[[^\]]*\]\s*)+/, "").replace(/^(어린이|가족|창작)?\s*뮤지컬\s*/, "").trim() || t;
 
-// NEW: 첫 수집 이후에 새로 발견된 소식 중 36시간이 안 지난 것(처음 한꺼번에 모은 소식에는 붙이지 않음)
-const isNew = (it) => it.firstSeenAt && dayKey(it.firstSeenAt) > state.firstBatch && Date.now() - new Date(it.firstSeenAt) < 36 * 3600e3;
+// NEW: 사이트별 첫 수집 이후에 새로 발견된 소식 중 36시간이 안 지난 것(처음 한꺼번에 모은 소식에는 붙이지 않음)
+const isNew = (it) => it.firstSeenAt && dayKey(it.firstSeenAt) > (state.firstBatch[it.source] || "") && Date.now() - new Date(it.firstSeenAt) < 36 * 3600e3;
 
 /* ── 같은 작품 묶기 ──
    같은 날 오픈하는 같은 작품(같은 공연장)은 사이트·시각이 달라도 한 박스로 보여준다.
@@ -272,7 +277,7 @@ function groupItems(items) {
 function save() {
   try {
     localStorage.setItem("mto-prefs", JSON.stringify({ view: state.view, sort: state.sort, past: state.past }));
-    localStorage.setItem("mto-on", JSON.stringify([...state.on]));
+    localStorage.setItem("mto-off", JSON.stringify(Object.keys(SOURCES).filter((k) => !state.on.has(k))));
   } catch {}
 }
 function filtered() {
@@ -449,7 +454,11 @@ async function copyText(btn) {
 
 function applyDb(db) {
   state.items = db.items || [];
-  state.firstBatch = state.items.map((it) => dayKey(it.firstSeenAt)).filter(Boolean).sort()[0] || null;
+  state.firstBatch = {};
+  for (const it of state.items) {
+    const d = dayKey(it.firstSeenAt);
+    if (d && (!state.firstBatch[it.source] || d < state.firstBatch[it.source])) state.firstBatch[it.source] = d;
+  }
   const at = db.updatedAt ? new Date(db.updatedAt) : null;
   const status = Object.entries(db.sources || {}).map(([k, s]) =>
     `<span class="${s.ok ? "" : "bad"}" title="${esc(s.error || "")}">${SOURCES[k]} ${s.ok ? "✓" : "실패"}</span>`).join("");

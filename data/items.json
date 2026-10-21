@@ -1,23 +1,85 @@
 {
- "updatedAt": "2026-10-22T00:15+09:00",
+ "updatedAt": "2026-10-22T00:20+09:00",
  "sources": {
   "nol": {
    "ok": true,
    "count": 3,
-   "at": "2026-10-22T00:15+09:00"
+   "at": "2026-10-22T00:20+09:00"
   },
   "ticketlink": {
    "ok": true,
    "count": 8,
-   "at": "2026-10-22T00:15+09:00"
+   "at": "2026-10-22T00:20+09:00"
   },
   "yes24": {
    "ok": true,
    "count": 44,
-   "at": "2026-10-22T00:15+09:00"
+   "at": "2026-10-22T00:20+09:00"
+  },
+  "melon": {
+   "ok": true,
+   "count": 9,
+   "at": "2026-10-22T00:20+09:00"
   }
  },
  "items": [
+  {
+   "id": "melon:12767",
+   "source": "melon",
+   "title": "세상에 하나뿐인 마술같은 미술공연 〈페인터즈〉 - 고양",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-08-24T09:00+09:00",
+   "place": "고양 어울림누리 어울림극장",
+   "url": "https://ticket.melon.com/performance/index.htm?prodId=213804",
+   "image": "https://cdnticket.melon.co.kr/resource/image/upload/ticketopen/2026/08/20260821162245e013956b-f5a6-42c9-81e3-6125182c1c18.png/melon/resize/180x254/strip/true",
+   "period": {
+    "start": "2026-10-31",
+    "end": "2026-10-31"
+   },
+   "round": "",
+   "roundPeriod": null,
+   "firstSeenAt": "2026-10-22T00:20+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00"
+  },
+  {
+   "id": "melon:12776",
+   "source": "melon",
+   "title": "페인터즈 11월",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-08-25T14:00+09:00",
+   "place": "광화문 전용관 (경향아트힐)",
+   "url": "https://ticket.melon.com/performance/index.htm?prodId=211235",
+   "image": "https://cdnticket.melon.co.kr/resource/image/upload/ticketopen/2026/08/20260824101917f9fd9315-57c4-4c93-968c-03b09616c46a.png/melon/resize/180x254/strip/true",
+   "period": {
+    "start": "2025-04-01",
+    "end": "2025-04-01"
+   },
+   "round": "",
+   "roundPeriod": null,
+   "firstSeenAt": "2026-10-22T00:20+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00"
+  },
+  {
+   "id": "melon:12797",
+   "source": "melon",
+   "title": "치펜데일 라이브 인 서울 2026",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-09-08T11:00+09:00",
+   "place": "에스팩토리 성수",
+   "url": "https://ticket.melon.com/performance/index.htm?prodId=213827",
+   "image": "https://cdnticket.melon.co.kr/resource/image/upload/ticketopen/2026/08/202608281659050ee5b2d3-ab59-4aac-ba53-05855b2662c7.jpg/melon/resize/180x254/strip/true",
+   "period": {
+    "start": "2026-10-31",
+    "end": "2026-11-02"
+   },
+   "round": "",
+   "roundPeriod": null,
+   "firstSeenAt": "2026-10-22T00:20+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00"
+  },
   {
    "id": "yes24:18442",
    "source": "yes24",
@@ -29,7 +91,7 @@
    "url": "https://ticket.yes24.com/Perf/59694",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260825/20260825-59694.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-07",
     "end": "2026-10-25"
@@ -53,7 +115,7 @@
    "url": "https://ticket.yes24.com/Perf/60114",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260915/20260915-60114.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-29",
     "end": "2026-10-31"
@@ -77,7 +139,7 @@
    "url": "https://ticket.yes24.com/Perf/59718",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260812/20260812-59718.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-09-08",
     "end": "2026-10-25"
@@ -101,7 +163,7 @@
    "url": "https://ticket.yes24.com/Perf/59239",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -125,7 +187,7 @@
    "url": "https://ticket.yes24.com/Perf/59239",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -139,6 +201,25 @@
    "perfId": "59239"
   },
   {
+   "id": "melon:12874",
+   "source": "melon",
+   "title": "2026 뮤지컬 윈디시티",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-09-16T11:00+09:00",
+   "place": "꿈의숲아트센터 퍼포먼스홀",
+   "url": "https://ticket.melon.com/performance/index.htm?prodId=213896",
+   "image": "https://cdnticket.melon.co.kr/resource/image/upload/ticketopen/2026/09/2026091414324246e0cc6f-3be6-46a0-9892-ade455158431.png/melon/resize/180x254/strip/true",
+   "period": {
+    "start": "2026-10-02",
+    "end": "2026-10-10"
+   },
+   "round": "",
+   "roundPeriod": null,
+   "firstSeenAt": "2026-10-22T00:20+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00"
+  },
+  {
    "id": "yes24:18483",
    "source": "yes24",
    "title": "뮤지컬 [두 도시 이야기] 1차",
@@ -149,7 +230,7 @@
    "url": "https://ticket.yes24.com/Perf/60128",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260916/20260916-60128.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-11",
     "end": "2027-02-08"
@@ -173,7 +254,7 @@
    "url": "https://ticket.yes24.com/Perf/59488",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59488.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-13",
     "end": "2026-11-01"
@@ -197,7 +278,7 @@
    "url": "https://ticket.yes24.com/Perf/60200",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260824/20260824-59852.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-20",
     "end": "2026-10-21"
@@ -218,7 +299,7 @@
    "url": "https://ticket.yes24.com/Perf/59596",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260807/20260807-59596.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-11-15"
@@ -242,7 +323,7 @@
    "url": "https://ticket.yes24.com/Perf/60232",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260916/20260916-60232.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-21",
     "end": "2026-11-22"
@@ -263,7 +344,7 @@
    "url": "https://ticket.yes24.com/Perf/60292",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260918/20260918-60292.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-17",
     "end": "2026-10-17"
@@ -284,7 +365,7 @@
    "url": "https://ticket.yes24.com/Perf/60204",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260807/20260807-59596.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-18",
     "end": "2026-10-18"
@@ -308,7 +389,7 @@
    "url": "https://ticket.yes24.com/Perf/59852",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-59852.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-11-08"
@@ -332,7 +413,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18526",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-21",
     "end": "2026-11-21"
@@ -352,7 +433,7 @@
    "url": "https://ticket.yes24.com/Perf/60316",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260921/20260921-60316.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2027-01-24"
@@ -376,7 +457,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18547",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-01",
     "end": "2026-11-01"
@@ -396,7 +477,7 @@
    "url": "https://ticket.yes24.com/Perf/59639",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260811/20260811-59639.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-09-16",
     "end": "2026-11-29"
@@ -420,7 +501,7 @@
    "url": "https://ticket.yes24.com/Perf/59300",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260907/20260907-59300.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-08-18",
     "end": "2026-11-08"
@@ -429,6 +510,25 @@
    "roundPeriod": null,
    "detailV": 3,
    "perfId": "59300"
+  },
+  {
+   "id": "melon:12958",
+   "source": "melon",
+   "title": "페인터즈 12월",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-09-30T10:00+09:00",
+   "place": "광화문 전용관 (경향아트힐)",
+   "url": "https://ticket.melon.com/performance/index.htm?prodId=211235",
+   "image": "https://cdnticket.melon.co.kr/resource/image/upload/ticketopen/2026/09/2026092911351556a66dac-037f-478e-9d47-d511c81dab8f.png/melon/resize/180x254/strip/true",
+   "period": {
+    "start": "2025-04-01",
+    "end": "2025-04-01"
+   },
+   "round": "",
+   "roundPeriod": null,
+   "firstSeenAt": "2026-10-22T00:20+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00"
   },
   {
    "id": "yes24:18558",
@@ -441,7 +541,7 @@
    "url": "https://ticket.yes24.com/Perf/58563",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202605/20260529/20260529-58563.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-12-06"
@@ -465,7 +565,7 @@
    "url": "https://ticket.yes24.com/Perf/59313",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202607/20260715/20260715-59313.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-08-08",
     "end": "2026-10-18"
@@ -489,7 +589,7 @@
    "url": "https://ticket.yes24.com/Perf/60403",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-60403.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-23",
     "end": "2026-10-23"
@@ -510,7 +610,7 @@
    "url": "https://ticket.yes24.com/Perf/60365",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260923/20260923-60365.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-06",
     "end": "2026-11-06"
@@ -531,7 +631,7 @@
    "url": "https://ticket.yes24.com/Perf/59565",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260804/20260804-59565.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-09-22",
     "end": "2026-12-13"
@@ -552,7 +652,7 @@
    "url": "https://ticket.yes24.com/Perf/58477",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260914/20260914-58477.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-07-24",
     "end": "2026-11-08"
@@ -576,7 +676,7 @@
    "url": "https://ticket.yes24.com/Perf/59565",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260804/20260804-59565.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-09-22",
     "end": "2026-12-13"
@@ -597,7 +697,7 @@
    "url": "https://ticket.yes24.com/Perf/59694",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260825/20260825-59694.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-11-15"
@@ -621,7 +721,7 @@
    "url": "https://ticket.yes24.com/Perf/60484",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261002/20261002-60484_2.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-12-15",
     "end": "2027-03-01"
@@ -645,7 +745,7 @@
    "url": "https://ticket.yes24.com/Perf/59596",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260807/20260807-59596.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-17",
     "end": "2026-11-29"
@@ -659,6 +759,44 @@
    "perfId": "59596"
   },
   {
+   "id": "melon:12950-0-0",
+   "source": "melon",
+   "title": "뮤지컬 〈레베카〉 1차",
+   "exclusive": false,
+   "label": "선예매",
+   "openAt": "2026-10-07T15:00+09:00",
+   "place": "충무아트센터 대극장",
+   "url": "https://ticket.melon.com/performance/index.htm?prodId=213984",
+   "image": "https://cdnticket.melon.co.kr/resource/image/upload/ticketopen/2026/09/20260928160837593d985a-340b-42e6-a495-25438e07a1dd.jpg/melon/resize/180x254/strip/true",
+   "period": {
+    "start": "2026-11-24",
+    "end": "2027-03-14"
+   },
+   "round": "1차",
+   "roundPeriod": null,
+   "firstSeenAt": "2026-10-22T00:20+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00"
+  },
+  {
+   "id": "melon:12950-0-1",
+   "source": "melon",
+   "title": "뮤지컬 〈레베카〉 1차",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-10-08T11:00+09:00",
+   "place": "충무아트센터 대극장",
+   "url": "https://ticket.melon.com/performance/index.htm?prodId=213984",
+   "image": "https://cdnticket.melon.co.kr/resource/image/upload/ticketopen/2026/09/20260928160837593d985a-340b-42e6-a495-25438e07a1dd.jpg/melon/resize/180x254/strip/true",
+   "period": {
+    "start": "2026-11-24",
+    "end": "2027-03-14"
+   },
+   "round": "1차",
+   "roundPeriod": null,
+   "firstSeenAt": "2026-10-22T00:20+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00"
+  },
+  {
    "id": "yes24:18609",
    "source": "yes24",
    "title": "뮤지컬 [잔혹동화 생존기] 마지막",
@@ -669,7 +807,7 @@
    "url": "https://ticket.yes24.com/Perf/59488",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59488.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2026-11-29"
@@ -693,7 +831,7 @@
    "url": "https://ticket.yes24.com/Perf/60524",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261008/20261008-60524.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-30",
     "end": "2026-11-01"
@@ -717,7 +855,7 @@
    "url": "https://ticket.yes24.com/Perf/60521",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261007/20261007-60521.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-12-22",
     "end": "2027-01-15"
@@ -741,7 +879,7 @@
    "url": "https://ticket.yes24.com/Perf/59639",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260811/20260811-59639.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-09-16",
     "end": "2026-11-29"
@@ -765,7 +903,7 @@
    "url": "https://ticket.yes24.com/Perf/59239",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -789,7 +927,7 @@
    "url": "https://ticket.yes24.com/Perf/59239",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -813,7 +951,7 @@
    "url": "https://ticket.yes24.com/Perf/60316",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260921/20260921-60316.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2027-01-24"
@@ -837,7 +975,7 @@
    "url": "https://ticket.yes24.com/Perf/59852",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-59852.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-29"
@@ -861,7 +999,7 @@
    "url": "https://ticket.yes24.com/Perf/60645",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261014/20261014-60645.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-31",
     "end": "2026-10-31"
@@ -882,7 +1020,7 @@
    "url": "https://ticket.yes24.com/Perf/60602",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261012/20261012-60602.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-10"
@@ -891,6 +1029,28 @@
    "round": "",
    "detailV": 3,
    "perfId": "60602"
+  },
+  {
+   "id": "melon:13028",
+   "source": "melon",
+   "title": "뮤지컬 〈두 도시 이야기〉 2차",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-10-16T11:00+09:00",
+   "place": "광림아트센터 BBCH홀",
+   "url": "https://ticket.melon.com/performance/index.htm?prodId=213865",
+   "image": "https://cdnticket.melon.co.kr/resource/image/upload/ticketopen/2026/10/2026100809465617ccb51b-5d4a-4278-86e5-c1b0a016df97.jpg/melon/resize/180x254/strip/true",
+   "period": {
+    "start": "2026-11-11",
+    "end": "2027-02-08"
+   },
+   "round": "2차",
+   "roundPeriod": {
+    "start": "2026-11-24",
+    "end": "2026-12-13"
+   },
+   "firstSeenAt": "2026-10-22T00:20+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00"
   },
   {
    "id": "yes24:18668",
@@ -903,7 +1063,7 @@
    "url": "https://ticket.yes24.com/Perf/60128",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260916/20260916-60128.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-11",
     "end": "2027-02-08"
@@ -927,7 +1087,7 @@
    "url": "https://ticket.yes24.com/Perf/60658",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-60658.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-12-16",
     "end": "2027-03-14"
@@ -951,7 +1111,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18687",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-12-23",
     "end": "2026-12-23"
@@ -971,7 +1131,7 @@
    "url": "https://ticket.yes24.com/Perf/60658",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-60658.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-12-16",
     "end": "2027-03-14"
@@ -1046,7 +1206,7 @@
    "url": "https://nol.yanolja.com/ticket/products/26015338",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26015338_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-13",
     "end": "2026-11-22"
@@ -1063,7 +1223,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66215",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/open_1015.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-11",
     "end": "2026-11-12"
@@ -1084,7 +1244,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66239",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_6/2026더퍼스트에디션_poster(200x247).jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-23",
     "end": "2026-11-23"
@@ -1101,7 +1261,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66256",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_6/human_open_1020.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2026-12-20"
@@ -1123,7 +1283,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18713",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2027-03-07"
@@ -1146,7 +1306,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66261",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/VEA_open_1020.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-10-27"
@@ -1156,6 +1316,25 @@
     "start": "2026-11-17",
     "end": "2026-12-06"
    }
+  },
+  {
+   "id": "melon:13079",
+   "source": "melon",
+   "title": "뮤지컬 〈레베카〉 2차",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-10-28T11:00+09:00",
+   "place": "충무아트센터 대극장",
+   "url": "https://ticket.melon.com/performance/index.htm?prodId=213984",
+   "image": "https://cdnticket.melon.co.kr/resource/image/upload/ticketopen/2026/10/202610161433074081e848-8fe9-4ffd-a65d-c04b3cc329fe.jpg/melon/resize/180x254/strip/true",
+   "period": {
+    "start": "2026-11-24",
+    "end": "2027-03-14"
+   },
+   "round": "2차",
+   "roundPeriod": null,
+   "firstSeenAt": "2026-10-22T00:20+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00"
   },
   {
    "id": "nol:15651-40709",
@@ -1168,7 +1347,7 @@
    "url": "https://nol.yanolja.com/ticket/products/26013993",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26013993_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-24",
     "end": "2027-03-14"
@@ -1186,7 +1365,7 @@
    "url": "https://nol.yanolja.com/ticket/products/26007416",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26007416_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-08-13",
     "end": "2027-03-01"
@@ -1204,7 +1383,7 @@
    "url": "https://ticket.yes24.com/Perf/58563",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202605/20260529/20260529-58563.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-12-08",
     "end": "2027-01-03"
@@ -1228,7 +1407,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/65980",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_1/4.포스터_뮤지컬광화문연가.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-28",
     "end": "2026-11-29"
@@ -1245,7 +1424,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66235",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/casino_open_1016.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-20",
     "end": "2027-04-25"
@@ -1262,7 +1441,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66201",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_3/pst1013.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-11-12",
     "end": "2026-11-12"
@@ -1279,7 +1458,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66136",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_5/poster_dummy_list_240_320_1_Musical.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-22T00:15+09:00",
+   "lastSeenAt": "2026-10-22T00:20+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2026-12-11"
