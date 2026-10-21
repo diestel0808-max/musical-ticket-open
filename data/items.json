@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-21T22:41+09:00",
+ "updatedAt": "2026-10-21T23:02+09:00",
  "sources": {
   "nol": {
    "ok": true,
    "count": 7,
-   "at": "2026-10-21T22:41+09:00"
+   "at": "2026-10-21T23:02+09:00"
   },
   "ticketlink": {
    "ok": true,
    "count": 20,
-   "at": "2026-10-21T22:41+09:00"
+   "at": "2026-10-21T23:02+09:00"
   },
   "yes24": {
    "ok": true,
    "count": 44,
-   "at": "2026-10-21T22:41+09:00"
+   "at": "2026-10-21T23:02+09:00"
   }
  },
  "items": [
@@ -29,7 +29,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18442",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18460",
@@ -42,7 +42,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18460",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18467",
@@ -55,7 +55,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18467",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18469-p1",
@@ -68,7 +68,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18469",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18469",
@@ -81,7 +81,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18469",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18483",
@@ -94,7 +94,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18483",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18475",
@@ -107,7 +107,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18475",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18504",
@@ -120,7 +120,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18504",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18480",
@@ -133,7 +133,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18480",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18523",
@@ -146,7 +146,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18523",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18527",
@@ -159,7 +159,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18527",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18548",
@@ -172,7 +172,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18548",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18524",
@@ -185,7 +185,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18524",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18526",
@@ -198,7 +198,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18526",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18554",
@@ -211,7 +211,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18554",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18547",
@@ -224,7 +224,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18547",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18559",
@@ -237,7 +237,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18559",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18567",
@@ -250,7 +250,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18567",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18558",
@@ -263,7 +263,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18558",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18574",
@@ -276,7 +276,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18574",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18565",
@@ -289,7 +289,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18565",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18579",
@@ -302,7 +302,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18579",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18576-p1",
@@ -315,7 +315,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18576",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18568",
@@ -328,7 +328,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18568",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18576",
@@ -341,7 +341,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18576",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18585",
@@ -354,7 +354,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18585",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18600",
@@ -367,7 +367,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18600",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18620",
@@ -380,7 +380,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18620",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18609",
@@ -393,7 +393,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18609",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18631",
@@ -406,7 +406,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18631",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18581",
@@ -419,7 +419,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18581",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18645",
@@ -432,7 +432,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18645",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18661-p1",
@@ -445,7 +445,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18661",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18661",
@@ -458,7 +458,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18661",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18658",
@@ -471,7 +471,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18658",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18641",
@@ -484,7 +484,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18641",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18680",
@@ -497,7 +497,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18680",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18655",
@@ -510,7 +510,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18655",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18668",
@@ -523,7 +523,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18668",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18681-p1",
@@ -536,7 +536,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18681",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18687",
@@ -549,7 +549,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18687",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18681",
@@ -562,7 +562,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18681",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66216",
@@ -575,7 +575,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66216",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_5/dd_open1015.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66234",
@@ -588,7 +588,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66234",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/let_open_1016.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66260",
@@ -601,7 +601,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66260",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/main_1020(1).jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66238",
@@ -614,7 +614,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66238",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_3/open_1016.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66252",
@@ -627,7 +627,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66252",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_8/bbp_open_1019.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "nol:15676-40891",
@@ -640,7 +640,7 @@
    "url": "https://nol.yanolja.com/ticket/products/26015338",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26015338_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66215",
@@ -653,7 +653,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66215",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/open_1015.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "nol:15681-40871",
@@ -666,7 +666,7 @@
    "url": "https://nol.yanolja.com/ticket/products/26014934",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26014934_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "nol:15638-40753",
@@ -679,7 +679,7 @@
    "url": "https://nol.yanolja.com/ticket/products/26010372",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26010372_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66270",
@@ -692,7 +692,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66270",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/KakaoTalk_20261015_162855036.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66271",
@@ -705,7 +705,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66271",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_9/santa_open_1021.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66286",
@@ -718,7 +718,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66286",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_7/open_1021.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66287",
@@ -731,7 +731,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66287",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_2/open_1021.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66233",
@@ -744,7 +744,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66233",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_6/open_1016.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66239",
@@ -757,7 +757,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66239",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_6/2026더퍼스트에디션_poster(200x247).jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66256",
@@ -770,7 +770,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66256",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_6/human_open_1020.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18713",
@@ -783,7 +783,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18713",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66261",
@@ -796,7 +796,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66261",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/VEA_open_1020.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "nol:15651-40709",
@@ -809,7 +809,7 @@
    "url": "https://nol.yanolja.com/ticket/products/26013993",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26013993_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "nol:15680-40917",
@@ -822,7 +822,7 @@
    "url": "https://nol.yanolja.com/ticket/products/26015241",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26015241_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "nol:15683-40880",
@@ -835,7 +835,7 @@
    "url": "https://nol.yanolja.com/ticket/products/26014931",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26014931_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "nol:15654-40865",
@@ -848,7 +848,7 @@
    "url": "https://nol.yanolja.com/ticket/products/26007416",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26007416_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "yes24:18708",
@@ -861,7 +861,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18708",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:65980",
@@ -874,7 +874,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/65980",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_1/4.포스터_뮤지컬광화문연가.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66228",
@@ -887,7 +887,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66228",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_8/OPEN_1016.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66235",
@@ -900,7 +900,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66235",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/casino_open_1016.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66201",
@@ -913,7 +913,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66201",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_3/pst1013.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66279",
@@ -926,7 +926,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66279",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_7/BBP_OPEN_1021.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   },
   {
    "id": "ticketlink:66136",
@@ -939,7 +939,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66136",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_5/poster_dummy_list_240_320_1_Musical.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T22:41+09:00"
+   "lastSeenAt": "2026-10-21T23:02+09:00"
   }
  ]
 }
