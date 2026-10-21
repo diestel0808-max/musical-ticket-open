@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-21T23:02+09:00",
+ "updatedAt": "2026-10-21T23:12+09:00",
  "sources": {
   "nol": {
    "ok": true,
    "count": 7,
-   "at": "2026-10-21T23:02+09:00"
+   "at": "2026-10-21T23:12+09:00"
   },
   "ticketlink": {
    "ok": true,
    "count": 20,
-   "at": "2026-10-21T23:02+09:00"
+   "at": "2026-10-21T23:12+09:00"
   },
   "yes24": {
    "ok": true,
    "count": 44,
-   "at": "2026-10-21T23:02+09:00"
+   "at": "2026-10-21T23:12+09:00"
   }
  },
  "items": [
@@ -25,11 +25,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-10T13:00+09:00",
-   "place": "",
+   "place": "예스24아트원 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18442",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-07",
+    "end": "2026-10-25"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18460",
@@ -38,11 +43,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-14T09:00+09:00",
-   "place": "",
+   "place": "관저문예회관 3층 공연장",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18460",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-29",
+    "end": "2026-10-31"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18467",
@@ -51,11 +61,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-14T14:00+09:00",
-   "place": "",
+   "place": "링크아트센터 페이코홀",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18467",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-09-08",
+    "end": "2026-10-25"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18469-p1",
@@ -64,11 +79,16 @@
    "exclusive": false,
    "label": "선예매",
    "openAt": "2026-09-15T11:00+09:00",
-   "place": "",
+   "place": "NOL 서경스퀘어 스콘 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18469",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-09-10",
+    "end": "2026-11-29"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18469",
@@ -77,11 +97,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-15T15:00+09:00",
-   "place": "",
+   "place": "NOL 서경스퀘어 스콘 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18469",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-09-10",
+    "end": "2026-11-29"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18483",
@@ -90,11 +115,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-16T14:00+09:00",
-   "place": "",
+   "place": "광림아트센터 BBCH홀",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18483",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-11",
+    "end": "2027-02-08"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18475",
@@ -103,11 +133,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-17T11:00+09:00",
-   "place": "",
+   "place": "대학로 TOM(티오엠) 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18475",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-13",
+    "end": "2026-11-01"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18504",
@@ -116,11 +151,16 @@
    "exclusive": true,
    "label": "",
    "openAt": "2026-09-17T12:00+09:00",
-   "place": "",
+   "place": "두산아트센터 연강홀",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18504",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-20",
+    "end": "2026-10-21"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18480",
@@ -129,11 +169,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-18T14:00+09:00",
-   "place": "",
+   "place": "홍익대 대학로 아트센터 대극장",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18480",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-27",
+    "end": "2026-11-15"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18523",
@@ -142,11 +187,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-21T14:00+09:00",
-   "place": "",
+   "place": "부산 드림씨어터",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18523",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-21",
+    "end": "2026-11-22"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18527",
@@ -155,11 +205,16 @@
    "exclusive": true,
    "label": "",
    "openAt": "2026-09-21T14:00+09:00",
-   "place": "",
+   "place": "영도문화예술회관 봉래홀(대공연장)",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18527",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-17",
+    "end": "2026-10-17"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18548",
@@ -168,11 +223,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-22T12:00+09:00",
-   "place": "",
+   "place": "홍익대 대학로 아트센터 대극장",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18548",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-18",
+    "end": "2026-10-18"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18524",
@@ -181,11 +241,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-22T14:00+09:00",
-   "place": "",
+   "place": "두산아트센터 연강홀",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18524",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-27",
+    "end": "2026-11-08"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18526",
@@ -194,11 +259,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-23T10:00+09:00",
-   "place": "",
+   "place": "창원 성산아트홀 대극장",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18526",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-21",
+    "end": "2026-11-21"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18554",
@@ -207,11 +277,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-23T12:00+09:00",
-   "place": "",
+   "place": "링크아트센터 벅스홀",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18554",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-03",
+    "end": "2027-01-24"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18547",
@@ -220,11 +295,16 @@
    "exclusive": true,
    "label": "",
    "openAt": "2026-09-23T14:00+09:00",
-   "place": "",
+   "place": "민주공원 민주항쟁기념관 큰방",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18547",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-01",
+    "end": "2026-11-01"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18559",
@@ -233,11 +313,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-29T11:00+09:00",
-   "place": "",
+   "place": "플러스씨어터",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18559",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-09-16",
+    "end": "2026-11-29"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18567",
@@ -246,11 +331,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-29T15:00+09:00",
-   "place": "",
+   "place": "링크더스페이스 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18567",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-08-18",
+    "end": "2026-11-08"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18558",
@@ -263,7 +353,12 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18558",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-10",
+    "end": "2026-12-06"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18574",
@@ -272,11 +367,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-09-30T11:00+09:00",
-   "place": "",
+   "place": "광림아트센터 BBCH홀",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18574",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-08-08",
+    "end": "2026-10-18"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18565",
@@ -285,11 +385,16 @@
    "exclusive": true,
    "label": "",
    "openAt": "2026-09-30T14:00+09:00",
-   "place": "",
+   "place": "영도문화예술회관 봉래홀(대공연장)",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18565",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-23",
+    "end": "2026-10-23"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18579",
@@ -298,11 +403,16 @@
    "exclusive": true,
    "label": "",
    "openAt": "2026-09-30T14:00+09:00",
-   "place": "",
+   "place": "3·15아트홀 대극장",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18579",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-06",
+    "end": "2026-11-06"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18576-p1",
@@ -311,11 +421,16 @@
    "exclusive": false,
    "label": "연애인 프리미엄 선예매",
    "openAt": "2026-10-01T11:00+09:00",
-   "place": "",
+   "place": "예스24스테이지 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18576",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-09-22",
+    "end": "2026-12-13"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18568",
@@ -324,11 +439,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-01T14:00+09:00",
-   "place": "",
+   "place": "GS아트센터",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18568",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-07-24",
+    "end": "2026-11-08"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18576",
@@ -337,11 +457,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-01T16:00+09:00",
-   "place": "",
+   "place": "예스24스테이지 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18576",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-09-22",
+    "end": "2026-12-13"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18585",
@@ -350,11 +475,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-02T13:00+09:00",
-   "place": "",
+   "place": "예스24아트원 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18585",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-27",
+    "end": "2026-11-15"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18600",
@@ -363,11 +493,16 @@
    "exclusive": true,
    "label": "",
    "openAt": "2026-10-06T14:00+09:00",
-   "place": "",
+   "place": "홍익대 대학로 아트센터 대극장",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18600",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-15",
+    "end": "2027-03-01"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18620",
@@ -376,11 +511,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-07T14:00+09:00",
-   "place": "",
+   "place": "홍익대 대학로 아트센터 대극장",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18620",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-17",
+    "end": "2026-11-29"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18609",
@@ -389,11 +529,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-08T11:00+09:00",
-   "place": "",
+   "place": "대학로 TOM(티오엠) 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18609",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-03",
+    "end": "2026-11-29"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18631",
@@ -402,11 +547,16 @@
    "exclusive": true,
    "label": "",
    "openAt": "2026-10-08T13:00+09:00",
-   "place": "",
+   "place": "NOL 유니플렉스 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18631",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-30",
+    "end": "2026-11-01"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18581",
@@ -419,7 +569,12 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18581",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2025-12-22",
+    "end": "2026-01-15"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18645",
@@ -428,11 +583,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-13T11:00+09:00",
-   "place": "",
+   "place": "플러스씨어터",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18645",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-09-16",
+    "end": "2026-11-29"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18661-p1",
@@ -441,11 +601,16 @@
    "exclusive": false,
    "label": "선예매",
    "openAt": "2026-10-13T12:00+09:00",
-   "place": "",
+   "place": "NOL 서경스퀘어 스콘 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18661",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-09-10",
+    "end": "2026-11-29"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18661",
@@ -454,11 +619,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-13T16:00+09:00",
-   "place": "",
+   "place": "NOL 서경스퀘어 스콘 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18661",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-09-10",
+    "end": "2026-11-29"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18658",
@@ -467,11 +637,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-14T12:00+09:00",
-   "place": "",
+   "place": "링크아트센터 벅스홀",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18658",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-03",
+    "end": "2027-01-24"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18641",
@@ -480,11 +655,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-14T14:00+09:00",
-   "place": "",
+   "place": "두산아트센터 연강홀",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18641",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-10",
+    "end": "2026-11-29"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18680",
@@ -493,11 +673,16 @@
    "exclusive": true,
    "label": "",
    "openAt": "2026-10-14T14:00+09:00",
-   "place": "",
+   "place": "안산보노마루 (경기 안산시 상록구 본오로 182)",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18680",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-31",
+    "end": "2026-10-31"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18655",
@@ -506,11 +691,16 @@
    "exclusive": true,
    "label": "",
    "openAt": "2026-10-14T15:00+09:00",
-   "place": "",
+   "place": "블루스퀘어 우리은행홀",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18655",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-10",
+    "end": "2026-11-10"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18668",
@@ -519,11 +709,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-16T11:00+09:00",
-   "place": "",
+   "place": "광림아트센터 BBCH홀",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18668",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-11",
+    "end": "2027-02-08"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18681-p1",
@@ -532,11 +727,16 @@
    "exclusive": false,
    "label": "선예매",
    "openAt": "2026-10-20T11:00+09:00",
-   "place": "",
+   "place": "예스24아트원 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18681",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-16",
+    "end": "2027-03-14"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18687",
@@ -545,11 +745,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-20T14:00+09:00",
-   "place": "",
+   "place": "소향씨어터 우리은행홀",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18687",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-23",
+    "end": "2026-12-23"
+   },
+   "periodChecked": true
   },
   {
    "id": "yes24:18681",
@@ -558,11 +763,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-20T15:00+09:00",
-   "place": "",
+   "place": "예스24아트원 1관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18681",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-16",
+    "end": "2027-03-14"
+   },
+   "periodChecked": true
   },
   {
    "id": "ticketlink:66216",
@@ -575,7 +785,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66216",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_5/dd_open1015.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-26",
+    "end": "2027-01-24"
+   }
   },
   {
    "id": "ticketlink:66234",
@@ -588,7 +802,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66234",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/let_open_1016.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-10",
+    "end": "2026-11-11"
+   }
   },
   {
    "id": "ticketlink:66260",
@@ -601,7 +819,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66260",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/main_1020(1).jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-14",
+    "end": "2026-11-14"
+   }
   },
   {
    "id": "ticketlink:66238",
@@ -614,7 +836,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66238",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_3/open_1016.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-02",
+    "end": "2027-01-31"
+   }
   },
   {
    "id": "ticketlink:66252",
@@ -627,7 +853,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66252",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_8/bbp_open_1019.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-19",
+    "end": "2026-12-20"
+   }
   },
   {
    "id": "nol:15676-40891",
@@ -640,7 +870,11 @@
    "url": "https://nol.yanolja.com/ticket/products/26015338",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26015338_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-13",
+    "end": "2026-11-22"
+   }
   },
   {
    "id": "ticketlink:66215",
@@ -653,7 +887,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66215",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/open_1015.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-11",
+    "end": "2026-11-12"
+   }
   },
   {
    "id": "nol:15681-40871",
@@ -666,7 +904,11 @@
    "url": "https://nol.yanolja.com/ticket/products/26014934",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26014934_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-19",
+    "end": "2026-12-20"
+   }
   },
   {
    "id": "nol:15638-40753",
@@ -679,7 +921,11 @@
    "url": "https://nol.yanolja.com/ticket/products/26010372",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26010372_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-09-04",
+    "end": "2027-01-03"
+   }
   },
   {
    "id": "ticketlink:66270",
@@ -692,7 +938,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66270",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/KakaoTalk_20261015_162855036.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-20",
+    "end": "2026-12-20"
+   }
   },
   {
    "id": "ticketlink:66271",
@@ -705,7 +955,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66271",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_9/santa_open_1021.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-05",
+    "end": "2026-12-05"
+   }
   },
   {
    "id": "ticketlink:66286",
@@ -718,7 +972,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66286",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_7/open_1021.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2027-01-02",
+    "end": "2027-01-03"
+   }
   },
   {
    "id": "ticketlink:66287",
@@ -731,7 +989,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66287",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_2/open_1021.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2027-01-16",
+    "end": "2027-01-16"
+   }
   },
   {
    "id": "ticketlink:66233",
@@ -744,7 +1006,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66233",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_6/open_1016.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2027-01-02",
+    "end": "2027-02-28"
+   }
   },
   {
    "id": "ticketlink:66239",
@@ -757,7 +1023,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66239",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_6/2026더퍼스트에디션_poster(200x247).jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-23",
+    "end": "2026-11-23"
+   }
   },
   {
    "id": "ticketlink:66256",
@@ -770,7 +1040,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66256",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_6/human_open_1020.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-11",
+    "end": "2026-12-20"
+   }
   },
   {
    "id": "yes24:18713",
@@ -779,11 +1053,16 @@
    "exclusive": false,
    "label": "",
    "openAt": "2026-10-26T14:00+09:00",
-   "place": "",
+   "place": "예스24 스테이지 3관",
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18713",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-11",
+    "end": "2027-03-07"
+   },
+   "periodChecked": true
   },
   {
    "id": "ticketlink:66261",
@@ -796,7 +1075,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66261",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/VEA_open_1020.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-10-27",
+    "end": "2026-10-27"
+   }
   },
   {
    "id": "nol:15651-40709",
@@ -809,7 +1092,11 @@
    "url": "https://nol.yanolja.com/ticket/products/26013993",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26013993_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-24",
+    "end": "2027-03-14"
+   }
   },
   {
    "id": "nol:15680-40917",
@@ -822,7 +1109,11 @@
    "url": "https://nol.yanolja.com/ticket/products/26015241",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26015241_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-24",
+    "end": "2027-01-10"
+   }
   },
   {
    "id": "nol:15683-40880",
@@ -835,7 +1126,11 @@
    "url": "https://nol.yanolja.com/ticket/products/26014931",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26014931_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-12",
+    "end": "2026-12-12"
+   }
   },
   {
    "id": "nol:15654-40865",
@@ -848,7 +1143,11 @@
    "url": "https://nol.yanolja.com/ticket/products/26007416",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26007416_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-08-13",
+    "end": "2027-03-01"
+   }
   },
   {
    "id": "yes24:18708",
@@ -861,7 +1160,12 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18708",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-08",
+    "end": "2027-01-03"
+   },
+   "periodChecked": true
   },
   {
    "id": "ticketlink:65980",
@@ -874,7 +1178,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/65980",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_1/4.포스터_뮤지컬광화문연가.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-28",
+    "end": "2026-11-29"
+   }
   },
   {
    "id": "ticketlink:66228",
@@ -887,7 +1195,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66228",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_8/OPEN_1016.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-11",
+    "end": "2026-11-11"
+   }
   },
   {
    "id": "ticketlink:66235",
@@ -900,7 +1212,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66235",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/casino_open_1016.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-20",
+    "end": "2027-04-25"
+   }
   },
   {
    "id": "ticketlink:66201",
@@ -913,7 +1229,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66201",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_3/pst1013.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-12",
+    "end": "2026-11-12"
+   }
   },
   {
    "id": "ticketlink:66279",
@@ -926,7 +1246,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66279",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_7/BBP_OPEN_1021.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-11-14",
+    "end": "2026-11-14"
+   }
   },
   {
    "id": "ticketlink:66136",
@@ -939,7 +1263,11 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66136",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_5/poster_dummy_list_240_320_1_Musical.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:02+09:00"
+   "lastSeenAt": "2026-10-21T23:12+09:00",
+   "period": {
+    "start": "2026-12-11",
+    "end": "2026-12-11"
+   }
   }
  ]
 }

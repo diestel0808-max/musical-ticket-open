@@ -2,9 +2,11 @@
 import re
 from datetime import datetime
 
-from ..common import http, iso_kst, make_item
+from ..common import html_text, http, iso_kst, make_item, parse_period
 
 API = "https://ticket.yes24.com/New/Notice/Ajax/axList.aspx"
+DETAIL_API = "https://ticket.yes24.com/New/Notice/Ajax/axRead.aspx"
+PLACE = re.compile(r"(?:공연\s*장\s*소?|(?<![가-힣])장\s*소)\s*[:：]\s*([^\r\n※]+)")
 MUSICAL_GENRE = "15457"
 LINK = re.compile(r'<a href="#id=(\d+)">(.*?)</a>', re.S)
 DATE = re.compile(r"(\d{4})\.(\d{2})\.(\d{2})\([^)]*\)\s*(\d{2}):(\d{2})")
@@ -34,3 +36,12 @@ def fetch(pages=2, size=20):
                 if name and parse_date(when):
                     items.append(make_item("yes24", f"{nid}-p{no}", title, parse_date(when), url, label=name))
     return items
+
+
+def fetch_detail(source_id, ref_year=None):
+    """공지 상세에서 공연기간과 공연장을 읽는다. source_id는 '18708' 또는 '18708-p1'."""
+    nid = str(source_id).split("-")[0]
+    text = html_text(http(DETAIL_API, data={"bId": nid, "genre": MUSICAL_GENRE, "province": "", "order": "1"}))
+    m = PLACE.search(text)
+    place = re.sub(r"\s+", " ", m.group(1)).strip()[:60] if m else ""
+    return parse_period(text, ref_year), place

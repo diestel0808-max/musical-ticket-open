@@ -75,11 +75,13 @@ h1 small { font-size: 14px; font-weight: 500; color: var(--muted); margin-left: 
 .day.is-today .day-head .date { color: var(--accent); }
 .rows { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .card {
-  display: grid; grid-template-columns: 56px 64px 1fr; gap: 12px; align-items: center;
+  display: grid; color: inherit; grid-template-columns: 56px 64px 1fr; gap: 12px; align-items: center;
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 10px 12px; text-decoration: none; transition: border-color .15s, transform .15s;
 }
-.card:hover { border-color: var(--faint); transform: translateY(-1px); }
+.card:hover { border-color: var(--faint); }
+.card .title a, .p-item .title a { text-decoration: none; }
+.card .title a:hover, .p-item .title a:hover { text-decoration: underline; }
 .card .time { font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .card .thumb { width: 64px; height: 84px; border-radius: 6px; background: var(--surface-2) center/cover no-repeat; display: grid; place-items: center; color: var(--faint); font-size: 11px; }
 .card .title { font-weight: 600; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
@@ -88,6 +90,19 @@ h1 small { font-size: 14px; font-weight: 500; color: var(--muted); margin-left: 
 .tag { font-size: 11px; font-weight: 700; padding: 0 6px; border-radius: 4px; background: var(--surface-2); color: var(--muted); }
 .tag.excl { background: var(--accent-soft); color: var(--accent); }
 .tag.new { background: var(--accent); color: #fff; }
+.period { display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; font-size: 13px; }
+.period .lbl { color: var(--faint); font-size: 12px; font-weight: 600; }
+.period .val { font-variant-numeric: tabular-nums; font-weight: 600; user-select: all; -webkit-user-select: all; cursor: text; }
+.copy { border: 1px solid var(--line); background: var(--surface); color: var(--muted); border-radius: 6px; padding: 0 7px; font-size: 11.5px; line-height: 20px; cursor: pointer; }
+.copy:hover { color: var(--text); border-color: var(--faint); }
+.copy.done { color: var(--accent); border-color: var(--accent); }
+.go { font-size: 12px; color: var(--muted); text-decoration: none; margin-left: auto; white-space: nowrap; }
+.go:hover { color: var(--accent); }
+.refresh { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 4px 12px; font-size: 13px; font-weight: 600; cursor: pointer; margin-left: 10px; }
+.refresh:hover { border-color: var(--faint); }
+.refresh[disabled] { opacity: .6; cursor: progress; }
+.refresh-msg { display: block; margin-top: 4px; font-size: 12.5px; }
+.refresh-msg.ok { color: var(--accent); }
 .empty { padding: 64px 0; text-align: center; color: var(--muted); }
 
 /* 캘린더 */
@@ -113,9 +128,9 @@ h1 small { font-size: 14px; font-weight: 500; color: var(--muted); margin-left: 
 .more { font-size: 12px; font-weight: 700; color: var(--accent); padding-top: 2px; }
 aside.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; align-self: start; position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: auto; }
 aside.panel h3 { margin: 0 0 12px; font-size: 16px; }
-.p-item { display: grid; grid-template-columns: 54px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); text-decoration: none; }
+.p-item { display: grid; grid-template-columns: 54px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); }
 .p-item:first-of-type { border-top: 0; }
-.p-item .thumb { width: 54px; height: 72px; border-radius: 6px; background: var(--surface-2) center/cover no-repeat; }
+.p-item .thumb { display: block; width: 54px; height: 72px; border-radius: 6px; background: var(--surface-2) center/cover no-repeat; }
 .p-item .title { font-weight: 600; line-height: 1.35; }
 .p-item .sub { color: var(--muted); font-size: 12.5px; margin-top: 3px; display: flex; flex-wrap: wrap; gap: 4px 8px; }
 
@@ -138,7 +153,7 @@ aside.panel h3 { margin: 0 0 12px; font-size: 16px; }
 <div class="wrap">
   <header class="top">
     <h1>뮤지컬 티켓오픈 <small>NOL · 티켓링크 · 예스24</small></h1>
-    <div class="meta" id="meta">불러오는 중…</div>
+    <div class="meta"><span id="meta">불러오는 중…</span><button class="refresh" id="refresh" title="세 사이트에서 지금 다시 가져오기">↻ 지금 업데이트</button><span class="refresh-msg" id="refresh-msg"></span></div>
   </header>
 
   <div class="toolbar">
@@ -205,15 +220,28 @@ function tags(it) {
     (it.exclusive ? `<span class="tag excl">단독</span>` : "") +
     (it.label ? `<span class="tag">${esc(it.label)}</span>` : "");
 }
+// 공연기간: 26.11.13 ~ 26.11.22 (하루면 26.11.26)
+const ymd = (d) => `${d.slice(2, 4)}.${d.slice(5, 7)}.${d.slice(8, 10)}`;
+function periodText(it) {
+  const p = it.period;
+  if (!p || !p.start) return "";
+  return !p.end || p.end === p.start ? ymd(p.start) : `${ymd(p.start)} ~ ${ymd(p.end)}`;
+}
+function period(it) {
+  const t = periodText(it);
+  return t ? `<div class="period"><span class="lbl">공연</span><span class="val">${t}</span><button class="copy" data-copy="${t}" title="공연기간 복사">복사</button></div>` : "";
+}
 function thumb(it) { return it.image ? `style="background-image:url('${esc(it.image)}')"` : ""; }
 
 function card(it) {
-  return `<a class="card" href="${esc(it.url)}" target="_blank" rel="noopener">
+  const link = `href="${esc(it.url)}" target="_blank" rel="noopener"`;
+  return `<div class="card">
     <div class="time">${timeOf(it.openAt) || "—"}</div>
-    <div class="thumb" ${thumb(it)}>${it.image ? "" : "No img"}</div>
-    <div><div class="title">${esc(it.title)}</div>
-      <div class="sub">${srcBadge(it)}${tags(it)}${it.place ? `<span>${esc(it.place)}</span>` : ""}</div></div>
-  </a>`;
+    <a class="thumb" ${link} ${thumb(it)} aria-label="공지 보기">${it.image ? "" : "No img"}</a>
+    <div><div class="title"><a ${link}>${esc(it.title)}</a></div>
+      ${period(it)}
+      <div class="sub">${srcBadge(it)}${tags(it)}${it.place ? `<span>${esc(it.place)}</span>` : ""}<a class="go" ${link}>공지 보기 ↗</a></div></div>
+  </div>`;
 }
 
 function renderList() {
@@ -274,11 +302,12 @@ function renderCal() {
   const sel = byDay.get(state.selected) || [];
   const { md, dow } = fmtDay(state.selected);
   const panel = `<h3>${md} (${dow}) <span class="meta">${sel.length ? sel.length + "건 · " + ddayLabel(state.selected) : ""}</span></h3>
-    ${sel.length ? sel.map((it) => `<a class="p-item" href="${esc(it.url)}" target="_blank" rel="noopener">
-      <div class="thumb" ${thumb(it)}></div>
-      <div><div class="title">${esc(it.title)}</div>
+    ${sel.length ? sel.map((it) => `<div class="p-item">
+      <a class="thumb" href="${esc(it.url)}" target="_blank" rel="noopener" ${thumb(it)} aria-label="공지 보기"></a>
+      <div><div class="title"><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a></div>
+        ${period(it)}
         <div class="sub"><b>${timeOf(it.openAt)}</b>${srcBadge(it)}${tags(it)}</div>
-        ${it.place ? `<div class="sub">${esc(it.place)}</div>` : ""}</div></a>`).join("") : `<div class="empty" style="padding:32px 0">이날은 오픈 소식이 없어요.</div>`}`;
+        ${it.place ? `<div class="sub">${esc(it.place)}</div>` : ""}</div></div>`).join("") : `<div class="empty" style="padding:32px 0">이날은 오픈 소식이 없어요.</div>`}`;
   return `<div class="cal-layout"><div>
       <div class="cal-head"><h2>${y}년 ${m}월</h2>
         <button class="icon-btn" data-nav="-1" aria-label="이전 달">‹</button>
@@ -303,6 +332,8 @@ function render() {
 }
 
 document.addEventListener("click", (e) => {
+  const cp = e.target.closest("[data-copy]");
+  if (cp) { copyText(cp); return; }
   const v = e.target.closest("[data-view]"); if (v) { state.view = v.dataset.view; return render(); }
   const c = e.target.closest("[data-src]");
   if (c) { const k = c.dataset.src; state.on.has(k) ? state.on.delete(k) : state.on.add(k); return render(); }
@@ -324,8 +355,52 @@ $("#sort").addEventListener("change", (e) => { state.sort = e.target.value; rend
 $("#past").addEventListener("change", (e) => { state.past = e.target.checked; render(); });
 $("#q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
 
+async function copyText(btn) {
+  const text = btn.dataset.copy;
+  let ok = true;
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    ok = false;
+    // 클립보드 권한이 없으면 텍스트를 선택해 두고 직접 복사하게
+    const val = btn.parentElement.querySelector(".val");
+    const range = document.createRange(); range.selectNodeContents(val);
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    btn.textContent = "⌘C로 복사";
+  }
+  if (ok) { btn.textContent = "복사됨"; btn.classList.add("done"); }
+  setTimeout(() => { btn.textContent = "복사"; btn.classList.remove("done"); }, ok ? 1200 : 2500);
+}
+
+function applyDb(db) {
+  state.items = db.items || [];
+  const at = db.updatedAt ? new Date(db.updatedAt) : null;
+  const status = Object.entries(db.sources || {}).map(([k, s]) =>
+    `<span class="${s.ok ? "" : "bad"}" title="${esc(s.error || "")}">${SOURCES[k]} ${s.ok ? "✓" : "실패"}</span>`).join("");
+  $("#meta").innerHTML = `마지막 수집 ${at ? at.toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "-"}<span class="src-status">${status}</span>`;
+  render();
+}
+
+$("#refresh").addEventListener("click", async () => {
+  const btn = $("#refresh"), msg = $("#refresh-msg");
+  btn.disabled = true; btn.textContent = "↻ 가져오는 중…"; msg.className = "refresh-msg"; msg.textContent = "";
+  try {
+    const r = await fetch("/api/refresh", { method: "POST" });
+    if (r.status === 404 || r.status === 405 || r.status === 501) throw new Error("이 주소에서는 업데이트 기능을 쓸 수 없어요(Vercel 배포에서만 동작)");
+    const res = await r.json();
+    if (!r.ok) throw new Error(res.error || `오류 ${r.status}`);
+    applyDb(res.db);
+    msg.className = "refresh-msg ok";
+    msg.textContent = `새 소식 ${res.newCount}건 · ` + (res.saved ? "저장됨 (1~2분 뒤 모든 기기에 반영)" : `이 화면에만 반영 — ${res.reason}`);
+  } catch (e) {
+    msg.textContent = e.message.startsWith("이 주소") ? e.message : `업데이트 실패: ${e.message}`;
+  } finally {
+    btn.disabled = false; btn.textContent = "↻ 지금 업데이트";
+  }
+});
+
 async function load() {
-  // 배포(Pages/Vercel)에서는 data/가 페이지 옆에, 로컬에서는 site/ 바깥에 있음
+  // 배포(Vercel)에서는 data/가 페이지 옆에, 로컬에서는 site/ 바깥에 있음
   for (const url of ["data/items.json", "../data/items.json"]) {
     try {
       const r = await fetch(url, { cache: "no-cache" });
@@ -335,14 +410,7 @@ async function load() {
   throw new Error("items.json을 찾을 수 없어요");
 }
 
-load().then((db) => {
-  state.items = db.items || [];
-  const at = db.updatedAt ? new Date(db.updatedAt) : null;
-  const status = Object.entries(db.sources || {}).map(([k, s]) =>
-    `<span class="${s.ok ? "" : "bad"}" title="${esc(s.error || "")}">${SOURCES[k]} ${s.ok ? "✓" : "실패"}</span>`).join("");
-  $("#meta").innerHTML = `마지막 수집 ${at ? at.toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "-"}<span class="src-status">${status}</span>`;
-  render();
-}).catch((e) => { $("#meta").textContent = e.message; $("#main").innerHTML = `<div class="empty">${esc(e.message)}</div>`; });
+load().then(applyDb).catch((e) => { $("#meta").textContent = e.message; $("#main").innerHTML = `<div class="empty">${esc(e.message)}</div>`; });
 </script>
 </body>
 </html>

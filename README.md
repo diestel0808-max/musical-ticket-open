@@ -1,41 +1,33 @@
 # 🎭 뮤지컬 티켓오픈 모아보기
 
-NOL(구 인터파크), 티켓링크, 예스24의 **뮤지컬 티켓오픈 공지**를 매일 아침 모아 한 페이지(목록/캘린더)로 보여주고, 새 소식은 노션 DB에 자동으로 추가합니다.
+NOL(구 인터파크), 티켓링크, 예스24의 **뮤지컬 티켓오픈 공지**를 매일 아침 모아 한 페이지(목록/캘린더)로 보여줍니다. 각 소식에는 작품의 **공연기간**(`26.11.13 ~ 26.11.22`, 복사 버튼 포함)이 함께 나옵니다.
 
-| 사이트 | 수집 위치 | 뮤지컬 판별 |
-|---|---|---|
-| NOL | `POST nol.yanolja.com/ticket/display/api/upcoming` | 장르 코드 `01011` |
-| 티켓링크 | `GET ticketlink.co.kr/help/getNoticeList?noticeCategoryCode=TICKET_OPEN` | `subCategoryId == 16` 또는 제목에 "뮤지컬" |
-| 예스24 | `POST ticket.yes24.com/New/Notice/Ajax/axList.aspx` | 장르 `15457` |
+| 사이트 | 수집 위치 | 뮤지컬 판별 | 공연기간 |
+|---|---|---|---|
+| NOL | `POST nol.yanolja.com/ticket/display/api/upcoming` | 장르 코드 `01011` | API 필드 |
+| 티켓링크 | `GET ticketlink.co.kr/help/getNoticeList?noticeCategoryCode=TICKET_OPEN` | `subCategoryId == 16` 또는 제목에 "뮤지컬" | 공지 본문 파싱 |
+| 예스24 | `POST ticket.yes24.com/New/Notice/Ajax/axList.aspx` | 장르 `15457` | 상세(`axRead.aspx`) 본문 파싱, 공지당 1회 |
 
 외부 패키지 없이 Python 3.9+ 표준 라이브러리만 씁니다.
 
-## 로컬 실행
+## 구성
+- `scraper/` — 수집기. `python3 -m scraper.main`이 `data/items.json`을 갱신
+- `site/index.html` — 정적 페이지(빌드 단계 없음)
+- `api/refresh.py` — Vercel 함수. 사이트의 「↻ 지금 업데이트」 버튼이 호출
+- `.github/workflows/update.yml` — 매일 08:00 KST 수집 후 커밋 → Vercel 자동 재배포
+- `vercel.json` — `site/` + `data/`를 `public/`으로 복사해 서빙
 
+## 로컬 실행
 ```bash
-python3 -m scraper.main --dry-run     # 저장 없이 결과만 보기
-python3 -m scraper.main --no-notion   # data/items.json 갱신 (노션 제외)
-python3 -m http.server 8787           # http://localhost:8787/site/ 에서 확인
+python3 -m scraper.main --dry-run   # 저장 없이 결과만 보기
+python3 -m scraper.main             # data/items.json 갱신
+python3 -m http.server 8787         # http://localhost:8787/site/ (업데이트 버튼은 Vercel에서만 동작)
 ```
 
-## 자동 실행 (GitHub Actions + Pages)
+## Vercel 배포
+1. https://vercel.com/new 에서 이 레포를 Import → Framework Preset **Other** → Deploy
+2. (업데이트 버튼 결과를 저장하려면) GitHub fine-grained 토큰을 만들기 — 대상: 이 레포만, 권한: **Contents: Read and write**
+3. Vercel 프로젝트 → Settings → Environment Variables에 `GITHUB_TOKEN` 추가 → Deployments에서 Redeploy
 
-`.github/workflows/update.yml`이 **매일 08:00 KST**에 수집 → `data/items.json` 커밋 → 노션 추가 → Pages 배포를 합니다.
-
-1. 레포 Settings → Pages → Source를 **GitHub Actions**로 설정
-2. 레포 Settings → Secrets and variables → Actions에 추가
-   - `NOTION_TOKEN`: https://www.notion.so/profile/integrations 에서 만든 내부 통합의 시크릿
-   - `NOTION_DB_ID`: `a1943851769c477da6df614bfb540cd7` (🎭 뮤지컬 티켓오픈 DB)
-3. 노션에서 DB 페이지 우측 상단 `···` → **연결(Connections)** → 만든 통합 추가
-4. Actions 탭에서 「수집 및 배포」를 한 번 수동 실행해 확인
-
-노션 시크릿이 없으면 노션 단계만 건너뜁니다. 노션을 처음 연결하면 **오픈일이 지나지 않은 항목만** 올라갑니다.
-
-### 노션 알림 받기
-- DB 우측 상단 ⚡ 자동화 → 트리거 「페이지 추가됨」 → 동작 「알림 보내기」(플랜에 따라 유료일 수 있음)
-- 또는 `오픈일시` 기준 캘린더 보기를 만들어 Notion Calendar에서 함께 보기
-
-## Vercel로 배포하려면
-수집은 그대로 GitHub Actions가 하고, Vercel은 정적 사이트만 호스팅합니다(`vercel.json` 포함).
-Vercel에서 이 레포를 Import하면 끝입니다. Actions가 매일 데이터를 커밋할 때마다 Vercel이 자동으로 다시 배포합니다.
-(이 경우 Pages는 꺼도 됩니다.)
+토큰이 없으면 버튼을 누른 사람 화면에만 최신 결과가 반영되고, 저장은 매일 아침 자동 수집 때 됩니다.
+토큰이 있으면 버튼 결과가 레포에 커밋되고, Vercel이 1~2분 뒤 재배포해 모든 기기에 반영됩니다(10분 안에 다시 누르면 저장은 건너뜀).

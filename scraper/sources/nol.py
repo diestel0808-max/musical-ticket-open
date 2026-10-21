@@ -18,6 +18,8 @@ def fetch(max_pages=10):
         for n in d["notices"]:
             url = (f"https://nol.yanolja.com/ticket/products/{n['goods_code']}"
                    if n.get("goods_code") else "https://nol.yanolja.com/ticket/display/upcoming")
+            period = ({"start": n["goods_start_date"], "end": n.get("goods_end_date") or n["goods_start_date"]}
+                      if n.get("goods_start_date") else None)
             image = n.get("goods_poster_image_url") or n.get("open_notice_poster_image_url") or ""
             # 선예매/일반예매처럼 오픈 일정이 여러 개면 각각 따로 표시
             for t in n.get("ticket_dates") or [{}]:
@@ -27,7 +29,7 @@ def fetch(max_pages=10):
                 items.append(make_item(
                     "nol", sid, n["title"] or n.get("goods_name", ""),
                     iso_kst(datetime.fromisoformat(open_at)) if open_at else None,
-                    url, place=n.get("venue_name", ""), image=image, label=label,
+                    url, place=n.get("venue_name", ""), image=image, label=label, period=period,
                 ))
         cursor = d["summary"].get("next_cursor")
         if not cursor or not d["notices"]:

@@ -1,5 +1,11 @@
 {
   "buildCommand": "mkdir -p public && cp -r site/. public/ && cp -r data public/data",
   "outputDirectory": "public",
-  "framework": null
+  "framework": null,
+  "functions": {
+    "api/refresh.py": {
+      "includeFiles": "{scraper/**,data/**}",
+      "maxDuration": 60
+    }
+  }
 }
