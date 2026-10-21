@@ -61,7 +61,7 @@ h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; }
 .seg button { border: 0; background: none; padding: 5px 16px; border-radius: 999px; cursor: pointer; color: var(--muted); font-weight: 600; }
 .seg button[aria-pressed="true"] { background: var(--text); color: var(--bg); }
 .chips { display: inline-flex; gap: 6px; margin-left: 6px; }
-.chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--surface); padding: 4px 12px 4px 5px; border-radius: 999px; cursor: pointer; font-weight: 600; font-size: 13px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--surface); padding: 4px 12px 4px 10px; border-radius: 999px; cursor: pointer; font-weight: 600; font-size: 13px; }
 .chip .n { color: var(--faint); font-weight: 500; }
 .chip[aria-pressed="false"] { opacity: .4; }
 .spacer { flex: 1; }
@@ -69,8 +69,8 @@ h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; }
 .search { width: 240px; }
 .toggle { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); cursor: pointer; user-select: none; font-size: 13px; }
 
-/* 사이트 원형 배지(참고 디자인의 '가/대/완' 같은 표시) */
-.sb { display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; color: #fff; font-size: 10.5px; font-weight: 700; flex: none; line-height: 1; }
+/* 사이트 색 점 */
+.sb { display: inline-block; width: 10px; height: 10px; border-radius: 50%; flex: none; }
 .sb.nol { background: var(--nol); } .sb.ticketlink { background: var(--ticketlink); } .sb.yes24 { background: var(--yes24); }
 
 /* ── 회차·기간 ── */
@@ -84,7 +84,7 @@ h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; }
 
 /* 사이트별 오픈 정보 줄: ● 예스24 11:00 선예매 ↗ */
 .slots { display: flex; flex-wrap: wrap; gap: 4px 6px; margin-top: 8px; }
-.slot { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px 2px 3px; font-size: 12.5px; white-space: nowrap; }
+.slot { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px 2px 8px; font-size: 12.5px; white-space: nowrap; }
 .slot:hover { border-color: var(--text); }
 .slot b { font-weight: 700; font-variant-numeric: tabular-nums; }
 .slot .lb { color: var(--muted); }
@@ -136,9 +136,9 @@ h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; }
 .cell.today .num { background: var(--accent); color: #fff; border-radius: 999px; padding: 0 8px; }
 .cell.selected { box-shadow: inset 0 0 0 2px var(--accent); }
 .ev { display: flex; align-items: center; gap: 5px; font-size: 12px; line-height: 1.3; padding: 2px 0; white-space: nowrap; overflow: hidden; }
-.ev .sb { width: 16px; height: 16px; font-size: 9.5px; }
+.ev .sb { width: 8px; height: 8px; }
 .ev .sbs { display: inline-flex; }
-.ev .sbs .sb + .sb { margin-left: -5px; box-shadow: 0 0 0 1.5px var(--surface); }
+.ev .sbs { gap: 2px; }
 .ev .t { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--muted); }
 .ev .n { overflow: hidden; text-overflow: ellipsis; }
 .cell.past .ev { opacity: .6; }
@@ -173,7 +173,7 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
   <header class="top">
     <div>
       <h1>뮤지컬 티켓오픈</h1>
-      <p class="sub-title">NOL · 티켓링크 · 예스24의 뮤지컬 티켓오픈 공지를 매일 아침 모아 보여드려요.</p>
+      <p class="sub-title">NOL · 티켓링크 · 예스24의 뮤지컬 티켓오픈 공지를 매일 아침 8시에 업데이트해요.<br>기간을 확인할 수 없는 경우 사이트로 이동해 확인해주세요.</p>
     </div>
     <div class="status">
       <div class="status-row"><span id="meta">불러오는 중…</span><button class="refresh" id="refresh" title="세 사이트에서 지금 다시 가져오기">↻ 지금 업데이트</button></div>
@@ -201,7 +201,6 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
 
 <script>
 const SOURCES = { nol: "NOL", ticketlink: "티켓링크", yes24: "예스24" };
-const SB = { nol: "N", ticketlink: "T", yes24: "Y" };
 const DOW = ["일", "월", "화", "수", "목", "금", "토"];
 const DOW_FULL = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
 const state = {
@@ -295,7 +294,7 @@ function periodHtml(g) {
 }
 // '일반 예매일'처럼 기본값인 구분은 굳이 보여주지 않고 선예매 같은 것만
 const showLabel = (l) => l && !/^일반\s*예매/.test(l);
-const sb = (src) => `<span class="sb ${src}" title="${SOURCES[src]}">${SB[src]}</span>`;
+const sb = (src) => `<span class="sb ${src}" title="${SOURCES[src]}"></span>`;
 function slotsHtml(g) {
   const multiTime = new Set(g.items.map((i) => timeOf(i.openAt))).size > 1;
   return `<div class="slots">${g.items.map((i) => `<a class="slot" href="${esc(i.url)}" target="_blank" rel="noopener" title="${SOURCES[i.source]} 공지 열기">${sb(i.source)}${SOURCES[i.source]}${multiTime ? ` <b>${timeOf(i.openAt)}</b>` : ""}${showLabel(i.label) ? ` <span class="lb">${esc(i.label)}</span>` : ""}${i.exclusive ? ` <span class="ex">단독</span>` : ""} <span class="arr">↗</span></a>`).join("")}</div>`;
@@ -468,7 +467,7 @@ $("#refresh").addEventListener("click", async () => {
     if (!r.ok) throw new Error(res.error || `오류 ${r.status}`);
     applyDb(res.db);
     msg.className = "refresh-msg ok";
-    msg.textContent = `새 소식 ${res.newCount}건 · ` + (res.saved ? "저장됨 (1~2분 뒤 모든 기기에 반영)" : `이 화면에만 반영 — ${res.reason}`);
+    msg.textContent = `새 소식 ${res.newCount}건 · 이 화면에 반영됨`;
   } catch (e) {
     msg.textContent = e.message.startsWith("이 주소") ? e.message : `업데이트 실패: ${e.message}`;
   } finally {
