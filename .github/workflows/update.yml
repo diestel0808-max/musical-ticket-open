@@ -1,0 +1,58 @@
+name: 수집 및 배포
+
+on:
+  schedule:
+    - cron: "0 23 * * *" # 매일 08:00 KST (UTC 23:00). GitHub 사정으로 수십 분 늦을 수 있음
+  workflow_dispatch: # Actions 탭에서 수동 실행
+  push:
+    branches: [main]
+    paths: ["site/**", "scraper/**", ".github/workflows/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 수집 (+ 노션 추가)
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DB_ID: ${{ secrets.NOTION_DB_ID }}
+        run: python -m scraper.main
+
+      - name: 데이터 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/items.json
+          git diff --cached --quiet || git commit -m "데이터 갱신 $(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M')"
+          git push
+
+      - name: 사이트 묶기
+        run: |
+          mkdir -p _site
+          cp -r site/. _site/
+          cp -r data _site/data
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,36 @@
+"""예스24 티켓: 공지사항 목록 ajax(HTML 조각). 장르=뮤지컬(15457)."""
+import re
+from datetime import datetime
+
+from ..common import http, iso_kst, make_item
+
+API = "https://ticket.yes24.com/New/Notice/Ajax/axList.aspx"
+MUSICAL_GENRE = "15457"
+LINK = re.compile(r'<a href="#id=(\d+)">(.*?)</a>', re.S)
+DATE = re.compile(r"(\d{4})\.(\d{2})\.(\d{2})\([^)]*\)\s*(\d{2}):(\d{2})")
+PRESALE = re.compile(r"presaleTit(\d)='([^']*)'.*?presaleTime\1='([^']*)'", re.S)
+
+
+def parse_date(s):
+    m = DATE.search(s or "")
+    return iso_kst(datetime(*map(int, m.groups()))) if m else None
+
+
+def fetch(pages=2, size=20):
+    items = []
+    for page in range(1, pages + 1):
+        s = http(API, data={"page": page, "size": size, "genre": MUSICAL_GENRE, "province": "",
+                            "order": "1", "searchType": "All", "searchText": ""})
+        for row in s.split("<tr>")[1:]:
+            m = LINK.search(row)
+            if not m or "오픈" not in row[: m.start()]:
+                continue
+            nid, title = m.groups()
+            rest = row[m.end():]
+            url = f"https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id={nid}"
+            items.append(make_item("yes24", nid, title, parse_date(rest), url))
+            # 선예매 등 추가 오픈 일정
+            for no, name, when in PRESALE.findall(rest):
+                if name and parse_date(when):
+                    items.append(make_item("yes24", f"{nid}-p{no}", title, parse_date(when), url, label=name))
+    return items

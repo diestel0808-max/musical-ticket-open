@@ -1,0 +1,5 @@
+{
+  "buildCommand": "mkdir -p public && cp -r site/. public/ && cp -r data public/data",
+  "outputDirectory": "public",
+  "framework": null
+}
