@@ -134,6 +134,17 @@ def parse_round_period(text, ref_year=None):
     return "", None
 
 
+# 어린이·가족 뮤지컬은 제외한다(NOL 화면의 '뮤지컬' 탭 기준에 맞춤)
+KIDS = re.compile(
+    r"어린이|가족|아동|키즈|유아|아기|베이비"
+    r"|베베핀|핑크퐁|뽀로로|타요|티니핑|호기심딱지|브레드이발소|신비아파트"  # 제목에 '어린이'가 없는 아동 브랜드
+)
+
+
+def is_kids(title):
+    return bool(KIDS.search(title or ""))
+
+
 def make_item(source, source_id, title, open_at, url, place="", image="", label="", period=None,
               round_="", round_period=None):
     title = clean_title(title)

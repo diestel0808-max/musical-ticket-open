@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-21T23:23+09:00",
+ "updatedAt": "2026-10-22T00:10+09:00",
  "sources": {
   "nol": {
    "ok": true,
-   "count": 7,
-   "at": "2026-10-21T23:23+09:00"
+   "count": 3,
+   "at": "2026-10-22T00:10+09:00"
   },
   "ticketlink": {
    "ok": true,
-   "count": 20,
-   "at": "2026-10-21T23:23+09:00"
+   "count": 8,
+   "at": "2026-10-22T00:10+09:00"
   },
   "yes24": {
    "ok": true,
    "count": 44,
-   "at": "2026-10-21T23:23+09:00"
+   "at": "2026-10-22T00:10+09:00"
   }
  },
  "items": [
@@ -29,7 +29,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18442",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-07",
     "end": "2026-10-25"
@@ -52,7 +52,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18460",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-29",
     "end": "2026-10-31"
@@ -75,7 +75,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18467",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-09-08",
     "end": "2026-10-25"
@@ -98,7 +98,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18469",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -121,7 +121,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18469",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -144,7 +144,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18483",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-11",
     "end": "2027-02-08"
@@ -167,7 +167,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18475",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-13",
     "end": "2026-11-01"
@@ -190,7 +190,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18504",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-20",
     "end": "2026-10-21"
@@ -210,7 +210,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18480",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-11-15"
@@ -233,7 +233,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18523",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-21",
     "end": "2026-11-22"
@@ -253,7 +253,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18527",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-17",
     "end": "2026-10-17"
@@ -273,7 +273,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18548",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-18",
     "end": "2026-10-18"
@@ -296,7 +296,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18524",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-11-08"
@@ -319,7 +319,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18526",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-21",
     "end": "2026-11-21"
@@ -339,7 +339,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18554",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2027-01-24"
@@ -362,7 +362,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18547",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-01",
     "end": "2026-11-01"
@@ -382,7 +382,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18559",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-09-16",
     "end": "2026-11-29"
@@ -405,7 +405,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18567",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-08-18",
     "end": "2026-11-08"
@@ -425,7 +425,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18558",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-12-06"
@@ -448,7 +448,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18574",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-08-08",
     "end": "2026-10-18"
@@ -471,7 +471,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18565",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-23",
     "end": "2026-10-23"
@@ -491,7 +491,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18579",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-06",
     "end": "2026-11-06"
@@ -511,7 +511,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18576",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-09-22",
     "end": "2026-12-13"
@@ -531,7 +531,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18568",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-07-24",
     "end": "2026-11-08"
@@ -554,7 +554,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18576",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-09-22",
     "end": "2026-12-13"
@@ -574,7 +574,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18585",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-11-15"
@@ -597,7 +597,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18600",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-12-15",
     "end": "2027-03-01"
@@ -620,7 +620,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18620",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-17",
     "end": "2026-11-29"
@@ -643,7 +643,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18609",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2026-11-29"
@@ -666,7 +666,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18631",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-30",
     "end": "2026-11-01"
@@ -689,7 +689,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18581",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-12-22",
     "end": "2027-01-15"
@@ -712,7 +712,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18645",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-09-16",
     "end": "2026-11-29"
@@ -735,7 +735,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18661",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -758,7 +758,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18661",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -781,7 +781,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18658",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2027-01-24"
@@ -804,7 +804,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18641",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-29"
@@ -827,7 +827,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18680",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-31",
     "end": "2026-10-31"
@@ -847,7 +847,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18655",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-10"
@@ -867,7 +867,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18668",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-11",
     "end": "2027-02-08"
@@ -890,7 +890,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18681",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-12-16",
     "end": "2027-03-14"
@@ -913,7 +913,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18687",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-12-23",
     "end": "2026-12-23"
@@ -933,7 +933,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18681",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-12-16",
     "end": "2027-03-14"
@@ -997,45 +997,6 @@
    }
   },
   {
-   "id": "ticketlink:66238",
-   "source": "ticketlink",
-   "title": "<아기상어 쿵짝쿵짝 뮤지컬 in 영등포> 1차",
-   "exclusive": false,
-   "label": "",
-   "openAt": "2026-10-21T15:00+09:00",
-   "place": "영등포아트스퀘어",
-   "url": "https://www.ticketlink.co.kr/help/notice/66238",
-   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_3/open_1016.png",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2026-12-02",
-    "end": "2027-01-31"
-   },
-   "round": "1차",
-   "roundPeriod": {
-    "start": "2026-12-02",
-    "end": "2027-01-31"
-   }
-  },
-  {
-   "id": "ticketlink:66252",
-   "source": "ticketlink",
-   "title": "베베핀 뮤지컬 <두근두근 새친구> - 광주",
-   "exclusive": false,
-   "label": "",
-   "openAt": "2026-10-22T10:00+09:00",
-   "place": "광주 빛고을시민문화관",
-   "url": "https://www.ticketlink.co.kr/help/notice/66252",
-   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_8/bbp_open_1019.jpg",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2026-12-19",
-    "end": "2026-12-20"
-   }
-  },
-  {
    "id": "nol:15676-40891",
    "source": "nol",
    "title": "우리의 마지막 순간들",
@@ -1046,7 +1007,7 @@
    "url": "https://nol.yanolja.com/ticket/products/26015338",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26015338_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-13",
     "end": "2026-11-22"
@@ -1063,7 +1024,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66215",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/open_1015.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-11",
     "end": "2026-11-12"
@@ -1071,126 +1032,6 @@
    "roundPeriod": {
     "start": "2026-11-11",
     "end": "2026-11-12"
-   }
-  },
-  {
-   "id": "nol:15681-40871",
-   "source": "nol",
-   "title": "가족뮤지컬 〈레인보우 버블젬 - 크리스탈 버블젬을 모아 전설의 악보를 완성하라!〉 - 부천",
-   "exclusive": false,
-   "label": "일반 예매일",
-   "openAt": "2026-10-23T10:00+09:00",
-   "place": "부천시민회관 대공연장",
-   "url": "https://nol.yanolja.com/ticket/products/26014934",
-   "image": "https://ticketimage.interpark.com/Play/image/large/26/26014934_p.gif",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2026-12-19",
-    "end": "2026-12-20"
-   }
-  },
-  {
-   "id": "nol:15638-40753",
-   "source": "nol",
-   "title": "뮤지컬〈알사탕〉- 서울숲",
-   "exclusive": false,
-   "label": "일반 예매일",
-   "openAt": "2026-10-23T11:00+09:00",
-   "place": "서울숲 씨어터 1관",
-   "url": "https://nol.yanolja.com/ticket/products/26010372",
-   "image": "https://ticketimage.interpark.com/Play/image/large/26/26010372_p.gif",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2026-09-04",
-    "end": "2027-01-03"
-   },
-   "round": "20차"
-  },
-  {
-   "id": "ticketlink:66270",
-   "source": "ticketlink",
-   "title": "연말특선 가족뮤지컬 <호두까기 인형> - 거제",
-   "exclusive": false,
-   "label": "",
-   "openAt": "2026-10-23T11:00+09:00",
-   "place": "거제시청소년수련관",
-   "url": "https://www.ticketlink.co.kr/help/notice/66270",
-   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/KakaoTalk_20261015_162855036.jpg",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2026-12-20",
-    "end": "2026-12-20"
-   }
-  },
-  {
-   "id": "ticketlink:66271",
-   "source": "ticketlink",
-   "title": "가족뮤지컬 <루돌프와 산타할아버지> - 김해",
-   "exclusive": false,
-   "label": "",
-   "openAt": "2026-10-23T11:00+09:00",
-   "place": "김해 장유도서관 공연장",
-   "url": "https://www.ticketlink.co.kr/help/notice/66271",
-   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_9/santa_open_1021.jpg",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2026-12-05",
-    "end": "2026-12-05"
-   }
-  },
-  {
-   "id": "ticketlink:66286",
-   "source": "ticketlink",
-   "title": "어린이 뮤지컬 <렛잇고> - 부산",
-   "exclusive": true,
-   "label": "",
-   "openAt": "2026-10-26T09:00+09:00",
-   "place": "부산시민회관 소극장",
-   "url": "https://www.ticketlink.co.kr/help/notice/66286",
-   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_7/open_1021.png",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2027-01-02",
-    "end": "2027-01-03"
-   }
-  },
-  {
-   "id": "ticketlink:66287",
-   "source": "ticketlink",
-   "title": "어린이 뮤지컬 <렛잇고> - 평택",
-   "exclusive": true,
-   "label": "",
-   "openAt": "2026-10-26T09:00+09:00",
-   "place": "평택북부문화회관 소공연장",
-   "url": "https://www.ticketlink.co.kr/help/notice/66287",
-   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_2/open_1021.png",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2027-01-16",
-    "end": "2027-01-16"
-   }
-  },
-  {
-   "id": "ticketlink:66233",
-   "source": "ticketlink",
-   "title": "가족뮤지컬 <건전지 엄마>",
-   "exclusive": true,
-   "label": "",
-   "openAt": "2026-10-26T14:00+09:00",
-   "place": "이화여자대학교 ECC 영산극장",
-   "url": "https://www.ticketlink.co.kr/help/notice/66233",
-   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_6/open_1016.jpg",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2027-01-02",
-    "end": "2027-02-28"
    }
   },
   {
@@ -1204,7 +1045,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66239",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_6/2026더퍼스트에디션_poster(200x247).jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-23",
     "end": "2026-11-23"
@@ -1221,7 +1062,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66256",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_6/human_open_1020.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2026-12-20"
@@ -1243,7 +1084,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18713",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2027-03-07"
@@ -1266,7 +1107,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66261",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/VEA_open_1020.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-10-27"
@@ -1288,46 +1129,12 @@
    "url": "https://nol.yanolja.com/ticket/products/26013993",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26013993_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-24",
     "end": "2027-03-14"
    },
    "round": "2차"
-  },
-  {
-   "id": "nol:15680-40917",
-   "source": "nol",
-   "title": "[서울] 한글용사 아이야 라이브ver. 〈달라도 친구야!〉",
-   "exclusive": false,
-   "label": "일반 예매일",
-   "openAt": "2026-10-28T11:00+09:00",
-   "place": "NOL 씨어터 합정 동양생명홀",
-   "url": "https://nol.yanolja.com/ticket/products/26015241",
-   "image": "https://ticketimage.interpark.com/Play/image/large/26/26015241_p.gif",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2026-12-24",
-    "end": "2027-01-10"
-   }
-  },
-  {
-   "id": "nol:15683-40880",
-   "source": "nol",
-   "title": "쏠티와 함께: 비긴즈",
-   "exclusive": false,
-   "label": "일반 예매일",
-   "openAt": "2026-10-28T12:00+09:00",
-   "place": "CTS아트홀",
-   "url": "https://nol.yanolja.com/ticket/products/26014931",
-   "image": "https://ticketimage.interpark.com/Play/image/large/26/26014931_p.gif",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2026-12-12",
-    "end": "2026-12-12"
-   }
   },
   {
    "id": "nol:15654-40865",
@@ -1340,7 +1147,7 @@
    "url": "https://nol.yanolja.com/ticket/products/26007416",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26007416_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-08-13",
     "end": "2027-03-01"
@@ -1358,7 +1165,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18708",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-12-08",
     "end": "2027-01-03"
@@ -1381,27 +1188,10 @@
    "url": "https://www.ticketlink.co.kr/help/notice/65980",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_1/4.포스터_뮤지컬광화문연가.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-28",
     "end": "2026-11-29"
-   }
-  },
-  {
-   "id": "ticketlink:66228",
-   "source": "ticketlink",
-   "title": "뮤지컬 최고다! 호기심딱지 시즌3 동화나라 구출대작전 - 안동",
-   "exclusive": true,
-   "label": "",
-   "openAt": "2026-10-30T10:00+09:00",
-   "place": "안동시민회관 영남홀",
-   "url": "https://www.ticketlink.co.kr/help/notice/66228",
-   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_8/OPEN_1016.jpg",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2026-11-11",
-    "end": "2026-11-11"
    }
   },
   {
@@ -1415,7 +1205,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66235",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/casino_open_1016.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-20",
     "end": "2027-04-25"
@@ -1432,27 +1222,10 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66201",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_3/pst1013.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-11-12",
     "end": "2026-11-12"
-   }
-  },
-  {
-   "id": "ticketlink:66279",
-   "source": "ticketlink",
-   "title": "베베핀 뮤지컬 <두근두근 새친구> - 상주",
-   "exclusive": true,
-   "label": "",
-   "openAt": "2026-11-03T10:00+09:00",
-   "place": "상주문화회관 대공연장",
-   "url": "https://www.ticketlink.co.kr/help/notice/66279",
-   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_7/BBP_OPEN_1021.jpg",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
-   "period": {
-    "start": "2026-11-14",
-    "end": "2026-11-14"
    }
   },
   {
@@ -1466,7 +1239,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66136",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_5/poster_dummy_list_240_320_1_Musical.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-21T23:23+09:00",
+   "lastSeenAt": "2026-10-22T00:10+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2026-12-11"

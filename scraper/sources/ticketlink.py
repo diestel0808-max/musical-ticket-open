@@ -2,14 +2,15 @@
 import json
 from datetime import datetime
 
-from ..common import html_text, http, iso_kst, make_item, parse_period, parse_round_period
+from ..common import html_text, http, is_kids, iso_kst, make_item, parse_period, parse_round_period
 
 API = "https://www.ticketlink.co.kr/help/getNoticeList?page={page}&noticeCategoryCode=TICKET_OPEN"
 MUSICAL_SUBCATEGORY = 16  # 공연 > 뮤지컬
 
 
 def is_musical(r):
-    return r.get("subCategoryId") == MUSICAL_SUBCATEGORY or "뮤지컬" in (r.get("title") or "")
+    """뮤지컬 분류만. 가족·아동 분류(85 등)에 있는 '가족뮤지컬'이나 제목에 어린이·가족이 들어간 공연은 제외."""
+    return r.get("subCategoryId") == MUSICAL_SUBCATEGORY and not is_kids(r.get("title"))
 
 
 def fetch(max_pages=4):

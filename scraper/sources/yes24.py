@@ -2,7 +2,7 @@
 import re
 from datetime import datetime
 
-from ..common import html_text, http, iso_kst, make_item, parse_period, parse_round_period
+from ..common import html_text, http, is_kids, iso_kst, make_item, parse_period, parse_round_period
 
 API = "https://ticket.yes24.com/New/Notice/Ajax/axList.aspx"
 DETAIL_API = "https://ticket.yes24.com/New/Notice/Ajax/axRead.aspx"
@@ -28,6 +28,8 @@ def fetch(pages=2, size=20):
             if not m or "오픈" not in row[: m.start()]:
                 continue
             nid, title = m.groups()
+            if is_kids(title):
+                continue
             rest = row[m.end():]
             url = f"https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id={nid}"
             items.append(make_item("yes24", nid, title, parse_date(rest), url))

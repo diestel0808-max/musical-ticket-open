@@ -1,8 +1,8 @@
-"""NOL 티켓(구 인터파크): 오픈예정 페이지가 쓰는 JSON API. 장르 코드로 뮤지컬만 요청."""
+"""NOL 티켓(구 인터파크): 오픈예정 페이지가 쓰는 JSON API. 장르 코드로 뮤지컬만 요청하고 아동/가족극은 뺀다."""
 import json
 from datetime import datetime
 
-from ..common import http, iso_kst, make_item, norm_round
+from ..common import http, is_kids, iso_kst, make_item, norm_round
 
 API = "https://nol.yanolja.com/ticket/display/api/upcoming"
 MUSICAL_GENRE = "01011"
@@ -16,6 +16,9 @@ def fetch(max_pages=10):
             body["cursor"] = cursor
         d = json.loads(http(API, json_body=body))
         for n in d["notices"]:
+            # NOL은 아동/가족극도 장르가 '뮤지컬'이라 하위 장르로 거른다(NOL 화면에서는 '가족' 탭에 나옴)
+            if "아동" in (n.get("goods_sub_genre_name") or "") or is_kids(n.get("title")):
+                continue
             url = (f"https://nol.yanolja.com/ticket/products/{n['goods_code']}"
                    if n.get("goods_code") else "https://nol.yanolja.com/ticket/display/upcoming")
             period = ({"start": n["goods_start_date"], "end": n.get("goods_end_date") or n["goods_start_date"]}
