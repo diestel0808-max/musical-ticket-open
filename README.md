@@ -28,6 +28,9 @@ python3 -m http.server 8787         # http://localhost:8787/site/ (업데이트 
 1. https://vercel.com/new 에서 이 레포를 Import → Framework Preset **Other** → Deploy
 2. (업데이트 버튼 결과를 저장하려면) GitHub fine-grained 토큰을 만들기 — 대상: 이 레포만, 권한: **Contents: Read and write**
 3. Vercel 프로젝트 → Settings → Environment Variables에 `GITHUB_TOKEN` 추가 → Deployments에서 Redeploy
+4. Vercel이 GitHub 푸시를 놓치는 경우가 있어 Deploy Hook을 씁니다. Vercel Settings → Git → Deploy Hooks의 `daily`(main) 주소를
+   - GitHub 레포 Settings → Secrets and variables → Actions에 `VERCEL_DEPLOY_HOOK`으로
+   - Vercel Settings → Environment Variables에도 `VERCEL_DEPLOY_HOOK`으로 등록
 
 토큰이 없으면 버튼을 누른 사람 화면에만 최신 결과가 반영되고, 저장은 매일 아침 자동 수집 때 됩니다.
 토큰이 있으면 버튼 결과가 레포에 커밋되고, Vercel이 1~2분 뒤 재배포해 모든 기기에 반영됩니다(10분 안에 다시 누르면 저장은 건너뜀).

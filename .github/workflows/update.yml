@@ -25,7 +25,9 @@ jobs:
       - name: 수집
         run: python -m scraper.main
 
-      - name: 데이터 커밋 (Vercel이 이 커밋을 보고 자동 재배포)
+      - name: 데이터 커밋 + Vercel 배포
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -36,3 +38,5 @@ jobs:
           # (rebase에서 -X theirs = 방금 수집한 우리 쪽 결과를 우선)
           git pull --rebase -X theirs origin main
           git push
+          # Vercel이 GitHub 푸시를 놓치는 경우가 있어 Deploy Hook으로 직접 배포를 요청
+          if [ -n "$VERCEL_DEPLOY_HOOK" ]; then curl -fsS -X POST "$VERCEL_DEPLOY_HOOK" > /dev/null && echo "Vercel 배포 요청함"; fi

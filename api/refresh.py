@@ -1,8 +1,8 @@
 """Vercel 함수: POST /api/refresh
 
 배포에 들어 있는 data/items.json을 기준으로 지금 다시 수집해 결과를 돌려준다.
-환경변수 GITHUB_TOKEN이 있으면 결과를 레포의 data/items.json에 커밋한다
-(→ Vercel이 자동 재배포해서 다른 기기에도 반영).
+환경변수 GITHUB_TOKEN이 있으면 결과를 레포의 data/items.json에 커밋하고,
+VERCEL_DEPLOY_HOOK이 있으면 재배포를 요청한다(→ 다른 기기에도 반영).
 """
 import base64
 import json
@@ -39,6 +39,17 @@ def github(method, url, body=None):
         return json.loads(r.read())
 
 
+def deploy_hook():
+    """Vercel이 GitHub 푸시를 놓치는 경우가 있어 Deploy Hook으로 직접 재배포를 요청한다."""
+    url = os.environ.get("VERCEL_DEPLOY_HOOK")
+    if not url:
+        return
+    try:
+        urllib.request.urlopen(urllib.request.Request(url, method="POST"), timeout=10).close()
+    except Exception as e:
+        print("Deploy Hook 호출 실패:", e)
+
+
 def refresh():
     """(응답 dict) 수집하고, 가능하면 레포에 저장한다."""
     token = os.environ.get("GITHUB_TOKEN")
@@ -73,6 +84,7 @@ def refresh():
                 "sha": sha,
             })
             result["saved"] = True
+            deploy_hook()
         except urllib.error.HTTPError as e:
             result["reason"] = f"저장 실패({e.code})"
     return result
