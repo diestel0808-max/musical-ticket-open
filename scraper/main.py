@@ -44,8 +44,9 @@ def collect(db, log=print):
                 old.update({k: it[k] for k in TRACKED})
                 if it.get("place"):
                     old["place"] = it["place"]
-                if it.get("period"):
-                    old["period"] = it["period"]
+                for k in ("period", "round", "roundPeriod"):  # 상세에서 채운 값은 비어 있는 값으로 덮지 않음
+                    if it.get(k):
+                        old[k] = it[k]
                 old["lastSeenAt"] = now
             else:
                 it["firstSeenAt"] = it["lastSeenAt"] = now
@@ -58,10 +59,13 @@ def collect(db, log=print):
     return db, new_items
 
 
+DETAIL_VERSION = 2  # 상세에서 읽는 항목이 늘면 올려서 기존 항목도 다시 읽게 함
+
+
 def fill_yes24_details(items, log):
-    """예스24는 목록에 공연기간이 없어서 상세를 한 번씩만 조회한다(같은 공지의 선예매 항목과 공유)."""
+    """예스24는 목록에 공연기간·회차 기간이 없어서 상세를 한 번씩만 조회한다(같은 공지의 선예매 항목과 공유)."""
     cache = {}
-    todo = [it for it in items if it["source"] == "yes24" and not it.get("period") and not it.get("periodChecked")]
+    todo = [it for it in items if it["source"] == "yes24" and it.get("detailV") != DETAIL_VERSION]
     for it in todo:
         nid = it["id"].split(":")[1].split("-")[0]
         if nid not in cache:
@@ -70,9 +74,12 @@ def fill_yes24_details(items, log):
             except Exception as e:
                 log(f"  예스24 상세 실패 {nid}: {e}")
                 continue
-        period, place = cache[nid]
+        period, place, round_, round_period = cache[nid]
         it["period"] = period
-        it["periodChecked"] = True
+        it["roundPeriod"] = round_period
+        it["round"] = round_ or it.get("round", "")
+        it["detailV"] = DETAIL_VERSION
+        it.pop("periodChecked", None)
         if place and not it.get("place"):
             it["place"] = place
     if cache:
@@ -87,7 +94,8 @@ def main(argv):
         print(f"  + [{it['source']}] {it['openAt']} {it['title']}")
     for src in SOURCES:
         rows = [it for it in db["items"] if it["source"] == src]
-        print(f"  {src}: 공연기간 {sum(1 for it in rows if it.get('period'))}/{len(rows)}")
+        print(f"  {src}: 공연기간 {sum(1 for it in rows if it.get('period'))}/{len(rows)}, "
+              f"회차 {sum(1 for it in rows if it.get('round'))}, 회차기간 {sum(1 for it in rows if it.get('roundPeriod'))}")
     if dry:
         print("(dry-run: 저장 안 함)")
         return

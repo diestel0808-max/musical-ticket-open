@@ -2,7 +2,7 @@
 import json
 from datetime import datetime
 
-from ..common import http, iso_kst, make_item
+from ..common import http, iso_kst, make_item, norm_round
 
 API = "https://nol.yanolja.com/ticket/display/api/upcoming"
 MUSICAL_GENRE = "01011"
@@ -30,6 +30,8 @@ def fetch(max_pages=10):
                     "nol", sid, n["title"] or n.get("goods_name", ""),
                     iso_kst(datetime.fromisoformat(open_at)) if open_at else None,
                     url, place=n.get("venue_name", ""), image=image, label=label, period=period,
+                    # NOL은 공지 상세가 없어 회차별 기간을 알 수 없음 → 회차 이름만
+                    round_=norm_round(n.get("open_name") or "") or norm_round(n.get("open_type_name") or ""),
                 ))
         cursor = d["summary"].get("next_cursor")
         if not cursor or not d["notices"]:

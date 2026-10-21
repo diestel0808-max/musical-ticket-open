@@ -2,7 +2,7 @@
 import re
 from datetime import datetime
 
-from ..common import html_text, http, iso_kst, make_item, parse_period
+from ..common import html_text, http, iso_kst, make_item, parse_period, parse_round_period
 
 API = "https://ticket.yes24.com/New/Notice/Ajax/axList.aspx"
 DETAIL_API = "https://ticket.yes24.com/New/Notice/Ajax/axRead.aspx"
@@ -39,9 +39,10 @@ def fetch(pages=2, size=20):
 
 
 def fetch_detail(source_id, ref_year=None):
-    """공지 상세에서 공연기간과 공연장을 읽는다. source_id는 '18708' 또는 '18708-p1'."""
+    """공지 상세에서 (전체 공연기간, 공연장, 회차, 회차 기간)을 읽는다. source_id는 '18708' 또는 '18708-p1'."""
     nid = str(source_id).split("-")[0]
     text = html_text(http(DETAIL_API, data={"bId": nid, "genre": MUSICAL_GENRE, "province": "", "order": "1"}))
     m = PLACE.search(text)
     place = re.sub(r"\s+", " ", m.group(1)).strip()[:60] if m else ""
-    return parse_period(text, ref_year), place
+    round_, round_period = parse_round_period(text, ref_year)
+    return parse_period(text, ref_year), place, round_, round_period

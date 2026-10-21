@@ -91,7 +91,8 @@ h1 small { font-size: 14px; font-weight: 500; color: var(--muted); margin-left: 
 .tag.excl { background: var(--accent-soft); color: var(--accent); }
 .tag.new { background: var(--accent); color: #fff; }
 .period { display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; font-size: 13px; }
-.period .lbl { color: var(--faint); font-size: 12px; font-weight: 600; }
+.period .lbl { color: var(--faint); font-size: 11.5px; }
+.period .rnd { font-size: 12px; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: 0 7px; border-radius: 4px; line-height: 20px; }
 .period .val { font-variant-numeric: tabular-nums; font-weight: 600; user-select: all; -webkit-user-select: all; cursor: text; }
 .copy { border: 1px solid var(--line); background: var(--surface); color: var(--muted); border-radius: 6px; padding: 0 7px; font-size: 11.5px; line-height: 20px; cursor: pointer; }
 .copy:hover { color: var(--text); border-color: var(--faint); }
@@ -220,16 +221,23 @@ function tags(it) {
     (it.exclusive ? `<span class="tag excl">단독</span>` : "") +
     (it.label ? `<span class="tag">${esc(it.label)}</span>` : "");
 }
-// 공연기간: 26.11.13 ~ 26.11.22 (하루면 26.11.26)
+// 회차 + 이번 회차로 열리는 공연 기간: "2차 티켓오픈 26.11.17 ~ 26.12.06" (하루면 날짜 하나)
+// 회차 기간을 못 찾은 공지(NOL 등)는 전체 공연기간으로 대신한다
 const ymd = (d) => `${d.slice(2, 4)}.${d.slice(5, 7)}.${d.slice(8, 10)}`;
-function periodText(it) {
-  const p = it.period;
-  if (!p || !p.start) return "";
-  return !p.end || p.end === p.start ? ymd(p.start) : `${ymd(p.start)} ~ ${ymd(p.end)}`;
+const range = (p) => !p || !p.start ? "" : !p.end || p.end === p.start ? ymd(p.start) : `${ymd(p.start)} ~ ${ymd(p.end)}`;
+function roundInfo(it) {
+  const name = `${it.round ? it.round + " " : ""}티켓오픈`;
+  const own = range(it.roundPeriod);
+  const dates = own || range(it.period);
+  // 회차가 있는데 회차 기간을 못 찾았을 때만 "전체 공연기간"이라고 밝힌다(단일 오픈이면 전체 기간 = 오픈 기간)
+  const whole = !own && !!dates && !!it.round;
+  const copy = dates ? `${name} ${dates}${whole ? " (전체 공연기간)" : ""}` : name;
+  return { name, dates, whole, copy };
 }
 function period(it) {
-  const t = periodText(it);
-  return t ? `<div class="period"><span class="lbl">공연</span><span class="val">${t}</span><button class="copy" data-copy="${t}" title="공연기간 복사">복사</button></div>` : "";
+  const r = roundInfo(it);
+  if (!r.dates && !it.round) return "";
+  return `<div class="period"><span class="rnd">${esc(r.name)}</span>${r.dates ? `<span class="val">${r.dates}</span>` : ""}${r.whole ? `<span class="lbl">전체 공연기간</span>` : ""}<button class="copy" data-copy="${esc(r.copy)}" title="회차·기간 복사">복사</button></div>`;
 }
 function thumb(it) { return it.image ? `style="background-image:url('${esc(it.image)}')"` : ""; }
 
@@ -361,12 +369,13 @@ async function copyText(btn) {
   try {
     await navigator.clipboard.writeText(text);
   } catch {
-    ok = false;
-    // 클립보드 권한이 없으면 텍스트를 선택해 두고 직접 복사하게
-    const val = btn.parentElement.querySelector(".val");
-    const range = document.createRange(); range.selectNodeContents(val);
-    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(range);
-    btn.textContent = "⌘C로 복사";
+    // 클립보드 API를 못 쓰는 환경이면 예전 방식으로
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { ok = document.execCommand("copy"); } catch { ok = false; }
+    ta.remove();
+    if (!ok) btn.textContent = "복사 실패";
   }
   if (ok) { btn.textContent = "복사됨"; btn.classList.add("done"); }
   setTimeout(() => { btn.textContent = "복사"; btn.classList.remove("done"); }, ok ? 1200 : 2500);

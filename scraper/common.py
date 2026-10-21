@@ -63,16 +63,8 @@ DATE_IN_TEXT = re.compile(
 )
 
 
-def parse_period(text, ref_year=None):
-    """'공연 기간 : 2026년 10월 09일(금) ~ 2027년 01월 03일(일)' 같은 문구에서 기간을 뽑는다.
-
-    반환: {"start": "YYYY-MM-DD", "end": "YYYY-MM-DD"} 또는 None
-    """
-    m = PERIOD_KEY.search(text or "")
-    if not m:
-        return None
-    # 같은 줄에서 '※'·'시간' 안내가 나오기 전까지만 본다
-    window = re.split(r"[\r\n※]|공연\s*시간|관람", text[m.end(): m.end() + 120])[0]
+def _dates_to_period(window, ref_year):
+    """window 안의 날짜들을 처음~마지막 범위로 묶는다. 연도가 빠진 날짜는 앞뒤 날짜·ref_year로 채운다."""
     dates = []
     for d in DATE_IN_TEXT.finditer(window):
         y, mo, da = (d.group(1), d.group(2), d.group(3)) if d.group(2) else (d.group(4), d.group(5), d.group(6))
@@ -80,22 +72,70 @@ def parse_period(text, ref_year=None):
     if not dates:
         return None
     start, end = dates[0], dates[-1]
-    if end[0] is None:
-        end[0] = start[0] or ref_year
+    later = lambda a, b: (a[1], a[2]) > (b[1], b[2])  # noqa: E731  월/일만 비교
+    if start[0] is None and end[0] is not None:
+        start[0] = end[0] - 1 if later(start, end) else end[0]
     if start[0] is None:
-        start[0] = end[0] - 1 if end[0] and (start[1], start[2]) > (end[1], end[2]) else end[0]
+        start[0] = ref_year
+    if end[0] is None and start[0]:
+        end[0] = start[0] + 1 if later(start, end) else start[0]
     if not start[0]:
         return None
     try:
         s, e = date(*start), date(*end)
     except ValueError:
         return None
-    if e < s:
-        e = s
-    return {"start": s.isoformat(), "end": e.isoformat()}
+    return {"start": s.isoformat(), "end": max(s, e).isoformat()}
 
 
-def make_item(source, source_id, title, open_at, url, place="", image="", label="", period=None):
+def _line_after(text, pos, look=120):
+    """pos부터 같은 줄에서 '※'·'공연시간'·'관람' 안내가 나오기 전까지."""
+    return re.split(r"[\r\n※]|공연\s*시간|관람", text[pos: pos + look])[0]
+
+
+def parse_period(text, ref_year=None):
+    """'공연 기간 : 2026년 10월 09일(금) ~ 2027년 01월 03일(일)' 같은 문구에서 전체 공연기간을 뽑는다.
+
+    반환: {"start": "YYYY-MM-DD", "end": "YYYY-MM-DD"} 또는 None
+    """
+    m = PERIOD_KEY.search(text or "")
+    return _dates_to_period(_line_after(text, m.end()), ref_year) if m else None
+
+
+# 회차: 2차 / 마지막 / 프리뷰 / 첫. 낱말 회차는 '우리의 마지막 순간들'처럼 작품명에도 쓰이므로
+# 뒤에 '티켓/오픈'이 오거나 문자열 끝일 때만 회차로 본다.
+ROUND = re.compile(r"(\d{1,2})\s*차(?!\s*[가-힣])|(\d{1,2})\s*차(?=\s*(?:티켓|오픈))|(마지막|프리뷰|첫)(?=\s*(?:티켓|오픈|$))")
+# '2차 티켓 오픈 공연 기간 :', '프리뷰 오픈 기간 :', '티켓오픈 공연 기간:' (※ '티켓오픈 일정'은 판매 시각이라 제외)
+ROUND_PERIOD_KEY = re.compile(
+    r"(?:((?:\d{1,2})\s*차|마지막|프리뷰|첫)\s*)?(티켓\s*)?오픈\s*(?:공연\s*)?기간\s*[:：]?"
+)
+
+
+def norm_round(s):
+    m = ROUND.search(s or "")
+    if not m:
+        return ""
+    num = m.group(1) or m.group(2)
+    return f"{int(num)}차" if num else m.group(3)
+
+
+def parse_round_period(text, ref_year=None):
+    """공지 본문에서 (회차, 이번 회차로 열리는 공연 기간)을 찾는다. 없으면 ("", None)."""
+    for m in ROUND_PERIOD_KEY.finditer(text or ""):
+        if not (m.group(1) or m.group(2)):  # '오픈 기간'만 있는 건 회차/티켓 단서가 없어 건너뜀
+            continue
+        line = _line_after(text, m.end())
+        period = _dates_to_period(line, ref_year)
+        if not period:  # 제목만 있고 날짜는 다음 줄에 있는 경우
+            nxt = text[m.end():].split("\n", 2)
+            period = _dates_to_period(nxt[1], ref_year) if len(nxt) > 1 else None
+        if period:
+            return norm_round(m.group(1) or ""), period
+    return "", None
+
+
+def make_item(source, source_id, title, open_at, url, place="", image="", label="", period=None,
+              round_="", round_period=None):
     title = clean_title(title)
     exclusive = bool(EXCLUSIVE.match(title))
     title = SUFFIX.sub("", EXCLUSIVE.sub("", title)) or title
@@ -109,5 +149,7 @@ def make_item(source, source_id, title, open_at, url, place="", image="", label=
         "place": place or "",
         "url": url,
         "image": image or "",
-        "period": period,  # {"start","end"} 또는 None
+        "period": period,  # 전체 공연기간 {"start","end"} 또는 None
+        "round": round_ or norm_round(title),  # 2차/마지막/프리뷰/첫 또는 ""
+        "roundPeriod": round_period,  # 이번 회차로 열리는 공연 기간 또는 None
     }
