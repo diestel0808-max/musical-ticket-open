@@ -6,6 +6,8 @@ from ..common import html_text, http, is_kids, iso_kst, make_item, parse_period,
 
 API = "https://ticket.yes24.com/New/Notice/Ajax/axList.aspx"
 DETAIL_API = "https://ticket.yes24.com/New/Notice/Ajax/axRead.aspx"
+PERF_ID = re.compile(r"GetSiteDetailURL\((\d+)\)")
+OG_IMAGE = re.compile(r'og:image"\s+content="([^"]+)"')
 PLACE = re.compile(r"(?:공연\s*장\s*소?|(?<![가-힣])장\s*소)\s*[:：]\s*([^\r\n※]+)")
 MUSICAL_GENRE = "15457"
 LINK = re.compile(r'<a href="#id=(\d+)">(.*?)</a>', re.S)
@@ -41,10 +43,30 @@ def fetch(pages=2, size=20):
 
 
 def fetch_detail(source_id, ref_year=None):
-    """공지 상세에서 (전체 공연기간, 공연장, 회차, 회차 기간)을 읽는다. source_id는 '18708' 또는 '18708-p1'."""
+    """공지 상세에서 공연기간·공연장·회차·회차 기간, 그리고 공연 상품 페이지 주소와 포스터를 읽는다.
+
+    source_id는 '18708' 또는 '18708-p1'. 공지는 지난 회차가 되면 지워지므로 링크는 상품 페이지로 바꾼다.
+    """
     nid = str(source_id).split("-")[0]
-    text = html_text(http(DETAIL_API, data={"bId": nid, "genre": MUSICAL_GENRE, "province": "", "order": "1"}))
+    raw = http(DETAIL_API, data={"bId": nid, "genre": MUSICAL_GENRE, "province": "", "order": "1"})
+    text = html_text(raw)
     m = PLACE.search(text)
-    place = re.sub(r"\s+", " ", m.group(1)).strip()[:60] if m else ""
     round_, round_period = parse_round_period(text, ref_year)
-    return parse_period(text, ref_year), place, round_, round_period
+    detail = {
+        "period": parse_period(text, ref_year),
+        "place": re.sub(r"\s+", " ", m.group(1)).strip()[:60] if m else "",
+        "round": round_,
+        "roundPeriod": round_period,
+        "perfId": None,
+        "image": "",
+    }
+    p = PERF_ID.search(raw)
+    if p:
+        detail["perfId"] = p.group(1)
+        try:
+            og = OG_IMAGE.search(http(f"https://ticket.yes24.com/Perf/{p.group(1)}"))
+            if og:
+                detail["image"] = "https:" + og.group(1) if og.group(1).startswith("//") else og.group(1)
+        except Exception:
+            pass
+    return detail

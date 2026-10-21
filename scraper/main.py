@@ -12,8 +12,8 @@ from .sources import nol, ticketlink, yes24
 
 DATA = Path(__file__).resolve().parent.parent / "data" / "items.json"
 SOURCES = {"nol": nol.fetch, "ticketlink": ticketlink.fetch, "yes24": yes24.fetch}
-# 다시 수집될 때 최신 값으로 덮어쓸 필드. period는 비어 있지 않을 때만 덮어쓴다.
-TRACKED = ("title", "label", "openAt", "url", "image")
+# 다시 수집될 때 최신 값으로 덮어쓸 필드. 나머지(기간·회차·이미지 등)는 비어 있지 않을 때만 덮어쓴다.
+TRACKED = ("title", "label", "openAt")
 
 
 def load(path=DATA):
@@ -44,9 +44,11 @@ def collect(db, log=print):
                 old.update({k: it[k] for k in TRACKED})
                 if it.get("place"):
                     old["place"] = it["place"]
-                for k in ("period", "round", "roundPeriod"):  # 상세에서 채운 값은 비어 있는 값으로 덮지 않음
+                for k in ("period", "round", "roundPeriod", "image"):  # 상세에서 채운 값은 비어 있는 값으로 덮지 않음
                     if it.get(k):
                         old[k] = it[k]
+                if not old.get("perfId"):  # 예스24는 상세에서 상품 페이지 주소로 바꿔 둔 링크를 유지
+                    old["url"] = it["url"]
                 old["lastSeenAt"] = now
             else:
                 it["firstSeenAt"] = it["lastSeenAt"] = now
@@ -68,13 +70,16 @@ def collect(db, log=print):
     return db, new_items
 
 
-DETAIL_VERSION = 2  # 상세에서 읽는 항목이 늘면 올려서 기존 항목도 다시 읽게 함
+DETAIL_VERSION = 3  # 상세에서 읽는 항목이 늘면 올려서 기존 항목도 다시 읽게 함
 
 
 def fill_yes24_details(items, log):
     """예스24는 목록에 공연기간·회차 기간이 없어서 상세를 한 번씩만 조회한다(같은 공지의 선예매 항목과 공유)."""
     cache = {}
-    todo = [it for it in items if it["source"] == "yes24" and it.get("detailV") != DETAIL_VERSION]
+    today = now_kst().date().isoformat()
+    # 상품 페이지가 공지보다 늦게 생기기도 해서, 링크를 못 찾은 공지는 오픈 전까지 매일 다시 본다
+    todo = [it for it in items if it["source"] == "yes24" and (
+        it.get("detailV") != DETAIL_VERSION or (not it.get("perfId") and (it.get("openAt") or "") >= today))]
     for it in todo:
         nid = it["id"].split(":")[1].split("-")[0]
         if nid not in cache:
@@ -83,14 +88,19 @@ def fill_yes24_details(items, log):
             except Exception as e:
                 log(f"  예스24 상세 실패 {nid}: {e}")
                 continue
-        period, place, round_, round_period = cache[nid]
-        it["period"] = period
-        it["roundPeriod"] = round_period
-        it["round"] = round_ or it.get("round", "")
+        d = cache[nid]
+        it["period"] = d["period"]
+        it["roundPeriod"] = d["roundPeriod"]
+        it["round"] = d["round"] or it.get("round", "")
         it["detailV"] = DETAIL_VERSION
         it.pop("periodChecked", None)
-        if place and not it.get("place"):
-            it["place"] = place
+        if d["place"] and not it.get("place"):
+            it["place"] = d["place"]
+        if d["perfId"]:  # 공지는 지난 회차가 되면 지워지므로 공연 상품 페이지로 연결
+            it["perfId"] = d["perfId"]
+            it["url"] = f"https://ticket.yes24.com/Perf/{d['perfId']}"
+        if d["image"]:
+            it["image"] = d["image"]
     if cache:
         log(f"[yes24 상세] {len(cache)}건 조회")
 
