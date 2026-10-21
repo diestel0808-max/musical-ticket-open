@@ -8,20 +8,22 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
 :root {
-  --bg: #f6f5f2; --surface: #ffffff; --surface-2: #f0eee9; --line: #e4e1da;
-  --text: #1d1b18; --muted: #6f6a61; --faint: #a39d92;
-  --accent: #c2410c; --accent-soft: #fdeee6;
-  --nol: #6d28d9; --ticketlink: #e11d48; --yes24: #2563eb;
-  --today: #fff7ed;
+  --bg: #ffffff; --surface: #ffffff; --soft: #f6f6f6; --past: #f4f4f4;
+  --line: #e6e6e6; --line-strong: #222222;
+  --text: #1f1f1f; --muted: #6b6b6b; --faint: #a3a3a3;
+  --accent: #14a99a; --accent-soft: #e4f6f4; --accent-text: #0e7f74;
+  --sun: #e5483f; --sat: #3a6fd8;
+  --nol: #7c4ddb; --ticketlink: #ec4561; --yes24: #3a6fd8;
   --radius: 10px;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #151412; --surface: #1d1c19; --surface-2: #26241f; --line: #34312b;
-    --text: #f1eee8; --muted: #a8a196; --faint: #6f6a61;
-    --accent: #fb923c; --accent-soft: #3a2416;
-    --nol: #a78bfa; --ticketlink: #fb7185; --yes24: #60a5fa;
-    --today: #2a2118;
+    --bg: #161616; --surface: #1d1d1d; --soft: #232323; --past: #1a1a1a;
+    --line: #2f2f2f; --line-strong: #e8e8e8;
+    --text: #f0f0f0; --muted: #a6a6a6; --faint: #6c6c6c;
+    --accent: #3cc8b9; --accent-soft: #15302d; --accent-text: #6fdccf;
+    --sun: #ff7a72; --sat: #7aa2ff;
+    --nol: #a98bff; --ticketlink: #ff7d93; --yes24: #7aa2ff;
   }
 }
 * { box-sizing: border-box; }
@@ -29,123 +31,139 @@ html, body { margin: 0; }
 body {
   background: var(--bg); color: var(--text);
   font: 14px/1.5 "Pretendard Variable", Pretendard, -apple-system, system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; letter-spacing: -0.005em;
 }
 button, input, select { font: inherit; color: inherit; }
-a { color: inherit; }
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 1320px; margin: 0 auto; padding: 0 32px 72px; }
 
-.wrap { max-width: 1360px; margin: 0 auto; padding: 0 32px 64px; }
+/* ── 헤더 ── */
+header.top { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding: 36px 0 20px; }
+h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; }
+.sub-title { margin: 4px 0 0; color: var(--muted); font-size: 13.5px; }
+.status { text-align: right; color: var(--muted); font-size: 13px; }
+.status-row { display: flex; align-items: center; justify-content: flex-end; gap: 12px; }
+.src-status { display: inline-flex; gap: 8px; }
+.src-status .bad { color: var(--sun); }
+.refresh { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.refresh:hover { border-color: var(--text); }
+.refresh[disabled] { opacity: .55; cursor: progress; }
+.refresh-msg { margin-top: 6px; min-height: 18px; font-size: 12.5px; }
+.refresh-msg.ok { color: var(--accent-text); }
 
-/* 헤더 */
-header.top { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding: 28px 0 18px; }
-h1 { margin: 0; font-size: 24px; letter-spacing: -0.02em; }
-h1 small { font-size: 14px; font-weight: 500; color: var(--muted); margin-left: 8px; letter-spacing: 0; }
-.meta { color: var(--muted); font-size: 13px; text-align: right; }
-.meta .src-status { display: inline-flex; gap: 10px; margin-left: 10px; }
-.meta .bad { color: var(--ticketlink); }
-
-/* 툴바 */
+/* ── 툴바 ── */
 .toolbar {
   position: sticky; top: 0; z-index: 5; background: var(--bg);
-  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
-  padding: 10px 0 14px; border-bottom: 1px solid var(--line);
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
 }
-.seg { display: inline-flex; background: var(--surface-2); border-radius: 8px; padding: 3px; }
-.seg button { border: 0; background: none; padding: 6px 14px; border-radius: 6px; cursor: pointer; color: var(--muted); font-weight: 600; }
-.seg button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 2px rgb(0 0 0 / .08); }
-.chips { display: inline-flex; gap: 6px; }
-.chip {
-  display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--surface);
-  padding: 5px 12px; border-radius: 999px; cursor: pointer; font-weight: 600; font-size: 13px;
-}
-.chip[aria-pressed="false"] { opacity: .45; }
-.dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
-.dot.nol { background: var(--nol); } .dot.ticketlink { background: var(--ticketlink); } .dot.yes24 { background: var(--yes24); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+.seg button { border: 0; background: none; padding: 5px 16px; border-radius: 999px; cursor: pointer; color: var(--muted); font-weight: 600; }
+.seg button[aria-pressed="true"] { background: var(--text); color: var(--bg); }
+.chips { display: inline-flex; gap: 6px; margin-left: 6px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--surface); padding: 4px 12px 4px 5px; border-radius: 999px; cursor: pointer; font-weight: 600; font-size: 13px; }
+.chip .n { color: var(--faint); font-weight: 500; }
+.chip[aria-pressed="false"] { opacity: .4; }
 .spacer { flex: 1; }
-.search { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 6px 12px; width: 240px; }
-.toolbar select { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 6px 10px; }
-.toggle { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); cursor: pointer; user-select: none; }
+.search, .toolbar select { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 14px; }
+.search { width: 240px; }
+.toggle { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); cursor: pointer; user-select: none; font-size: 13px; }
 
-/* 목록 */
-.day { display: grid; grid-template-columns: 140px 1fr; gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--line); }
-.day-head { position: sticky; top: 64px; align-self: start; }
-.day-head .date { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; }
+/* 사이트 원형 배지(참고 디자인의 '가/대/완' 같은 표시) */
+.sb { display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; color: #fff; font-size: 10.5px; font-weight: 700; flex: none; line-height: 1; }
+.sb.nol { background: var(--nol); } .sb.ticketlink { background: var(--ticketlink); } .sb.yes24 { background: var(--yes24); }
+
+/* ── 회차·기간 ── */
+.rnd { display: inline-block; white-space: nowrap; font-size: 12px; font-weight: 700; color: var(--accent-text); background: var(--accent-soft); padding: 1px 8px; border-radius: 4px; }
+.period { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 8px; margin-top: 6px; }
+.dates { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.dates .val { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 13.5px; user-select: all; -webkit-user-select: all; cursor: text; }
+.copy { border: 1px solid var(--line); background: var(--surface); color: var(--muted); border-radius: 4px; padding: 0 7px; font-size: 11.5px; line-height: 20px; cursor: pointer; white-space: nowrap; }
+.copy:hover { color: var(--text); border-color: var(--text); }
+.copy.done { color: var(--accent-text); border-color: var(--accent); }
+
+/* 사이트별 오픈 정보 줄: ● 예스24 11:00 선예매 ↗ */
+.slots { display: flex; flex-wrap: wrap; gap: 4px 6px; margin-top: 8px; }
+.slot { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px 2px 3px; font-size: 12.5px; white-space: nowrap; }
+.slot:hover { border-color: var(--text); }
+.slot b { font-weight: 700; font-variant-numeric: tabular-nums; }
+.slot .lb { color: var(--muted); }
+.slot .ex { color: var(--sun); font-weight: 700; font-size: 11.5px; }
+.slot .arr { color: var(--faint); }
+.place { margin-top: 6px; color: var(--muted); font-size: 12.5px; }
+.new { display: inline-block; vertical-align: 2px; margin-left: 6px; font-size: 10.5px; font-weight: 800; color: #fff; background: var(--sun); border-radius: 3px; padding: 0 5px; line-height: 16px; }
+
+/* ── 목록 ── */
+.day { display: grid; grid-template-columns: 132px 1fr; gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+.day-head { position: sticky; top: 70px; align-self: start; }
+.day-head .date { font-size: 22px; font-weight: 800; letter-spacing: -0.03em; }
 .day-head .dow { color: var(--muted); font-weight: 600; margin-left: 4px; }
-.day-head .dday { display: inline-block; margin-top: 4px; font-size: 12px; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: 1px 8px; border-radius: 999px; }
-.day.is-today .day-head .date { color: var(--accent); }
-.rows { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-.card {
-  display: grid; color: inherit; grid-template-columns: 56px 64px 1fr; gap: 12px; align-items: center;
-  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 10px 12px; text-decoration: none; transition: border-color .15s, transform .15s;
-}
-.card:hover { border-color: var(--faint); }
-.card .title a, .p-item .title a { text-decoration: none; }
-.card .title a:hover, .p-item .title a:hover { text-decoration: underline; }
-.card .time { font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums; }
-.card .thumb { width: 64px; height: 84px; border-radius: 6px; background: var(--surface-2) center/cover no-repeat; display: grid; place-items: center; color: var(--faint); font-size: 11px; }
-.card .title { font-weight: 600; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.card .sub { margin-top: 4px; color: var(--muted); font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
-.badge { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; }
-.tag { font-size: 11px; font-weight: 700; padding: 0 6px; border-radius: 4px; background: var(--surface-2); color: var(--muted); }
-.tag.excl { background: var(--accent-soft); color: var(--accent); }
-.tag.new { background: var(--accent); color: #fff; }
-.period { display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; font-size: 13px; }
-.period .lbl { color: var(--faint); font-size: 11.5px; }
-.period .rnd { font-size: 12px; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: 0 7px; border-radius: 4px; line-height: 20px; }
-.period .val { font-variant-numeric: tabular-nums; font-weight: 600; user-select: all; -webkit-user-select: all; cursor: text; }
-.copy { border: 1px solid var(--line); background: var(--surface); color: var(--muted); border-radius: 6px; padding: 0 7px; font-size: 11.5px; line-height: 20px; cursor: pointer; }
-.copy:hover { color: var(--text); border-color: var(--faint); }
-.copy.done { color: var(--accent); border-color: var(--accent); }
-.go { font-size: 12px; color: var(--muted); text-decoration: none; margin-left: auto; white-space: nowrap; }
-.go:hover { color: var(--accent); }
-.refresh { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 4px 12px; font-size: 13px; font-weight: 600; cursor: pointer; margin-left: 10px; }
-.refresh:hover { border-color: var(--faint); }
-.refresh[disabled] { opacity: .6; cursor: progress; }
-.refresh-msg { display: block; margin-top: 4px; font-size: 12.5px; }
-.refresh-msg.ok { color: var(--accent); }
-.empty { padding: 64px 0; text-align: center; color: var(--muted); }
+.day-head .dday { display: inline-block; margin-top: 4px; font-size: 12px; font-weight: 700; color: var(--accent-text); }
+.day-head.sun .dow { color: var(--sun); } .day-head.sat .dow { color: var(--sat); }
+.day.is-today .day-head .date { color: var(--accent-text); }
+.rows { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.card { display: grid; grid-template-columns: 52px 66px minmax(0, 1fr); gap: 14px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; }
+.card:hover { border-color: #cfcfcf; }
+.card .time { font-size: 17px; font-weight: 800; font-variant-numeric: tabular-nums; padding-top: 1px; }
+.thumb { display: block; width: 66px; height: 88px; border-radius: 6px; background: var(--soft) center/cover no-repeat; }
+.title { font-weight: 700; font-size: 14.5px; line-height: 1.4; }
+.title a:hover { text-decoration: underline; }
+.empty { padding: 72px 0; text-align: center; color: var(--muted); }
 
-/* 캘린더 */
-.cal-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 20px; padding-top: 16px; }
-.cal-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
-.cal-head h2 { margin: 0 8px 0 0; font-size: 20px; letter-spacing: -0.02em; min-width: 120px; }
-.icon-btn { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 4px 10px; cursor: pointer; }
-.grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); background: var(--surface); border-radius: var(--radius); overflow: hidden; }
-.grid .dow-h { padding: 6px 8px; font-size: 12px; font-weight: 700; color: var(--muted); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface-2); }
-.grid .dow-h.sun, .cell.sun .num { color: var(--ticketlink); }
-.grid .dow-h.sat, .cell.sat .num { color: var(--yes24); }
-.cell { min-height: 118px; padding: 6px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); cursor: pointer; min-width: 0; }
-.cell:hover { background: var(--surface-2); }
-.cell.out { background: var(--bg); }
-.cell.out .num { opacity: .4; }
-.cell.today { background: var(--today); }
-.cell.today .num { background: var(--accent); color: #fff; border-radius: 999px; padding: 0 7px; }
-.cell.selected { outline: 2px solid var(--accent); outline-offset: -2px; }
-.cell .num { font-size: 12px; font-weight: 700; display: inline-block; margin-bottom: 4px; }
-.ev { display: flex; align-items: center; gap: 5px; font-size: 12px; line-height: 1.35; padding: 1px 0; white-space: nowrap; overflow: hidden; }
+/* ── 캘린더 (참고 디자인 느낌: 흰 바탕, 진한 요일 밑줄, 지난 날짜 회색) ── */
+.cal-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 28px; padding-top: 28px; }
+.cal-head { display: flex; align-items: center; justify-content: center; gap: 18px; position: relative; }
+.cal-head h2 { margin: 0; font-size: 22px; font-weight: 800; letter-spacing: -0.03em; min-width: 140px; text-align: center; }
+.circle { width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); cursor: pointer; display: grid; place-items: center; font-size: 15px; color: var(--muted); }
+.circle:hover { border-color: var(--text); color: var(--text); }
+.today-btn { position: absolute; right: 0; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 3px 12px; font-size: 12.5px; cursor: pointer; }
+.today-btn:hover { border-color: var(--text); }
+.legend { display: flex; gap: 14px; margin: 18px 0 10px; font-size: 12.5px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 5px; }
+.legend .past-sw { width: 14px; height: 14px; background: var(--past); border: 1px solid var(--line); border-radius: 3px; }
+.grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); background: var(--surface); border-left: 1px solid var(--line); }
+.dow-h { text-align: center; padding: 10px 0; font-size: 13px; font-weight: 600; border-top: 1px solid var(--line); border-right: 1px solid var(--line); border-bottom: 2px solid var(--line-strong); }
+.dow-h.sun { color: var(--sun); border-bottom-color: var(--sun); }
+.dow-h.sat { color: var(--sat); }
+.cell { min-height: 112px; padding: 8px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); cursor: pointer; min-width: 0; background: var(--surface); }
+.cell:hover { background: var(--soft); }
+.cell.past { background: var(--past); }
+.cell.past .num { color: var(--faint); }
+.cell.out { background: var(--surface); }
+.cell.out .num { opacity: .35; }
+.cell .num { font-size: 13px; font-weight: 700; display: inline-block; margin-bottom: 5px; }
+.cell.sun .num { color: var(--sun); } .cell.sat .num { color: var(--sat); }
+.cell.today .num { background: var(--accent); color: #fff; border-radius: 999px; padding: 0 8px; }
+.cell.selected { box-shadow: inset 0 0 0 2px var(--accent); }
+.ev { display: flex; align-items: center; gap: 5px; font-size: 12px; line-height: 1.3; padding: 2px 0; white-space: nowrap; overflow: hidden; }
+.ev .sb { width: 16px; height: 16px; font-size: 9.5px; }
+.ev .sbs { display: inline-flex; }
+.ev .sbs .sb + .sb { margin-left: -5px; box-shadow: 0 0 0 1.5px var(--surface); }
 .ev .t { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--muted); }
 .ev .n { overflow: hidden; text-overflow: ellipsis; }
-.more { font-size: 12px; font-weight: 700; color: var(--accent); padding-top: 2px; }
-aside.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; align-self: start; position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: auto; }
-aside.panel h3 { margin: 0 0 12px; font-size: 16px; }
-.p-item { display: grid; grid-template-columns: 54px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); }
-.p-item:first-of-type { border-top: 0; }
-.p-item .thumb { display: block; width: 54px; height: 72px; border-radius: 6px; background: var(--surface-2) center/cover no-repeat; }
-.p-item .title { font-weight: 600; line-height: 1.35; }
-.p-item .sub { color: var(--muted); font-size: 12.5px; margin-top: 3px; display: flex; flex-wrap: wrap; gap: 4px 8px; }
+.cell.past .ev { opacity: .6; }
+.more { font-size: 12px; font-weight: 700; color: var(--accent-text); padding-top: 2px; }
+aside.panel { border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; align-self: start; position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: auto; background: var(--surface); }
+aside.panel h3 { margin: 0 0 4px; font-size: 18px; font-weight: 800; letter-spacing: -0.02em; }
+aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+.p-item { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 12px; padding: 14px 0; border-top: 1px solid var(--line); }
+.p-item .thumb { width: 54px; height: 72px; }
+.p-item .title { font-size: 14px; }
+/* 좁은 패널에서는 회차 배지 아래 줄로 날짜를 내려 덩어리지지 않게 */
+.p-item .period { flex-direction: column; align-items: flex-start; gap: 4px; }
+.p-item .slots { margin-top: 6px; }
 
 @media (max-width: 960px) {
   .wrap { padding: 0 16px 48px; }
   header.top { flex-direction: column; align-items: flex-start; }
-  .meta { text-align: left; }
-  .day { grid-template-columns: 1fr; gap: 8px; }
+  .status, .status-row { text-align: left; justify-content: flex-start; }
+  .day { grid-template-columns: 1fr; gap: 10px; }
   .day-head { position: static; }
   .rows { grid-template-columns: 1fr; }
   .cal-layout { grid-template-columns: 1fr; }
   aside.panel { position: static; max-height: none; }
-  .cell { min-height: 72px; }
-  .ev .n { display: none; }
+  .cell { min-height: 64px; padding: 4px; }
+  .ev .n, .ev .t { display: none; }
   .search { width: 100%; }
 }
 </style>
@@ -153,8 +171,14 @@ aside.panel h3 { margin: 0 0 12px; font-size: 16px; }
 <body>
 <div class="wrap">
   <header class="top">
-    <h1>뮤지컬 티켓오픈 <small>NOL · 티켓링크 · 예스24</small></h1>
-    <div class="meta"><span id="meta">불러오는 중…</span><button class="refresh" id="refresh" title="세 사이트에서 지금 다시 가져오기">↻ 지금 업데이트</button><span class="refresh-msg" id="refresh-msg"></span></div>
+    <div>
+      <h1>뮤지컬 티켓오픈</h1>
+      <p class="sub-title">NOL · 티켓링크 · 예스24의 뮤지컬 티켓오픈 공지를 매일 아침 모아 보여드려요.</p>
+    </div>
+    <div class="status">
+      <div class="status-row"><span id="meta">불러오는 중…</span><button class="refresh" id="refresh" title="세 사이트에서 지금 다시 가져오기">↻ 지금 업데이트</button></div>
+      <div class="refresh-msg" id="refresh-msg"></div>
+    </div>
   </header>
 
   <div class="toolbar">
@@ -168,7 +192,7 @@ aside.panel h3 { margin: 0 0 12px; font-size: 16px; }
       <option value="open">오픈 일시순</option>
       <option value="new">새로 올라온 순</option>
     </select>
-    <label class="toggle"><input type="checkbox" id="past"> 지난 오픈 보기</label>
+    <label class="toggle" id="past-wrap"><input type="checkbox" id="past"> 지난 오픈 보기</label>
     <input class="search" id="q" type="search" placeholder="작품명·공연장 검색">
   </div>
 
@@ -177,29 +201,74 @@ aside.panel h3 { margin: 0 0 12px; font-size: 16px; }
 
 <script>
 const SOURCES = { nol: "NOL", ticketlink: "티켓링크", yes24: "예스24" };
+const SB = { nol: "N", ticketlink: "T", yes24: "Y" };
 const DOW = ["일", "월", "화", "수", "목", "금", "토"];
+const DOW_FULL = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
 const state = {
   items: [], view: "list", sort: "open", past: false, q: "",
   on: new Set(Object.keys(SOURCES)),
-  month: null, selected: null,
+  month: null, selected: null, firstBatch: null,
 };
 try { Object.assign(state, JSON.parse(localStorage.getItem("mto-prefs") || "{}"), { on: new Set(JSON.parse(localStorage.getItem("mto-on") || "null") || Object.keys(SOURCES)) }); } catch {}
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const pad = (n) => String(n).padStart(2, "0");
 // openAt은 KST ISO 문자열. 날짜·시각은 문자열에서 바로 읽어 브라우저 시간대와 무관하게 표시
 const dayKey = (iso) => iso ? iso.slice(0, 10) : null;
 const timeOf = (iso) => iso ? iso.slice(11, 16) : "";
-const kstNow = () => new Date(Date.now() + 9 * 3600e3);
-const todayKey = () => kstNow().toISOString().slice(0, 10);
+const todayKey = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
 function keyToDate(k) { const [y, m, d] = k.split("-").map(Number); return new Date(Date.UTC(y, m - 1, d)); }
 function ddays(k) { return Math.round((keyToDate(k) - keyToDate(todayKey())) / 864e5); }
 function ddayLabel(k) { const d = ddays(k); return d === 0 ? "오늘" : d === 1 ? "내일" : d > 0 ? `D-${d}` : `${-d}일 전`; }
-function fmtDay(k) { const dt = keyToDate(k); return { md: `${dt.getUTCMonth() + 1}/${dt.getUTCDate()}`, dow: DOW[dt.getUTCDay()] }; }
+function fmtDay(k) { const dt = keyToDate(k); return { md: `${dt.getUTCMonth() + 1}/${dt.getUTCDate()}`, dow: DOW[dt.getUTCDay()], wd: dt.getUTCDay() }; }
 // 캘린더 칸처럼 좁은 곳에서는 "[링크스페셜데이…] 뮤지컬" 같은 머리말을 떼고 작품명 위주로
 const shortTitle = (t) => t.replace(/^(\s*\[[^\]]*\]\s*)+/, "").replace(/^(어린이|가족|창작)?\s*뮤지컬\s*/, "").trim() || t;
-const isNew =(it) => it.firstSeenAt && (Date.now() - new Date(it.firstSeenAt)) < 36 * 3600e3;
+
+// NEW: 첫 수집 이후에 새로 발견된 소식 중 36시간이 안 지난 것(처음 한꺼번에 모은 소식에는 붙이지 않음)
+const isNew = (it) => it.firstSeenAt && dayKey(it.firstSeenAt) > state.firstBatch && Date.now() - new Date(it.firstSeenAt) < 36 * 3600e3;
+
+/* ── 같은 작품 묶기 ──
+   같은 날 오픈하는 같은 작품(같은 공연장)은 사이트·시각이 달라도 한 박스로 보여준다.
+   작품 키: 제목의 〈〉<>《》「」[] 안 이름(앞쪽 [지역]/[이벤트] 머리말 제외)을 공백·기호 없이 비교 */
+function workKey(title) {
+  const t = title.replace(/^(\s*\[[^\]]*\]\s*)+/, "");
+  const m = t.match(/[<〈《「]\s*([^>〉》」]+?)\s*[>〉》」]/) || t.match(/\[\s*([^\]]+?)\s*\]/);
+  const name = m ? m[1] : t.replace(/뮤지컬|티켓\s*오픈|\d+\s*차|마지막|프리뷰/g, "");
+  return name.toLowerCase().replace(/[\s\p{P}\p{S}]/gu, "");
+}
+const normPlace = (p) => (p || "").replace(/[\s\p{P}]/gu, "");
+function samePlace(a, b) {
+  const x = normPlace(a), y = normPlace(b);
+  if (!x || !y) return true;
+  return x.includes(y.slice(0, 4)) || y.includes(x.slice(0, 4));
+}
+function groupItems(items) {
+  const groups = [];
+  const sorted = [...items].sort((a, b) => (a.openAt || "9999").localeCompare(b.openAt || "9999"));
+  for (const it of sorted) {
+    const key = `${dayKey(it.openAt) || "none"}|${workKey(it.title)}`;
+    const g = groups.find((g) => g.key === key && g.items.every((o) => samePlace(o.place, it.place)));
+    if (g) g.items.push(it); else groups.push({ key, items: [it] });
+  }
+  for (const g of groups) {
+    const its = g.items;
+    const best = its.find((i) => i.roundPeriod) || its.find((i) => i.round) || its[0];
+    Object.assign(g, {
+      openAt: its[0].openAt,
+      title: best.title,
+      image: (its.find((i) => i.image) || {}).image || "",
+      place: its.map((i) => i.place).filter(Boolean).sort((a, b) => b.length - a.length)[0] || "",
+      round: best.round || (its.find((i) => i.round) || {}).round || "",
+      roundPeriod: best.roundPeriod || null,
+      period: best.period || null,
+      url: best.url,
+      firstSeenAt: its.map((i) => i.firstSeenAt || "").sort()[0],
+      isNew: its.some(isNew),
+      sources: [...new Set(its.map((i) => i.source))],
+    });
+  }
+  return groups;
+}
 
 function save() {
   try {
@@ -207,87 +276,79 @@ function save() {
     localStorage.setItem("mto-on", JSON.stringify([...state.on]));
   } catch {}
 }
-
 function filtered() {
   const q = state.q.trim().toLowerCase();
-  return state.items.filter((it) =>
-    state.on.has(it.source) &&
-    (!q || (it.title + " " + it.place).toLowerCase().includes(q)));
+  return state.items.filter((it) => state.on.has(it.source) && (!q || (it.title + " " + it.place).toLowerCase().includes(q)));
 }
 
-function srcBadge(it) { return `<span class="badge"><span class="dot ${it.source}"></span>${SOURCES[it.source]}</span>`; }
-function tags(it) {
-  return (isNew(it) ? `<span class="tag new">NEW</span>` : "") +
-    (it.exclusive ? `<span class="tag excl">단독</span>` : "") +
-    (it.label ? `<span class="tag">${esc(it.label)}</span>` : "");
-}
-// 회차 + 이번 회차로 열리는 공연 기간: "2차 티켓오픈 26.11.17 ~ 26.12.06" (하루면 날짜 하나)
-// 회차 기간을 못 찾은 공지(NOL 등)는 전체 공연기간으로 대신한다
+/* ── 회차·기간 ──
+   회차 기간을 찾으면 "2차 티켓오픈 26.11.17 ~ 26.12.06".
+   회차 표시 없이 한 번 여는 공연은 공연기간이 곧 오픈 범위라 그대로 보여주고,
+   회차는 있는데 회차 기간을 못 찾았으면 날짜는 비워 둔다(전체 기간으로 대신하면 헷갈림). */
 const ymd = (d) => `${d.slice(2, 4)}.${d.slice(5, 7)}.${d.slice(8, 10)}`;
 const range = (p) => !p || !p.start ? "" : !p.end || p.end === p.start ? ymd(p.start) : `${ymd(p.start)} ~ ${ymd(p.end)}`;
-function roundInfo(it) {
-  const name = `${it.round ? it.round + " " : ""}티켓오픈`;
-  const own = range(it.roundPeriod);
-  const dates = own || range(it.period);
-  // 회차가 있는데 회차 기간을 못 찾았을 때만 "전체 공연기간"이라고 밝힌다(단일 오픈이면 전체 기간 = 오픈 기간)
-  const whole = !own && !!dates && !!it.round;
-  const copy = dates ? `${name} ${dates}${whole ? " (전체 공연기간)" : ""}` : name;
-  return { name, dates, whole, copy };
+function periodHtml(g) {
+  const name = `${g.round ? g.round + " " : ""}티켓오픈`;
+  const dates = range(g.roundPeriod) || (g.round ? "" : range(g.period));
+  if (!dates && !g.round) return "";
+  return `<div class="period"><span class="rnd">${esc(name)}</span>${dates ? `<span class="dates"><span class="val">${dates}</span><button class="copy" data-copy="${esc(name + " " + dates)}" title="회차·기간 복사">복사</button></span>` : ""}</div>`;
 }
-function period(it) {
-  const r = roundInfo(it);
-  if (!r.dates && !it.round) return "";
-  return `<div class="period"><span class="rnd">${esc(r.name)}</span>${r.dates ? `<span class="val">${r.dates}</span>` : ""}${r.whole ? `<span class="lbl">전체 공연기간</span>` : ""}<button class="copy" data-copy="${esc(r.copy)}" title="회차·기간 복사">복사</button></div>`;
+// '일반 예매일'처럼 기본값인 구분은 굳이 보여주지 않고 선예매 같은 것만
+const showLabel = (l) => l && !/^일반\s*예매/.test(l);
+const sb = (src) => `<span class="sb ${src}" title="${SOURCES[src]}">${SB[src]}</span>`;
+function slotsHtml(g) {
+  const multiTime = new Set(g.items.map((i) => timeOf(i.openAt))).size > 1;
+  return `<div class="slots">${g.items.map((i) => `<a class="slot" href="${esc(i.url)}" target="_blank" rel="noopener" title="${SOURCES[i.source]} 공지 열기">${sb(i.source)}${SOURCES[i.source]}${multiTime ? ` <b>${timeOf(i.openAt)}</b>` : ""}${showLabel(i.label) ? ` <span class="lb">${esc(i.label)}</span>` : ""}${i.exclusive ? ` <span class="ex">단독</span>` : ""} <span class="arr">↗</span></a>`).join("")}</div>`;
 }
-function thumb(it) { return it.image ? `style="background-image:url('${esc(it.image)}')"` : ""; }
+const thumbStyle = (g) => g.image ? `style="background-image:url('${esc(g.image)}')"` : "";
 
-function card(it) {
-  const link = `href="${esc(it.url)}" target="_blank" rel="noopener"`;
+function card(g) {
   return `<div class="card">
-    <div class="time">${timeOf(it.openAt) || "—"}</div>
-    <a class="thumb" ${link} ${thumb(it)} aria-label="공지 보기">${it.image ? "" : "No img"}</a>
-    <div><div class="title"><a ${link}>${esc(it.title)}</a></div>
-      ${period(it)}
-      <div class="sub">${srcBadge(it)}${tags(it)}${it.place ? `<span>${esc(it.place)}</span>` : ""}<a class="go" ${link}>공지 보기 ↗</a></div></div>
+    <div class="time">${timeOf(g.openAt) || "—"}</div>
+    <a class="thumb" href="${esc(g.url)}" target="_blank" rel="noopener" ${thumbStyle(g)} aria-label="공지 보기"></a>
+    <div>
+      <div class="title"><a href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.title)}</a>${g.isNew ? `<span class="new">NEW</span>` : ""}</div>
+      ${periodHtml(g)}
+      ${slotsHtml(g)}
+      ${g.place ? `<div class="place">${esc(g.place)}</div>` : ""}
+    </div>
   </div>`;
 }
 
 function renderList() {
-  const items = filtered();
   const today = todayKey();
-  let groups = new Map();
-  let undated = [];
+  const groups = groupItems(filtered()).filter((g) => state.past || !g.openAt || dayKey(g.openAt) >= today);
+  const byDay = new Map();
+  const undated = [];
   if (state.sort === "open") {
-    const list = items.filter((it) => it.openAt && (state.past || dayKey(it.openAt) >= today))
-      .sort((a, b) => a.openAt.localeCompare(b.openAt) || a.title.localeCompare(b.title));
-    if (!state.past) undated = items.filter((it) => !it.openAt);
-    for (const it of list) { const k = dayKey(it.openAt); (groups.get(k) || groups.set(k, []).get(k)).push(it); }
+    for (const g of groups) {
+      if (!g.openAt) { undated.push(g); continue; }
+      const k = dayKey(g.openAt); (byDay.get(k) || byDay.set(k, []).get(k)).push(g);
+    }
   } else {
-    const list = items.filter((it) => state.past || !it.openAt || dayKey(it.openAt) >= today)
-      .sort((a, b) => (b.firstSeenAt || "").localeCompare(a.firstSeenAt || "") || (a.openAt || "").localeCompare(b.openAt || ""));
-    for (const it of list) { const k = dayKey(it.firstSeenAt) || "?"; (groups.get(k) || groups.set(k, []).get(k)).push(it); }
+    groups.sort((a, b) => (b.firstSeenAt || "").localeCompare(a.firstSeenAt || "") || (a.openAt || "").localeCompare(b.openAt || ""));
+    for (const g of groups) { const k = dayKey(g.firstSeenAt) || "?"; (byDay.get(k) || byDay.set(k, []).get(k)).push(g); }
   }
-  if (!groups.size && !undated.length) return `<div class="empty">조건에 맞는 티켓오픈 소식이 없어요.</div>`;
+  if (!byDay.size && !undated.length) return `<div class="empty">조건에 맞는 티켓오픈 소식이 없어요.</div>`;
   let html = "";
-  for (const [k, list] of groups) {
-    const { md, dow } = fmtDay(k);
-    const sub = state.sort === "open" ? `<span class="dday">${ddayLabel(k)}</span>` : `<div class="meta" style="text-align:left">수집일</div>`;
+  for (const [k, list] of byDay) {
+    const { md, dow, wd } = fmtDay(k);
+    const sub = state.sort === "open" ? `<span class="dday">${ddayLabel(k)}</span>` : `<span class="dday" style="color:var(--muted)">수집일</span>`;
     html += `<section class="day ${k === today && state.sort === "open" ? "is-today" : ""}">
-      <div class="day-head"><span class="date">${md}</span><span class="dow">(${dow})</span><br>${sub}</div>
+      <div class="day-head ${wd === 0 ? "sun" : wd === 6 ? "sat" : ""}"><span class="date">${md}</span><span class="dow">(${dow})</span><br>${sub}</div>
       <div class="rows">${list.map(card).join("")}</div></section>`;
   }
   if (undated.length) {
-    html += `<section class="day"><div class="day-head"><span class="date">일시 미정</span></div>
+    html += `<section class="day"><div class="day-head"><span class="date" style="font-size:18px">일시 미정</span></div>
       <div class="rows">${undated.map(card).join("")}</div></section>`;
   }
   return html;
 }
 
 function renderCal() {
-  const items = filtered().filter((it) => it.openAt);
   const byDay = new Map();
-  for (const it of items.sort((a, b) => a.openAt.localeCompare(b.openAt))) {
-    const k = dayKey(it.openAt); (byDay.get(k) || byDay.set(k, []).get(k)).push(it);
+  for (const g of groupItems(filtered().filter((it) => it.openAt))) {
+    const k = dayKey(g.openAt); (byDay.get(k) || byDay.set(k, []).get(k)).push(g);
   }
   const today = todayKey();
   if (!state.month) state.month = today.slice(0, 7);
@@ -297,30 +358,37 @@ function renderCal() {
   const start = new Date(first); start.setUTCDate(1 - first.getUTCDay());
   const weeks = Math.ceil((first.getUTCDay() + new Date(Date.UTC(y, m, 0)).getUTCDate()) / 7);
   const MAX = 4;
-  let cells = DOW.map((d, i) => `<div class="dow-h ${i === 0 ? "sun" : i === 6 ? "sat" : ""}">${d}</div>`).join("");
+  let cells = DOW_FULL.map((d, i) => `<div class="dow-h ${i === 0 ? "sun" : i === 6 ? "sat" : ""}">${d}</div>`).join("");
   for (let i = 0; i < weeks * 7; i++) {
     const d = new Date(start); d.setUTCDate(start.getUTCDate() + i);
     const k = d.toISOString().slice(0, 10);
     const list = byDay.get(k) || [];
-    const cls = ["cell", d.getUTCMonth() !== m - 1 && "out", k === today && "today", k === state.selected && "selected", d.getUTCDay() === 0 && "sun", d.getUTCDay() === 6 && "sat"].filter(Boolean).join(" ");
+    const cls = ["cell", d.getUTCMonth() !== m - 1 && "out", k < today && "past", k === today && "today", k === state.selected && "selected",
+      d.getUTCDay() === 0 && "sun", d.getUTCDay() === 6 && "sat"].filter(Boolean).join(" ");
     cells += `<div class="${cls}" data-day="${k}"><span class="num">${d.getUTCDate()}</span>
-      ${list.slice(0, MAX).map((it) => `<div class="ev" title="${esc(timeOf(it.openAt) + " " + it.title)}"><span class="dot ${it.source}"></span><span class="t">${timeOf(it.openAt)}</span><span class="n">${esc(shortTitle(it.title))}</span></div>`).join("")}
+      ${list.slice(0, MAX).map((g) => `<div class="ev" title="${esc(timeOf(g.openAt) + " " + g.title)}"><span class="sbs">${g.sources.map(sb).join("")}</span><span class="t">${timeOf(g.openAt)}</span><span class="n">${esc(shortTitle(g.title))}</span></div>`).join("")}
       ${list.length > MAX ? `<div class="more">+${list.length - MAX}</div>` : ""}</div>`;
   }
   const sel = byDay.get(state.selected) || [];
   const { md, dow } = fmtDay(state.selected);
-  const panel = `<h3>${md} (${dow}) <span class="meta">${sel.length ? sel.length + "건 · " + ddayLabel(state.selected) : ""}</span></h3>
-    ${sel.length ? sel.map((it) => `<div class="p-item">
-      <a class="thumb" href="${esc(it.url)}" target="_blank" rel="noopener" ${thumb(it)} aria-label="공지 보기"></a>
-      <div><div class="title"><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a></div>
-        ${period(it)}
-        <div class="sub"><b>${timeOf(it.openAt)}</b>${srcBadge(it)}${tags(it)}</div>
-        ${it.place ? `<div class="sub">${esc(it.place)}</div>` : ""}</div></div>`).join("") : `<div class="empty" style="padding:32px 0">이날은 오픈 소식이 없어요.</div>`}`;
+  const panel = `<h3>${md} (${dow})</h3><div class="cnt">${sel.length ? `${sel.length}건 · ${ddayLabel(state.selected)}` : "이날은 오픈 소식이 없어요."}</div>
+    ${sel.map((g) => `<div class="p-item">
+      <a class="thumb" href="${esc(g.url)}" target="_blank" rel="noopener" ${thumbStyle(g)} aria-label="공지 보기"></a>
+      <div>
+        <div class="title"><a href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.title)}</a>${g.isNew ? `<span class="new">NEW</span>` : ""}</div>
+        ${periodHtml(g)}
+        ${slotsHtml(g)}
+        ${g.place ? `<div class="place">${esc(g.place)}</div>` : ""}
+      </div></div>`).join("")}`;
+  const legend = Object.keys(SOURCES).map((s) => `<span>${sb(s)}${SOURCES[s]}</span>`).join("") + `<span><i class="past-sw"></i>지난 날짜</span>`;
   return `<div class="cal-layout"><div>
-      <div class="cal-head"><h2>${y}년 ${m}월</h2>
-        <button class="icon-btn" data-nav="-1" aria-label="이전 달">‹</button>
-        <button class="icon-btn" data-nav="0">오늘</button>
-        <button class="icon-btn" data-nav="1" aria-label="다음 달">›</button></div>
+      <div class="cal-head">
+        <button class="circle" data-nav="-1" aria-label="이전 달">‹</button>
+        <h2>${y}년 ${m}월</h2>
+        <button class="circle" data-nav="1" aria-label="다음 달">›</button>
+        <button class="today-btn" data-nav="0">오늘</button>
+      </div>
+      <div class="legend">${legend}</div>
       <div class="grid">${cells}</div></div>
     <aside class="panel">${panel}</aside></div>`;
 }
@@ -329,19 +397,18 @@ function render() {
   document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.view === state.view));
   $("#chips").innerHTML = Object.entries(SOURCES).map(([k, v]) => {
     const n = state.items.filter((it) => it.source === k).length;
-    return `<button class="chip" data-src="${k}" aria-pressed="${state.on.has(k)}"><span class="dot ${k}"></span>${v} <span class="meta">${n}</span></button>`;
+    return `<button class="chip" data-src="${k}" aria-pressed="${state.on.has(k)}">${sb(k)}${v} <span class="n">${n}</span></button>`;
   }).join("");
   $("#sort").value = state.sort;
   $("#past").checked = state.past;
   $("#sort").style.display = state.view === "list" ? "" : "none";
-  $("#past").parentElement.style.display = state.view === "list" ? "" : "none";
+  $("#past-wrap").style.display = state.view === "list" ? "" : "none";
   $("#main").innerHTML = state.view === "list" ? renderList() : renderCal();
   save();
 }
 
 document.addEventListener("click", (e) => {
-  const cp = e.target.closest("[data-copy]");
-  if (cp) { copyText(cp); return; }
+  const cp = e.target.closest("[data-copy]"); if (cp) { copyText(cp); return; }
   const v = e.target.closest("[data-view]"); if (v) { state.view = v.dataset.view; return render(); }
   const c = e.target.closest("[data-src]");
   if (c) { const k = c.dataset.src; state.on.has(k) ? state.on.delete(k) : state.on.add(k); return render(); }
@@ -349,7 +416,7 @@ document.addEventListener("click", (e) => {
   if (n) {
     const d = Number(n.dataset.nav);
     if (d === 0) { state.month = todayKey().slice(0, 7); state.selected = todayKey(); }
-    else { const [y, m] = state.month.split("-").map(Number); const dt = new Date(Date.UTC(y, m - 1 + d, 1)); state.month = dt.toISOString().slice(0, 7); }
+    else { const [y, m] = state.month.split("-").map(Number); state.month = new Date(Date.UTC(y, m - 1 + d, 1)).toISOString().slice(0, 7); }
     return render();
   }
   const cell = e.target.closest("[data-day]");
@@ -375,18 +442,19 @@ async function copyText(btn) {
     document.body.appendChild(ta); ta.select();
     try { ok = document.execCommand("copy"); } catch { ok = false; }
     ta.remove();
-    if (!ok) btn.textContent = "복사 실패";
   }
-  if (ok) { btn.textContent = "복사됨"; btn.classList.add("done"); }
-  setTimeout(() => { btn.textContent = "복사"; btn.classList.remove("done"); }, ok ? 1200 : 2500);
+  btn.textContent = ok ? "복사됨" : "복사 실패";
+  btn.classList.toggle("done", ok);
+  setTimeout(() => { btn.textContent = "복사"; btn.classList.remove("done"); }, 1400);
 }
 
 function applyDb(db) {
   state.items = db.items || [];
+  state.firstBatch = state.items.map((it) => dayKey(it.firstSeenAt)).filter(Boolean).sort()[0] || null;
   const at = db.updatedAt ? new Date(db.updatedAt) : null;
   const status = Object.entries(db.sources || {}).map(([k, s]) =>
     `<span class="${s.ok ? "" : "bad"}" title="${esc(s.error || "")}">${SOURCES[k]} ${s.ok ? "✓" : "실패"}</span>`).join("");
-  $("#meta").innerHTML = `마지막 수집 ${at ? at.toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "-"}<span class="src-status">${status}</span>`;
+  $("#meta").innerHTML = `마지막 수집 ${at ? at.toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "-"} <span class="src-status">${status}</span>`;
   render();
 }
 
@@ -395,7 +463,7 @@ $("#refresh").addEventListener("click", async () => {
   btn.disabled = true; btn.textContent = "↻ 가져오는 중…"; msg.className = "refresh-msg"; msg.textContent = "";
   try {
     const r = await fetch("/api/refresh", { method: "POST" });
-    if (r.status === 404 || r.status === 405 || r.status === 501) throw new Error("이 주소에서는 업데이트 기능을 쓸 수 없어요(Vercel 배포에서만 동작)");
+    if ([404, 405, 501].includes(r.status)) throw new Error("이 주소에서는 업데이트 기능을 쓸 수 없어요(Vercel 배포에서만 동작)");
     const res = await r.json();
     if (!r.ok) throw new Error(res.error || `오류 ${r.status}`);
     applyDb(res.db);
@@ -418,7 +486,6 @@ async function load() {
   }
   throw new Error("items.json을 찾을 수 없어요");
 }
-
 load().then(applyDb).catch((e) => { $("#meta").textContent = e.message; $("#main").innerHTML = `<div class="empty">${esc(e.message)}</div>`; });
 </script>
 </body>
