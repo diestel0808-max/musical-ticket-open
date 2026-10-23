@@ -2,7 +2,7 @@ name: 수집
 
 on:
   schedule:
-    - cron: "0 23 * * *" # 매일 08:00 KST (UTC 23:00). GitHub 사정으로 수십 분 늦을 수 있음
+    - cron: "0 21 * * *" # 06:00 KST (UTC 21:00). GitHub 예약 실행은 1~2시간씩 밀리곤 해서 8시 전에 끝나도록 일찍 건다
   workflow_dispatch: # Actions 탭에서 수동 실행
 
 permissions:

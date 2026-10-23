@@ -143,7 +143,9 @@ h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; }
 .ev .n { overflow: hidden; text-overflow: ellipsis; }
 .cell.past .ev { opacity: .6; }
 .more { font-size: 12px; font-weight: 700; color: var(--accent-text); padding-top: 2px; }
-aside.panel { border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; align-self: start; position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: auto; background: var(--surface); }
+.side { display: flex; flex-direction: column; gap: 16px; align-self: start; position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: auto; }
+aside.panel { border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; background: var(--surface); }
+.open-at { font-size: 12.5px; font-weight: 700; color: var(--accent-text); margin-bottom: 2px; font-variant-numeric: tabular-nums; }
 aside.panel h3 { margin: 0 0 4px; font-size: 18px; font-weight: 800; letter-spacing: -0.02em; }
 aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
 .p-item { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 12px; padding: 14px 0; border-top: 1px solid var(--line); }
@@ -161,7 +163,7 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
   .day-head { position: static; }
   .rows { grid-template-columns: 1fr; }
   .cal-layout { grid-template-columns: 1fr; }
-  aside.panel { position: static; max-height: none; }
+  .side { position: static; max-height: none; }
   .cell { min-height: 64px; padding: 4px; }
   .ev .n, .ev .t { display: none; }
   .search { width: 100%; }
@@ -306,6 +308,9 @@ function slotsHtml(g) {
 }
 const thumbStyle = (g) => g.image ? `style="background-image:url('${esc(g.image)}')"` : "";
 
+// "10/30 (금) 14:00"
+const openLabel = (iso) => { const { md, dow } = fmtDay(dayKey(iso)); return `${md} (${dow}) ${timeOf(iso)}`; };
+
 function card(g) {
   return `<div class="card">
     <div class="time">${timeOf(g.openAt) || "—"}</div>
@@ -375,15 +380,21 @@ function renderCal() {
   }
   const sel = byDay.get(state.selected) || [];
   const { md, dow } = fmtDay(state.selected);
-  const panel = `<h3>${md} (${dow})</h3><div class="cnt">${sel.length ? `${sel.length}건 · ${ddayLabel(state.selected)}` : "이날은 오픈 소식이 없어요."}</div>
-    ${sel.map((g) => `<div class="p-item">
+  const pItem = (g, showOpen) => `<div class="p-item">
       <a class="thumb" href="${esc(g.url)}" target="_blank" rel="noopener" ${thumbStyle(g)} aria-label="공지 보기"></a>
       <div>
+        ${showOpen && g.openAt ? `<div class="open-at">${openLabel(g.openAt)} 오픈</div>` : ""}
         <div class="title"><a href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.title)}</a>${g.isNew ? `<span class="new">NEW</span>` : ""}</div>
         ${periodHtml(g)}
         ${slotsHtml(g)}
         ${g.place ? `<div class="place">${esc(g.place)}</div>` : ""}
-      </div></div>`).join("")}`;
+      </div></div>`;
+  const panel = `<h3>${md} (${dow})</h3><div class="cnt">${sel.length ? `${sel.length}건 · ${ddayLabel(state.selected)}` : "이날은 오픈 소식이 없어요."}</div>
+    ${sel.map((g) => pItem(g, false)).join("")}`;
+  // 그날 아침 수집에서 새로 올라온 소식(오픈일과 상관없이). 사이트별 첫 수집분은 제외
+  const added = groupItems(filtered().filter((it) => dayKey(it.firstSeenAt) === state.selected && state.selected > (state.firstBatch[it.source] || "")));
+  const addedBox = added.length ? `<aside class="panel"><h3>${md} 아침 새 소식</h3><div class="cnt">${added.length}건 · 오픈일순</div>
+    ${added.map((g) => pItem(g, true)).join("")}</aside>` : "";
   const legend = Object.keys(SOURCES).map((s) => `<span>${sb(s)}${SOURCES[s]}</span>`).join("") + `<span><i class="past-sw"></i>지난 날짜</span>`;
   return `<div class="cal-layout"><div>
       <div class="cal-head">
@@ -394,7 +405,7 @@ function renderCal() {
       </div>
       <div class="legend">${legend}</div>
       <div class="grid">${cells}</div></div>
-    <aside class="panel">${panel}</aside></div>`;
+    <div class="side"><aside class="panel">${panel}</aside>${addedBox}</div></div>`;
 }
 
 function render() {
