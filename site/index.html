@@ -175,7 +175,7 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
   <header class="top">
     <div>
       <h1>뮤지컬 티켓오픈</h1>
-      <p class="sub-title">NOL · 티켓링크 · 예스24 · 멜론티켓의 뮤지컬 티켓오픈 공지를 매일 아침 8시에 업데이트해요.<br>기간을 확인할 수 없는 경우 사이트로 이동해 확인해주세요.</p>
+      <p class="sub-title">NOL · 티켓링크 · 예스24 · 멜론티켓의 뮤지컬 티켓오픈 공지를 매일 아침 8시에 업데이트해요.<br>기간을 확인할 수 없는 경우 사이트로 이동해 확인해주세요.<br>뮤지컬 배우 콘서트나 미처 담기지 못한 소식이 있을 수 있으니, 꼭 예매 사이트에서도 한 번 더 확인해 주세요.</p>
     </div>
     <div class="status">
       <div class="status-row"><span id="meta">불러오는 중…</span><button class="refresh" id="refresh" title="세 사이트에서 지금 다시 가져오기">↻ 지금 업데이트</button></div>
@@ -393,7 +393,7 @@ function renderCal() {
     ${sel.map((g) => pItem(g, false)).join("")}`;
   // 그날 아침 수집에서 새로 올라온 소식(오픈일과 상관없이). 사이트별 첫 수집분은 제외
   const added = groupItems(filtered().filter((it) => dayKey(it.firstSeenAt) === state.selected && state.selected > (state.firstBatch[it.source] || "")));
-  const addedBox = added.length ? `<aside class="panel"><h3>${md} 아침 새 소식</h3><div class="cnt">${added.length}건 · 오픈일순</div>
+  const addedBox = added.length ? `<aside class="panel"><h3>${md} UPDATE</h3><div class="cnt">${added.length}건 · 오픈일순</div>
     ${added.map((g) => pItem(g, true)).join("")}</aside>` : "";
   const legend = Object.keys(SOURCES).map((s) => `<span>${sb(s)}${SOURCES[s]}</span>`).join("") + `<span><i class="past-sw"></i>지난 날짜</span>`;
   return `<div class="cal-layout"><div>
