@@ -11,6 +11,10 @@ NOL(구 인터파크), 티켓링크, 예스24, 멜론티켓의 **뮤지컬 티�
 
 외부 패키지 없이 Python 3.9+ 표준 라이브러리만 씁니다.
 
+## 공연중 탭
+`scraper/ongoing.py`가 KOPIS(공연예술통합전산망) 공개 API로 오늘 공연 중인 **서울** 뮤지컬을 모아 `data/ongoing.json`에 저장합니다(티켓오픈 데이터와 별개).
+오픈런·종료일이 1년 넘게 남은 장기 공연·아동극은 제외합니다. GitHub Secrets에 `KOPIS_KEY`가 있어야 동작합니다.
+
 ## 구성
 - `scraper/` — 수집기. `python3 -m scraper.main`이 `data/items.json`을 갱신
 - `site/index.html` — 정적 페이지(빌드 단계 없음)

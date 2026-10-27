@@ -7,6 +7,7 @@
 """
 import json
 import os
+import re
 import sys
 import traceback
 import xml.etree.ElementTree as ET
@@ -56,13 +57,29 @@ def list_ongoing(key, today):
         page += 1
 
 
+# KOPIS 예매처 이름 → 이 사이트에서 쓰는 사이트 키. NOL은 옛 인터파크 주소를 NOL 상품 페이지로 바꾼다.
+def booking_link(name, url):
+    m = re.search(r"GoodsCode=(\d+)", url)
+    if "놀유니버스" in name or "인터파크" in name or "interpark" in url:
+        return {"source": "nol", "name": "NOL", "url": f"https://nol.yanolja.com/ticket/products/{m.group(1)}" if m else url}
+    if "티켓링크" in name or "ticketlink" in url:
+        return {"source": "ticketlink", "name": "티켓링크", "url": url.replace("http://", "https://")}
+    if "예스24" in name or "yes24" in url:
+        return {"source": "yes24", "name": "예스24", "url": url}
+    if "멜론" in name or "melon" in url:
+        return {"source": "melon", "name": "멜론티켓", "url": url}
+    return {"source": "", "name": re.sub(r"\s*(주식회사|\(주\)|㈜)\s*", "", name), "url": url}
+
+
 def detail(key, pid):
     db = kopis(f"/{pid}", service=key).find("./db")
     links = []
     for r in db.findall("./relates/relate"):
         name, url = text(r, "relatenm"), text(r, "relateurl")
         if url:
-            links.append({"name": name, "url": url})
+            links.append(booking_link(name, url))
+    # 4대 예매처를 앞에
+    links.sort(key=lambda l: ["nol", "ticketlink", "yes24", "melon", ""].index(l["source"]))
     return {
         "age": text(db, "prfage"),
         "child": text(db, "child"),
@@ -89,17 +106,21 @@ def collect(key, prev, log=print):
         if is_kids(title):
             skipped["kids"] += 1
             continue
+        m = re.search(r"\s*\[([^\]]+)\]\s*$", title)
+        area = m.group(1) if m else ""
         it = {
             "id": pid,
-            "title": title,
+            "title": title[: m.start()] if m else title,
+            "area": area,  # 예: 대학로, 서울, 서울 광진
             "start": kdate(text(row, "prfpdfrom")),
             "end": end,
             "place": text(row, "fcltynm"),
-            "image": text(row, "poster").replace("http://", "https://"),
+            # www.kopis.or.kr은 https에서 다른 주소로 넘겨서, 바로 https://kopis.or.kr 로
+            "image": re.sub(r"^https?://(www\.)?kopis\.or\.kr", "https://kopis.or.kr", text(row, "poster")),
             "url": f"https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id={pid}",
         }
         d = cache.get(pid, {}).get("detail")
-        if d is None:
+        if not d or any("source" not in l for l in d.get("links", [])):
             try:
                 d = detail(key, pid)
             except Exception as e:

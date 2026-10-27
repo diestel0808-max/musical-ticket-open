@@ -27,6 +27,7 @@
   }
 }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html, body { margin: 0; }
 body {
   background: var(--bg); color: var(--text);
@@ -51,6 +52,12 @@ h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; }
 .refresh[disabled] { opacity: .55; cursor: progress; }
 .refresh-msg { margin-top: 6px; min-height: 18px; font-size: 12.5px; }
 .refresh-msg.ok { color: var(--accent-text); }
+
+/* ── 큰 탭 ── */
+.tabs { display: flex; gap: 28px; margin-top: 4px; }
+.tabs button { background: none; border: 0; padding: 10px 0 12px; font-size: 16px; font-weight: 800; letter-spacing: -0.02em; color: var(--faint); border-bottom: 2px solid transparent; margin-bottom: -1px; cursor: pointer; }
+.tabs button[aria-selected="true"] { color: var(--text); border-bottom-color: var(--text); }
+.tabs button:hover { color: var(--text); }
 
 /* ── 툴바 ── */
 .toolbar {
@@ -156,6 +163,35 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
 .p-item .period { flex-direction: column; align-items: flex-start; gap: 4px; }
 .p-item .slots { margin-top: 6px; }
 
+/* ── 공연중: 목록 ── */
+.og-count { color: var(--muted); font-size: 13px; margin-left: 4px; }
+.og-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; padding-top: 22px; }
+.og-card { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 14px; border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; background: var(--surface); }
+.og-card:hover { border-color: #cfcfcf; }
+.og-card .thumb { width: 84px; height: 116px; }
+.og-left { font-size: 12.5px; font-weight: 700; color: var(--accent-text); margin-bottom: 3px; }
+.og-left.soon { color: var(--sun); }
+.area-tag { display: inline-block; vertical-align: 1px; margin-left: 6px; font-size: 11px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; }
+.slot.etc { color: var(--muted); }
+
+/* ── 공연중: 타임라인 ── */
+.tl { position: relative; margin-top: 22px; }
+.tl-row { display: grid; grid-template-columns: 260px minmax(0, 1fr); align-items: center; border-bottom: 1px solid var(--line); }
+.tl-row.head { border-bottom: 2px solid var(--line-strong); }
+.tl-name { padding: 9px 14px 9px 0; font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tl-name a:hover { text-decoration: underline; }
+.tl-name .pl { color: var(--faint); font-weight: 500; margin-left: 6px; font-size: 12px; }
+.tl-track { position: relative; height: 38px; }
+.tl-row.head .tl-track { height: 30px; }
+.tl-mline { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--line); }
+.tl-mlabel { position: absolute; top: 7px; font-size: 12px; font-weight: 600; color: var(--muted); padding-left: 5px; white-space: nowrap; }
+.tl-bar { position: absolute; top: 12px; height: 14px; border-radius: 999px; border: 1px solid var(--accent); }
+.tl-bar.soon { border-color: var(--sun); }
+.tl-end { position: absolute; top: 11px; font-size: 11.5px; font-weight: 700; color: var(--accent-text); white-space: nowrap; padding-left: 6px; font-variant-numeric: tabular-nums; }
+.tl-end.soon { color: var(--sun); }
+.tl-today { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--sun); pointer-events: none; }
+.tl-today span { position: absolute; top: 8px; left: 5px; font-size: 11px; font-weight: 800; color: var(--sun); white-space: nowrap; }
+
 @media (max-width: 960px) {
   .wrap { padding: 0 16px 48px; }
   header.top { flex-direction: column; align-items: flex-start; }
@@ -168,6 +204,9 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
   .cell { min-height: 64px; padding: 4px; }
   .ev .n, .ev .t { display: none; }
   .search { width: 100%; }
+  .og-grid { grid-template-columns: 1fr; }
+  .tl-row { grid-template-columns: 130px minmax(0, 1fr); }
+  .tl-name .pl { display: none; }
 }
 </style>
 </head>
@@ -175,21 +214,37 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
 <div class="wrap">
   <header class="top">
     <div>
-      <h1>뮤지컬 티켓오픈</h1>
+      <h1 id="h1">뮤지컬 티켓오픈</h1>
+      <div id="open-intro">
       <p class="sub-title">NOL · 티켓링크 · 예스24 · 멜론티켓의 뮤지컬 티켓오픈 공지를 매일 오전 10시 이후에 업데이트해요 😊</p>
       <ul class="notes">
         <li>업데이트는 오전 10시에 시작되지만, 실제 반영은 보통 낮 12시~1시쯤 돼요.</li>
         <li>기간을 확인할 수 없는 경우 사이트로 이동해 확인해주세요.</li>
         <li>미처 담기지 못한 소식이 있을 수 있으니, 꼭 예매 사이트에서도 한 번 더 확인해 주세요.</li>
       </ul>
+      </div>
+      <div id="og-intro" hidden>
+      <p class="sub-title">오늘 서울에서 공연 중인 뮤지컬을 모아 보여드려요 🎭</p>
+      <ul class="notes">
+        <li>오픈런·1년 넘게 이어지는 장기 공연, 지방 투어, 가족·아동극은 제외했어요.</li>
+        <li>공연예술통합전산망(KOPIS) 정보를 바탕으로 매일 오전에 업데이트해요.</li>
+        <li>회차·캐스팅 등 자세한 일정은 예매 사이트에서 확인해 주세요.</li>
+      </ul>
+      </div>
     </div>
-    <div class="status">
+    <div class="status" id="open-status">
       <div class="status-row"><span id="meta">불러오는 중…</span><button class="refresh" id="refresh" title="세 사이트에서 지금 다시 가져오기">↻ 지금 업데이트</button></div>
       <div class="refresh-msg" id="refresh-msg"></div>
     </div>
+    <div class="status" id="og-status" hidden><span id="og-meta">불러오는 중…</span></div>
   </header>
 
-  <div class="toolbar">
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="open" aria-selected="true">티켓오픈</button>
+    <button role="tab" data-tab="ongoing" aria-selected="false">공연중</button>
+  </nav>
+
+  <div class="toolbar" id="open-toolbar">
     <div class="seg" role="group" aria-label="보기">
       <button data-view="list" aria-pressed="true">목록</button>
       <button data-view="cal" aria-pressed="false">캘린더</button>
@@ -205,6 +260,24 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
   </div>
 
   <main id="main"></main>
+
+  <div class="toolbar" id="og-toolbar" hidden>
+    <div class="seg" role="group" aria-label="공연중 보기">
+      <button data-ogview="list" aria-pressed="true">목록</button>
+      <button data-ogview="timeline" aria-pressed="false">타임라인</button>
+    </div>
+    <span class="og-count" id="og-count"></span>
+    <span class="spacer"></span>
+    <select id="og-sort" aria-label="정렬">
+      <option value="end">막 내림 임박순</option>
+      <option value="start">최근 개막순</option>
+      <option value="title">가나다순</option>
+    </select>
+    <label class="toggle"><input type="checkbox" id="og-dhr"> 대학로만</label>
+    <label class="toggle"><input type="checkbox" id="og-soon"> 2주 안에 막 내림</label>
+    <input class="search" id="og-q" type="search" placeholder="작품명·공연장 검색">
+  </div>
+  <main id="og-main" hidden></main>
 </div>
 
 <script>
@@ -512,6 +585,129 @@ async function load() {
   throw new Error("items.json을 찾을 수 없어요");
 }
 load().then(applyDb).catch((e) => { $("#meta").textContent = e.message; $("#main").innerHTML = `<div class="empty">${esc(e.message)}</div>`; });
+
+/* ════════ 공연중 탭 (티켓오픈과 상태·데이터 완전히 분리) ════════ */
+const og = { items: [], loaded: false, view: "list", sort: "end", dhr: false, soon: false, q: "" };
+try { Object.assign(og, JSON.parse(localStorage.getItem("mto-og") || "{}"), { items: [], loaded: false }); } catch {}
+const saveOg = () => { try { localStorage.setItem("mto-og", JSON.stringify({ view: og.view, sort: og.sort, dhr: og.dhr, soon: og.soon })); } catch {} };
+const daysLeft = (end) => ddays(end);
+const leftLabel = (end) => { const d = daysLeft(end); return d === 0 ? "오늘 막 내림" : `${d}일 남음`; };
+const isDaehakro = (it) => it.area === "대학로" || /대학로/.test(it.place);
+
+function ogFiltered() {
+  const q = og.q.trim().toLowerCase();
+  const list = og.items.filter((it) =>
+    (!og.dhr || isDaehakro(it)) && (!og.soon || daysLeft(it.end) <= 14) &&
+    (!q || (it.title + " " + it.place).toLowerCase().includes(q)));
+  const by = {
+    end: (a, b) => a.end.localeCompare(b.end) || a.title.localeCompare(b.title),
+    start: (a, b) => b.start.localeCompare(a.start) || a.title.localeCompare(b.title),
+    title: (a, b) => a.title.localeCompare(b.title, "ko"),
+  }[og.sort];
+  return list.sort(by);
+}
+
+function ogLinks(it) {
+  const links = (it.detail && it.detail.links) || [];
+  const main = links.filter((l) => l.source);
+  const etc = links.filter((l) => !l.source);
+  if (!links.length) return "";
+  return `<div class="slots">${main.map((l) => `<a class="slot" href="${esc(l.url)}" target="_blank" rel="noopener">${sb(l.source)}${esc(l.name)} <span class="arr">↗</span></a>`).join("")}${
+    etc.length ? `<a class="slot etc" href="${esc(etc[0].url)}" target="_blank" rel="noopener" title="${esc(etc.map((l) => l.name).join(", "))}">${main.length ? `외 ${etc.length}곳` : esc(etc[0].name) + (etc.length > 1 ? ` 외 ${etc.length - 1}곳` : "")} <span class="arr">↗</span></a>` : ""}</div>`;
+}
+const ogUrl = (it) => (((it.detail && it.detail.links) || [])[0] || {}).url || it.url;
+
+function ogCard(it) {
+  const soon = daysLeft(it.end) <= 14;
+  const dates = range({ start: it.start, end: it.end });
+  return `<div class="og-card">
+    <a class="thumb" href="${esc(ogUrl(it))}" target="_blank" rel="noopener" ${it.image ? `style="background-image:url('${esc(it.image.replace(/^https?:\/\/(www\.)?kopis\.or\.kr/, "https://kopis.or.kr"))}')"` : ""} aria-label="예매 페이지"></a>
+    <div>
+      <div class="og-left ${soon ? "soon" : ""}">${leftLabel(it.end)}</div>
+      <div class="title"><a href="${esc(ogUrl(it))}" target="_blank" rel="noopener">${esc(it.title)}</a>${it.area && it.area !== "서울" ? `<span class="area-tag">${esc(it.area)}</span>` : ""}</div>
+      <div class="period"><span class="dates"><span class="val">${dates}</span><button class="copy" data-copy="${esc(dates)}" title="공연기간 복사">복사</button></span></div>
+      ${ogLinks(it)}
+      <div class="place">${esc(it.place)}${it.detail && it.detail.age ? ` · ${esc(it.detail.age)}` : ""}</div>
+    </div>
+  </div>`;
+}
+
+function ogTimeline(list) {
+  if (!list.length) return "";
+  // 보여줄 범위: 지난달 1일 ~ 가장 늦게 끝나는 달의 말일
+  const t = keyToDate(todayKey());
+  const from = new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth() - 1, 1));
+  const last = keyToDate(list.reduce((m, it) => (it.end > m ? it.end : m), todayKey()));
+  const to = new Date(Date.UTC(last.getUTCFullYear(), last.getUTCMonth() + 1, 1));
+  const span = to - from;
+  const pct = (k) => Math.max(0, Math.min(100, ((keyToDate(k) - from) / span) * 100));
+  const months = [];
+  for (let d = new Date(from); d < to; d.setUTCMonth(d.getUTCMonth() + 1)) months.push(new Date(d));
+  const lines = months.map((d) => `<div class="tl-mline" style="left:${pct(d.toISOString().slice(0, 10))}%"></div>`).join("");
+  const head = `<div class="tl-row head"><div class="tl-name" style="color:var(--muted)">작품</div><div class="tl-track">${months.map((d) => {
+    const k = d.toISOString().slice(0, 10);
+    return `<div class="tl-mline" style="left:${pct(k)}%"></div><div class="tl-mlabel" style="left:${pct(k)}%">${d.getUTCMonth() === 0 || d === months[0] ? `${String(d.getUTCFullYear()).slice(2)}년 ` : ""}${d.getUTCMonth() + 1}월</div>`;
+  }).join("")}</div></div>`;
+  const today = pct(todayKey());
+  const rows = list.map((it) => {
+    const soon = daysLeft(it.end) <= 14;
+    const a = pct(it.start), b = pct(it.end) + 100 / (span / 864e5); // 종료일 하루 포함
+    const done = Math.max(0, Math.min(100, ((today - a) / (b - a)) * 100));
+    const col = soon ? "var(--sun)" : "var(--accent)";
+    return `<div class="tl-row"><div class="tl-name" title="${esc(it.title + " · " + it.place)}"><a href="${esc(ogUrl(it))}" target="_blank" rel="noopener">${esc(it.title)}</a><span class="pl">${esc(it.place)}</span></div>
+      <div class="tl-track">${lines}
+        <div class="tl-bar ${soon ? "soon" : ""}" title="${range({ start: it.start, end: it.end })}" style="left:${a}%;width:${b - a}%;background:linear-gradient(90deg, ${col} ${done}%, var(--surface) ${done}%)"></div>
+        <div class="tl-end ${soon ? "soon" : ""}" style="left:${b}%">${ymd(it.end).slice(3)}</div>
+      </div></div>`;
+  }).join("");
+  return `<div class="tl">${head}${rows}<div class="tl-today" style="left:calc(260px + (100% - 260px) * ${today / 100})"><span>오늘</span></div></div>`;
+}
+
+function renderOg() {
+  document.querySelectorAll("[data-ogview]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.ogview === og.view));
+  $("#og-sort").value = og.sort; $("#og-dhr").checked = og.dhr; $("#og-soon").checked = og.soon;
+  if (!og.loaded) { $("#og-main").innerHTML = `<div class="empty">불러오는 중…</div>`; return; }
+  const list = ogFiltered();
+  $("#og-count").textContent = `${list.length}편`;
+  $("#og-main").innerHTML = !list.length ? `<div class="empty">조건에 맞는 공연이 없어요.</div>`
+    : og.view === "list" ? `<div class="og-grid">${list.map(ogCard).join("")}</div>` : ogTimeline(list);
+  saveOg();
+}
+
+async function loadOg() {
+  for (const url of ["data/ongoing.json", "../data/ongoing.json"]) {
+    try { const r = await fetch(url, { cache: "no-cache" }); if (r.ok) return r.json(); } catch {}
+  }
+  throw new Error("공연중 데이터를 아직 불러올 수 없어요");
+}
+
+function setTab(tab) {
+  const ongoing = tab === "ongoing";
+  document.querySelectorAll("[data-tab]").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === tab));
+  $("#h1").textContent = ongoing ? "공연 중인 뮤지컬" : "뮤지컬 티켓오픈";
+  for (const id of ["open-intro", "open-status", "open-toolbar", "main"]) $("#" + id).hidden = ongoing;
+  for (const id of ["og-intro", "og-status", "og-toolbar", "og-main"]) $("#" + id).hidden = !ongoing;
+  if (location.hash !== (ongoing ? "#ongoing" : "")) history.replaceState(null, "", ongoing ? "#ongoing" : location.pathname + location.search);
+  if (ongoing && !og.loaded) {
+    renderOg();
+    loadOg().then((db) => {
+      og.items = db.items || []; og.loaded = true;
+      const at = db.updatedAt ? new Date(db.updatedAt).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "-";
+      $("#og-meta").innerHTML = `마지막 수집 ${at}${db.ok === false ? ` <span class="src-status"><span class="bad" title="${esc(db.error || "")}">수집 실패 — 이전 목록 표시 중</span></span>` : ""}`;
+      renderOg();
+    }).catch((e) => { $("#og-main").innerHTML = `<div class="empty">${esc(e.message)}</div>`; });
+  } else if (ongoing) renderOg();
+}
+
+document.addEventListener("click", (e) => {
+  const t = e.target.closest("[data-tab]"); if (t) return setTab(t.dataset.tab);
+  const v = e.target.closest("[data-ogview]"); if (v) { og.view = v.dataset.ogview; renderOg(); }
+});
+$("#og-sort").addEventListener("change", (e) => { og.sort = e.target.value; renderOg(); });
+$("#og-dhr").addEventListener("change", (e) => { og.dhr = e.target.checked; renderOg(); });
+$("#og-soon").addEventListener("change", (e) => { og.soon = e.target.checked; renderOg(); });
+$("#og-q").addEventListener("input", (e) => { og.q = e.target.value; renderOg(); });
+setTab(location.hash === "#ongoing" ? "ongoing" : "open");
 </script>
 </body>
 </html>
