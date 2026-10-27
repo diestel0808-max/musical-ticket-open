@@ -15,7 +15,7 @@ NOL(구 인터파크), 티켓링크, 예스24, 멜론티켓의 **뮤지컬 티�
 - `scraper/` — 수집기. `python3 -m scraper.main`이 `data/items.json`을 갱신
 - `site/index.html` — 정적 페이지(빌드 단계 없음)
 - `api/refresh.py` — Vercel 함수. 사이트의 「↻ 지금 업데이트」 버튼이 호출
-- `.github/workflows/update.yml` — 매일 08:00 KST 수집 후 커밋 → Vercel 자동 재배포
+- `.github/workflows/update.yml` — 매일 10:00 KST(실제로는 1~3시간 늦게 시작되기도 함) 수집 후 커밋 → Vercel 자동 재배포
 - `vercel.json` — `site/` + `data/`를 `public/`으로 복사해 서빙
 
 ## 로컬 실행
