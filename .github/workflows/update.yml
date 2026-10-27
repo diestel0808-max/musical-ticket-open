@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "0 1 * * *" # 10:00 KST (UTC 01:00). GitHub 예약 실행은 1~3시간 늦게 시작되곤 함
   workflow_dispatch: # Actions 탭에서 수동 실행
+  push:
+    branches: [main]
+    paths: ["scraper/ongoing.py"] # 공연중 수집기를 고치면 바로 한 번 돌려 확인
 
 permissions:
   contents: write
@@ -25,13 +28,18 @@ jobs:
       - name: 수집
         run: python -m scraper.main
 
+      - name: 공연중 수집 (KOPIS)
+        env:
+          KOPIS_KEY: ${{ secrets.KOPIS_KEY }}
+        run: python -m scraper.ongoing
+
       - name: 데이터 커밋 + Vercel 배포
         env:
           VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/items.json
+          git add data/
           git diff --cached --quiet && exit 0
           git commit -m "데이터 갱신 $(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M')"
           # 사이트의 「지금 업데이트」 버튼이 그 사이 커밋했을 수 있으니 최신을 받아 위에 얹는다
