@@ -10,7 +10,9 @@ import json
 import os
 import re
 import sys
+import time
 import traceback
+import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import timedelta
 from pathlib import Path
@@ -29,7 +31,17 @@ UPCOMING_DAYS = 7  # 개막 예정 탭: 오늘 기준 이 날수 안에 개막
 
 
 def kopis(path="", **params):
-    root = ET.fromstring(http(f"{API}{path}?{urlencode(params)}"))
+    # KOPIS는 연달아 요청하면 가끔 400을 돌려줘서, 잠깐 쉬었다가 두 번까지 다시 시도한다
+    for attempt in range(3):
+        try:
+            body = http(f"{API}{path}?{urlencode(params)}")
+            break
+        except urllib.error.HTTPError:
+            if attempt == 2:
+                raise
+            time.sleep(1.5 * (attempt + 1))
+    time.sleep(0.15)
+    root = ET.fromstring(body)
     err = root.find("./db/errmsg")
     if err is not None and (err.text or "").strip():
         raise RuntimeError(f"KOPIS 오류: {err.text.strip()}")

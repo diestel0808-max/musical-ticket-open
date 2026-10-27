@@ -17,21 +17,30 @@ import re
 from datetime import date, timedelta
 
 from .common import NOT_MUSICAL, now_kst
-from .ongoing import kdate, kopis, text
+from .ongoing import kopis, text
 
 # 제목에서 작품 이름만 남기기: [단독]/[지역] 머리말, '뮤지컬', 회차, ' - 지역' 꼬리 등을 뗀다
 BRACKET = re.compile(r"[<〈《「\[]\s*([^>〉》」\]]+?)\s*[>〉》」\]]")
 
 
+ROUND_TAIL = re.compile(r"\s*(\d+\s*차|마지막|프리뷰)\s*$")
+
+
 def work_name(title):
-    t = re.sub(r"^(\s*\[[^\]]*\]\s*)+", "", title)
+    lead = re.match(r"^(\s*\[[^\]]*\]\s*)+", title)
+    t = title[lead.end():] if lead else title
+    # '[식스 더 뮤지컬(SIX THE MUSICAL)] 1차'처럼 앞 대괄호가 곧 작품명인 경우
+    if lead and len(norm(ROUND_TAIL.sub("", t))) < 2:
+        t = re.search(r"\[([^\]]+)\]", lead.group(0)).group(1)
     m = BRACKET.search(t)
     if m:
         t = m.group(1)
     else:
-        t = re.sub(r"\s+-\s+\S+(\s*공연)?$", "", t)  # '… - 대구', '… - 부산 공연'
-        t = re.sub(r"\d+\s*차|마지막|프리뷰|티켓\s*오픈", " ", t)
-    t = re.sub(r"뮤지컬|^\s*20\d\d\s+", " ", t)  # '뮤지컬', 앞의 연도
+        # 회차 표시는 제목 끝에 붙은 것만 뗀다('우리의 마지막 순간들'의 '마지막'은 작품명)
+        t = ROUND_TAIL.sub("", t)
+        t = re.sub(r"\s+[-–]\s+\S+(\s*공연)?$", "", t)  # '… - 대구', '… – 10주년', '… - 부산 공연'
+    t = re.sub(r"\([^)]*\)", " ", t)  # '(SIX THE MUSICAL)' 같은 원제 병기
+    t = re.sub(r"^\s*(20\d\d\s+)?(프랑스\s+|낭독\s*)?뮤지컬\s*|^\s*20\d\d\s+", "", t)  # 앞의 연도·'뮤지컬'
     return re.sub(r"\s+", " ", t).strip()
 
 
@@ -39,19 +48,37 @@ def norm(s):
     return re.sub(r"[\s\W_]+", "", s or "").lower()
 
 
+def same_work(want, got):
+    """제목 표기가 조금 달라도 같은 작품인지: 한쪽이 다른 쪽을 포함하거나, 원하는 이름의 낱말이 모두 들어 있으면 같다고 본다.
+    예) '사의찬미 2026 2ND STAGE' ↔ '사의찬미', '안톤체홉 -청혼' ↔ '안톤체홉의 청혼'"""
+    w, g = norm(want), norm(got)
+    if not w or not g:
+        return False
+    if w in g or g in w:
+        return True
+    words = [norm(x) for x in want.split() if len(norm(x)) >= 2]
+    return len(words) >= 2 and all(x in g for x in words)
+
+
 def kopis_genres(key, name, around):
-    """KOPIS에서 이름이 같은 공연들의 장르 집합. KOPIS 검색 기간은 한 번에 31일까지라 공연 시작일 앞뒤로 찾는다."""
-    want = norm(name)
-    if len(want) < 2:
+    """KOPIS에서 같은 작품으로 보이는 공연들의 장르 집합.
+    KOPIS 이름 검색은 부분 일치라, 전체 이름으로 못 찾으면 첫 낱말로 다시 찾아 same_work로 거른다.
+    검색 기간은 한 번에 31일까지라 공연 시작일 앞뒤로 나눠 찾는다."""
+    if len(norm(name)) < 2:
         return set()
+    first = name.split()[0]
+    queries = [name] + ([first] if first != name and len(norm(first)) >= 2 else [])
     genres = set()
-    for start in (around - timedelta(days=30), around):
-        root = kopis(service=key, stdate=start.strftime("%Y%m%d"), eddate=(start + timedelta(days=30)).strftime("%Y%m%d"),
-                     cpage=1, rows=100, shprfnm=name)
-        for row in root.findall("./db"):
-            got = norm(re.sub(r"\s*\[[^\]]+\]\s*$", "", text(row, "prfnm")))
-            if got and (want in got or got in want):
-                genres.add(text(row, "genrenm"))
+    for q in queries:
+        for start in (around - timedelta(days=30), around):
+            root = kopis(service=key, stdate=start.strftime("%Y%m%d"),
+                         eddate=(start + timedelta(days=30)).strftime("%Y%m%d"), cpage=1, rows=100, shprfnm=q)
+            for row in root.findall("./db"):
+                got = re.sub(r"\s*\[[^\]]+\]\s*$", "", text(row, "prfnm"))
+                if same_work(name, got):
+                    genres.add(text(row, "genrenm"))
+        if genres:
+            break
     return genres
 
 
@@ -71,6 +98,9 @@ def check(item, key):
     return "reject", f"KOPIS 장르: {', '.join(sorted(genres))}"
 
 
+VERIFY_VERSION = 2  # 판정 방식을 고치면 올려서 기존 항목도 다시 확인
+
+
 def verify(db, by_id, log=print):
     """확인이 필요한 항목(새 소식, 아직 KOPIS 미등록인 오픈 전 소식)을 검증하고 제외 대상은 excluded로 옮긴다."""
     key = os.environ.get("KOPIS_KEY")
@@ -79,7 +109,9 @@ def verify(db, by_id, log=print):
     checked = rejected = 0
     for it in list(by_id.values()):
         g = it.get("genreCheck") or {}
-        recheck = g.get("status") == "unknown" and key and (it.get("openAt") or "") >= now and g.get("at", "")[:10] < now[:10]
+        recheck = key and (
+            g.get("v") != VERIFY_VERSION
+            or (g.get("status") == "unknown" and (it.get("openAt") or "") >= now and g.get("at", "")[:10] < now[:10]))
         if g and not recheck:
             continue
         try:
@@ -88,7 +120,7 @@ def verify(db, by_id, log=print):
             log(f"  장르 확인 실패 {it['title']}: {e}")
             continue
         checked += 1
-        it["genreCheck"] = {"status": status, "reason": reason, "at": now}
+        it["genreCheck"] = {"status": status, "reason": reason, "at": now, "v": VERIFY_VERSION}
         if status == "reject":
             rejected += 1
             del by_id[it["id"]]
