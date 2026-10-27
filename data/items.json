@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-10-27T18:06+09:00",
+ "updatedAt": "2026-10-27T18:15+09:00",
  "sources": {
   "nol": {
    "ok": true,
    "count": 13,
-   "at": "2026-10-27T18:06+09:00"
+   "at": "2026-10-27T18:15+09:00"
   },
   "ticketlink": {
    "ok": true,
    "count": 12,
-   "at": "2026-10-27T18:06+09:00"
+   "at": "2026-10-27T18:15+09:00"
   },
   "yes24": {
    "ok": true,
-   "count": 45,
-   "at": "2026-10-27T18:06+09:00"
+   "count": 46,
+   "at": "2026-10-27T18:15+09:00"
   }
  },
  "items": [
@@ -40,7 +40,12 @@
     "end": "2026-10-25"
    },
    "detailV": 3,
-   "perfId": "59694"
+   "perfId": "59694",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18460",
@@ -64,7 +69,12 @@
    },
    "round": "",
    "detailV": 3,
-   "perfId": "60114"
+   "perfId": "60114",
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18467",
@@ -88,7 +98,12 @@
     "end": "2026-10-25"
    },
    "detailV": 3,
-   "perfId": "59718"
+   "perfId": "59718",
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18469-p1",
@@ -112,7 +127,12 @@
     "end": "2026-11-01"
    },
    "detailV": 3,
-   "perfId": "59239"
+   "perfId": "59239",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18469",
@@ -136,7 +156,12 @@
     "end": "2026-11-01"
    },
    "detailV": 3,
-   "perfId": "59239"
+   "perfId": "59239",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18483",
@@ -160,7 +185,12 @@
     "end": "2026-11-22"
    },
    "detailV": 3,
-   "perfId": "60128"
+   "perfId": "60128",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18475",
@@ -184,7 +214,12 @@
     "end": "2026-11-01"
    },
    "detailV": 3,
-   "perfId": "59488"
+   "perfId": "59488",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18504",
@@ -205,7 +240,12 @@
    "roundPeriod": null,
    "round": "",
    "detailV": 3,
-   "perfId": "60200"
+   "perfId": "60200",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18480",
@@ -229,7 +269,12 @@
     "end": "2026-11-15"
    },
    "detailV": 3,
-   "perfId": "59596"
+   "perfId": "59596",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18523",
@@ -250,7 +295,12 @@
    "roundPeriod": null,
    "round": "",
    "detailV": 3,
-   "perfId": "60232"
+   "perfId": "60232",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18527",
@@ -263,7 +313,7 @@
    "url": "https://ticket.yes24.com/Perf/60292",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260918/20260918-60292.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-10-17",
     "end": "2026-10-17"
@@ -271,7 +321,12 @@
    "roundPeriod": null,
    "round": "",
    "detailV": 3,
-   "perfId": "60292"
+   "perfId": "60292",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18548",
@@ -284,7 +339,7 @@
    "url": "https://ticket.yes24.com/Perf/60204",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260807/20260807-59596.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-10-18",
     "end": "2026-10-18"
@@ -295,7 +350,12 @@
    },
    "round": "",
    "detailV": 3,
-   "perfId": "60204"
+   "perfId": "60204",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18524",
@@ -319,7 +379,12 @@
     "end": "2026-11-08"
    },
    "detailV": 3,
-   "perfId": "59852"
+   "perfId": "59852",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18526",
@@ -332,14 +397,19 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18526",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-21",
     "end": "2026-11-21"
    },
    "roundPeriod": null,
    "round": "",
-   "detailV": 3
+   "detailV": 3,
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18554",
@@ -352,7 +422,7 @@
    "url": "https://ticket.yes24.com/Perf/60316",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260921/20260921-60316.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2027-01-24"
@@ -363,7 +433,12 @@
     "end": "2026-11-15"
    },
    "detailV": 3,
-   "perfId": "60316"
+   "perfId": "60316",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18547",
@@ -376,14 +451,19 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18547",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-01",
     "end": "2026-11-01"
    },
    "roundPeriod": null,
    "round": "",
-   "detailV": 3
+   "detailV": 3,
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18559",
@@ -396,7 +476,7 @@
    "url": "https://ticket.yes24.com/Perf/59639",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260811/20260811-59639.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-09-16",
     "end": "2026-11-29"
@@ -407,7 +487,12 @@
     "end": "2026-11-08"
    },
    "detailV": 3,
-   "perfId": "59639"
+   "perfId": "59639",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18567",
@@ -420,7 +505,7 @@
    "url": "https://ticket.yes24.com/Perf/59300",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260907/20260907-59300.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-08-18",
     "end": "2026-11-08"
@@ -428,7 +513,12 @@
    "round": "4차",
    "roundPeriod": null,
    "detailV": 3,
-   "perfId": "59300"
+   "perfId": "59300",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18558",
@@ -441,7 +531,7 @@
    "url": "https://ticket.yes24.com/Perf/58563",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202605/20260529/20260529-58563.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-12-06"
@@ -452,7 +542,12 @@
    },
    "round": "",
    "detailV": 3,
-   "perfId": "58563"
+   "perfId": "58563",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18574",
@@ -465,7 +560,7 @@
    "url": "https://ticket.yes24.com/Perf/59313",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202607/20260715/20260715-59313.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-08-08",
     "end": "2026-10-18"
@@ -476,7 +571,12 @@
     "end": "2026-10-18"
    },
    "detailV": 3,
-   "perfId": "59313"
+   "perfId": "59313",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18565",
@@ -489,7 +589,7 @@
    "url": "https://ticket.yes24.com/Perf/60403",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-60403.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-10-23",
     "end": "2026-10-23"
@@ -497,7 +597,12 @@
    "roundPeriod": null,
    "round": "",
    "detailV": 3,
-   "perfId": "60403"
+   "perfId": "60403",
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18579",
@@ -510,7 +615,7 @@
    "url": "https://ticket.yes24.com/Perf/60365",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260923/20260923-60365.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-06",
     "end": "2026-11-06"
@@ -518,7 +623,12 @@
    "roundPeriod": null,
    "round": "",
    "detailV": 3,
-   "perfId": "60365"
+   "perfId": "60365",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18576-p1",
@@ -531,7 +641,7 @@
    "url": "https://ticket.yes24.com/Perf/59565",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260804/20260804-59565.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-09-22",
     "end": "2026-12-13"
@@ -539,7 +649,12 @@
    "round": "2차",
    "roundPeriod": null,
    "detailV": 3,
-   "perfId": "59565"
+   "perfId": "59565",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18568",
@@ -552,7 +667,7 @@
    "url": "https://ticket.yes24.com/Perf/58477",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260914/20260914-58477.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-07-24",
     "end": "2026-11-08"
@@ -563,7 +678,12 @@
     "end": "2026-11-08"
    },
    "detailV": 3,
-   "perfId": "58477"
+   "perfId": "58477",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18576",
@@ -576,7 +696,7 @@
    "url": "https://ticket.yes24.com/Perf/59565",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260804/20260804-59565.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-09-22",
     "end": "2026-12-13"
@@ -584,7 +704,12 @@
    "round": "2차",
    "roundPeriod": null,
    "detailV": 3,
-   "perfId": "59565"
+   "perfId": "59565",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18585",
@@ -597,7 +722,7 @@
    "url": "https://ticket.yes24.com/Perf/59694",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260825/20260825-59694.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-11-15"
@@ -608,7 +733,12 @@
     "end": "2026-11-15"
    },
    "detailV": 3,
-   "perfId": "59694"
+   "perfId": "59694",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18600",
@@ -621,7 +751,7 @@
    "url": "https://ticket.yes24.com/Perf/60484",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261002/20261002-60484_2.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-12-15",
     "end": "2027-03-01"
@@ -632,7 +762,12 @@
     "end": "2026-12-27"
    },
    "detailV": 3,
-   "perfId": "60484"
+   "perfId": "60484",
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18620",
@@ -645,7 +780,7 @@
    "url": "https://ticket.yes24.com/Perf/59596",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260807/20260807-59596.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-17",
     "end": "2026-11-29"
@@ -656,7 +791,12 @@
     "end": "2026-11-29"
    },
    "detailV": 3,
-   "perfId": "59596"
+   "perfId": "59596",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18609",
@@ -669,7 +809,7 @@
    "url": "https://ticket.yes24.com/Perf/59488",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59488.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2026-11-29"
@@ -680,7 +820,12 @@
     "end": "2026-11-29"
    },
    "detailV": 3,
-   "perfId": "59488"
+   "perfId": "59488",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18631",
@@ -693,7 +838,7 @@
    "url": "https://ticket.yes24.com/Perf/60524",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261008/20261008-60524.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-10-30",
     "end": "2026-11-01"
@@ -704,7 +849,12 @@
    },
    "round": "",
    "detailV": 3,
-   "perfId": "60524"
+   "perfId": "60524",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18581",
@@ -717,7 +867,7 @@
    "url": "https://ticket.yes24.com/Perf/60521",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261007/20261007-60521.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-12-22",
     "end": "2027-01-15"
@@ -728,7 +878,12 @@
     "end": "2027-01-15"
    },
    "detailV": 3,
-   "perfId": "60521"
+   "perfId": "60521",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18645",
@@ -741,7 +896,7 @@
    "url": "https://ticket.yes24.com/Perf/59639",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260811/20260811-59639.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-09-16",
     "end": "2026-11-29"
@@ -752,7 +907,12 @@
     "end": "2026-11-29"
    },
    "detailV": 3,
-   "perfId": "59639"
+   "perfId": "59639",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18661-p1",
@@ -765,7 +925,7 @@
    "url": "https://ticket.yes24.com/Perf/59239",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -776,7 +936,12 @@
     "end": "2026-11-15"
    },
    "detailV": 3,
-   "perfId": "59239"
+   "perfId": "59239",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18661",
@@ -789,7 +954,7 @@
    "url": "https://ticket.yes24.com/Perf/59239",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -800,7 +965,12 @@
     "end": "2026-11-15"
    },
    "detailV": 3,
-   "perfId": "59239"
+   "perfId": "59239",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18658",
@@ -813,7 +983,7 @@
    "url": "https://ticket.yes24.com/Perf/60316",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260921/20260921-60316.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2027-01-24"
@@ -824,7 +994,12 @@
     "end": "2026-12-06"
    },
    "detailV": 3,
-   "perfId": "60316"
+   "perfId": "60316",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18641",
@@ -837,7 +1012,7 @@
    "url": "https://ticket.yes24.com/Perf/59852",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-59852.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-29"
@@ -848,7 +1023,12 @@
     "end": "2026-11-29"
    },
    "detailV": 3,
-   "perfId": "59852"
+   "perfId": "59852",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18680",
@@ -861,7 +1041,7 @@
    "url": "https://ticket.yes24.com/Perf/60645",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261014/20261014-60645.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-10-31",
     "end": "2026-10-31"
@@ -869,7 +1049,12 @@
    "roundPeriod": null,
    "round": "",
    "detailV": 3,
-   "perfId": "60645"
+   "perfId": "60645",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18655",
@@ -882,7 +1067,7 @@
    "url": "https://ticket.yes24.com/Perf/60602",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261012/20261012-60602.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-10"
@@ -890,7 +1075,12 @@
    "roundPeriod": null,
    "round": "",
    "detailV": 3,
-   "perfId": "60602"
+   "perfId": "60602",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18668",
@@ -903,7 +1093,7 @@
    "url": "https://ticket.yes24.com/Perf/60128",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260916/20260916-60128.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-11",
     "end": "2027-02-08"
@@ -914,7 +1104,12 @@
     "end": "2026-12-13"
    },
    "detailV": 3,
-   "perfId": "60128"
+   "perfId": "60128",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18681-p1",
@@ -927,7 +1122,7 @@
    "url": "https://ticket.yes24.com/Perf/60658",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-60658.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-12-16",
     "end": "2027-03-14"
@@ -938,7 +1133,12 @@
     "end": "2026-12-20"
    },
    "detailV": 3,
-   "perfId": "60658"
+   "perfId": "60658",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18687",
@@ -951,14 +1151,19 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18687",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-12-23",
     "end": "2026-12-23"
    },
    "roundPeriod": null,
    "round": "",
-   "detailV": 3
+   "detailV": 3,
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18681",
@@ -971,7 +1176,7 @@
    "url": "https://ticket.yes24.com/Perf/60658",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-60658.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-12-16",
     "end": "2027-03-14"
@@ -982,7 +1187,12 @@
     "end": "2026-12-20"
    },
    "detailV": 3,
-   "perfId": "60658"
+   "perfId": "60658",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "ticketlink:66216",
@@ -999,6 +1209,11 @@
    "period": {
     "start": "2026-11-26",
     "end": "2027-01-24"
+   },
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
    }
   },
   {
@@ -1016,6 +1231,11 @@
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-11"
+   },
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
    }
   },
   {
@@ -1033,6 +1253,11 @@
    "period": {
     "start": "2026-11-14",
     "end": "2026-11-14"
+   },
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
    }
   },
   {
@@ -1050,6 +1275,11 @@
    "period": {
     "start": "2026-11-13",
     "end": "2026-11-22"
+   },
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
    }
   },
   {
@@ -1071,6 +1301,11 @@
    "roundPeriod": {
     "start": "2026-11-11",
     "end": "2026-11-12"
+   },
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
    }
   },
   {
@@ -1090,7 +1325,12 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-23T10:12+09:00",
-   "lastSeenAt": "2026-10-23T10:12+09:00"
+   "lastSeenAt": "2026-10-23T10:12+09:00",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "ticketlink:66239",
@@ -1107,6 +1347,11 @@
    "period": {
     "start": "2026-11-23",
     "end": "2026-11-23"
+   },
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
    }
   },
   {
@@ -1129,6 +1374,11 @@
    "roundPeriod": {
     "start": "2026-12-11",
     "end": "2026-12-20"
+   },
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
    }
   },
   {
@@ -1142,7 +1392,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18713",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2027-03-07"
@@ -1152,7 +1402,12 @@
     "start": "2026-12-11",
     "end": "2026-12-20"
    },
-   "detailV": 3
+   "detailV": 3,
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "ticketlink:66319",
@@ -1171,7 +1426,12 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T09:15+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "nol:15749-41279",
@@ -1190,7 +1450,12 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T09:15+09:00",
-   "lastSeenAt": "2026-10-27T09:15+09:00"
+   "lastSeenAt": "2026-10-27T09:15+09:00",
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "ticketlink:66261",
@@ -1203,7 +1468,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66261",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/VEA_open_1020.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-10-27"
@@ -1212,6 +1477,11 @@
    "roundPeriod": {
     "start": "2026-11-17",
     "end": "2026-12-06"
+   },
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
    }
   },
   {
@@ -1231,7 +1501,12 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "nol:15651-40709",
@@ -1244,12 +1519,17 @@
    "url": "https://nol.yanolja.com/ticket/products/26013993",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26013993_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-24",
     "end": "2027-03-14"
    },
-   "round": "2차"
+   "round": "2차",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18740-p1",
@@ -1271,8 +1551,13 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
-   "detailV": 3
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "detailV": 3,
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "nol:15654-40865",
@@ -1285,12 +1570,17 @@
    "url": "https://nol.yanolja.com/ticket/products/26007416",
    "image": "https://ticketimage.interpark.com/Play/image/large/26/26007416_p.gif",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-08-13",
     "end": "2027-03-01"
    },
-   "round": "5차"
+   "round": "5차",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "nol:15732-41252",
@@ -1309,7 +1599,12 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T09:15+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18708",
@@ -1322,7 +1617,7 @@
    "url": "https://ticket.yes24.com/Perf/58563",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202605/20260529/20260529-58563.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-12-08",
     "end": "2027-01-03"
@@ -1333,7 +1628,12 @@
    },
    "round": "",
    "detailV": 3,
-   "perfId": "58563"
+   "perfId": "58563",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18751",
@@ -1352,8 +1652,13 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
-   "detailV": 3
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "detailV": 3,
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "nol:15738-41255",
@@ -1372,7 +1677,12 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T09:15+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "ticketlink:66310",
@@ -1394,7 +1704,12 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18740",
@@ -1416,8 +1731,13 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
-   "detailV": 3
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "detailV": 3,
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "ticketlink:65980",
@@ -1430,10 +1750,15 @@
    "url": "https://www.ticketlink.co.kr/help/notice/65980",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_1/4.포스터_뮤지컬광화문연가.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-28",
     "end": "2026-11-29"
+   },
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
    }
   },
   {
@@ -1453,7 +1778,12 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-23T10:12+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18737-p1",
@@ -1472,9 +1802,43 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "detailV": 3,
-   "perfId": "59565"
+   "perfId": "59565",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
+  },
+  {
+   "id": "yes24:18758-p1",
+   "source": "yes24",
+   "title": "뮤지컬 [소크라테스 패러독스] 마지막",
+   "exclusive": false,
+   "label": "선예매",
+   "openAt": "2026-10-30T11:00+09:00",
+   "place": "NOL 서경스퀘어 스콘 1관",
+   "url": "https://ticket.yes24.com/Perf/59239",
+   "image": "",
+   "period": {
+    "start": "2026-09-10",
+    "end": "2026-11-29"
+   },
+   "round": "마지막",
+   "roundPeriod": {
+    "start": "2026-11-17",
+    "end": "2026-11-29"
+   },
+   "firstSeenAt": "2026-10-27T18:15+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "detailV": 3,
+   "perfId": "59239",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "ticketlink:66328",
@@ -1496,7 +1860,12 @@
     "end": "2026-12-06"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18749",
@@ -1518,9 +1887,14 @@
     "end": "2026-12-06"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "detailV": 3,
-   "perfId": "59694"
+   "perfId": "59694",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "nol:15773-41402",
@@ -1539,7 +1913,36 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T18:06+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
+  },
+  {
+   "id": "yes24:18758",
+   "source": "yes24",
+   "title": "뮤지컬 [소크라테스 패러독스] 마지막",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-10-30T14:00+09:00",
+   "place": "NOL 서경스퀘어 스콘 1관",
+   "url": "https://ticket.yes24.com/Perf/59239",
+   "image": "",
+   "period": {
+    "start": "2026-09-10",
+    "end": "2026-11-29"
+   },
+   "round": "마지막",
+   "roundPeriod": {
+    "start": "2026-11-17",
+    "end": "2026-11-29"
+   },
+   "firstSeenAt": "2026-10-27T18:15+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "detailV": 3,
+   "perfId": "59239"
   },
   {
    "id": "ticketlink:66336",
@@ -1561,7 +1964,12 @@
     "end": "2026-12-27"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18756",
@@ -1583,8 +1991,13 @@
     "end": "2026-12-27"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
-   "detailV": 3
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "detailV": 3,
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "nol:15712-41051",
@@ -1603,7 +2016,12 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-23T10:12+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "yes24:18737",
@@ -1622,9 +2040,14 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "detailV": 3,
-   "perfId": "59565"
+   "perfId": "59565",
+   "genreCheck": {
+    "status": "ok",
+    "reason": "KOPIS 장르: 뮤지컬",
+    "at": "2026-10-27T18:16+09:00"
+   }
   },
   {
    "id": "ticketlink:66235",
@@ -1637,10 +2060,15 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66235",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/casino_open_1016.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-20",
     "end": "2027-04-25"
+   },
+   "genreCheck": {
+    "status": "unknown",
+    "reason": "KOPIS 미등록",
+    "at": "2026-10-27T18:16+09:00"
    }
   },
   {
@@ -1654,7 +2082,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66201",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_3/pst1013.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-11-12",
     "end": "2026-11-12"
@@ -1677,7 +2105,7 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00"
   },
   {
    "id": "ticketlink:66333",
@@ -1699,7 +2127,7 @@
     "end": "2027-01-17"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00"
   },
   {
    "id": "nol:15737-41217",
@@ -1718,7 +2146,7 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T09:15+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00"
   },
   {
    "id": "yes24:18742",
@@ -1740,7 +2168,7 @@
     "end": "2027-02-05"
    },
    "firstSeenAt": "2026-10-27T09:15+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "detailV": 3,
    "perfId": "60521"
   },
@@ -1761,7 +2189,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00"
   },
   {
    "id": "ticketlink:66331",
@@ -1780,7 +2208,7 @@
    "round": "1차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00"
   },
   {
    "id": "yes24:18752",
@@ -1796,27 +2224,8 @@
    "round": "1차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "detailV": 3
-  },
-  {
-   "id": "ticketlink:66337",
-   "source": "ticketlink",
-   "title": "청춘사운드콘서트 - 대구",
-   "exclusive": true,
-   "label": "",
-   "openAt": "2026-11-06T10:00+09:00",
-   "place": "대덕문화전당 드림홀",
-   "url": "https://www.ticketlink.co.kr/help/notice/66337",
-   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/open_1027.jpg",
-   "period": {
-    "start": "2026-12-05",
-    "end": "2026-12-05"
-   },
-   "round": "",
-   "roundPeriod": null,
-   "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
   },
   {
    "id": "nol:15767-41371",
@@ -1835,7 +2244,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00"
   },
   {
    "id": "yes24:18754",
@@ -1857,7 +2266,7 @@
     "end": "2027-01-16"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "detailV": 3
   },
   {
@@ -1877,7 +2286,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00"
+   "lastSeenAt": "2026-10-27T18:15+09:00"
   },
   {
    "id": "yes24:18753",
@@ -1899,7 +2308,7 @@
     "end": "2027-01-24"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "detailV": 3
   },
   {
@@ -1913,11 +2322,21 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66136",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_5/poster_dummy_list_240_320_1_Musical.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-10-27T18:06+09:00",
+   "lastSeenAt": "2026-10-27T18:15+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2026-12-11"
    }
+  }
+ ],
+ "excluded": [
+  {
+   "id": "ticketlink:66337",
+   "source": "ticketlink",
+   "title": "청춘사운드콘서트 - 대구",
+   "openAt": "2026-11-06T10:00+09:00",
+   "reason": "제목상 콘서트·갈라·팬미팅·토크",
+   "at": "2026-10-27T18:16+09:00"
   }
  ]
 }
