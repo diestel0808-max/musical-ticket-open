@@ -25,6 +25,7 @@ SEOUL = "11"  # KOPIS 지역(시도) 코드: 서울
 MAX_RUN_AHEAD = timedelta(days=365)  # 이보다 더 남은 공연은 장기 공연으로 보고 제외
 KIDS_AGE = ("개월", "만 3세", "만 4세", "만 5세")  # 관람연령이 이렇게 낮으면 아동극
 ADULT = re.compile(r"19세|청소년\s*관람\s*불가|성인")  # 19세 이상 쇼 공연 제외
+CONCERT = re.compile(r"콘서트|갈라|GALA|Concert", re.I)  # 뮤지컬 콘서트·갈라는 제외(낭독공연은 포함)
 UPCOMING_DAYS = 7  # 개막 예정 탭: 오늘 기준 이 날수 안에 개막
 
 
@@ -91,20 +92,28 @@ def detail(key, pid):
     }
 
 
-def build(rows, key, cache, limit, skipped, log):
-    """KOPIS 목록 행 → 화면용 항목. 오픈런·장기·아동·19세 이상 공연은 뺀다."""
+def build(rows, key, cache, limit, excluded, log):
+    """KOPIS 목록 행 → 화면용 항목. 오픈런·장기·아동·19세 이상·콘서트는 빼고, 뺀 이유를 excluded에 남긴다."""
     items = []
     for row in rows:
         pid = text(row, "mt20id")
-        title, end = text(row, "prfnm"), kdate(text(row, "prfpdto"))
+        title, start, end = text(row, "prfnm"), kdate(text(row, "prfpdfrom")), kdate(text(row, "prfpdto"))
+
+        def skip(reason, age=""):
+            excluded.append({"id": pid, "title": title, "reason": reason, "start": start, "end": end,
+                             "place": text(row, "fcltynm"), "age": age})
+
         if text(row, "openrun").upper() == "Y":
-            skipped["openrun"] += 1
+            skip("오픈런")
             continue
         if not end or end > limit:
-            skipped["long"] += 1
+            skip("장기 공연(종료일 1년 이상 남음)")
             continue
         if is_kids(title):
-            skipped["kids"] += 1
+            skip("아동·가족(제목)")
+            continue
+        if CONCERT.search(title):
+            skip("콘서트·갈라")
             continue
         m = re.search(r"\s*\[([^\]]+)\]\s*$", title)
         it = {
@@ -126,11 +135,14 @@ def build(rows, key, cache, limit, skipped, log):
                 log(f"  상세 실패 {pid}: {e}")
                 d = {}
         age = d.get("age", "")
-        if d.get("child", "").upper() == "Y" or any(k in age for k in KIDS_AGE):
-            skipped["kids"] += 1
+        if d.get("child", "").upper() == "Y":
+            skip("아동(KOPIS 아동공연 표시)", age)
+            continue
+        if any(k in age for k in KIDS_AGE):
+            skip("아동(관람연령)", age)
             continue
         if ADULT.search(age):
-            skipped["adult"] += 1
+            skip("19세 이상", age)
             continue
         it["detail"] = d
         items.append(it)
@@ -142,21 +154,24 @@ def collect(key, prev, log=print):
     limit = (today + MAX_RUN_AHEAD).isoformat()
     # 상세는 공연당 한 번만(개막 예정이던 공연이 공연중으로 넘어와도 재사용)
     cache = {it["id"]: it for it in prev.get("items", []) + prev.get("upcoming", [])}
-    skipped = {"openrun": 0, "long": 0, "kids": 0, "adult": 0}
+    excluded = []
 
-    items = build(list_kopis(key, "02", today, today), key, cache, limit, skipped, log)
+    items = build(list_kopis(key, "02", today, today), key, cache, limit, excluded, log)
     items.sort(key=lambda x: (x["end"], x["title"]))
 
     # 개막 예정: 내일~7일 뒤에 첫 공연이 있는 작품
     soon = today + timedelta(days=UPCOMING_DAYS)
     rows = [r for r in list_kopis(key, "01", today, soon)
             if today.isoformat() < kdate(text(r, "prfpdfrom")) <= soon.isoformat()]
-    upcoming = build(rows, key, cache, limit, skipped, log)
+    upcoming = build(rows, key, cache, limit, excluded, log)
     upcoming.sort(key=lambda x: (x["start"], x["title"]))
 
-    log(f"[공연중] {len(items)}건, [개막 예정] {len(upcoming)}건 "
-        f"(제외: 오픈런 {skipped['openrun']}, 장기 {skipped['long']}, 아동 {skipped['kids']}, 19세 이상 {skipped['adult']})")
-    return {"updatedAt": now_kst().isoformat(timespec="minutes"), "ok": True, "items": items, "upcoming": upcoming}
+    log(f"[공연중] {len(items)}건, [개막 예정] {len(upcoming)}건, 제외 {len(excluded)}건")
+    for e in excluded:
+        log(f"  - {e['reason']}: {e['title']} ({e['start']}~{e['end']}, {e['age']})")
+    # excluded는 화면에 쓰지 않지만, 제외 기준이 맞게 걸렀는지 점검할 수 있게 함께 저장
+    return {"updatedAt": now_kst().isoformat(timespec="minutes"), "ok": True,
+            "items": items, "upcoming": upcoming, "excluded": excluded}
 
 
 def main(argv):
