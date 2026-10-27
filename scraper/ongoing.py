@@ -69,8 +69,6 @@ def booking_link(name, url):
         return {"source": "ticketlink", "name": "티켓링크", "url": url.replace("http://", "https://")}
     if "예스24" in name or "yes24" in url:
         return {"source": "yes24", "name": "예스24", "url": url}
-    if "멜론" in name or "melon" in url:
-        return {"source": "melon", "name": "멜론티켓", "url": url}
     return {"source": "", "name": re.sub(r"\s*(주식회사|\(주\)|㈜)\s*", "", name), "url": url}
 
 
@@ -82,7 +80,7 @@ def detail(key, pid):
         if url:
             links.append(booking_link(name, url))
     # 4대 예매처를 앞에
-    links.sort(key=lambda l: ["nol", "ticketlink", "yes24", "melon", ""].index(l["source"]))
+    links.sort(key=lambda l: ["nol", "ticketlink", "yes24", ""].index(l["source"]))
     return {
         "age": text(db, "prfage"),
         "child": text(db, "child"),

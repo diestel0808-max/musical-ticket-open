@@ -8,10 +8,10 @@ import traceback
 from pathlib import Path
 
 from .common import is_kids, now_kst
-from .sources import melon, nol, ticketlink, yes24
+from .sources import nol, ticketlink, yes24
 
 DATA = Path(__file__).resolve().parent.parent / "data" / "items.json"
-SOURCES = {"nol": nol.fetch, "ticketlink": ticketlink.fetch, "yes24": yes24.fetch, "melon": melon.fetch}
+SOURCES = {"nol": nol.fetch, "ticketlink": ticketlink.fetch, "yes24": yes24.fetch}
 # 다시 수집될 때 최신 값으로 덮어쓸 필드. 나머지(기간·회차·이미지 등)는 비어 있지 않을 때만 덮어쓴다.
 TRACKED = ("title", "label", "openAt")
 
@@ -25,8 +25,9 @@ def load(path=DATA):
 def collect(db, log=print):
     """db(items.json 내용)를 최신 수집 결과로 갱신해 (db, 새 항목 목록)을 돌려준다."""
     now = now_kst().isoformat(timespec="minutes")
-    by_id = {it["id"]: it for it in db.get("items", [])}
-    db.setdefault("sources", {})
+    # 더 이상 수집하지 않는 사이트(예: 멜론티켓)의 소식과 상태는 정리
+    by_id = {it["id"]: it for it in db.get("items", []) if it["source"] in SOURCES}
+    db["sources"] = {k: v for k, v in db.get("sources", {}).items() if k in SOURCES}
     new_items = []
 
     for name, fetch in SOURCES.items():

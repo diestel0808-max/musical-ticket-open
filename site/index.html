@@ -13,7 +13,7 @@
   --text: #1f1f1f; --muted: #6b6b6b; --faint: #a3a3a3;
   --accent: #14a99a; --accent-soft: #e4f6f4; --accent-text: #0e7f74;
   --sun: #e5483f; --sat: #3a6fd8;
-  --nol: #7c4ddb; --ticketlink: #ec4561; --yes24: #3a6fd8; --melon: #00b33c;
+  --nol: #7c4ddb; --ticketlink: #ec4561; --yes24: #3a6fd8;
   --radius: 10px;
 }
 @media (prefers-color-scheme: dark) {
@@ -23,7 +23,7 @@
     --text: #f0f0f0; --muted: #a6a6a6; --faint: #6c6c6c;
     --accent: #3cc8b9; --accent-soft: #15302d; --accent-text: #6fdccf;
     --sun: #ff7a72; --sat: #7aa2ff;
-    --nol: #a98bff; --ticketlink: #ff7d93; --yes24: #7aa2ff; --melon: #3ddc72;
+    --nol: #a98bff; --ticketlink: #ff7d93; --yes24: #7aa2ff;
   }
 }
 * { box-sizing: border-box; }
@@ -79,7 +79,7 @@ h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; }
 
 /* 사이트 색 점 */
 .sb { display: inline-block; width: 10px; height: 10px; border-radius: 50%; flex: none; }
-.sb.nol { background: var(--nol); } .sb.ticketlink { background: var(--ticketlink); } .sb.yes24 { background: var(--yes24); } .sb.melon { background: var(--melon); }
+.sb.nol { background: var(--nol); } .sb.ticketlink { background: var(--ticketlink); } .sb.yes24 { background: var(--yes24); }
 
 /* ── 회차·기간 ── */
 .rnd { display: inline-block; white-space: nowrap; font-size: 12px; font-weight: 700; color: var(--accent-text); background: var(--accent-soft); padding: 1px 8px; border-radius: 4px; }
@@ -216,7 +216,7 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
     <div>
       <h1 id="h1">뮤지컬 티켓오픈</h1>
       <div id="open-intro">
-      <p class="sub-title">NOL · 티켓링크 · 예스24 · 멜론티켓의 뮤지컬 티켓오픈 공지를 매일 오전 10시 이후에 업데이트해요 😊</p>
+      <p class="sub-title">NOL · 티켓링크 · 예스24의 뮤지컬 티켓오픈 공지를 매일 오전 10시 이후에 업데이트해요 😊</p>
       <ul class="notes">
         <li>업데이트는 오전 10시에 시작되지만, 실제 반영은 보통 낮 12시~1시쯤 돼요.</li>
         <li>기간을 확인할 수 없는 경우 사이트로 이동해 확인해주세요.</li>
@@ -282,7 +282,7 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
 </div>
 
 <script>
-const SOURCES = { nol: "NOL", ticketlink: "티켓링크", yes24: "예스24", melon: "멜론티켓" };
+const SOURCES = { nol: "NOL", ticketlink: "티켓링크", yes24: "예스24" };
 const DOW = ["일", "월", "화", "수", "목", "금", "토"];
 const DOW_FULL = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
 const state = {
@@ -613,8 +613,8 @@ function ogFiltered() {
 
 function ogLinks(it) {
   const links = (it.detail && it.detail.links) || [];
-  const main = links.filter((l) => l.source);
-  const etc = links.filter((l) => !l.source);
+  const main = links.filter((l) => SOURCES[l.source]);  // 이 사이트가 다루는 예매처만 색 점으로
+  const etc = links.filter((l) => !SOURCES[l.source]);
   if (!links.length) return "";
   return `<div class="slots">${main.map((l) => `<a class="slot" href="${esc(l.url)}" target="_blank" rel="noopener">${sb(l.source)}${esc(l.name)} <span class="arr">↗</span></a>`).join("")}${
     etc.length ? `<a class="slot etc" href="${esc(etc[0].url)}" target="_blank" rel="noopener" title="${esc(etc.map((l) => l.name).join(", "))}">${main.length ? `외 ${etc.length}곳` : esc(etc[0].name) + (etc.length > 1 ? ` 외 ${etc.length - 1}곳` : "")} <span class="arr">↗</span></a>` : ""}</div>`;
