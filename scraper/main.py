@@ -9,6 +9,7 @@ from pathlib import Path
 
 from .common import is_kids, now_kst
 from .sources import nol, ticketlink, yes24
+from .verify import verify
 
 DATA = Path(__file__).resolve().parent.parent / "data" / "items.json"
 SOURCES = {"nol": nol.fetch, "ticketlink": ticketlink.fetch, "yes24": yes24.fetch}
@@ -29,6 +30,7 @@ def collect(db, log=print):
     by_id = {it["id"]: it for it in db.get("items", []) if it["source"] in SOURCES}
     db["sources"] = {k: v for k, v in db.get("sources", {}).items() if k in SOURCES}
     new_items = []
+    rejected = {e["id"] for e in db.get("excluded", [])}  # 장르 확인에서 뺀 소식은 다시 넣지 않음
 
     for name, fetch in SOURCES.items():
         try:
@@ -40,6 +42,8 @@ def collect(db, log=print):
             continue
         log(f"[{name}] {len(fetched)}건")
         for it in fetched:
+            if it["id"] in rejected:
+                continue
             old = by_id.get(it["id"])
             if old:
                 old.update({k: it[k] for k in TRACKED})
@@ -66,6 +70,7 @@ def collect(db, log=print):
             del by_id[it["id"]]
 
     fill_yes24_details(by_id.values(), log)
+    verify(db, by_id, log)  # 예매처 분류를 KOPIS 장르와 제목 규칙으로 한 번 더 확인
     db["items"] = sorted(by_id.values(), key=lambda x: (x["openAt"] or "9999", x["id"]))
     db["updatedAt"] = now
     return db, new_items

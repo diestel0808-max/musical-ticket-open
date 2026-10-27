@@ -16,7 +16,7 @@ from datetime import timedelta
 from pathlib import Path
 from urllib.parse import urlencode
 
-from .common import http, is_kids, now_kst
+from .common import NOT_MUSICAL, http, is_kids, now_kst
 
 API = "http://www.kopis.or.kr/openApi/restful/pblprfr"
 DATA = Path(__file__).resolve().parent.parent / "data" / "ongoing.json"
@@ -25,7 +25,6 @@ SEOUL = "11"  # KOPIS 지역(시도) 코드: 서울
 MAX_RUN_AHEAD = timedelta(days=365)  # 이보다 더 남은 공연은 장기 공연으로 보고 제외
 KIDS_AGE = ("개월", "만 3세", "만 4세", "만 5세")  # 관람연령이 이렇게 낮으면 아동극
 ADULT = re.compile(r"19세|청소년\s*관람\s*불가|성인")  # 19세 이상 쇼 공연 제외
-CONCERT = re.compile(r"콘서트|갈라|GALA|Concert", re.I)  # 뮤지컬 콘서트·갈라는 제외(낭독공연은 포함)
 UPCOMING_DAYS = 7  # 개막 예정 탭: 오늘 기준 이 날수 안에 개막
 
 
@@ -110,7 +109,7 @@ def build(rows, key, cache, limit, excluded, log):
         if is_kids(title):
             skip("아동·가족(제목)")
             continue
-        if CONCERT.search(title):
+        if NOT_MUSICAL.search(title):
             skip("콘서트·갈라")
             continue
         m = re.search(r"\s*\[([^\]]+)\]\s*$", title)

@@ -26,6 +26,8 @@ jobs:
           python-version: "3.12"
 
       - name: 수집
+        env:
+          KOPIS_KEY: ${{ secrets.KOPIS_KEY }} # 티켓오픈 소식의 장르를 KOPIS로 확인
         run: python -m scraper.main
 
       - name: 공연중 수집 (KOPIS)
