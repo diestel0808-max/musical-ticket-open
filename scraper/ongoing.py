@@ -132,8 +132,10 @@ def build(rows, key, cache, limit, excluded, log):
             try:
                 d = detail(key, pid)
             except Exception as e:
+                # 상세(관람연령·아동 표시)를 못 보면 아동극·19세 이상을 거를 수 없으니 이번엔 뺐다가 다음 수집 때 다시 본다
                 log(f"  상세 실패 {pid}: {e}")
-                d = {}
+                skip("상세 조회 실패(다음 수집 때 다시 확인)")
+                continue
         age = d.get("age", "")
         if d.get("child", "").upper() == "Y":
             skip("아동(KOPIS 아동공연 표시)", age)
