@@ -141,10 +141,6 @@ KIDS = re.compile(
 )
 
 
-# 뮤지컬 분류에 섞여 들어오는 콘서트·갈라·팬미팅·토크 공연(낭독공연은 뮤지컬로 둠)
-NOT_MUSICAL = re.compile(r"콘서트|갈라|GALA|concert|팬\s*미팅|토크", re.I)
-
-
 def is_kids(title):
     return bool(KIDS.search(title or ""))
 

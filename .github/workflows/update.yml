@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Actions 탭에서 수동 실행
   push:
     branches: [main]
-    paths: ["scraper/ongoing.py", "scraper/verify.py"] # KOPIS를 쓰는 코드를 고치면 바로 한 번 돌려 확인
+    paths: ["scraper/ongoing.py"] # 공연중 수집기를 고치면 바로 한 번 돌려 확인
 
 permissions:
   contents: write
@@ -26,8 +26,6 @@ jobs:
           python-version: "3.12"
 
       - name: 수집
-        env:
-          KOPIS_KEY: ${{ secrets.KOPIS_KEY }} # 티켓오픈 소식의 장르를 KOPIS로 확인
         run: python -m scraper.main
 
       - name: 공연중 수집 (KOPIS)

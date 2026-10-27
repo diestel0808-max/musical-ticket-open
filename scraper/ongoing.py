@@ -10,15 +10,13 @@ import json
 import os
 import re
 import sys
-import time
 import traceback
-import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import timedelta
 from pathlib import Path
 from urllib.parse import urlencode
 
-from .common import NOT_MUSICAL, http, is_kids, now_kst
+from .common import http, is_kids, now_kst
 
 API = "http://www.kopis.or.kr/openApi/restful/pblprfr"
 DATA = Path(__file__).resolve().parent.parent / "data" / "ongoing.json"
@@ -27,21 +25,12 @@ SEOUL = "11"  # KOPIS 지역(시도) 코드: 서울
 MAX_RUN_AHEAD = timedelta(days=365)  # 이보다 더 남은 공연은 장기 공연으로 보고 제외
 KIDS_AGE = ("개월", "만 3세", "만 4세", "만 5세")  # 관람연령이 이렇게 낮으면 아동극
 ADULT = re.compile(r"19세|청소년\s*관람\s*불가|성인")  # 19세 이상 쇼 공연 제외
+CONCERT = re.compile(r"콘서트|갈라|GALA|Concert", re.I)  # 뮤지컬 콘서트·갈라는 제외(낭독공연은 포함)
 UPCOMING_DAYS = 7  # 개막 예정 탭: 오늘 기준 이 날수 안에 개막
 
 
 def kopis(path="", **params):
-    # KOPIS는 연달아 요청하면 가끔 400을 돌려줘서, 잠깐 쉬었다가 두 번까지 다시 시도한다
-    for attempt in range(3):
-        try:
-            body = http(f"{API}{path}?{urlencode(params)}")
-            break
-        except urllib.error.HTTPError:
-            if attempt == 2:
-                raise
-            time.sleep(1.5 * (attempt + 1))
-    time.sleep(0.15)
-    root = ET.fromstring(body)
+    root = ET.fromstring(http(f"{API}{path}?{urlencode(params)}"))
     err = root.find("./db/errmsg")
     if err is not None and (err.text or "").strip():
         raise RuntimeError(f"KOPIS 오류: {err.text.strip()}")
@@ -121,7 +110,7 @@ def build(rows, key, cache, limit, excluded, log):
         if is_kids(title):
             skip("아동·가족(제목)")
             continue
-        if NOT_MUSICAL.search(title):
+        if CONCERT.search(title):
             skip("콘서트·갈라")
             continue
         m = re.search(r"\s*\[([^\]]+)\]\s*$", title)
