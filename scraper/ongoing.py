@@ -1,7 +1,8 @@
 """공연중 탭: KOPIS(공연예술통합전산망) 공개 API로 오늘 공연 중인 서울 뮤지컬을 모아 data/ongoing.json에 저장한다.
 
 티켓오픈(data/items.json)과는 완전히 별개로 돈다.
-제외: 오픈런, 종료일이 1년 넘게 남은 장기 공연, 서울 밖(지방 투어), 아동/가족 공연.
+공연중(items)과 1주 안에 개막하는 개막 예정(upcoming) 두 목록을 만든다.
+제외: 오픈런, 종료일이 1년 넘게 남은 장기 공연, 서울 밖(지방 투어), 아동/가족 공연, 19세 이상 공연.
 
 사용법: KOPIS_KEY=... python3 -m scraper.ongoing [--dry-run]
 """
@@ -23,6 +24,8 @@ MUSICAL = "GGGA"  # KOPIS 장르 코드: 뮤지컬
 SEOUL = "11"  # KOPIS 지역(시도) 코드: 서울
 MAX_RUN_AHEAD = timedelta(days=365)  # 이보다 더 남은 공연은 장기 공연으로 보고 제외
 KIDS_AGE = ("개월", "만 3세", "만 4세", "만 5세")  # 관람연령이 이렇게 낮으면 아동극
+ADULT = re.compile(r"19세|청소년\s*관람\s*불가|성인")  # 19세 이상 쇼 공연 제외
+UPCOMING_DAYS = 7  # 개막 예정 탭: 오늘 기준 이 날수 안에 개막
 
 
 def kopis(path="", **params):
@@ -43,13 +46,12 @@ def kdate(s):
     return s.replace(".", "-") if s else ""
 
 
-def list_ongoing(key, today):
-    """오늘 공연 중인 서울 뮤지컬(아동 제외) 목록. KOPIS는 페이지당 최대 100건."""
-    day = today.strftime("%Y%m%d")
+def list_kopis(key, state, start, end):
+    """서울 뮤지컬(아동 제외) 목록. state: '02' 공연중, '01' 공연예정. KOPIS는 페이지당 최대 100건."""
     out, page = [], 1
     while True:
-        root = kopis(service=key, stdate=day, eddate=day, cpage=page, rows=100,
-                     shcate=MUSICAL, prfstate="02", signgucode=SEOUL, kidstate="N")
+        root = kopis(service=key, stdate=start.strftime("%Y%m%d"), eddate=end.strftime("%Y%m%d"), cpage=page,
+                     rows=100, shcate=MUSICAL, prfstate=state, signgucode=SEOUL, kidstate="N")
         rows = root.findall("./db")
         out += rows
         if len(rows) < 100 or page >= 10:
@@ -89,12 +91,10 @@ def detail(key, pid):
     }
 
 
-def collect(key, prev, log=print):
-    today = now_kst().date()
-    limit = (today + MAX_RUN_AHEAD).isoformat()
-    cache = {it["id"]: it for it in prev.get("items", [])}  # 상세는 공연당 한 번만
-    items, skipped = [], {"openrun": 0, "long": 0, "kids": 0}
-    for row in list_ongoing(key, today):
+def build(rows, key, cache, limit, skipped, log):
+    """KOPIS 목록 행 → 화면용 항목. 오픈런·장기·아동·19세 이상 공연은 뺀다."""
+    items = []
+    for row in rows:
         pid = text(row, "mt20id")
         title, end = text(row, "prfnm"), kdate(text(row, "prfpdto"))
         if text(row, "openrun").upper() == "Y":
@@ -107,11 +107,10 @@ def collect(key, prev, log=print):
             skipped["kids"] += 1
             continue
         m = re.search(r"\s*\[([^\]]+)\]\s*$", title)
-        area = m.group(1) if m else ""
         it = {
             "id": pid,
             "title": title[: m.start()] if m else title,
-            "area": area,  # 예: 대학로, 서울, 서울 광진
+            "area": m.group(1) if m else "",  # 예: 대학로, 서울, 서울 광진
             "start": kdate(text(row, "prfpdfrom")),
             "end": end,
             "place": text(row, "fcltynm"),
@@ -126,14 +125,38 @@ def collect(key, prev, log=print):
             except Exception as e:
                 log(f"  상세 실패 {pid}: {e}")
                 d = {}
-        if d.get("child", "").upper() == "Y" or any(k in d.get("age", "") for k in KIDS_AGE):
+        age = d.get("age", "")
+        if d.get("child", "").upper() == "Y" or any(k in age for k in KIDS_AGE):
             skipped["kids"] += 1
+            continue
+        if ADULT.search(age):
+            skipped["adult"] += 1
             continue
         it["detail"] = d
         items.append(it)
+    return items
+
+
+def collect(key, prev, log=print):
+    today = now_kst().date()
+    limit = (today + MAX_RUN_AHEAD).isoformat()
+    # 상세는 공연당 한 번만(개막 예정이던 공연이 공연중으로 넘어와도 재사용)
+    cache = {it["id"]: it for it in prev.get("items", []) + prev.get("upcoming", [])}
+    skipped = {"openrun": 0, "long": 0, "kids": 0, "adult": 0}
+
+    items = build(list_kopis(key, "02", today, today), key, cache, limit, skipped, log)
     items.sort(key=lambda x: (x["end"], x["title"]))
-    log(f"[공연중] {len(items)}건 (제외: 오픈런 {skipped['openrun']}, 장기 {skipped['long']}, 아동 {skipped['kids']})")
-    return {"updatedAt": now_kst().isoformat(timespec="minutes"), "ok": True, "items": items}
+
+    # 개막 예정: 내일~7일 뒤에 첫 공연이 있는 작품
+    soon = today + timedelta(days=UPCOMING_DAYS)
+    rows = [r for r in list_kopis(key, "01", today, soon)
+            if today.isoformat() < kdate(text(r, "prfpdfrom")) <= soon.isoformat()]
+    upcoming = build(rows, key, cache, limit, skipped, log)
+    upcoming.sort(key=lambda x: (x["start"], x["title"]))
+
+    log(f"[공연중] {len(items)}건, [개막 예정] {len(upcoming)}건 "
+        f"(제외: 오픈런 {skipped['openrun']}, 장기 {skipped['long']}, 아동 {skipped['kids']}, 19세 이상 {skipped['adult']})")
+    return {"updatedAt": now_kst().isoformat(timespec="minutes"), "ok": True, "items": items, "upcoming": upcoming}
 
 
 def main(argv):

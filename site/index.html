@@ -224,9 +224,9 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
       </ul>
       </div>
       <div id="og-intro" hidden>
-      <p class="sub-title">오늘 서울에서 공연 중인 뮤지컬을 모아 보여드려요 🎭</p>
+      <p class="sub-title" id="og-sub">오늘 서울에서 공연 중인 뮤지컬을 모아 보여드려요 🎭</p>
       <ul class="notes">
-        <li>오픈런·1년 넘게 이어지는 장기 공연, 지방 투어, 가족·아동극은 제외했어요.</li>
+        <li>오픈런·1년 넘게 이어지는 장기 공연, 지방 투어, 가족·아동극, 19세 이상 공연은 제외했어요.</li>
         <li>공연예술통합전산망(KOPIS) 정보를 바탕으로 매일 오전에 업데이트해요.</li>
         <li>회차·캐스팅 등 자세한 일정은 예매 사이트에서 확인해 주세요.</li>
       </ul>
@@ -242,6 +242,7 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
   <nav class="tabs" role="tablist">
     <button role="tab" data-tab="open" aria-selected="true">티켓오픈</button>
     <button role="tab" data-tab="ongoing" aria-selected="false">공연중</button>
+    <button role="tab" data-tab="upcoming" aria-selected="false">개막 예정</button>
   </nav>
 
   <div class="toolbar" id="open-toolbar">
@@ -262,19 +263,19 @@ aside.panel .cnt { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
   <main id="main"></main>
 
   <div class="toolbar" id="og-toolbar" hidden>
-    <div class="seg" role="group" aria-label="공연중 보기">
+    <div class="seg" role="group" aria-label="공연중 보기" id="og-seg">
       <button data-ogview="list" aria-pressed="true">목록</button>
       <button data-ogview="timeline" aria-pressed="false">타임라인</button>
     </div>
     <span class="og-count" id="og-count"></span>
     <span class="spacer"></span>
     <select id="og-sort" aria-label="정렬">
-      <option value="end">막 내림 임박순</option>
+      <option value="end">폐막 임박순</option>
       <option value="start">최근 개막순</option>
       <option value="title">가나다순</option>
     </select>
     <label class="toggle"><input type="checkbox" id="og-dhr"> 대학로만</label>
-    <label class="toggle"><input type="checkbox" id="og-soon"> 2주 안에 막 내림</label>
+    <label class="toggle" id="og-soon-wrap"><input type="checkbox" id="og-soon"> 2주 안에 폐막 예정</label>
     <input class="search" id="og-q" type="search" placeholder="작품명·공연장 검색">
   </div>
   <main id="og-main" hidden></main>
@@ -587,24 +588,27 @@ async function load() {
 load().then(applyDb).catch((e) => { $("#meta").textContent = e.message; $("#main").innerHTML = `<div class="empty">${esc(e.message)}</div>`; });
 
 /* ════════ 공연중 탭 (티켓오픈과 상태·데이터 완전히 분리) ════════ */
-const og = { items: [], loaded: false, view: "list", sort: "end", dhr: false, soon: false, q: "" };
-try { Object.assign(og, JSON.parse(localStorage.getItem("mto-og") || "{}"), { items: [], loaded: false }); } catch {}
+// mode: ongoing(공연중) | upcoming(개막 예정). 두 탭은 같은 파일(data/ongoing.json)의 다른 목록을 쓴다
+const og = { items: [], upcoming: [], loaded: false, mode: "ongoing", view: "list", sort: "end", dhr: false, soon: false, q: "" };
+try { Object.assign(og, JSON.parse(localStorage.getItem("mto-og") || "{}"), { items: [], upcoming: [], loaded: false, mode: "ongoing" }); } catch {}
 const saveOg = () => { try { localStorage.setItem("mto-og", JSON.stringify({ view: og.view, sort: og.sort, dhr: og.dhr, soon: og.soon })); } catch {} };
 const daysLeft = (end) => ddays(end);
-const leftLabel = (end) => { const d = daysLeft(end); return d === 0 ? "오늘 막 내림" : `${d}일 남음`; };
+const leftLabel = (end) => { const d = daysLeft(end); return d === 0 ? "오늘 폐막" : `폐막까지 ${d}일`; };
+const openLabelOg = (start) => { const d = ddays(start); return d <= 0 ? "오늘 개막" : d === 1 ? "내일 개막" : `개막 ${d}일 전`; };
 const isDaehakro = (it) => it.area === "대학로" || /대학로/.test(it.place);
 
 function ogFiltered() {
   const q = og.q.trim().toLowerCase();
-  const list = og.items.filter((it) =>
-    (!og.dhr || isDaehakro(it)) && (!og.soon || daysLeft(it.end) <= 14) &&
+  const up = og.mode === "upcoming";
+  const list = (up ? og.upcoming : og.items).filter((it) =>
+    (!og.dhr || isDaehakro(it)) && (up || !og.soon || daysLeft(it.end) <= 14) &&
     (!q || (it.title + " " + it.place).toLowerCase().includes(q)));
   const by = {
     end: (a, b) => a.end.localeCompare(b.end) || a.title.localeCompare(b.title),
     start: (a, b) => b.start.localeCompare(a.start) || a.title.localeCompare(b.title),
     title: (a, b) => a.title.localeCompare(b.title, "ko"),
   }[og.sort];
-  return list.sort(by);
+  return list.sort(up ? (a, b) => a.start.localeCompare(b.start) || a.title.localeCompare(b.title) : by);
 }
 
 function ogLinks(it) {
@@ -618,14 +622,15 @@ function ogLinks(it) {
 const ogUrl = (it) => (((it.detail && it.detail.links) || [])[0] || {}).url || it.url;
 
 function ogCard(it) {
-  const soon = daysLeft(it.end) <= 14;
+  const up = og.mode === "upcoming";
+  const soon = up ? ddays(it.start) <= 2 : daysLeft(it.end) <= 14;
   const dates = range({ start: it.start, end: it.end });
   return `<div class="og-card">
     <a class="thumb" href="${esc(ogUrl(it))}" target="_blank" rel="noopener" ${it.image ? `style="background-image:url('${esc(it.image.replace(/^https?:\/\/(www\.)?kopis\.or\.kr/, "https://kopis.or.kr"))}')"` : ""} aria-label="예매 페이지"></a>
     <div>
-      <div class="og-left ${soon ? "soon" : ""}">${leftLabel(it.end)}</div>
+      <div class="og-left ${soon ? "soon" : ""}">${up ? openLabelOg(it.start) : leftLabel(it.end)}</div>
       <div class="title"><a href="${esc(ogUrl(it))}" target="_blank" rel="noopener">${esc(it.title)}</a>${it.area && it.area !== "서울" ? `<span class="area-tag">${esc(it.area)}</span>` : ""}</div>
-      <div class="period"><span class="dates"><span class="val">${dates}</span><button class="copy" data-copy="${esc(dates)}" title="공연기간 복사">복사</button></span></div>
+      <div class="period"><span class="dates"><span class="val">${dates}</span></span></div>
       ${ogLinks(it)}
       <div class="place">${esc(it.place)}${it.detail && it.detail.age ? ` · ${esc(it.detail.age)}` : ""}</div>
     </div>
@@ -668,9 +673,10 @@ function renderOg() {
   $("#og-sort").value = og.sort; $("#og-dhr").checked = og.dhr; $("#og-soon").checked = og.soon;
   if (!og.loaded) { $("#og-main").innerHTML = `<div class="empty">불러오는 중…</div>`; return; }
   const list = ogFiltered();
+  const up = og.mode === "upcoming";
   $("#og-count").textContent = `${list.length}편`;
-  $("#og-main").innerHTML = !list.length ? `<div class="empty">조건에 맞는 공연이 없어요.</div>`
-    : og.view === "list" ? `<div class="og-grid">${list.map(ogCard).join("")}</div>` : ogTimeline(list);
+  $("#og-main").innerHTML = !list.length ? `<div class="empty">${up ? "1주 안에 개막하는 공연이 없어요." : "조건에 맞는 공연이 없어요."}</div>`
+    : up || og.view === "list" ? `<div class="og-grid">${list.map(ogCard).join("")}</div>` : ogTimeline(list);
   saveOg();
 }
 
@@ -682,16 +688,21 @@ async function loadOg() {
 }
 
 function setTab(tab) {
-  const ongoing = tab === "ongoing";
+  const ongoing = tab === "ongoing" || tab === "upcoming";  // 공연중·개막 예정은 같은 화면 틀을 씀
+  const up = tab === "upcoming";
+  og.mode = up ? "upcoming" : "ongoing";
   document.querySelectorAll("[data-tab]").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === tab));
-  $("#h1").textContent = ongoing ? "공연 중인 뮤지컬" : "뮤지컬 티켓오픈";
+  $("#h1").textContent = up ? "개막 예정 뮤지컬" : ongoing ? "공연 중인 뮤지컬" : "뮤지컬 티켓오픈";
+  $("#og-sub").textContent = up ? "앞으로 1주 안에 서울에서 개막하는 뮤지컬이에요 ✨" : "오늘 서울에서 공연 중인 뮤지컬을 모아 보여드려요 🎭";
   for (const id of ["open-intro", "open-status", "open-toolbar", "main"]) $("#" + id).hidden = ongoing;
   for (const id of ["og-intro", "og-status", "og-toolbar", "og-main"]) $("#" + id).hidden = !ongoing;
-  if (location.hash !== (ongoing ? "#ongoing" : "")) history.replaceState(null, "", ongoing ? "#ongoing" : location.pathname + location.search);
+  for (const id of ["og-seg", "og-sort", "og-soon-wrap"]) $("#" + id).hidden = up;  // 개막 예정은 개막순 목록만
+  const hash = ongoing ? "#" + tab : "";
+  if (location.hash !== hash) history.replaceState(null, "", hash || location.pathname + location.search);
   if (ongoing && !og.loaded) {
     renderOg();
     loadOg().then((db) => {
-      og.items = db.items || []; og.loaded = true;
+      og.items = db.items || []; og.upcoming = db.upcoming || []; og.loaded = true;
       const at = db.updatedAt ? new Date(db.updatedAt).toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "-";
       $("#og-meta").innerHTML = `마지막 수집 ${at}${db.ok === false ? ` <span class="src-status"><span class="bad" title="${esc(db.error || "")}">수집 실패 — 이전 목록 표시 중</span></span>` : ""}`;
       renderOg();
@@ -707,7 +718,7 @@ $("#og-sort").addEventListener("change", (e) => { og.sort = e.target.value; rend
 $("#og-dhr").addEventListener("change", (e) => { og.dhr = e.target.checked; renderOg(); });
 $("#og-soon").addEventListener("change", (e) => { og.soon = e.target.checked; renderOg(); });
 $("#og-q").addEventListener("input", (e) => { og.q = e.target.value; renderOg(); });
-setTab(location.hash === "#ongoing" ? "ongoing" : "open");
+setTab(["#ongoing", "#upcoming"].includes(location.hash) ? location.hash.slice(1) : "open");
 </script>
 </body>
 </html>
