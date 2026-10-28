@@ -2,7 +2,9 @@ name: 수집
 
 on:
   schedule:
-    - cron: "0 1 * * *" # 10:00 KST (UTC 01:00). GitHub 예약 실행은 1~3시간 늦게 시작되곤 함
+    # 07:17 KST (UTC 22:17). GitHub 예약 실행은 실제로 2~3시간 늦게 시작돼서(기록상 최대 3시간 15분)
+    # 11시 전에 반영되도록 일찍 건다. 정각은 몰려서 더 밀리므로 17분에.
+    - cron: "17 22 * * *"
   workflow_dispatch: # Actions 탭에서 수동 실행
   push:
     branches: [main]
