@@ -7,8 +7,5 @@
       "includeFiles": "{scraper/**,data/**}",
       "maxDuration": 60
     }
-  },
-  "regions": [
-    "icn1"
-  ]
+  }
 }

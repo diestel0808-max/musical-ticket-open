@@ -65,7 +65,8 @@ def collect(db, log=print):
         if is_kids(it["title"]) or stale_nol:
             del by_id[it["id"]]
 
-    fill_yes24_details(by_id.values(), log)
+    if db["sources"].get("yes24", {}).get("ok"):  # 목록부터 못 받았으면 서버에 닿지 않는 것이라 상세도 건너뜀
+        fill_yes24_details(by_id.values(), log)
     db["items"] = sorted(by_id.values(), key=lambda x: (x["openAt"] or "9999", x["id"]))
     db["updatedAt"] = now
     return db, new_items

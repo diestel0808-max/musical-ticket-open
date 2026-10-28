@@ -17,7 +17,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from scraper import common  # noqa: E402
 from scraper.main import DATA, collect, load  # noqa: E402
+
+# 함수 실행은 60초 제한이라, 응답 없는 사이트 하나가 전체를 붙잡지 않게 요청당 대기를 짧게
+common.TIMEOUT = 8
 
 REPO = os.environ.get("GITHUB_REPO", "diestel0808-max/musical-ticket-open")
 CONTENTS_API = f"https://api.github.com/repos/{REPO}/contents/data/items.json"

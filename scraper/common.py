@@ -13,7 +13,11 @@ UA = (
 )
 
 
-def http(url, data=None, json_body=None, headers=None, timeout=20):
+# 요청 하나의 최대 대기(초). 매일 수집은 넉넉히, 사이트의 「지금 업데이트」(60초 제한)는 api/refresh.py에서 줄인다
+TIMEOUT = 20
+
+
+def http(url, data=None, json_body=None, headers=None, timeout=None):
     """GET/POST 요청 후 응답 본문(str)을 돌려준다."""
     h = {"User-Agent": UA, "Accept-Language": "ko-KR,ko;q=0.9"}
     if headers:
@@ -26,7 +30,7 @@ def http(url, data=None, json_body=None, headers=None, timeout=20):
         body = urllib.parse.urlencode(data).encode()
         h["Content-Type"] = "application/x-www-form-urlencoded; charset=UTF-8"
     req = urllib.request.Request(url, data=body, headers=h)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
+    with urllib.request.urlopen(req, timeout=timeout or TIMEOUT) as r:
         return r.read().decode("utf-8", errors="replace")
 
 
