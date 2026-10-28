@@ -47,7 +47,7 @@ h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; }
 .status-row { display: flex; align-items: center; justify-content: flex-end; gap: 12px; }
 .src-status { display: inline-flex; gap: 8px; }
 .src-status .bad { color: var(--sun); }
-.refresh { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.refresh { white-space: nowrap; flex: none; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600; cursor: pointer; }
 .refresh:hover { border-color: var(--text); }
 .refresh[disabled] { opacity: .55; cursor: progress; }
 .refresh-msg { margin-top: 6px; min-height: 18px; font-size: 12.5px; }
@@ -600,7 +600,11 @@ const isDaehakro = (it) => it.area === "대학로" || /대학로/.test(it.place)
 function ogFiltered() {
   const q = og.q.trim().toLowerCase();
   const up = og.mode === "upcoming";
-  const list = (up ? og.upcoming : og.items).filter((it) =>
+  // 수집이 하루 밀려도 오늘 기준으로 맞게: 막 내린 공연은 빼고, 개막일이 지난 '개막 예정'은 공연중으로 옮긴다
+  const today = todayKey();
+  const all = [...og.items, ...og.upcoming].filter((it) => it.end >= today);
+  const pool = up ? all.filter((it) => it.start > today) : all.filter((it) => it.start <= today);
+  const list = pool.filter((it) =>
     (!og.dhr || isDaehakro(it)) && (up || !og.soon || daysLeft(it.end) <= 14) &&
     (!q || (it.title + " " + it.place).toLowerCase().includes(q)));
   const by = {
