@@ -1,7 +1,30 @@
 {
- "updatedAt": "2026-10-27T18:47+09:00",
+ "updatedAt": "2026-10-29T10:50+09:00",
  "ok": true,
  "items": [
+  {
+   "id": "PF303268",
+   "title": "80일의 끝에서 낭독공연",
+   "area": "",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303268_261014_104823.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303268",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "고훈정, 임규형, 이종석, 이지숙, 원종환, 조훈, 김보현 등",
+    "runtime": "1시간 50분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014255"
+     }
+    ]
+   }
+  },
   {
    "id": "PF292306",
    "title": "디어 에반 핸슨 (Musical Dear Evan Hansen)",
@@ -1190,29 +1213,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF303268",
-   "title": "80일의 끝에서 낭독공연",
-   "area": "",
-   "start": "2026-10-29",
-   "end": "2026-10-29",
-   "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303268_261014_104823.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303268",
-   "detail": {
-    "age": "만 13세 이상",
-    "child": "N",
-    "cast": "고훈정, 임규형, 이종석, 이지숙, 원종환, 조훈, 김보현 등",
-    "runtime": "1시간 50분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26014255"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF303179",
    "title": "네가 나를 사랑하느냐",
    "area": "",
@@ -1264,6 +1264,34 @@
       "source": "",
       "name": "코스타(Coaster)",
       "url": "https://ticket.co-star.kr/shop/item.php?it_id=1791773408"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF304661",
+   "title": "심청 in 성수: 고양이가 된 우리, 심청과 함께 가상 성수를 누비다",
+   "area": "",
+   "start": "2026-11-01",
+   "end": "2026-11-08",
+   "place": "공간 철(CHUL)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304661_261028_112230.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304661",
+   "detail": {
+    "age": "만 11세 이상",
+    "child": "N",
+    "cast": "이은서, 이승채",
+    "runtime": "1시간",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015523"
+     },
+     {
+      "source": "",
+      "name": "마스킷",
+      "url": "https://reservation.qless.ai/ko/01a15865-cfd3-7655-ac4a-c7064ed5a688/events/01a15893-544c-754a-894d-90707e5678a9"
      }
     ]
    }
@@ -1518,7 +1546,7 @@
    "title": "헝키쇼 (HUNKY SHOW)",
    "reason": "19세 이상",
    "start": "2025-04-25",
-   "end": "2026-11-29",
+   "end": "2026-12-31",
    "place": "스타스테이지",
    "age": "만 19세 이상"
   },
@@ -1692,6 +1720,24 @@
    "end": "2026-12-11",
    "place": "웨스트브릿지 라이브홀",
    "age": ""
+  },
+  {
+   "id": "PF299302",
+   "title": "호두까기 인형 [서울 양천]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-04",
+   "end": "2026-11-29",
+   "place": "한국방송회관 코바코홀 (구. 브로드홀)",
+   "age": "24개월 이상"
+  },
+  {
+   "id": "PF298148",
+   "title": "오즈의 크리스마스 [서울 송파]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-04",
+   "end": "2026-12-31",
+   "place": "송파어린이문화회관",
+   "age": "30개월 이상"
   }
  ]
 }
