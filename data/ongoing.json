@@ -1,26 +1,26 @@
 {
- "updatedAt": "2026-10-29T14:48+09:00",
- "ok": false,
+ "updatedAt": "2026-10-30T14:49+09:00",
+ "ok": true,
  "items": [
   {
-   "id": "PF303268",
-   "title": "80일의 끝에서 낭독공연",
+   "id": "PF303179",
+   "title": "네가 나를 사랑하느냐",
    "area": "",
-   "start": "2026-10-29",
-   "end": "2026-10-29",
-   "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303268_261014_104823.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303268",
+   "start": "2026-10-30",
+   "end": "2026-10-31",
+   "place": "스케네웨이 [홍대]",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303179_261013_134645.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303179",
    "detail": {
-    "age": "만 13세 이상",
+    "age": "만 6세 이상",
     "child": "N",
-    "cast": "고훈정, 임규형, 이종석, 이지숙, 원종환, 조훈, 김보현 등",
-    "runtime": "1시간 50분",
+    "cast": "김사련, 김진성, 장수연, 민희영, 김수민",
+    "runtime": "1시간 20분",
     "links": [
      {
       "source": "nol",
       "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26014255"
+      "url": "https://nol.yanolja.com/ticket/products/26014365"
      }
     ]
    }
@@ -1213,29 +1213,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF303179",
-   "title": "네가 나를 사랑하느냐",
-   "area": "",
-   "start": "2026-10-30",
-   "end": "2026-10-31",
-   "place": "스케네웨이 [홍대]",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303179_261013_134645.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303179",
-   "detail": {
-    "age": "만 6세 이상",
-    "child": "N",
-    "cast": "김사련, 김진성, 장수연, 민희영, 김수민",
-    "runtime": "1시간 20분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26014365"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF301634",
    "title": "정신병동에도 아침이 와요",
    "area": "",
@@ -1394,9 +1371,147 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF303872",
+   "title": "뮤지컬 워크샵, 시지프스",
+   "area": "",
+   "start": "2026-11-06",
+   "end": "2026-11-08",
+   "place": "산울림소극장",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303872_261020_125028.png",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303872",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "곽현진, 오수현, 이태우, 김나영, 전유빈, 김나연, 허유빈 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "",
+      "name": "플레이티켓",
+      "url": "http://playticket.co.kr/nav/detail.html?idx=4614"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF294534",
+   "title": "바람으로의 여행",
+   "area": "",
+   "start": "2026-11-06",
+   "end": "2027-01-10",
+   "place": "스튜디오 블루",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF294534_260624_132649.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF294534",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "김소년, 조수하, 윤채린, 김가람, 권무성, 윤장현, 서예빈 등",
+    "runtime": "2시간 5분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26008744"
+     },
+     {
+      "source": "yes24",
+      "name": "예스24",
+      "url": "https://ticket.yes24.com/Perf/59734"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/590324"
+     },
+     {
+      "source": "",
+      "name": "대학로티켓닷컴",
+      "url": "http://www.maketicket.co.kr/ticket/GD30695"
+     },
+     {
+      "source": "",
+      "name": "클립서비스",
+      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79390"
+     },
+     {
+      "source": "",
+      "name": "타임티켓",
+      "url": "https://timeticket.co.kr/product/7321"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF300790",
+   "title": "쇼 머스트 고 온 in 대학로",
+   "area": "",
+   "start": "2026-11-06",
+   "end": "2026-12-31",
+   "place": "한성아트홀(구. 인켈아트홀)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF300790_260914_121206.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF300790",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "최대철, 이주훈, 김성훈, 신예준, 손난희, 양나현, 예하나 등",
+    "runtime": "1시간 39분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26013092"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/65597"
+     },
+     {
+      "source": "yes24",
+      "name": "예스24",
+      "url": "https://ticket.yes24.com/Perf/60112"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1733041"
+     },
+     {
+      "source": "",
+      "name": "대학로티켓닷컴",
+      "url": "http://www.maketicket.co.kr/ticket/GD30989"
+     },
+     {
+      "source": "",
+      "name": "카카오톡예약하기",
+      "url": "https://booking.kakao.com/detail/ticket/731131"
+     },
+     {
+      "source": "",
+      "name": "클립서비스",
+      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79440"
+     },
+     {
+      "source": "",
+      "name": "타임티켓",
+      "url": "https://timeticket.co.kr/product/7377"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
+  {
+   "id": "PF304512",
+   "title": "김동완의 뮤지컬 콘서트",
+   "reason": "콘서트·갈라",
+   "start": "2026-10-30",
+   "end": "2026-12-11",
+   "place": "웨스트브릿지 라이브홀",
+   "age": ""
+  },
   {
    "id": "PF303893",
    "title": "눈의 여왕 [서울 금천]",
@@ -1490,11 +1605,11 @@
   {
    "id": "PF294961",
    "title": "SEXY MEN STANDING 섹시 맨 스탠딩",
-   "reason": "19세 이상",
+   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
    "start": "2026-07-01",
    "end": "2026-11-29",
    "place": "레드루즈씨어터",
-   "age": "만 19세 이상"
+   "age": ""
   },
   {
    "id": "PF293005",
@@ -1544,11 +1659,11 @@
   {
    "id": "PF276055",
    "title": "헝키쇼 (HUNKY SHOW)",
-   "reason": "19세 이상",
+   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
    "start": "2025-04-25",
    "end": "2026-12-31",
    "place": "스타스테이지",
-   "age": "만 19세 이상"
+   "age": ""
   },
   {
    "id": "PF273014",
@@ -1713,15 +1828,6 @@
    "age": ""
   },
   {
-   "id": "PF304512",
-   "title": "김동완의 뮤지컬 콘서트",
-   "reason": "콘서트·갈라",
-   "start": "2026-10-30",
-   "end": "2026-12-11",
-   "place": "웨스트브릿지 라이브홀",
-   "age": ""
-  },
-  {
    "id": "PF299302",
    "title": "호두까기 인형 [서울 양천]",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -1739,6 +1845,5 @@
    "place": "송파어린이문화회관",
    "age": "30개월 이상"
   }
- ],
- "error": "HTTP Error 400: Bad Request"
+ ]
 }
