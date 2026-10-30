@@ -1,6 +1,6 @@
 {
  "updatedAt": "2026-10-29T14:48+09:00",
- "ok": true,
+ "ok": false,
  "items": [
   {
    "id": "PF303268",
@@ -1739,5 +1739,6 @@
    "place": "송파어린이문화회관",
    "age": "30개월 이상"
   }
- ]
+ ],
+ "error": "HTTP Error 400: Bad Request"
 }
