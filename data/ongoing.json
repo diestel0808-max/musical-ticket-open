@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-30T14:49+09:00",
+ "updatedAt": "2026-10-31T10:37+09:00",
  "ok": true,
  "items": [
   {
@@ -515,6 +515,39 @@
       "source": "",
       "name": "타임티켓",
       "url": "https://timeticket.co.kr/product/7444"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF301634",
+   "title": "정신병동에도 아침이 와요",
+   "area": "",
+   "start": "2026-10-31",
+   "end": "2026-11-22",
+   "place": "이화여자대학교 삼성홀",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF301634_260923_103936.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301634",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "최태이, 유주연, 정동화, 염성연, 최민우, 조성태, 정혜은 등",
+    "runtime": "2시간 45분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/65821"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1743767"
+     },
+     {
+      "source": "",
+      "name": "코스타(Coaster)",
+      "url": "https://ticket.co-star.kr/shop/item.php?it_id=1791773408"
      }
     ]
    }
@@ -1213,39 +1246,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF301634",
-   "title": "정신병동에도 아침이 와요",
-   "area": "",
-   "start": "2026-10-31",
-   "end": "2026-11-22",
-   "place": "이화여자대학교 삼성홀",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF301634_260923_103936.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301634",
-   "detail": {
-    "age": "만 13세 이상",
-    "child": "N",
-    "cast": "최태이, 유주연, 정동화, 염성연, 최민우, 조성태, 정혜은 등",
-    "runtime": "2시간 45분",
-    "links": [
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/65821"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1743767"
-     },
-     {
-      "source": "",
-      "name": "코스타(Coaster)",
-      "url": "https://ticket.co-star.kr/shop/item.php?it_id=1791773408"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF304661",
    "title": "심청 in 성수: 고양이가 된 우리, 심청과 함께 가상 성수를 누비다",
    "area": "",
@@ -1500,6 +1500,52 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF304520",
+   "title": "잔해",
+   "area": "대학로",
+   "start": "2026-11-07",
+   "end": "2026-11-08",
+   "place": "창작공간 BBB",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304520_261026_162506.png",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304520",
+   "detail": {
+    "age": "전체 관람가",
+    "child": "N",
+    "cast": "노경민, 박주희, 백찬혁, 신수민, 이유미, 장현우",
+    "runtime": "1시간 10분",
+    "links": [
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1758105"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF303749",
+   "title": "제7회 서울연극25페스티벌, 나에게 묻는다, 순환의 노래",
+   "area": "",
+   "start": "2026-11-07",
+   "end": "2026-11-08",
+   "place": "대학로 스카이씨어터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303749_261019_135836.png",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303749",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "강민지, 손동진, 김신영, 심아영, 윤휘영",
+    "runtime": "1시간 20분",
+    "links": [
+     {
+      "source": "",
+      "name": "플레이티켓",
+      "url": "http://playticket.co.kr/nav/detail.html?idx=4615"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
@@ -1515,11 +1561,11 @@
   {
    "id": "PF303893",
    "title": "눈의 여왕 [서울 금천]",
-   "reason": "아동(KOPIS 아동공연 표시)",
+   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
    "start": "2026-10-24",
    "end": "2026-11-21",
    "place": "레미어린이극장 [금천]",
-   "age": "전체 관람가"
+   "age": ""
   },
   {
    "id": "PF301985",
@@ -1569,11 +1615,11 @@
   {
    "id": "PF296844",
    "title": "세종 이도의 꿈",
-   "reason": "아동(KOPIS 아동공연 표시)",
+   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
    "start": "2026-09-05",
    "end": "2026-11-01",
    "place": "경복궁아트홀",
-   "age": "36개월 이상"
+   "age": ""
   },
   {
    "id": "PF296670",
@@ -1605,11 +1651,11 @@
   {
    "id": "PF294961",
    "title": "SEXY MEN STANDING 섹시 맨 스탠딩",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "19세 이상",
    "start": "2026-07-01",
    "end": "2026-11-29",
    "place": "레드루즈씨어터",
-   "age": ""
+   "age": "만 19세 이상"
   },
   {
    "id": "PF293005",
@@ -1623,11 +1669,11 @@
   {
    "id": "PF290797",
    "title": "Club 설화 [대학로]",
-   "reason": "19세 이상",
+   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
    "start": "2026-05-14",
    "end": "2026-11-29",
    "place": "극장 온 (ON) (구.CJ아지트)",
-   "age": "만 19세 이상"
+   "age": ""
   },
   {
    "id": "PF286497",
@@ -1724,7 +1770,7 @@
    "title": "터치 파이브 (TOUCH FIVE)",
    "reason": "오픈런",
    "start": "2024-11-08",
-   "end": "2026-11-29",
+   "end": "2026-12-31",
    "place": "TOUCH FIVE 전용관",
    "age": ""
   },
@@ -1825,6 +1871,60 @@
    "start": "2021-05-01",
    "end": "2026-10-31",
    "place": "에이치씨어터",
+   "age": ""
+  },
+  {
+   "id": "PF302888",
+   "title": "티시 태시",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-07",
+   "end": "2026-11-29",
+   "place": "상상나라극장",
+   "age": "24개월 이상"
+  },
+  {
+   "id": "PF302626",
+   "title": "헬로카봇: 카봇크루가 되어줘! [서울 마포]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-07",
+   "end": "2026-11-29",
+   "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
+   "age": "24개월 이상"
+  },
+  {
+   "id": "PF301487",
+   "title": "아기돼지 삼형제: 늑대숲 또옹돼지 원정대 [서울 강북]",
+   "reason": "아동·가족(제목)",
+   "start": "2026-11-07",
+   "end": "2026-11-08",
+   "place": "꿈의숲아트센터",
+   "age": ""
+  },
+  {
+   "id": "PF301148",
+   "title": "신데렐라 [서울 강남]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "place": "논현1 문화센터",
+   "age": "전체 관람가"
+  },
+  {
+   "id": "PF301113",
+   "title": "조선 마법사관 진준",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-07",
+   "end": "2026-12-31",
+   "place": "국립중앙박물관 극장 용",
+   "age": "36개월 이상"
+  },
+  {
+   "id": "PF300012",
+   "title": "인싸가족 [서울 서초]",
+   "reason": "아동·가족(제목)",
+   "start": "2026-11-07",
+   "end": "2026-11-08",
+   "place": "한전아트센터",
    "age": ""
   },
   {
