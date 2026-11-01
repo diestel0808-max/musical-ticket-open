@@ -1,30 +1,7 @@
 {
- "updatedAt": "2026-10-31T14:40+09:00",
+ "updatedAt": "2026-11-01T10:13+09:00",
  "ok": true,
  "items": [
-  {
-   "id": "PF303179",
-   "title": "네가 나를 사랑하느냐",
-   "area": "",
-   "start": "2026-10-30",
-   "end": "2026-10-31",
-   "place": "스케네웨이 [홍대]",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303179_261013_134645.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303179",
-   "detail": {
-    "age": "만 6세 이상",
-    "child": "N",
-    "cast": "김사련, 김진성, 장수연, 민희영, 김수민",
-    "runtime": "1시간 20분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26014365"
-     }
-    ]
-   }
-  },
   {
    "id": "PF292306",
    "title": "디어 에반 핸슨 (Musical Dear Evan Hansen)",
@@ -140,6 +117,34 @@
       "source": "",
       "name": "타임티켓",
       "url": "https://timeticket.co.kr/product/7406"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF304661",
+   "title": "심청 in 성수: 고양이가 된 우리, 심청과 함께 가상 성수를 누비다",
+   "area": "",
+   "start": "2026-11-01",
+   "end": "2026-11-08",
+   "place": "공간 철(CHUL)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304661_261028_112230.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304661",
+   "detail": {
+    "age": "만 11세 이상",
+    "child": "N",
+    "cast": "이은서, 이승채",
+    "runtime": "1시간",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015523"
+     },
+     {
+      "source": "",
+      "name": "마스킷",
+      "url": "https://reservation.qless.ai/ko/01a15865-cfd3-7655-ac4a-c7064ed5a688/events/01a15893-544c-754a-894d-90707e5678a9"
      }
     ]
    }
@@ -1246,34 +1251,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF304661",
-   "title": "심청 in 성수: 고양이가 된 우리, 심청과 함께 가상 성수를 누비다",
-   "area": "",
-   "start": "2026-11-01",
-   "end": "2026-11-08",
-   "place": "공간 철(CHUL)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304661_261028_112230.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304661",
-   "detail": {
-    "age": "만 11세 이상",
-    "child": "N",
-    "cast": "이은서, 이승채",
-    "runtime": "1시간",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26015523"
-     },
-     {
-      "source": "",
-      "name": "마스킷",
-      "url": "https://reservation.qless.ai/ko/01a15865-cfd3-7655-ac4a-c7064ed5a688/events/01a15893-544c-754a-894d-90707e5678a9"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF302368",
    "title": "요셉전",
    "area": "대학로",
@@ -1568,15 +1545,6 @@
    "age": "전체 관람가"
   },
   {
-   "id": "PF301985",
-   "title": "DRAG in 혜화 (드랙인혜화)",
-   "reason": "오픈런",
-   "start": "2026-10-09",
-   "end": "2026-10-31",
-   "place": "뮤지컬펍 커튼콜",
-   "age": ""
-  },
-  {
    "id": "PF300749",
    "title": "바둑이와 세리 [대학로]",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -1602,15 +1570,6 @@
    "end": "2026-11-01",
    "place": "한전아트센터",
    "age": "전체 관람가"
-  },
-  {
-   "id": "PF297249",
-   "title": "숲속의 청소부 다롱이",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-09-01",
-   "end": "2026-10-31",
-   "place": "송파어린이문화회관",
-   "age": "30개월 이상"
   },
   {
    "id": "PF296844",
@@ -1685,15 +1644,6 @@
    "age": ""
   },
   {
-   "id": "PF285983",
-   "title": "스크루테이프의 편지 [대학로]",
-   "reason": "오픈런",
-   "start": "2026-04-17",
-   "end": "2026-10-31",
-   "place": "명륜아트홀",
-   "age": ""
-  },
-  {
    "id": "PF284594",
    "title": "장수탕 선녀님 [서울 광진]",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -1710,15 +1660,6 @@
    "end": "2026-12-31",
    "place": "스타스테이지",
    "age": "만 19세 이상"
-  },
-  {
-   "id": "PF273014",
-   "title": "스폿라이트 [대학로]",
-   "reason": "오픈런",
-   "start": "2025-08-28",
-   "end": "2026-10-31",
-   "place": "스폿라이트",
-   "age": ""
   },
   {
    "id": "PF272938",
@@ -1757,15 +1698,6 @@
    "age": "12개월 이상"
   },
   {
-   "id": "PF259779",
-   "title": "써니텐 [대학로]",
-   "reason": "오픈런",
-   "start": "2025-01-01",
-   "end": "2026-10-31",
-   "place": "JTN 아트홀(구. 대학로예술마당)",
-   "age": ""
-  },
-  {
    "id": "PF251017",
    "title": "터치 파이브 (TOUCH FIVE)",
    "reason": "오픈런",
@@ -1790,15 +1722,6 @@
    "start": "2024-07-14",
    "end": "2026-11-29",
    "place": "라온씨어터",
-   "age": ""
-  },
-  {
-   "id": "PF242666",
-   "title": "페인터즈 [서대문전용관]",
-   "reason": "오픈런",
-   "start": "2024-06-05",
-   "end": "2026-10-31",
-   "place": "NH아트홀",
    "age": ""
   },
   {
@@ -1853,24 +1776,6 @@
    "start": "2024-01-03",
    "end": "2026-11-29",
    "place": "JTN 아트홀(구. 대학로예술마당)",
-   "age": ""
-  },
-  {
-   "id": "PF229985",
-   "title": "천로역정",
-   "reason": "오픈런",
-   "start": "2023-12-09",
-   "end": "2026-10-31",
-   "place": "명륜아트홀",
-   "age": ""
-  },
-  {
-   "id": "PF173894",
-   "title": "프리즌 [H씨어터]",
-   "reason": "오픈런",
-   "start": "2021-05-01",
-   "end": "2026-10-31",
-   "place": "에이치씨어터",
    "age": ""
   },
   {
