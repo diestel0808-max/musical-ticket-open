@@ -1,73 +1,7 @@
 {
- "updatedAt": "2026-11-01T15:04+09:00",
- "ok": false,
+ "updatedAt": "2026-11-02T15:01+09:00",
+ "ok": true,
  "items": [
-  {
-   "id": "PF292306",
-   "title": "디어 에반 핸슨 (Musical Dear Evan Hansen)",
-   "area": "서울",
-   "start": "2026-08-01",
-   "end": "2026-11-01",
-   "place": "충무아트센터",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF292306_260527_110648.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF292306",
-   "detail": {
-    "age": "만 13세 이상",
-    "child": "N",
-    "cast": "박강현, 임규형, 나현우, 김선영, 신영숙, 조민호, 김수호 등",
-    "runtime": "2시간 40분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26007442"
-     },
-     {
-      "source": "yes24",
-      "name": "예스24",
-      "url": "https://ticket.yes24.com/Perf/58543"
-     },
-     {
-      "source": "",
-      "name": "29CM",
-      "url": "https://ticket.29cm.co.kr/catalog/4104896"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1659791"
-     },
-     {
-      "source": "",
-      "name": "클립서비스",
-      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79229"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF301091",
-   "title": "솔로몬",
-   "area": "대학로",
-   "start": "2026-10-23",
-   "end": "2026-11-01",
-   "place": "다케이씨어터 (구. 창조소극장)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF301091_260916_145417.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301091",
-   "detail": {
-    "age": "만 11세 이상",
-    "child": "N",
-    "cast": "박진우, 은별, 권경외, 김예은, 하경찬, 이세은, 이상현 등",
-    "runtime": "1시간 40분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26012997"
-     }
-    ]
-   }
-  },
   {
    "id": "PF296319",
    "title": "다이브",
@@ -841,6 +775,44 @@
    }
   },
   {
+   "id": "PF302368",
+   "title": "요셉전",
+   "area": "대학로",
+   "start": "2026-11-02",
+   "end": "2026-12-02",
+   "place": "아트하우스",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF302368_261002_140512.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302368",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "정지환, 지강혁, 조지환, 성보람, 김연수, 유민정, 박혜민 등",
+    "runtime": "1시간 30분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014168"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1741250"
+     },
+     {
+      "source": "",
+      "name": "대학로티켓닷컴",
+      "url": "http://www.maketicket.co.kr/ticket/GD31110"
+     },
+     {
+      "source": "",
+      "name": "타임티켓",
+      "url": "https://timeticket.co.kr/product/7427"
+     }
+    ]
+   }
+  },
+  {
    "id": "PF298593",
    "title": "아나키스트",
    "area": "대학로",
@@ -1251,44 +1223,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF302368",
-   "title": "요셉전",
-   "area": "대학로",
-   "start": "2026-11-02",
-   "end": "2026-12-02",
-   "place": "아트하우스",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF302368_261002_140512.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302368",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "정지환, 지강혁, 조지환, 성보람, 김연수, 유민정, 박혜민 등",
-    "runtime": "1시간 30분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26014168"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1741250"
-     },
-     {
-      "source": "",
-      "name": "대학로티켓닷컴",
-      "url": "http://www.maketicket.co.kr/ticket/GD31110"
-     },
-     {
-      "source": "",
-      "name": "타임티켓",
-      "url": "https://timeticket.co.kr/product/7427"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF301565",
    "title": "FATED",
    "area": "대학로",
@@ -1523,6 +1457,85 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF303292",
+   "title": "백야의 밤 리딩 쇼케이스",
+   "area": "대학로",
+   "start": "2026-11-09",
+   "end": "2026-11-09",
+   "place": "달밤엔씨어터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303292_261014_131913.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303292",
+   "detail": {
+    "age": "만 15세 이상",
+    "child": "N",
+    "cast": "김나연, 이준우, 노서희, 이경민 등",
+    "runtime": "1시간 10분",
+    "links": [
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1749866"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF300941",
+   "title": "사춘기",
+   "area": "대학로",
+   "start": "2026-11-09",
+   "end": "2027-01-31",
+   "place": "예그린씨어터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF300941_260915_104351.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF300941",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "임찬민, 이서영, 송영미, 전하영, 김이담, 이승준, 김시유 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26013198"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/65623"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1738405"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF303878",
+   "title": "애프터 나인 쇼케이스",
+   "area": "",
+   "start": "2026-11-09",
+   "end": "2026-11-09",
+   "place": "XSCALA(엑스칼라)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303878_261020_131103.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303878",
+   "detail": {
+    "age": "만 11세 이상",
+    "child": "N",
+    "cast": "주민진, 정지은, 강찬, 윤미소, 이주찬, 심건우, 김동현 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66353"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
@@ -1561,33 +1574,6 @@
    "end": "2026-11-15",
    "place": "북아현아트홀",
    "age": "24개월 이상"
-  },
-  {
-   "id": "PF298781",
-   "title": "코밈 [서울 서초]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-10-24",
-   "end": "2026-11-01",
-   "place": "한전아트센터",
-   "age": "전체 관람가"
-  },
-  {
-   "id": "PF296844",
-   "title": "세종 이도의 꿈",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-09-05",
-   "end": "2026-11-01",
-   "place": "경복궁아트홀",
-   "age": "36개월 이상"
-  },
-  {
-   "id": "PF296670",
-   "title": "콧구멍을 후비면 [서울 양천]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-10-03",
-   "end": "2026-11-01",
-   "place": "한국방송회관 코바코홀 (구. 브로드홀)",
-   "age": "전체 관람가"
   },
   {
    "id": "PF296265",
@@ -1850,6 +1836,5 @@
    "place": "송파어린이문화회관",
    "age": "30개월 이상"
   }
- ],
- "error": "HTTP Error 400: Bad Request"
+ ]
 }
