@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-02T15:01+09:00",
- "ok": false,
+ "updatedAt": "2026-11-03T15:46+09:00",
+ "ok": true,
  "items": [
   {
    "id": "PF296319",
@@ -1145,6 +1145,67 @@
    }
   },
   {
+   "id": "PF301565",
+   "title": "FATED",
+   "area": "대학로",
+   "start": "2026-11-03",
+   "end": "2027-01-24",
+   "place": "링크아트센터드림",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF301565_260922_133248.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301565",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "박규원, 신주협, 박준형, 박정모, 조은성, 김재한, 이동수 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/65818"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1743331"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF301746",
+   "title": "마하고니",
+   "area": "대학로",
+   "start": "2026-11-03",
+   "end": "2027-01-24",
+   "place": "링크아트센터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF301746_260928_114407.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301746",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "최재웅, 선한국, 이진혁, 김찬종, 임예진, 정민, 온주완 등",
+    "runtime": "1시간 50분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/65819"
+     },
+     {
+      "source": "yes24",
+      "name": "예스24",
+      "url": "https://ticket.yes24.com/Perf/60316"
+     },
+     {
+      "source": "",
+      "name": "코스타(Coaster)",
+      "url": "https://ticket.co-star.kr/shop/item.php?it_id=1792409787"
+     }
+    ]
+   }
+  },
+  {
    "id": "PF291533",
    "title": "빨래: 32차 프로덕션",
    "area": "",
@@ -1222,67 +1283,6 @@
   }
  ],
  "upcoming": [
-  {
-   "id": "PF301565",
-   "title": "FATED",
-   "area": "대학로",
-   "start": "2026-11-03",
-   "end": "2027-01-24",
-   "place": "링크아트센터드림",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF301565_260922_133248.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301565",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "박규원, 신주협, 박준형, 박정모, 조은성, 김재한, 이동수 등",
-    "runtime": "1시간 40분",
-    "links": [
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/65818"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1743331"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF301746",
-   "title": "마하고니",
-   "area": "대학로",
-   "start": "2026-11-03",
-   "end": "2027-01-24",
-   "place": "링크아트센터",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF301746_260928_114407.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301746",
-   "detail": {
-    "age": "만 13세 이상",
-    "child": "N",
-    "cast": "최재웅, 선한국, 이진혁, 김찬종, 임예진, 정민, 온주완 등",
-    "runtime": "1시간 50분",
-    "links": [
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/65819"
-     },
-     {
-      "source": "yes24",
-      "name": "예스24",
-      "url": "https://ticket.yes24.com/Perf/60316"
-     },
-     {
-      "source": "",
-      "name": "코스타(Coaster)",
-      "url": "https://ticket.co-star.kr/shop/item.php?it_id=1792409787"
-     }
-    ]
-   }
-  },
   {
    "id": "PF303872",
    "title": "뮤지컬 워크샵, 시지프스",
@@ -1536,6 +1536,34 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF302792",
+   "title": "Sounds of Autumn",
+   "area": "",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "place": "롯데콘서트홀",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF302792_261008_112216.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302792",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "칼린 수 팍, 최재림, 정선아, 신효범 등",
+    "runtime": "1시간 30분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014144"
+     },
+     {
+      "source": "",
+      "name": "롯데콘서트홀",
+      "url": "https://www.lotteconcerthall.com/product/performance/261225"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
@@ -1711,6 +1739,15 @@
    "age": ""
   },
   {
+   "id": "PF242666",
+   "title": "페인터즈 [서대문전용관]",
+   "reason": "오픈런",
+   "start": "2024-06-05",
+   "end": "2027-01-31",
+   "place": "NH아트홀",
+   "age": ""
+  },
+  {
    "id": "PF237479",
    "title": "페인터즈 [경향아트힐]",
    "reason": "오픈런",
@@ -1836,6 +1873,5 @@
    "place": "송파어린이문화회관",
    "age": "30개월 이상"
   }
- ],
- "error": "HTTP Error 400: Bad Request"
+ ]
 }
