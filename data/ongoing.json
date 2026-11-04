@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-03T15:46+09:00",
+ "updatedAt": "2026-11-04T11:22+09:00",
  "ok": true,
  "items": [
   {
@@ -1564,6 +1564,49 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF300974",
+   "title": "두 도시 이야기",
+   "area": "",
+   "start": "2026-11-11",
+   "end": "2027-02-08",
+   "place": "광림아트센터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF300974_260915_132402.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF300974",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "정기열, 신성록, 고은성, 백형훈, 진태화, 노윤, 이선민 등",
+    "runtime": "2시간 50분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26013098"
+     },
+     {
+      "source": "yes24",
+      "name": "예스24",
+      "url": "https://ticket.yes24.com/Perf/60128"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1737045"
+     },
+     {
+      "source": "",
+      "name": "멜론티켓",
+      "url": "https://ticket.melon.com/performance/index.htm?prodId=213865"
+     },
+     {
+      "source": "",
+      "name": "쇼노트",
+      "url": "http://www.shownote.com/Ticket/Performance/Details?performanceId=378"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
@@ -1602,6 +1645,24 @@
    "end": "2026-11-15",
    "place": "북아현아트홀",
    "age": "24개월 이상"
+  },
+  {
+   "id": "PF299302",
+   "title": "호두까기 인형 [서울 양천]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-04",
+   "end": "2026-11-29",
+   "place": "한국방송회관 코바코홀 (구. 브로드홀)",
+   "age": "24개월 이상"
+  },
+  {
+   "id": "PF298148",
+   "title": "오즈의 크리스마스 [서울 송파]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-04",
+   "end": "2026-12-31",
+   "place": "송파어린이문화회관",
+   "age": "30개월 이상"
   },
   {
    "id": "PF296265",
@@ -1854,24 +1915,6 @@
    "end": "2026-11-08",
    "place": "한전아트센터",
    "age": ""
-  },
-  {
-   "id": "PF299302",
-   "title": "호두까기 인형 [서울 양천]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-04",
-   "end": "2026-11-29",
-   "place": "한국방송회관 코바코홀 (구. 브로드홀)",
-   "age": "24개월 이상"
-  },
-  {
-   "id": "PF298148",
-   "title": "오즈의 크리스마스 [서울 송파]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-04",
-   "end": "2026-12-31",
-   "place": "송파어린이문화회관",
-   "age": "30개월 이상"
   }
  ]
 }
