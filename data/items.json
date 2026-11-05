@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-11-05T11:28+09:00",
+ "updatedAt": "2026-11-05T15:46+09:00",
  "sources": {
   "nol": {
    "ok": true,
-   "count": 14,
-   "at": "2026-11-05T11:28+09:00"
+   "count": 11,
+   "at": "2026-11-05T15:46+09:00"
   },
   "ticketlink": {
    "ok": true,
-   "count": 15,
-   "at": "2026-11-05T11:28+09:00"
+   "count": 13,
+   "at": "2026-11-05T15:46+09:00"
   },
   "yes24": {
    "ok": true,
    "count": 46,
-   "at": "2026-11-05T11:28+09:00"
+   "at": "2026-11-05T15:46+09:00"
   }
  },
  "items": [
@@ -465,7 +465,7 @@
    "url": "https://ticket.yes24.com/Perf/59313",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202607/20260715/20260715-59313.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-08-08",
     "end": "2026-10-18"
@@ -510,7 +510,7 @@
    "url": "https://ticket.yes24.com/Perf/60365",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260923/20260923-60365.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-11-06",
     "end": "2026-11-06"
@@ -531,7 +531,7 @@
    "url": "https://ticket.yes24.com/Perf/59565",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260804/20260804-59565.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-09-22",
     "end": "2026-12-13"
@@ -552,7 +552,7 @@
    "url": "https://ticket.yes24.com/Perf/58477",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260914/20260914-58477.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-07-24",
     "end": "2026-11-08"
@@ -576,7 +576,7 @@
    "url": "https://ticket.yes24.com/Perf/59565",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260804/20260804-59565.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-09-22",
     "end": "2026-12-13"
@@ -597,7 +597,7 @@
    "url": "https://ticket.yes24.com/Perf/59694",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260825/20260825-59694.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-11-15"
@@ -621,7 +621,7 @@
    "url": "https://ticket.yes24.com/Perf/60484",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261002/20261002-60484_2.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-12-15",
     "end": "2027-03-01"
@@ -645,7 +645,7 @@
    "url": "https://ticket.yes24.com/Perf/59596",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260807/20260807-59596.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-11-17",
     "end": "2026-11-29"
@@ -669,7 +669,7 @@
    "url": "https://ticket.yes24.com/Perf/59488",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59488.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2026-11-29"
@@ -693,7 +693,7 @@
    "url": "https://ticket.yes24.com/Perf/60524",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261008/20261008-60524.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-10-30",
     "end": "2026-11-01"
@@ -717,7 +717,7 @@
    "url": "https://ticket.yes24.com/Perf/60521",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261007/20261007-60521.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-12-22",
     "end": "2027-01-15"
@@ -741,7 +741,7 @@
    "url": "https://ticket.yes24.com/Perf/59639",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260811/20260811-59639.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-09-16",
     "end": "2026-11-29"
@@ -765,7 +765,7 @@
    "url": "https://ticket.yes24.com/Perf/59239",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -789,7 +789,7 @@
    "url": "https://ticket.yes24.com/Perf/59239",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -813,7 +813,7 @@
    "url": "https://ticket.yes24.com/Perf/60316",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260921/20260921-60316.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2027-01-24"
@@ -837,7 +837,7 @@
    "url": "https://ticket.yes24.com/Perf/59852",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-59852.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-29"
@@ -861,7 +861,7 @@
    "url": "https://ticket.yes24.com/Perf/60645",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261014/20261014-60645.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-10-31",
     "end": "2026-10-31"
@@ -882,7 +882,7 @@
    "url": "https://ticket.yes24.com/Perf/60602",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261012/20261012-60602.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-10"
@@ -903,7 +903,7 @@
    "url": "https://ticket.yes24.com/Perf/60128",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260916/20260916-60128.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-11-11",
     "end": "2027-02-08"
@@ -927,7 +927,7 @@
    "url": "https://ticket.yes24.com/Perf/60658",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-60658.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-12-16",
     "end": "2027-03-14"
@@ -951,7 +951,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18687",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-12-23",
     "end": "2026-12-23"
@@ -971,7 +971,7 @@
    "url": "https://ticket.yes24.com/Perf/60658",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-60658.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-12-16",
     "end": "2027-03-14"
@@ -1142,7 +1142,7 @@
    "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18713",
    "image": "",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2027-03-07"
@@ -1271,7 +1271,7 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "60836"
   },
@@ -1323,7 +1323,7 @@
    "url": "https://ticket.yes24.com/Perf/58563",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202605/20260529/20260529-58563.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "period": {
     "start": "2026-12-08",
     "end": "2027-01-03"
@@ -1353,7 +1353,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "60857"
   },
@@ -1418,7 +1418,7 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "60836"
   },
@@ -1494,7 +1494,7 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "59565"
   },
@@ -1518,7 +1518,7 @@
     "end": "2026-11-29"
    },
    "firstSeenAt": "2026-10-27T18:15+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "59239"
   },
@@ -1564,7 +1564,7 @@
     "end": "2026-12-06"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "59694"
   },
@@ -1607,7 +1607,7 @@
     "end": "2026-11-29"
    },
    "firstSeenAt": "2026-10-27T18:15+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "59239"
   },
@@ -1653,7 +1653,7 @@
     "end": "2026-12-27"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "60863"
   },
@@ -1693,7 +1693,7 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "59565"
   },
@@ -1769,7 +1769,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-28T23:43+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "60916"
   },
@@ -1968,7 +1968,7 @@
     "end": "2026-12-20"
    },
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "60940"
   },
@@ -2033,7 +2033,7 @@
     "end": "2026-12-20"
    },
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "59852"
   },
@@ -2076,7 +2076,7 @@
     "end": "2027-02-05"
    },
    "firstSeenAt": "2026-10-27T09:15+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "60521"
   },
@@ -2192,7 +2192,7 @@
    "round": "1차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T18:47+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "60933"
   },
@@ -2204,7 +2204,7 @@
    "label": "",
    "openAt": "2026-11-05T14:00+09:00",
    "place": "플러스씨어터",
-   "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18760",
+   "url": "https://ticket.yes24.com/Perf/60967",
    "image": "",
    "period": {
     "start": "2026-12-09",
@@ -2216,8 +2216,9 @@
     "end": "2026-12-13"
    },
    "firstSeenAt": "2026-10-28T23:43+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
-   "detailV": 3
+   "lastSeenAt": "2026-11-05T15:46+09:00",
+   "detailV": 3,
+   "perfId": "60967"
   },
   {
    "id": "ticketlink:66367",
@@ -2239,7 +2240,7 @@
     "end": "2026-12-27"
    },
    "firstSeenAt": "2026-10-30T10:58+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "ticketlink:66405",
@@ -2258,7 +2259,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-02T15:01+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "ticketlink:66378",
@@ -2277,7 +2278,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "ticketlink:66403",
@@ -2296,7 +2297,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-02T15:01+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "ticketlink:66337",
@@ -2326,7 +2327,7 @@
    "openAt": "2026-11-06T11:00+09:00",
    "place": "NOL 서경스퀘어 스콘2관",
    "url": "https://nol.yanolja.com/ticket/products/26015902",
-   "image": "https://ticketimage.interpark.com/TicketImage/notice_poster/20/2026110217502326.jpg",
+   "image": "https://ticketimage.interpark.com/Play/image/large/26/26015902_p.gif",
    "period": {
     "start": "2026-12-12",
     "end": "2027-02-28"
@@ -2334,7 +2335,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-03T12:29+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "ticketlink:66417",
@@ -2350,7 +2351,28 @@
    "round": "1차",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-03T12:29+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
+  },
+  {
+   "id": "yes24:18796",
+   "source": "yes24",
+   "title": "[수원] 2027 베스트셀러 뮤지컬 [콧구멍을 후비면]",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-11-06T11:00+09:00",
+   "place": "장안구민회관 한누리아트홀",
+   "url": "https://ticket.yes24.com/Perf/61025",
+   "image": "",
+   "period": {
+    "start": "2027-01-10",
+    "end": "2027-01-10"
+   },
+   "round": "",
+   "roundPeriod": null,
+   "firstSeenAt": "2026-11-05T15:46+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
+   "detailV": 3,
+   "perfId": "61025"
   },
   {
    "id": "ticketlink:66411",
@@ -2372,7 +2394,7 @@
     "end": "2026-12-13"
    },
    "firstSeenAt": "2026-11-02T15:01+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "ticketlink:66423",
@@ -2391,7 +2413,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-04T11:21+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "nol:15862-41941",
@@ -2410,7 +2432,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-05T11:28+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "nol:15847-41847",
@@ -2429,7 +2451,7 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-03T15:46+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "ticketlink:66416",
@@ -2451,7 +2473,7 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-11-03T12:29+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "ticketlink:66419",
@@ -2470,7 +2492,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-03T15:46+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "yes24:18782",
@@ -2492,7 +2514,7 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-11-03T12:29+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3
   },
   {
@@ -2512,7 +2534,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-05T11:28+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "yes24:18785",
@@ -2534,7 +2556,7 @@
     "end": "2027-01-10"
    },
    "firstSeenAt": "2026-11-04T11:21+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3,
    "perfId": "60484"
   },
@@ -2558,7 +2580,7 @@
     "end": "2026-12-20"
    },
    "firstSeenAt": "2026-11-03T15:46+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "ticketlink:66439",
@@ -2577,7 +2599,53 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-05T11:28+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
+  },
+  {
+   "id": "ticketlink:66453",
+   "source": "ticketlink",
+   "title": "뮤지컬 <마하고니> 3차",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-11-11T12:00+09:00",
+   "place": "링크아트센터 페이코홀",
+   "url": "https://www.ticketlink.co.kr/help/notice/66453",
+   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_9/26_mg_open_1105.jpg",
+   "period": {
+    "start": "2026-12-08",
+    "end": "2026-12-27"
+   },
+   "round": "3차",
+   "roundPeriod": {
+    "start": "2026-12-08",
+    "end": "2026-12-27"
+   },
+   "firstSeenAt": "2026-11-05T15:46+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00"
+  },
+  {
+   "id": "yes24:18799",
+   "source": "yes24",
+   "title": "뮤지컬 [마하고니] 3차",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-11-11T12:00+09:00",
+   "place": "링크아트센터 페이코홀",
+   "url": "https://ticket.yes24.com/Perf/60316",
+   "image": "",
+   "period": {
+    "start": "2026-11-03",
+    "end": "2027-01-24"
+   },
+   "round": "3차",
+   "roundPeriod": {
+    "start": "2026-12-08",
+    "end": "2026-12-27"
+   },
+   "firstSeenAt": "2026-11-05T15:46+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
+   "detailV": 3,
+   "perfId": "60316"
   },
   {
    "id": "nol:15767-41678",
@@ -2596,7 +2664,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-31T10:37+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "yes24:18754",
@@ -2618,11 +2686,11 @@
     "end": "2027-01-16"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3
   },
   {
-   "id": "nol:15768-41675",
+   "id": "nol:15768-41985",
    "source": "nol",
    "title": "뮤지컬 〈해밀턴〉 내한공연 - 서울(Musical HAMILTON)",
    "exclusive": false,
@@ -2637,8 +2705,8 @@
    },
    "round": "",
    "roundPeriod": null,
-   "firstSeenAt": "2026-10-31T10:37+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "firstSeenAt": "2026-11-05T15:46+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "yes24:18753",
@@ -2660,11 +2728,56 @@
     "end": "2027-01-24"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
    "detailV": 3
   },
   {
-   "id": "nol:15860-41917",
+   "id": "ticketlink:66441",
+   "source": "ticketlink",
+   "title": "뮤지컬 <샤이닝> 1차",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-11-12T11:00+09:00",
+   "place": "대학로 TOM(티오엠) 2관",
+   "url": "https://www.ticketlink.co.kr/help/notice/66441",
+   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_2/s_open_1105.jpg",
+   "period": {
+    "start": "2026-12-16",
+    "end": "2027-01-03"
+   },
+   "round": "1차",
+   "roundPeriod": {
+    "start": "2026-12-16",
+    "end": "2027-01-03"
+   },
+   "firstSeenAt": "2026-11-05T15:46+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00"
+  },
+  {
+   "id": "yes24:18795",
+   "source": "yes24",
+   "title": "뮤지컬 [샤이닝] 1차",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-11-12T11:00+09:00",
+   "place": "대학로 TOM(티오엠) 2관",
+   "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18795",
+   "image": "",
+   "period": {
+    "start": "2026-12-16",
+    "end": "2027-01-03"
+   },
+   "round": "1차",
+   "roundPeriod": {
+    "start": "2026-12-16",
+    "end": "2027-01-03"
+   },
+   "firstSeenAt": "2026-11-05T15:46+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00",
+   "detailV": 3
+  },
+  {
+   "id": "nol:15860-41982",
    "source": "nol",
    "title": "뮤지컬 〈콰이어 오브 맨〉",
    "exclusive": false,
@@ -2679,11 +2792,11 @@
    },
    "round": "마지막",
    "roundPeriod": null,
-   "firstSeenAt": "2026-11-04T15:21+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "firstSeenAt": "2026-11-05T15:46+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
-   "id": "nol:15860-41916",
+   "id": "nol:15860-41981",
    "source": "nol",
    "title": "뮤지컬 〈콰이어 오브 맨〉",
    "exclusive": false,
@@ -2698,8 +2811,8 @@
    },
    "round": "마지막",
    "roundPeriod": null,
-   "firstSeenAt": "2026-11-04T15:21+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "firstSeenAt": "2026-11-05T15:46+09:00",
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "nol:15806-41629",
@@ -2718,7 +2831,7 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "nol:15806-41628",
@@ -2737,7 +2850,7 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "nol:15806-41627",
@@ -2756,7 +2869,7 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-05T11:28+09:00"
+   "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
    "id": "ticketlink:66136",
