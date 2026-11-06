@@ -2,7 +2,7 @@
 import re
 from datetime import datetime
 
-from ..common import html_text, http, is_kids, iso_kst, make_item, parse_age, parse_period, parse_round_period
+from ..common import MUSICAL_WORD, html_text, http, is_kids, iso_kst, make_item, parse_age, parse_period, parse_round_period
 
 API = "https://ticket.yes24.com/New/Notice/Ajax/axList.aspx"
 DETAIL_API = "https://ticket.yes24.com/New/Notice/Ajax/axRead.aspx"
@@ -60,6 +60,7 @@ def fetch_detail(source_id, ref_year=None):
         "perfId": None,
         "image": "",
         "age": parse_age(text),
+        "mentionsMusical": bool(MUSICAL_WORD.search(text)),
     }
     p = PERF_ID.search(raw)
     if p:

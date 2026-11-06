@@ -48,6 +48,8 @@ def collect(db, log=print):
                 for k in ("period", "round", "roundPeriod", "image", "age"):  # 상세에서 채운 값은 비어 있는 값으로 덮지 않음
                     if it.get(k):
                         old[k] = it[k]
+                if it.get("mentionsMusical") is not None:
+                    old["mentionsMusical"] = it["mentionsMusical"]
                 if not old.get("perfId"):  # 예스24는 상세에서 상품 페이지 주소로 바꿔 둔 링크를 유지
                     old["url"] = it["url"]
                 old["lastSeenAt"] = now
@@ -69,7 +71,7 @@ def collect(db, log=print):
         fill_yes24_details(by_id.values(), log)
     # 19세 이상·아동극·콘서트 정리. 예스24는 상세를 읽어야 연령을 알 수 있어 그 뒤에 한다
     for it in list(by_id.values()):
-        reason = exclusion(it["title"], it.get("age"), it.get("place"))
+        reason = exclusion(it["title"], it.get("age"), it.get("place"), it.get("mentionsMusical"))
         if reason:
             log(f"  제외({reason}): [{it['source']}] {it['title']} / {it.get('age', '')}")
             del by_id[it["id"]]
@@ -80,7 +82,7 @@ def collect(db, log=print):
     return db, new_items
 
 
-DETAIL_VERSION = 4  # 상세에서 읽는 항목이 늘면 올려서 기존 항목도 다시 읽게 함
+DETAIL_VERSION = 5  # 상세에서 읽는 항목이 늘면 올려서 기존 항목도 다시 읽게 함
 
 
 def fill_yes24_details(items, log):
@@ -104,6 +106,7 @@ def fill_yes24_details(items, log):
         it["round"] = d["round"] or it.get("round", "")
         it["detailV"] = DETAIL_VERSION
         it["age"] = d["age"]
+        it["mentionsMusical"] = d["mentionsMusical"]
         it.pop("periodChecked", None)
         if d["place"] and not it.get("place"):
             it["place"] = d["place"]

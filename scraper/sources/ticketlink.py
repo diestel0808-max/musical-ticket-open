@@ -2,7 +2,7 @@
 import json
 from datetime import datetime
 
-from ..common import html_text, http, is_kids, iso_kst, make_item, parse_age, parse_period, parse_round_period
+from ..common import MUSICAL_WORD, html_text, http, is_kids, iso_kst, make_item, parse_age, parse_period, parse_round_period
 
 API = "https://www.ticketlink.co.kr/help/getNoticeList?page={page}&noticeCategoryCode=TICKET_OPEN"
 MUSICAL_SUBCATEGORY = 16  # 공연 > 뮤지컬
@@ -31,6 +31,7 @@ def fetch(max_pages=4):
                 place=r.get("placeName") or "",
                 period=parse_period(text, ref_year),
                 round_=round_, round_period=round_period, age=parse_age(text),
+                mentions_musical=bool(MUSICAL_WORD.search(text)),
                 image=(r.get("imagePath") or r.get("noticeImagePath") or "").replace("http://", "https://"),
             ))
         if page >= d["paging"]["pageCount"]:
