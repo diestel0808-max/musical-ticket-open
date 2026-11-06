@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-07T00:47+09:00",
+ "updatedAt": "2026-11-07T01:09+09:00",
  "ok": true,
  "items": [
   {
@@ -1663,6 +1663,174 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF303127",
+   "title": "플릭스! (Musical FLIX!)",
+   "area": "",
+   "start": "2026-11-17",
+   "end": "2026-11-28",
+   "place": "강동아트센터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303127_261013_103504.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303127",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "조형균, 이창용, 임지홍, 정다희, 도율희, 전재현, 장두환 등",
+    "runtime": "2시간 20분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014529"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66161"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1753143"
+     },
+     {
+      "source": "",
+      "name": "클립서비스",
+      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79526"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF303594",
+   "title": "브로큰 넘버스 (BROKEN NUMBERS)",
+   "area": "",
+   "start": "2026-11-18",
+   "end": "2027-02-07",
+   "place": "링크더스페이스(LINK THE SPACE)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303594_261016_134745.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303594",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "박영빈, 박주혁, 류찬열, 김현기, 김준식, 노혜성, 문진아 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66282"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1756533"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305560",
+   "title": "밤을 건너는 시인",
+   "area": "",
+   "start": "2026-11-19",
+   "end": "2026-11-20",
+   "place": "호원아트홀",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305560_261105_133749.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305560",
+   "detail": {
+    "age": "만 12세 이상",
+    "child": "N",
+    "cast": "이어진, 이상택, 이미경, 김윤수, 유성진",
+    "runtime": "1시간 20분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015896"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF303276",
+   "title": "사의찬미",
+   "area": "서울 영등포",
+   "start": "2026-11-20",
+   "end": "2026-11-22",
+   "place": "영등포아트홀",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303276_261014_111632.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303276",
+   "detail": {
+    "age": "만 12세 이상",
+    "child": "N",
+    "cast": "김종구, 온주완, 최수진, 최연우, 김려원, 정민, 원태민 등",
+    "runtime": "1시간 50분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26013816"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305142",
+   "title": "인사이드 더 플레이 : 카지노X",
+   "area": "",
+   "start": "2026-11-20",
+   "end": "2027-04-25",
+   "place": "롯데시네마 에비뉴엘 [서울 중구]",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305142_261102_161057.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305142",
+   "detail": {
+    "age": "만 15세 이상",
+    "child": "N",
+    "cast": "노태현, 김동현, 김유권, 두영광, 민규태, 칼 웨인, 박철연 등",
+    "runtime": "2시간 20분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014816"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66461"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1767834"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305106",
+   "title": "중섭 리딩 쇼케이스",
+   "area": "",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "place": "성수아트홀(성수문화복지회관)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305106_261102_145209.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305106",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "박민성, 조상웅, 임강희, 김윤하, 하유진, 석인모, 김송이",
+    "runtime": "1시간 25분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014962"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
@@ -1982,6 +2150,15 @@
    "age": ""
   },
   {
+   "id": "PF305505",
+   "title": "서리풀악동문화공연, 빨간모자야 조심해 (11월)",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "place": "반포심산아트홀",
+   "age": "24개월 이상"
+  },
+  {
    "id": "PF305172",
    "title": "김정민 & 성찬경 뮤지컬 콘서트: 정찬콘 Vol.1 쓰다, Day.3 발레뤼스",
    "reason": "콘서트 등 뮤지컬 아님",
@@ -2009,6 +2186,15 @@
    "age": ""
   },
   {
+   "id": "PF304788",
+   "title": "1598 연안에서 [서울 노원]",
+   "reason": "아동(관람연령)",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "place": "노원문화예술회관",
+   "age": "48개월 이상"
+  },
+  {
    "id": "PF302792",
    "title": "Sounds of Autumn",
    "reason": "콘서트 등 뮤지컬 아님",
@@ -2016,6 +2202,42 @@
    "end": "2026-11-10",
    "place": "롯데콘서트홀",
    "age": ""
+  },
+  {
+   "id": "PF302037",
+   "title": "바울: 사랑으로 걷다 [대학로]",
+   "reason": "오픈런",
+   "start": "2026-11-19",
+   "end": "2027-01-30",
+   "place": "명륜아트홀",
+   "age": ""
+  },
+  {
+   "id": "PF300886",
+   "title": "백설공주 [서울 강북]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-21",
+   "end": "2026-11-22",
+   "place": "꿈의숲아트센터",
+   "age": "24개월 이상"
+  },
+  {
+   "id": "PF299783",
+   "title": "호두까기 인형 [서울 구로]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "place": "구로창의아트홀",
+   "age": "전체 관람가"
+  },
+  {
+   "id": "PF299373",
+   "title": "호두까기 인형 [서울 구로]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "place": "구로구민회관",
+   "age": "전체 관람가"
   }
  ]
 }
