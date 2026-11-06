@@ -157,7 +157,7 @@ ADULT_AGE = re.compile(r"(?<!\d)19\s*세|청소년\s*관람\s*불가|성인")
 OLDER_AGE = re.compile(r"(?<!\d)([7-9]|1\d)\s*세|초등|중학|고등")
 KIDS_AGE = re.compile(r"\d+\s*개월|(?<!\d)[1-5]\s*세")
 # 예매처가 뮤지컬로 분류해도 뮤지컬이 아닌 공연(낭독공연은 뮤지컬로 둔다)
-NOT_MUSICAL = re.compile(r"콘서트|갈라|GALA|concert|팬\s*미팅|토크|연극|낭독극", re.I)
+NOT_MUSICAL = re.compile(r"콘서트|갈라|GALA|concert|팬\s*미팅|토크|연극|낭독극|인사이드 더 플레이", re.I)
 # 제목이나 공지 본문에 이런 말이 하나도 없으면 예매처 분류가 뮤지컬이어도 뮤지컬로 보지 않는다
 MUSICAL_WORD = re.compile(r"뮤지컬|musical|음악극|가무극|넘버", re.I)
 CONCERT_VENUE = re.compile(r"콘서트홀|라이브홀")
