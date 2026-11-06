@@ -1,7 +1,7 @@
 """공연중 탭: KOPIS(공연예술통합전산망) 공개 API로 오늘 공연 중인 서울 뮤지컬을 모아 data/ongoing.json에 저장한다.
 
 티켓오픈(data/items.json)과는 완전히 별개로 돈다.
-공연중(items)과 1주 안에 개막하는 개막 예정(upcoming) 두 목록을 만든다.
+공연중(items)과 2주 안에 개막하는 개막 예정(upcoming) 두 목록을 만든다.
 제외: 오픈런, 종료일이 1년 넘게 남은 장기 공연, 서울 밖(지방 투어), 아동/가족 공연, 19세 이상 공연.
 
 사용법: KOPIS_KEY=... python3 -m scraper.ongoing [--dry-run]
@@ -23,7 +23,7 @@ DATA = Path(__file__).resolve().parent.parent / "data" / "ongoing.json"
 MUSICAL = "GGGA"  # KOPIS 장르 코드: 뮤지컬
 SEOUL = "11"  # KOPIS 지역(시도) 코드: 서울
 MAX_RUN_AHEAD = timedelta(days=365)  # 이보다 더 남은 공연은 장기 공연으로 보고 제외
-UPCOMING_DAYS = 7  # 개막 예정 탭: 오늘 기준 이 날수 안에 개막
+UPCOMING_DAYS = 14  # 개막 예정 탭: 오늘 기준 이 날수 안에 개막
 
 
 def kopis(path="", **params):
@@ -152,7 +152,7 @@ def collect(key, prev, log=print):
     items = build(list_kopis(key, "02", today, today), key, cache, limit, excluded, log)
     items.sort(key=lambda x: (x["end"], x["title"]))
 
-    # 개막 예정: 내일~7일 뒤에 첫 공연이 있는 작품
+    # 개막 예정: 내일~14일 뒤에 첫 공연이 있는 작품
     soon = today + timedelta(days=UPCOMING_DAYS)
     rows = [r for r in list_kopis(key, "01", today, soon)
             if today.isoformat() < kdate(text(r, "prfpdfrom")) <= soon.isoformat()]

@@ -679,7 +679,7 @@ function renderOg() {
   const list = ogFiltered();
   const up = og.mode === "upcoming";
   $("#og-count").textContent = `${list.length}편`;
-  $("#og-main").innerHTML = !list.length ? `<div class="empty">${up ? "1주 안에 개막하는 공연이 없어요." : "조건에 맞는 공연이 없어요."}</div>`
+  $("#og-main").innerHTML = !list.length ? `<div class="empty">${up ? "2주 안에 개막하는 공연이 없어요." : "조건에 맞는 공연이 없어요."}</div>`
     : up || og.view === "list" ? `<div class="og-grid">${list.map(ogCard).join("")}</div>` : ogTimeline(list);
   saveOg();
 }
@@ -697,7 +697,7 @@ function setTab(tab) {
   og.mode = up ? "upcoming" : "ongoing";
   document.querySelectorAll("[data-tab]").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === tab));
   $("#h1").textContent = up ? "개막 예정 뮤지컬" : ongoing ? "공연 중인 뮤지컬" : "뮤지컬 티켓오픈";
-  $("#og-sub").textContent = up ? "앞으로 1주 안에 서울에서 개막하는 뮤지컬이에요 ✨" : "오늘 서울에서 공연 중인 뮤지컬을 모아 보여드려요 🎭";
+  $("#og-sub").textContent = up ? "앞으로 2주 안에 서울에서 개막하는 뮤지컬이에요 ✨" : "오늘 서울에서 공연 중인 뮤지컬을 모아 보여드려요 🎭";
   for (const id of ["open-intro", "open-status", "open-toolbar", "main"]) $("#" + id).hidden = ongoing;
   for (const id of ["og-intro", "og-status", "og-toolbar", "og-main"]) $("#" + id).hidden = !ongoing;
   for (const id of ["og-seg", "og-sort", "og-soon-wrap"]) $("#" + id).hidden = up;  // 개막 예정은 개막순 목록만
