@@ -37,7 +37,7 @@ def http(url, data=None, json_body=None, headers=None, timeout=None):
 def clean_title(s):
     """<b>[단독판매]</b> 같은 강조 태그와 공백을 정리한다. (<겨울왕국> 같은 작품명 괄호는 유지)"""
     s = re.sub(r"</?(b|em|span|strong|br)\s*/?>", " ", s or "", flags=re.I)
-    s = html.unescape(s)
+    s = html.unescape(s).replace("\u200b", "")
     return re.sub(r"\s+", " ", s).strip()
 
 
@@ -149,8 +149,41 @@ def is_kids(title):
     return bool(KIDS.search(title or ""))
 
 
+# 공지 본문의 '관람등급 : 만 13세 이상' 같은 줄. '관람 연령 증빙이 어려울…' 같은 안내문은 콜론이 없어 걸리지 않는다
+AGE_LINE = re.compile(r"(?:관람\s*(?:등급|연령|가능\s*연령)|연령\s*제한|공연\s*등급)\s*[:：]\s*([^\r\n]{1,60})")
+# 등급 줄이 없을 때의 아동극 표현: '24개월 이상 표를 구입합니다'
+MONTHS = re.compile(r"\d+\s*개월\s*이상")
+ADULT_AGE = re.compile(r"(?<!\d)19\s*세|청소년\s*관람\s*불가|성인")
+OLDER_AGE = re.compile(r"(?<!\d)([7-9]|1\d)\s*세|초등|중학|고등")
+KIDS_AGE = re.compile(r"\d+\s*개월|(?<!\d)[1-5]\s*세")
+# 예매처가 뮤지컬로 분류해도 뮤지컬이 아닌 공연(낭독공연은 뮤지컬로 둔다)
+NOT_MUSICAL = re.compile(r"콘서트|갈라|GALA|concert|팬\s*미팅|토크|연극", re.I)
+CONCERT_VENUE = re.compile(r"콘서트홀|라이브홀")
+
+
+def parse_age(text):
+    m = AGE_LINE.search(text or "")
+    if m:
+        return m.group(1).strip()
+    m = MONTHS.search(text or "")
+    return m.group(0) if m else ""
+
+
+def exclusion(title, age="", place=""):
+    """티켓오픈·공연중·개막 예정 공통 제외 기준. 빼야 하면 이유를, 아니면 None을 돌려준다."""
+    if is_kids(title):
+        return "아동·가족(제목)"
+    if NOT_MUSICAL.search(title or "") or CONCERT_VENUE.search(place or ""):
+        return "콘서트 등 뮤지컬 아님"
+    if ADULT_AGE.search(age or ""):
+        return "19세 이상"
+    if KIDS_AGE.search(age or "") and not OLDER_AGE.search(age):
+        return "아동(관람연령)"
+    return None
+
+
 def make_item(source, source_id, title, open_at, url, place="", image="", label="", period=None,
-              round_="", round_period=None):
+              round_="", round_period=None, age=""):
     title = clean_title(title)
     exclusive = bool(EXCLUSIVE.match(title))
     title = SUFFIX.sub("", EXCLUSIVE.sub("", title)) or title
@@ -167,4 +200,5 @@ def make_item(source, source_id, title, open_at, url, place="", image="", label=
         "period": period,  # 전체 공연기간 {"start","end"} 또는 None
         "round": round_ or norm_round(title),  # 2차/마지막/프리뷰/첫 또는 ""
         "roundPeriod": round_period,  # 이번 회차로 열리는 공연 기간 또는 None
+        "age": age or "",  # 공지에 적힌 관람 연령
     }

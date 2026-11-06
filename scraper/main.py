@@ -7,7 +7,7 @@ import sys
 import traceback
 from pathlib import Path
 
-from .common import is_kids, now_kst
+from .common import exclusion, now_kst
 from .sources import nol, ticketlink, yes24
 
 DATA = Path(__file__).resolve().parent.parent / "data" / "items.json"
@@ -45,7 +45,7 @@ def collect(db, log=print):
                 old.update({k: it[k] for k in TRACKED})
                 if it.get("place"):
                     old["place"] = it["place"]
-                for k in ("period", "round", "roundPeriod", "image"):  # 상세에서 채운 값은 비어 있는 값으로 덮지 않음
+                for k in ("period", "round", "roundPeriod", "image", "age"):  # 상세에서 채운 값은 비어 있는 값으로 덮지 않음
                     if it.get(k):
                         old[k] = it[k]
                 if not old.get("perfId"):  # 예스24는 상세에서 상품 페이지 주소로 바꿔 둔 링크를 유지
@@ -56,23 +56,31 @@ def collect(db, log=print):
                 by_id[it["id"]] = it
                 new_items.append(it)
 
-    # 수집 기준에서 빠진 항목 정리: 어린이·가족 제목, 그리고 NOL 오픈예정 목록에서 사라진 앞으로의 오픈
+    # NOL 오픈예정 목록에서 사라진 앞으로의 오픈 정리
     # (NOL 목록은 앞으로 열릴 오픈을 모두 보여주므로, 없으면 아동/가족극으로 걸렀거나 취소된 것)
     fetched_nol = {it["id"] for it in by_id.values() if it.get("lastSeenAt") == now and it["source"] == "nol"}
     nol_ok = db["sources"].get("nol", {}).get("ok")
     for it in list(by_id.values()):
         stale_nol = nol_ok and it["source"] == "nol" and it["id"] not in fetched_nol and (it.get("openAt") or "") >= now
-        if is_kids(it["title"]) or stale_nol:
+        if stale_nol:
             del by_id[it["id"]]
 
     if db["sources"].get("yes24", {}).get("ok"):  # 목록부터 못 받았으면 서버에 닿지 않는 것이라 상세도 건너뜀
         fill_yes24_details(by_id.values(), log)
+    # 19세 이상·아동극·콘서트 정리. 예스24는 상세를 읽어야 연령을 알 수 있어 그 뒤에 한다
+    for it in list(by_id.values()):
+        reason = exclusion(it["title"], it.get("age"), it.get("place"))
+        if reason:
+            log(f"  제외({reason}): [{it['source']}] {it['title']} / {it.get('age', '')}")
+            del by_id[it["id"]]
+            if it in new_items:
+                new_items.remove(it)
     db["items"] = sorted(by_id.values(), key=lambda x: (x["openAt"] or "9999", x["id"]))
     db["updatedAt"] = now
     return db, new_items
 
 
-DETAIL_VERSION = 3  # 상세에서 읽는 항목이 늘면 올려서 기존 항목도 다시 읽게 함
+DETAIL_VERSION = 4  # 상세에서 읽는 항목이 늘면 올려서 기존 항목도 다시 읽게 함
 
 
 def fill_yes24_details(items, log):
@@ -95,6 +103,7 @@ def fill_yes24_details(items, log):
         it["roundPeriod"] = d["roundPeriod"]
         it["round"] = d["round"] or it.get("round", "")
         it["detailV"] = DETAIL_VERSION
+        it["age"] = d["age"]
         it.pop("periodChecked", None)
         if d["place"] and not it.get("place"):
             it["place"] = d["place"]

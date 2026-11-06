@@ -3,7 +3,7 @@ import json
 import urllib.request
 from datetime import datetime
 
-from ..common import http, is_kids, iso_kst, make_item, norm_round
+from ..common import html_text, http, is_kids, iso_kst, make_item, norm_round, parse_age
 
 API = "https://nol.yanolja.com/ticket/display/api/upcoming"
 MUSICAL_GENRE = "01011"
@@ -42,6 +42,8 @@ def fetch(max_pages=10):
             period = ({"start": n["goods_start_date"], "end": n.get("goods_end_date") or n["goods_start_date"]}
                       if n.get("goods_start_date") else None)
             image = poster(n)
+            # 등급 필드가 비어 있는 공연이 많아 소개 글의 '관람연령:' 줄로 보완
+            age = n.get("goods_age_rating_name") or parse_age(html_text(n.get("goods_info")))
             # 선예매/일반예매처럼 오픈 일정이 여러 개면 각각 따로 표시
             for t in n.get("ticket_dates") or [{}]:
                 open_at = t.get("ticket_open_date")
@@ -50,7 +52,7 @@ def fetch(max_pages=10):
                 items.append(make_item(
                     "nol", sid, n["title"] or n.get("goods_name", ""),
                     iso_kst(datetime.fromisoformat(open_at)) if open_at else None,
-                    url, place=n.get("venue_name", ""), image=image, label=label, period=period,
+                    url, place=n.get("venue_name", ""), image=image, label=label, period=period, age=age,
                     # NOL은 공지 상세가 없어 회차별 기간을 알 수 없음 → 회차 이름만
                     round_=norm_round(n.get("open_name") or "") or norm_round(n.get("open_type_name") or ""),
                 ))

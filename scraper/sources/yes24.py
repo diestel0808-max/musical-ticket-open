@@ -2,7 +2,7 @@
 import re
 from datetime import datetime
 
-from ..common import html_text, http, is_kids, iso_kst, make_item, parse_period, parse_round_period
+from ..common import html_text, http, is_kids, iso_kst, make_item, parse_age, parse_period, parse_round_period
 
 API = "https://ticket.yes24.com/New/Notice/Ajax/axList.aspx"
 DETAIL_API = "https://ticket.yes24.com/New/Notice/Ajax/axRead.aspx"
@@ -59,6 +59,7 @@ def fetch_detail(source_id, ref_year=None):
         "roundPeriod": round_period,
         "perfId": None,
         "image": "",
+        "age": parse_age(text),
     }
     p = PERF_ID.search(raw)
     if p:

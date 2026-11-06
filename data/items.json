@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-11-06T15:44+09:00",
+ "updatedAt": "2026-11-07T00:45+09:00",
  "sources": {
   "nol": {
    "ok": true,
-   "count": 13,
-   "at": "2026-11-06T15:44+09:00"
+   "count": 12,
+   "at": "2026-11-07T00:45+09:00"
   },
   "ticketlink": {
    "ok": true,
-   "count": 13,
-   "at": "2026-11-06T15:44+09:00"
+   "count": 9,
+   "at": "2026-11-07T00:45+09:00"
   },
   "yes24": {
    "ok": true,
    "count": 46,
-   "at": "2026-11-06T15:44+09:00"
+   "at": "2026-11-07T00:45+09:00"
   }
  },
  "items": [
@@ -39,8 +39,9 @@
     "start": "2026-10-07",
     "end": "2026-10-25"
    },
-   "detailV": 3,
-   "perfId": "59694"
+   "detailV": 4,
+   "perfId": "59694",
+   "age": "14세 이상 관람가"
   },
   {
    "id": "yes24:18460",
@@ -63,8 +64,9 @@
     "end": "2026-10-31"
    },
    "round": "",
-   "detailV": 3,
-   "perfId": "60114"
+   "detailV": 4,
+   "perfId": "60114",
+   "age": "15세 이상관람가"
   },
   {
    "id": "yes24:18467",
@@ -87,8 +89,9 @@
     "start": "2026-10-07",
     "end": "2026-10-25"
    },
-   "detailV": 3,
-   "perfId": "59718"
+   "detailV": 4,
+   "perfId": "59718",
+   "age": "13세 이상 관람가"
   },
   {
    "id": "yes24:18469-p1",
@@ -111,8 +114,9 @@
     "start": "2026-10-13",
     "end": "2026-11-01"
    },
-   "detailV": 3,
-   "perfId": "59239"
+   "detailV": 4,
+   "perfId": "59239",
+   "age": "8세 이상 (미취학 아동 관람불가)"
   },
   {
    "id": "yes24:18469",
@@ -135,8 +139,9 @@
     "start": "2026-10-13",
     "end": "2026-11-01"
    },
-   "detailV": 3,
-   "perfId": "59239"
+   "detailV": 4,
+   "perfId": "59239",
+   "age": "8세 이상 (미취학 아동 관람불가)"
   },
   {
    "id": "yes24:18483",
@@ -159,8 +164,9 @@
     "start": "2026-11-11",
     "end": "2026-11-22"
    },
-   "detailV": 3,
-   "perfId": "60128"
+   "detailV": 4,
+   "perfId": "60128",
+   "age": "8세 이상 관람가 (2026년 기준 2019년 포함 이전 출생자, 2027년 기준 2020년 포함 이전 출생"
   },
   {
    "id": "yes24:18475",
@@ -183,8 +189,9 @@
     "start": "2026-10-13",
     "end": "2026-11-01"
    },
-   "detailV": 3,
-   "perfId": "59488"
+   "detailV": 4,
+   "perfId": "59488",
+   "age": "17세 이상 (고등학생 이상 관람가 / 2010년 12월 포함 이전 출생자)"
   },
   {
    "id": "yes24:18504",
@@ -204,8 +211,9 @@
    },
    "roundPeriod": null,
    "round": "",
-   "detailV": 3,
-   "perfId": "60200"
+   "detailV": 4,
+   "perfId": "60200",
+   "age": "8세 이상 관람가"
   },
   {
    "id": "yes24:18480",
@@ -216,7 +224,7 @@
    "openAt": "2026-09-18T14:00+09:00",
    "place": "홍익대 대학로 아트센터 대극장",
    "url": "https://ticket.yes24.com/Perf/59596",
-   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260807/20260807-59596.jpg",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202611/20261102/20261102-59596.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
    "lastSeenAt": "2026-10-27T09:15+09:00",
    "period": {
@@ -228,8 +236,9 @@
     "start": "2026-10-27",
     "end": "2026-11-15"
    },
-   "detailV": 3,
-   "perfId": "59596"
+   "detailV": 4,
+   "perfId": "59596",
+   "age": "8세 이상 관람가"
   },
   {
    "id": "yes24:18523",
@@ -249,8 +258,9 @@
    },
    "roundPeriod": null,
    "round": "",
-   "detailV": 3,
-   "perfId": "60232"
+   "detailV": 4,
+   "perfId": "60232",
+   "age": "8세 이상 관람가 (2019년 포함 이전 출생자 관람 가능 / 미취학 아동 입장 불가)"
   },
   {
    "id": "yes24:18527",
@@ -270,8 +280,9 @@
    },
    "roundPeriod": null,
    "round": "",
-   "detailV": 3,
-   "perfId": "60292"
+   "detailV": 4,
+   "perfId": "60292",
+   "age": "초등학생 이상 관람가"
   },
   {
    "id": "yes24:18548",
@@ -294,8 +305,9 @@
     "end": "2026-10-18"
    },
    "round": "",
-   "detailV": 3,
-   "perfId": "60204"
+   "detailV": 4,
+   "perfId": "60204",
+   "age": "8세 이상 관람가"
   },
   {
    "id": "yes24:18524",
@@ -306,7 +318,7 @@
    "openAt": "2026-09-22T14:00+09:00",
    "place": "두산아트센터 연강홀",
    "url": "https://ticket.yes24.com/Perf/59852",
-   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-59852.jpg",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261026/20261026-59852.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
    "lastSeenAt": "2026-10-27T18:06+09:00",
    "period": {
@@ -318,8 +330,9 @@
     "start": "2026-10-27",
     "end": "2026-11-08"
    },
-   "detailV": 3,
-   "perfId": "59852"
+   "detailV": 4,
+   "perfId": "59852",
+   "age": "8세 이상 관람가"
   },
   {
    "id": "yes24:18526",
@@ -339,7 +352,8 @@
    },
    "roundPeriod": null,
    "round": "",
-   "detailV": 3
+   "detailV": 4,
+   "age": "8세 이상 관람가"
   },
   {
    "id": "yes24:18554",
@@ -362,8 +376,9 @@
     "start": "2026-11-03",
     "end": "2026-11-15"
    },
-   "detailV": 3,
-   "perfId": "60316"
+   "detailV": 4,
+   "perfId": "60316",
+   "age": "중학생 이상 관람가"
   },
   {
    "id": "yes24:18547",
@@ -383,7 +398,8 @@
    },
    "roundPeriod": null,
    "round": "",
-   "detailV": 3
+   "detailV": 4,
+   "age": "만 7세 이상"
   },
   {
    "id": "yes24:18559",
@@ -406,8 +422,9 @@
     "start": "2026-10-20",
     "end": "2026-11-08"
    },
-   "detailV": 3,
-   "perfId": "59639"
+   "detailV": 4,
+   "perfId": "59639",
+   "age": "10세 이상 관람가"
   },
   {
    "id": "yes24:18567",
@@ -427,8 +444,9 @@
    },
    "round": "4차",
    "roundPeriod": null,
-   "detailV": 3,
-   "perfId": "59300"
+   "detailV": 4,
+   "perfId": "59300",
+   "age": "중학생 이상 관람가(13세 이상 관람가)"
   },
   {
    "id": "yes24:18558",
@@ -451,8 +469,9 @@
     "end": "2026-12-06"
    },
    "round": "",
-   "detailV": 3,
-   "perfId": "58563"
+   "detailV": 4,
+   "perfId": "58563",
+   "age": "8세 이상 관람가(2019년 포함 이전 출생자)"
   },
   {
    "id": "yes24:18574",
@@ -475,8 +494,9 @@
     "start": "2026-10-06",
     "end": "2026-10-18"
    },
-   "detailV": 3,
-   "perfId": "59313"
+   "detailV": 4,
+   "perfId": "59313",
+   "age": "8세 이상(2019년생 포함 이전 출생자 / 미취학 아동 관람 불가)"
   },
   {
    "id": "yes24:18565",
@@ -496,8 +516,9 @@
    },
    "roundPeriod": null,
    "round": "",
-   "detailV": 3,
-   "perfId": "60403"
+   "detailV": 4,
+   "perfId": "60403",
+   "age": "초등학생 이상 관람가"
   },
   {
    "id": "yes24:18579",
@@ -510,15 +531,16 @@
    "url": "https://ticket.yes24.com/Perf/60365",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260923/20260923-60365.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-11-06",
     "end": "2026-11-06"
    },
    "roundPeriod": null,
    "round": "",
-   "detailV": 3,
-   "perfId": "60365"
+   "detailV": 4,
+   "perfId": "60365",
+   "age": "7세 이상"
   },
   {
    "id": "yes24:18576-p1",
@@ -538,8 +560,9 @@
    },
    "round": "2차",
    "roundPeriod": null,
-   "detailV": 3,
-   "perfId": "59565"
+   "detailV": 4,
+   "perfId": "59565",
+   "age": "17세 이상 관람가 (2010년생 포함 이전 출생자)"
   },
   {
    "id": "yes24:18568",
@@ -562,8 +585,9 @@
     "start": "2026-10-27",
     "end": "2026-11-08"
    },
-   "detailV": 3,
-   "perfId": "58477"
+   "detailV": 4,
+   "perfId": "58477",
+   "age": "8세 이상 관람가 (2019년 포함 이전 출생자)"
   },
   {
    "id": "yes24:18576",
@@ -583,8 +607,9 @@
    },
    "round": "2차",
    "roundPeriod": null,
-   "detailV": 3,
-   "perfId": "59565"
+   "detailV": 4,
+   "perfId": "59565",
+   "age": "17세 이상 관람가 (2010년생 포함 이전 출생자)"
   },
   {
    "id": "yes24:18585",
@@ -597,7 +622,7 @@
    "url": "https://ticket.yes24.com/Perf/59694",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260825/20260825-59694.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-11-15"
@@ -607,8 +632,9 @@
     "start": "2026-10-27",
     "end": "2026-11-15"
    },
-   "detailV": 3,
-   "perfId": "59694"
+   "detailV": 4,
+   "perfId": "59694",
+   "age": "14세 이상 관람가"
   },
   {
    "id": "yes24:18600",
@@ -621,7 +647,7 @@
    "url": "https://ticket.yes24.com/Perf/60484",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261002/20261002-60484_2.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-12-15",
     "end": "2027-03-01"
@@ -631,8 +657,9 @@
     "start": "2026-12-15",
     "end": "2026-12-27"
    },
-   "detailV": 3,
-   "perfId": "60484"
+   "detailV": 4,
+   "perfId": "60484",
+   "age": "14세 이상 관람가 (2026년 기준 2013년생 포함 이전 출생자)"
   },
   {
    "id": "yes24:18620",
@@ -643,9 +670,9 @@
    "openAt": "2026-10-07T14:00+09:00",
    "place": "홍익대 대학로 아트센터 대극장",
    "url": "https://ticket.yes24.com/Perf/59596",
-   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260807/20260807-59596.jpg",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202611/20261102/20261102-59596.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-11-17",
     "end": "2026-11-29"
@@ -655,8 +682,9 @@
     "start": "2026-11-17",
     "end": "2026-11-29"
    },
-   "detailV": 3,
-   "perfId": "59596"
+   "detailV": 4,
+   "perfId": "59596",
+   "age": "8세 이상 관람가"
   },
   {
    "id": "yes24:18609",
@@ -669,7 +697,7 @@
    "url": "https://ticket.yes24.com/Perf/59488",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59488.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2026-11-29"
@@ -679,8 +707,9 @@
     "start": "2026-11-03",
     "end": "2026-11-29"
    },
-   "detailV": 3,
-   "perfId": "59488"
+   "detailV": 4,
+   "perfId": "59488",
+   "age": "17세 이상 (고등학생 이상 관람가 / 2010년 12월 포함 이전 출생자)"
   },
   {
    "id": "yes24:18631",
@@ -693,7 +722,7 @@
    "url": "https://ticket.yes24.com/Perf/60524",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261008/20261008-60524.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-10-30",
     "end": "2026-11-01"
@@ -703,8 +732,9 @@
     "end": "2026-11-01"
    },
    "round": "",
-   "detailV": 3,
-   "perfId": "60524"
+   "detailV": 4,
+   "perfId": "60524",
+   "age": "중학생 이상(2026년 기준 2013년 포함 이전 출생자 관람 가능)"
   },
   {
    "id": "yes24:18581",
@@ -717,7 +747,7 @@
    "url": "https://ticket.yes24.com/Perf/60521",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261007/20261007-60521.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-12-22",
     "end": "2027-01-15"
@@ -727,8 +757,9 @@
     "start": "2026-12-22",
     "end": "2027-01-15"
    },
-   "detailV": 3,
-   "perfId": "60521"
+   "detailV": 4,
+   "perfId": "60521",
+   "age": "8세 이상 관람가(2026년 기준, 2019년 포함 이전 출생자)"
   },
   {
    "id": "yes24:18645",
@@ -741,7 +772,7 @@
    "url": "https://ticket.yes24.com/Perf/59639",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260811/20260811-59639.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-09-16",
     "end": "2026-11-29"
@@ -751,8 +782,9 @@
     "start": "2026-11-10",
     "end": "2026-11-29"
    },
-   "detailV": 3,
-   "perfId": "59639"
+   "detailV": 4,
+   "perfId": "59639",
+   "age": "10세 이상 관람가"
   },
   {
    "id": "yes24:18661-p1",
@@ -765,7 +797,7 @@
    "url": "https://ticket.yes24.com/Perf/59239",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -775,8 +807,9 @@
     "start": "2026-11-03",
     "end": "2026-11-15"
    },
-   "detailV": 3,
-   "perfId": "59239"
+   "detailV": 4,
+   "perfId": "59239",
+   "age": "8세 이상 (미취학 아동 관람불가)"
   },
   {
    "id": "yes24:18661",
@@ -789,7 +822,7 @@
    "url": "https://ticket.yes24.com/Perf/59239",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -799,8 +832,9 @@
     "start": "2026-11-03",
     "end": "2026-11-15"
    },
-   "detailV": 3,
-   "perfId": "59239"
+   "detailV": 4,
+   "perfId": "59239",
+   "age": "8세 이상 (미취학 아동 관람불가)"
   },
   {
    "id": "yes24:18658",
@@ -813,7 +847,7 @@
    "url": "https://ticket.yes24.com/Perf/60316",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260921/20260921-60316.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2027-01-24"
@@ -823,8 +857,9 @@
     "start": "2026-11-17",
     "end": "2026-12-06"
    },
-   "detailV": 3,
-   "perfId": "60316"
+   "detailV": 4,
+   "perfId": "60316",
+   "age": "중학생 이상 관람가"
   },
   {
    "id": "yes24:18641",
@@ -835,9 +870,9 @@
    "openAt": "2026-10-14T14:00+09:00",
    "place": "두산아트센터 연강홀",
    "url": "https://ticket.yes24.com/Perf/59852",
-   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-59852.jpg",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261026/20261026-59852.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-29"
@@ -847,8 +882,9 @@
     "start": "2026-11-10",
     "end": "2026-11-29"
    },
-   "detailV": 3,
-   "perfId": "59852"
+   "detailV": 4,
+   "perfId": "59852",
+   "age": "8세 이상 관람가"
   },
   {
    "id": "yes24:18680",
@@ -861,15 +897,16 @@
    "url": "https://ticket.yes24.com/Perf/60645",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261014/20261014-60645.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-10-31",
     "end": "2026-10-31"
    },
    "roundPeriod": null,
    "round": "",
-   "detailV": 3,
-   "perfId": "60645"
+   "detailV": 4,
+   "perfId": "60645",
+   "age": "만 8세 이상"
   },
   {
    "id": "yes24:18655",
@@ -882,15 +919,16 @@
    "url": "https://ticket.yes24.com/Perf/60602",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261012/20261012-60602.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-10"
    },
    "roundPeriod": null,
    "round": "",
-   "detailV": 3,
-   "perfId": "60602"
+   "detailV": 4,
+   "perfId": "60602",
+   "age": "8세 이상 관람 가능 (2019년 이전 출생자 입장 가능)"
   },
   {
    "id": "yes24:18668",
@@ -903,7 +941,7 @@
    "url": "https://ticket.yes24.com/Perf/60128",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260916/20260916-60128.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-11-11",
     "end": "2027-02-08"
@@ -913,8 +951,9 @@
     "start": "2026-11-24",
     "end": "2026-12-13"
    },
-   "detailV": 3,
-   "perfId": "60128"
+   "detailV": 4,
+   "perfId": "60128",
+   "age": "8세 이상 관람가 (2026년 기준 2019년 포함 이전 출생자, 2027년 기준 2020년 포함 이전 출생"
   },
   {
    "id": "yes24:18681-p1",
@@ -927,7 +966,7 @@
    "url": "https://ticket.yes24.com/Perf/60658",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-60658.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-12-16",
     "end": "2027-03-14"
@@ -937,28 +976,9 @@
     "start": "2026-12-16",
     "end": "2026-12-20"
    },
-   "detailV": 3,
-   "perfId": "60658"
-  },
-  {
-   "id": "yes24:18687",
-   "source": "yes24",
-   "title": "2026 난타 크리스마스 특별 부산 공연",
-   "exclusive": false,
-   "label": "",
-   "openAt": "2026-10-20T14:00+09:00",
-   "place": "소향씨어터 우리은행홀",
-   "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18687",
-   "image": "",
-   "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "period": {
-    "start": "2026-12-23",
-    "end": "2026-12-23"
-   },
-   "roundPeriod": null,
-   "round": "",
-   "detailV": 3
+   "detailV": 4,
+   "perfId": "60658",
+   "age": "12세 이상"
   },
   {
    "id": "yes24:18681",
@@ -971,7 +991,7 @@
    "url": "https://ticket.yes24.com/Perf/60658",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-60658.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-12-16",
     "end": "2027-03-14"
@@ -981,8 +1001,9 @@
     "start": "2026-12-16",
     "end": "2026-12-20"
    },
-   "detailV": 3,
-   "perfId": "60658"
+   "detailV": 4,
+   "perfId": "60658",
+   "age": "12세 이상"
   },
   {
    "id": "ticketlink:66216",
@@ -1139,10 +1160,10 @@
    "label": "",
    "openAt": "2026-10-26T14:00+09:00",
    "place": "예스24 스테이지 3관",
-   "url": "https://ticket.yes24.com/New/Notice/NoticeMain.aspx#id=18713",
-   "image": "",
+   "url": "https://ticket.yes24.com/Perf/60772",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261022/20261022-60772.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2027-03-07"
@@ -1152,7 +1173,9 @@
     "start": "2026-12-11",
     "end": "2026-12-20"
    },
-   "detailV": 3
+   "detailV": 4,
+   "age": "15세 이상",
+   "perfId": "60772"
   },
   {
    "id": "ticketlink:66319",
@@ -1260,7 +1283,7 @@
    "openAt": "2026-10-29T11:00+09:00",
    "place": "대학로 TOM 1관",
    "url": "https://ticket.yes24.com/Perf/60836",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261028/20261028-60836.jpg",
    "period": {
     "start": "2026-12-08",
     "end": "2027-02-28"
@@ -1271,9 +1294,10 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60836"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60836",
+   "age": ""
   },
   {
    "id": "nol:15654-40865",
@@ -1323,7 +1347,7 @@
    "url": "https://ticket.yes24.com/Perf/58563",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202605/20260529/20260529-58563.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-12-08",
     "end": "2027-01-03"
@@ -1333,8 +1357,9 @@
     "end": "2027-01-03"
    },
    "round": "",
-   "detailV": 3,
-   "perfId": "58563"
+   "detailV": 4,
+   "perfId": "58563",
+   "age": "8세 이상 관람가(2019년 포함 이전 출생자)"
   },
   {
    "id": "yes24:18751",
@@ -1353,9 +1378,10 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60857"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60857",
+   "age": "초등학생 이상 관람가"
   },
   {
    "id": "nol:15738-41255",
@@ -1407,7 +1433,7 @@
    "openAt": "2026-10-29T16:00+09:00",
    "place": "대학로 TOM 1관",
    "url": "https://ticket.yes24.com/Perf/60836",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261028/20261028-60836.jpg",
    "period": {
     "start": "2026-12-08",
     "end": "2027-02-28"
@@ -1418,9 +1444,10 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60836"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60836",
+   "age": ""
   },
   {
    "id": "ticketlink:65980",
@@ -1486,7 +1513,7 @@
    "openAt": "2026-10-30T11:00+09:00",
    "place": "예스24스테이지 1관",
    "url": "https://ticket.yes24.com/Perf/59565",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260804/20260804-59565.jpg",
    "period": {
     "start": "2026-09-22",
     "end": "2026-12-13"
@@ -1494,9 +1521,10 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "59565"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "59565",
+   "age": "17세 이상 관람가 (2010년생 포함 이전 출생자)"
   },
   {
    "id": "yes24:18758-p1",
@@ -1507,7 +1535,7 @@
    "openAt": "2026-10-30T11:00+09:00",
    "place": "NOL 서경스퀘어 스콘 1관",
    "url": "https://ticket.yes24.com/Perf/59239",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -1518,9 +1546,10 @@
     "end": "2026-11-29"
    },
    "firstSeenAt": "2026-10-27T18:15+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "59239"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "59239",
+   "age": "8세 이상 (미취학 아동 관람불가)"
   },
   {
    "id": "ticketlink:66328",
@@ -1553,7 +1582,7 @@
    "openAt": "2026-10-30T13:00+09:00",
    "place": "예스24아트원 1관",
    "url": "https://ticket.yes24.com/Perf/59694",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260825/20260825-59694.jpg",
    "period": {
     "start": "2026-11-17",
     "end": "2026-12-06"
@@ -1564,9 +1593,10 @@
     "end": "2026-12-06"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "59694"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "59694",
+   "age": "14세 이상 관람가"
   },
   {
    "id": "nol:15773-41471",
@@ -1596,7 +1626,7 @@
    "openAt": "2026-10-30T14:00+09:00",
    "place": "NOL 서경스퀘어 스콘 1관",
    "url": "https://ticket.yes24.com/Perf/59239",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -1607,9 +1637,10 @@
     "end": "2026-11-29"
    },
    "firstSeenAt": "2026-10-27T18:15+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "59239"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "59239",
+   "age": "8세 이상 (미취학 아동 관람불가)"
   },
   {
    "id": "ticketlink:66336",
@@ -1642,7 +1673,7 @@
    "openAt": "2026-10-30T15:00+09:00",
    "place": "브릭스씨어터",
    "url": "https://ticket.yes24.com/Perf/60863",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261030/20261030-60863.jpg",
    "period": {
     "start": "2026-12-08",
     "end": "2026-12-27"
@@ -1653,9 +1684,10 @@
     "end": "2026-12-27"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60863"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60863",
+   "age": "14세 이상 관람가"
   },
   {
    "id": "nol:15712-41051",
@@ -1685,7 +1717,7 @@
    "openAt": "2026-10-30T16:00+09:00",
    "place": "예스24스테이지 1관",
    "url": "https://ticket.yes24.com/Perf/59565",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260804/20260804-59565.jpg",
    "period": {
     "start": "2026-09-22",
     "end": "2026-12-13"
@@ -1693,9 +1725,10 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "59565"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "59565",
+   "age": "17세 이상 관람가 (2010년생 포함 이전 출생자)"
   },
   {
    "id": "ticketlink:66235",
@@ -1761,7 +1794,7 @@
    "openAt": "2026-11-02T11:00+09:00",
    "place": "영월문화예술회관",
    "url": "https://ticket.yes24.com/Perf/60916",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261029/20261029-60916.jpg",
    "period": {
     "start": "2026-11-23",
     "end": "2026-11-23"
@@ -1769,9 +1802,10 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-28T23:43+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60916"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60916",
+   "age": "전체관람가"
   },
   {
    "id": "ticketlink:66201",
@@ -1957,7 +1991,7 @@
    "openAt": "2026-11-04T11:00+09:00",
    "place": "NOL 서경스퀘어 스콘 1관",
    "url": "https://ticket.yes24.com/Perf/60940",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202611/20261102/20261102-60940.jpg",
    "period": {
     "start": "2026-12-09",
     "end": "2027-02-28"
@@ -1968,9 +2002,10 @@
     "end": "2026-12-20"
    },
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60940"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60940",
+   "age": "12세 이상 (초등학교 5학년 이상 관람 가능 /"
   },
   {
    "id": "nol:15811-41623",
@@ -2022,7 +2057,7 @@
    "openAt": "2026-11-04T12:00+09:00",
    "place": "두산아트센터 연강홀",
    "url": "https://ticket.yes24.com/Perf/59852",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261026/20261026-59852.jpg",
    "period": {
     "start": "2026-12-01",
     "end": "2026-12-20"
@@ -2033,9 +2068,10 @@
     "end": "2026-12-20"
    },
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "59852"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "59852",
+   "age": "8세 이상 관람가"
   },
   {
    "id": "nol:15737-41217",
@@ -2065,7 +2101,7 @@
    "openAt": "2026-11-04T14:00+09:00",
    "place": "",
    "url": "https://ticket.yes24.com/Perf/60521",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261007/20261007-60521.jpg",
    "period": {
     "start": "2027-01-16",
     "end": "2027-02-05"
@@ -2076,9 +2112,10 @@
     "end": "2027-02-05"
    },
    "firstSeenAt": "2026-10-27T09:15+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60521"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60521",
+   "age": "8세 이상 관람가(2026년 기준, 2019년 포함 이전 출생자)"
   },
   {
    "id": "nol:15752-41959",
@@ -2184,7 +2221,7 @@
    "openAt": "2026-11-05T14:00+09:00",
    "place": "한전아트센터",
    "url": "https://ticket.yes24.com/Perf/60933",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261030/20261030-60933.jpg",
    "period": {
     "start": "2026-12-01",
     "end": "2027-01-31"
@@ -2192,9 +2229,10 @@
    "round": "1차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T18:47+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60933"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60933",
+   "age": "8세 이상(미취학아동 관람불가)"
   },
   {
    "id": "yes24:18760",
@@ -2205,7 +2243,7 @@
    "openAt": "2026-11-05T14:00+09:00",
    "place": "플러스씨어터",
    "url": "https://ticket.yes24.com/Perf/60967",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202611/20261104/20261104-60967.jpg",
    "period": {
     "start": "2026-12-09",
     "end": "2027-03-01"
@@ -2216,9 +2254,10 @@
     "end": "2026-12-13"
    },
    "firstSeenAt": "2026-10-28T23:43+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60967"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60967",
+   "age": "14세 이상 관람가 (2026년 공연 기준 2013년 포함 이전 출생자 관람 가능)"
   },
   {
    "id": "ticketlink:66367",
@@ -2300,25 +2339,6 @@
    "lastSeenAt": "2026-11-05T15:46+09:00"
   },
   {
-   "id": "ticketlink:66337",
-   "source": "ticketlink",
-   "title": "청춘사운드콘서트 - 대구",
-   "exclusive": true,
-   "label": "",
-   "openAt": "2026-11-06T10:00+09:00",
-   "place": "대덕문화전당 드림홀",
-   "url": "https://www.ticketlink.co.kr/help/notice/66337",
-   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/open_1027.jpg",
-   "period": {
-    "start": "2026-12-05",
-    "end": "2026-12-05"
-   },
-   "round": "",
-   "roundPeriod": null,
-   "firstSeenAt": "2026-10-27T18:47+09:00",
-   "lastSeenAt": "2026-11-03T12:29+09:00"
-  },
-  {
    "id": "nol:15839-41776",
    "source": "nol",
    "title": "뮤지컬 〈언더 문보우〉",
@@ -2352,27 +2372,6 @@
    "roundPeriod": null,
    "firstSeenAt": "2026-11-03T12:29+09:00",
    "lastSeenAt": "2026-11-06T15:44+09:00"
-  },
-  {
-   "id": "yes24:18796",
-   "source": "yes24",
-   "title": "[수원] 2027 베스트셀러 뮤지컬 [콧구멍을 후비면]",
-   "exclusive": false,
-   "label": "",
-   "openAt": "2026-11-06T11:00+09:00",
-   "place": "장안구민회관 한누리아트홀",
-   "url": "https://ticket.yes24.com/Perf/61025",
-   "image": "",
-   "period": {
-    "start": "2027-01-10",
-    "end": "2027-01-10"
-   },
-   "round": "",
-   "roundPeriod": null,
-   "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "61025"
   },
   {
    "id": "ticketlink:66411",
@@ -2451,25 +2450,6 @@
    "lastSeenAt": "2026-11-06T15:44+09:00"
   },
   {
-   "id": "nol:15862-41941",
-   "source": "nol",
-   "title": "2026 뮤지컬 헝키쇼 (HUNKY SHOW)",
-   "exclusive": false,
-   "label": "일반 예매일",
-   "openAt": "2026-11-09T10:00+09:00",
-   "place": "스타스테이지",
-   "url": "https://nol.yanolja.com/ticket/products/25003978",
-   "image": "https://ticketimage.interpark.com/Play/image/large/25/25003978_p.gif",
-   "period": {
-    "start": "2025-04-25",
-    "end": "2026-11-30"
-   },
-   "round": "",
-   "roundPeriod": null,
-   "firstSeenAt": "2026-11-05T11:28+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
-  },
-  {
    "id": "nol:15847-41847",
    "source": "nol",
    "title": "뮤지컬 〈닥터 두리틀〉",
@@ -2486,7 +2466,8 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-03T15:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "8세 이상 관람가"
   },
   {
    "id": "ticketlink:66416",
@@ -2508,7 +2489,8 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-11-03T12:29+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "중학생 이상 관람가"
   },
   {
    "id": "ticketlink:66419",
@@ -2527,7 +2509,8 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-03T15:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "8세 이상 관람가"
   },
   {
    "id": "yes24:18782",
@@ -2549,26 +2532,9 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-11-03T12:29+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3
-  },
-  {
-   "id": "yes24:18804",
-   "source": "yes24",
-   "title": "다예쁜，다예뿐! - 뮤지컬배우 정다예 10주년 콘서트",
-   "exclusive": true,
-   "label": "",
-   "openAt": "2026-11-09T14:00+09:00",
-   "place": "대학로 브이씨어터",
-   "url": "https://ticket.yes24.com/Perf/61010",
-   "image": "",
-   "period": null,
-   "round": "",
-   "roundPeriod": null,
-   "firstSeenAt": "2026-11-06T11:29+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "61010"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "age": "중학생 이상 관람가"
   },
   {
    "id": "yes24:18808-p1",
@@ -2579,7 +2545,7 @@
    "openAt": "2026-11-09T14:00+09:00",
    "place": "평택시 남부문화예술회관 대공연장",
    "url": "https://ticket.yes24.com/Perf/60974",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202611/20261106/20261106-60974.jpg",
    "period": {
     "start": "2026-12-19",
     "end": "2026-12-19"
@@ -2587,9 +2553,10 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-06T15:44+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60974"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60974",
+   "age": ""
   },
   {
    "id": "nol:15846-41930",
@@ -2608,12 +2575,13 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-05T11:28+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "6세 이상 관람가(2021년생 포함 이전 출생자 관람 가능)"
   },
   {
    "id": "ticketlink:66466",
    "source": "ticketlink",
-   "title": "지컬 <어느 60대 노부부의 이야기> - 영덕​​",
+   "title": "뮤지컬 <어느 60대 노부부의 이야기> - 영덕",
    "exclusive": true,
    "label": "",
    "openAt": "2026-11-10T11:00+09:00",
@@ -2627,7 +2595,8 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-06T15:44+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "만 8세 이상"
   },
   {
    "id": "yes24:18785",
@@ -2638,7 +2607,7 @@
    "openAt": "2026-11-10T14:00+09:00",
    "place": "홍익대 대학로 아트센터 대극장",
    "url": "https://ticket.yes24.com/Perf/60484",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261002/20261002-60484_2.jpg",
    "period": {
     "start": "2026-12-15",
     "end": "2027-03-01"
@@ -2649,9 +2618,10 @@
     "end": "2027-01-10"
    },
    "firstSeenAt": "2026-11-04T11:21+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60484"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60484",
+   "age": "14세 이상 관람가 (2026년 기준 2013년생 포함 이전 출생자 / 2027년 기준 2014년생 포함 이"
   },
   {
    "id": "yes24:18808",
@@ -2662,7 +2632,7 @@
    "openAt": "2026-11-10T14:00+09:00",
    "place": "평택시 남부문화예술회관 대공연장",
    "url": "https://ticket.yes24.com/Perf/60974",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202611/20261106/20261106-60974.jpg",
    "period": {
     "start": "2026-12-19",
     "end": "2026-12-19"
@@ -2670,9 +2640,10 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-06T15:44+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60974"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60974",
+   "age": ""
   },
   {
    "id": "ticketlink:66420",
@@ -2694,26 +2665,8 @@
     "end": "2026-12-20"
    },
    "firstSeenAt": "2026-11-03T15:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
-  },
-  {
-   "id": "ticketlink:66439",
-   "source": "ticketlink",
-   "title": "뮤지컬 <사랑의 하츄핑: 고래보석의 전설>",
-   "exclusive": false,
-   "label": "",
-   "openAt": "2026-11-11T11:00+09:00",
-   "place": "우리금융아트홀",
-   "url": "https://www.ticketlink.co.kr/help/notice/66439",
-   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/h_open_1105.jpg",
-   "period": {
-    "start": "2027-01-09",
-    "end": "2027-03-01"
-   },
-   "round": "",
-   "roundPeriod": null,
-   "firstSeenAt": "2026-11-05T11:28+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "14세 이상 관람가 (중학생 관람가 / 2026년 공연 기준, 2013년 포함 이전 출생자)"
   },
   {
    "id": "ticketlink:66453",
@@ -2735,7 +2688,8 @@
     "end": "2026-12-27"
    },
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "중학생 이상 관람가"
   },
   {
    "id": "yes24:18799",
@@ -2746,7 +2700,7 @@
    "openAt": "2026-11-11T12:00+09:00",
    "place": "링크아트센터 페이코홀",
    "url": "https://ticket.yes24.com/Perf/60316",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260921/20260921-60316.jpg",
    "period": {
     "start": "2026-11-03",
     "end": "2027-01-24"
@@ -2757,9 +2711,10 @@
     "end": "2026-12-27"
    },
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60316"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60316",
+   "age": "중학생 이상 관람가"
   },
   {
    "id": "nol:15767-41678",
@@ -2778,7 +2733,8 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-31T10:37+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "중학생이상 관람가"
   },
   {
    "id": "yes24:18754",
@@ -2800,8 +2756,9 @@
     "end": "2027-01-16"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "age": "중학생 이상 관람가(2026년 기준 : 2013년 포함 이전 출생자 / 2027년 기준: 2014년 포함 이"
   },
   {
    "id": "nol:15768-41985",
@@ -2820,7 +2777,8 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "중학생이상 관람가"
   },
   {
    "id": "yes24:18753",
@@ -2842,8 +2800,9 @@
     "end": "2027-01-24"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "age": "중학생 이상 관람가(2027년 기준, 2014년 포함 이전 출생자)"
   },
   {
    "id": "ticketlink:66441",
@@ -2865,7 +2824,8 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "14세 이상 (중학생 이상 관람가)"
   },
   {
    "id": "yes24:18795",
@@ -2887,8 +2847,9 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "age": "14세 이상 (중학생 이상 관람가)"
   },
   {
    "id": "nol:15860-41982",
@@ -2907,7 +2868,8 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "14세 이상 관람가"
   },
   {
    "id": "nol:15860-41981",
@@ -2926,7 +2888,8 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "14세 이상 관람가"
   },
   {
    "id": "nol:15806-41629",
@@ -2945,7 +2908,8 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "10세 이상 관람가"
   },
   {
    "id": "ticketlink:66458",
@@ -2964,7 +2928,8 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-06T11:29+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "8세 이상 관람가 (2018년 포함 이전 출생자 관람 가능)"
   },
   {
    "id": "nol:15806-41628",
@@ -2983,7 +2948,8 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "10세 이상 관람가"
   },
   {
    "id": "nol:15875-42011",
@@ -3002,7 +2968,8 @@
    "round": "3차",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-06T15:44+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "8세 이상 관람가 (2026년 기준 2019년 포함 이전 출생자, 2027년 기준 2020년 포함 이전 출생"
   },
   {
    "id": "yes24:18805",
@@ -3013,7 +2980,7 @@
    "openAt": "2026-11-13T14:00+09:00",
    "place": "광림아트센터 BBCH홀",
    "url": "https://ticket.yes24.com/Perf/60128",
-   "image": "",
+   "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260916/20260916-60128.jpg",
    "period": {
     "start": "2026-11-11",
     "end": "2027-02-08"
@@ -3024,9 +2991,10 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-11-06T15:44+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
-   "detailV": 3,
-   "perfId": "60128"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "detailV": 4,
+   "perfId": "60128",
+   "age": "8세 이상 관람가 (2026년 기준 2019년 포함 이전 출생자, 2027년 기준 2020년 포함 이전 출생"
   },
   {
    "id": "nol:15806-41627",
@@ -3045,7 +3013,8 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "10세 이상 관람가"
   },
   {
    "id": "ticketlink:66136",
@@ -3058,11 +3027,12 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66136",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_5/poster_dummy_list_240_320_1_Musical.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00",
+   "lastSeenAt": "2026-11-07T00:45+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2026-12-11"
-   }
+   },
+   "age": "만18세이상"
   },
   {
    "id": "nol:15873-42033",
@@ -3081,7 +3051,8 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-06T11:29+09:00",
-   "lastSeenAt": "2026-11-06T15:44+09:00"
+   "lastSeenAt": "2026-11-07T00:45+09:00",
+   "age": "중학생이상 관람가"
   }
  ]
 }
