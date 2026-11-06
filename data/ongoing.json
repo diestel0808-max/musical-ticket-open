@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-06T15:45+09:00",
+ "updatedAt": "2026-11-07T00:47+09:00",
  "ok": true,
  "items": [
   {
@@ -102,6 +102,29 @@
       "source": "",
       "name": "마스킷",
       "url": "https://reservation.qless.ai/ko/01a15865-cfd3-7655-ac4a-c7064ed5a688/events/01a15893-544c-754a-894d-90707e5678a9"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF304520",
+   "title": "잔해",
+   "area": "대학로",
+   "start": "2026-11-07",
+   "end": "2026-11-08",
+   "place": "창작공간 BBB",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304520_261026_162506.png",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304520",
+   "detail": {
+    "age": "전체 관람가",
+    "child": "N",
+    "cast": "노경민, 박주희, 백찬혁, 신수민, 이유미, 장현우",
+    "runtime": "1시간 10분",
+    "links": [
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1758105"
      }
     ]
    }
@@ -1413,52 +1436,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF304520",
-   "title": "잔해",
-   "area": "대학로",
-   "start": "2026-11-07",
-   "end": "2026-11-08",
-   "place": "창작공간 BBB",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304520_261026_162506.png",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304520",
-   "detail": {
-    "age": "전체 관람가",
-    "child": "N",
-    "cast": "노경민, 박주희, 백찬혁, 신수민, 이유미, 장현우",
-    "runtime": "1시간 10분",
-    "links": [
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1758105"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF303749",
-   "title": "제7회 서울연극25페스티벌, 나에게 묻는다, 순환의 노래",
-   "area": "",
-   "start": "2026-11-07",
-   "end": "2026-11-08",
-   "place": "대학로 스카이씨어터",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303749_261019_135836.png",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303749",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "강민지, 손동진, 김신영, 심아영, 윤휘영",
-    "runtime": "1시간 20분",
-    "links": [
-     {
-      "source": "",
-      "name": "플레이티켓",
-      "url": "http://playticket.co.kr/nav/detail.html?idx=4615"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF303292",
    "title": "백야의 밤 리딩 쇼케이스",
    "area": "대학로",
@@ -1533,34 +1510,6 @@
       "source": "ticketlink",
       "name": "티켓링크",
       "url": "https://www.ticketlink.co.kr/product/66353"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF302792",
-   "title": "Sounds of Autumn",
-   "area": "",
-   "start": "2026-11-10",
-   "end": "2026-11-10",
-   "place": "롯데콘서트홀",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF302792_261008_112216.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302792",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "칼린 수 팍, 최재림, 정선아, 신효범 등",
-    "runtime": "1시간 30분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26014144"
-     },
-     {
-      "source": "",
-      "name": "롯데콘서트홀",
-      "url": "https://www.lotteconcerthall.com/product/performance/261225"
      }
     ]
    }
@@ -1676,13 +1625,51 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF295981",
+   "title": "서울예술단, 백범",
+   "area": "",
+   "start": "2026-11-14",
+   "end": "2026-11-21",
+   "place": "국립극장",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF295981_261001_134601.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF295981",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "최병규, 김현아, 박소연, 안재홍, 고석진, 김백현, 금승훈 등",
+    "runtime": "2시간 15분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26013711"
+     },
+     {
+      "source": "",
+      "name": "국립극장",
+      "url": "https://www.ntok.go.kr/ntok/pm/prfmng/performanceDetail.do?mi=21008&perfId=267152"
+     },
+     {
+      "source": "",
+      "name": "나눔티켓",
+      "url": "https://www.nanumticket.or.kr/pe/detail.html?p_marking=&p_new=&start2=0&page_no2=1&p_idx=14130"
+     },
+     {
+      "source": "",
+      "name": "클립서비스",
+      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79505"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
   {
    "id": "PF304512",
    "title": "김동완의 뮤지컬 콘서트",
-   "reason": "콘서트·갈라",
+   "reason": "콘서트 등 뮤지컬 아님",
    "start": "2026-10-30",
    "end": "2026-12-11",
    "place": "웨스트브릿지 라이브홀",
@@ -1696,6 +1683,60 @@
    "end": "2026-11-21",
    "place": "레미어린이극장 [금천]",
    "age": "전체 관람가"
+  },
+  {
+   "id": "PF303749",
+   "title": "제7회 서울연극25페스티벌, 나에게 묻는다, 순환의 노래",
+   "reason": "콘서트 등 뮤지컬 아님",
+   "start": "2026-11-07",
+   "end": "2026-11-08",
+   "place": "대학로 스카이씨어터",
+   "age": ""
+  },
+  {
+   "id": "PF302888",
+   "title": "티시 태시",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-07",
+   "end": "2026-11-29",
+   "place": "상상나라극장",
+   "age": "24개월 이상"
+  },
+  {
+   "id": "PF302626",
+   "title": "톡톡 라이브쇼, 헬로카봇: 카봇크루가 되어줘! [서울 마포]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-07",
+   "end": "2026-11-29",
+   "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
+   "age": "24개월 이상"
+  },
+  {
+   "id": "PF301487",
+   "title": "아기돼지 삼형제: 늑대숲 또옹돼지 원정대 [서울 강북]",
+   "reason": "아동·가족(제목)",
+   "start": "2026-11-07",
+   "end": "2026-11-08",
+   "place": "꿈의숲아트센터",
+   "age": ""
+  },
+  {
+   "id": "PF301148",
+   "title": "신데렐라 [서울 강남]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "place": "논현1 문화센터",
+   "age": "전체 관람가"
+  },
+  {
+   "id": "PF301113",
+   "title": "조선 마법사관 진준",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-07",
+   "end": "2026-12-31",
+   "place": "국립중앙박물관 극장 용",
+   "age": "36개월 이상"
   },
   {
    "id": "PF300749",
@@ -1714,6 +1755,15 @@
    "end": "2026-11-15",
    "place": "북아현아트홀",
    "age": "24개월 이상"
+  },
+  {
+   "id": "PF300012",
+   "title": "인싸가족 [서울 서초]",
+   "reason": "아동·가족(제목)",
+   "start": "2026-11-07",
+   "end": "2026-11-08",
+   "place": "한전아트센터",
+   "age": ""
   },
   {
    "id": "PF299302",
@@ -1932,9 +1982,18 @@
    "age": ""
   },
   {
+   "id": "PF305172",
+   "title": "김정민 & 성찬경 뮤지컬 콘서트: 정찬콘 Vol.1 쓰다, Day.3 발레뤼스",
+   "reason": "콘서트 등 뮤지컬 아님",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "place": "브릭스씨어터 (구. 콘텐츠 그라운드)",
+   "age": ""
+  },
+  {
    "id": "PF305171",
    "title": "김정민 & 성찬경 뮤지컬 콘서트: 정찬콘 Vol.1 쓰다, Day.2 여든여덟 개의 고통",
-   "reason": "콘서트·갈라",
+   "reason": "콘서트 등 뮤지컬 아님",
    "start": "2026-11-13",
    "end": "2026-11-13",
    "place": "브릭스씨어터 (구. 콘텐츠 그라운드)",
@@ -1943,64 +2002,19 @@
   {
    "id": "PF305144",
    "title": "김정민 & 성찬경 뮤지컬 콘서트 Day.1 정찬콘 vol.1 쓰다",
-   "reason": "콘서트·갈라",
+   "reason": "콘서트 등 뮤지컬 아님",
    "start": "2026-11-12",
    "end": "2026-11-12",
    "place": "브릭스씨어터 (구. 콘텐츠 그라운드)",
    "age": ""
   },
   {
-   "id": "PF302888",
-   "title": "티시 태시",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-07",
-   "end": "2026-11-29",
-   "place": "상상나라극장",
-   "age": "24개월 이상"
-  },
-  {
-   "id": "PF302626",
-   "title": "톡톡 라이브쇼, 헬로카봇: 카봇크루가 되어줘! [서울 마포]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-07",
-   "end": "2026-11-29",
-   "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
-   "age": "24개월 이상"
-  },
-  {
-   "id": "PF301487",
-   "title": "아기돼지 삼형제: 늑대숲 또옹돼지 원정대 [서울 강북]",
-   "reason": "아동·가족(제목)",
-   "start": "2026-11-07",
-   "end": "2026-11-08",
-   "place": "꿈의숲아트센터",
-   "age": ""
-  },
-  {
-   "id": "PF301148",
-   "title": "신데렐라 [서울 강남]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-07",
-   "end": "2026-11-07",
-   "place": "논현1 문화센터",
-   "age": "전체 관람가"
-  },
-  {
-   "id": "PF301113",
-   "title": "조선 마법사관 진준",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-07",
-   "end": "2026-12-31",
-   "place": "국립중앙박물관 극장 용",
-   "age": "36개월 이상"
-  },
-  {
-   "id": "PF300012",
-   "title": "인싸가족 [서울 서초]",
-   "reason": "아동·가족(제목)",
-   "start": "2026-11-07",
-   "end": "2026-11-08",
-   "place": "한전아트센터",
+   "id": "PF302792",
+   "title": "Sounds of Autumn",
+   "reason": "콘서트 등 뮤지컬 아님",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "place": "롯데콘서트홀",
    "age": ""
   }
  ]
