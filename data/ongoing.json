@@ -1777,6 +1777,39 @@
    }
   },
   {
+   "id": "PF305142",
+   "title": "인사이드 더 플레이 : 카지노X",
+   "area": "",
+   "start": "2026-11-20",
+   "end": "2027-04-25",
+   "place": "롯데시네마 에비뉴엘 [서울 중구]",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305142_261102_161057.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305142",
+   "detail": {
+    "age": "만 15세 이상",
+    "child": "N",
+    "cast": "노태현, 김동현, 김유권, 두영광, 민규태, 칼 웨인, 박철연 등",
+    "runtime": "2시간 20분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014816"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66461"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1767834"
+     }
+    ]
+   }
+  },
+  {
    "id": "PF305106",
    "title": "중섭 리딩 쇼케이스",
    "area": "",
@@ -2205,15 +2238,6 @@
    "end": "2026-11-21",
    "place": "구로구민회관",
    "age": "전체 관람가"
-  },
-  {
-   "id": "PF305142",
-   "title": "인사이드 더 플레이 : 카지노X",
-   "reason": "콘서트 등 뮤지컬 아님",
-   "start": "2026-11-20",
-   "end": "2027-04-25",
-   "place": "롯데시네마 에비뉴엘 [서울 중구]",
-   "age": "만 15세 이상"
   }
  ]
 }

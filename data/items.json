@@ -1760,6 +1760,24 @@
    "mentionsMusical": true
   },
   {
+   "id": "ticketlink:66235",
+   "source": "ticketlink",
+   "title": "인사이드 더 플레이 : 카지노X",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-10-30T19:00+09:00",
+   "place": "롯데시네마 에비뉴엘(명동)",
+   "url": "https://www.ticketlink.co.kr/help/notice/66235",
+   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_10/casino_open_1016.png",
+   "firstSeenAt": "2026-10-21T22:41+09:00",
+   "lastSeenAt": "2026-10-30T14:48+09:00",
+   "period": {
+    "start": "2026-11-20",
+    "end": "2027-04-25"
+   },
+   "mentionsMusical": false
+  },
+  {
    "id": "nol:15792-41655",
    "source": "nol",
    "title": "뮤지컬 〈단종, 1698〉 낭독공연 - 영월",

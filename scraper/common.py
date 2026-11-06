@@ -157,9 +157,11 @@ ADULT_AGE = re.compile(r"(?<!\d)19\s*세|청소년\s*관람\s*불가|성인")
 OLDER_AGE = re.compile(r"(?<!\d)([7-9]|1\d)\s*세|초등|중학|고등")
 KIDS_AGE = re.compile(r"\d+\s*개월|(?<!\d)[1-5]\s*세")
 # 예매처가 뮤지컬로 분류해도 뮤지컬이 아닌 공연(낭독공연은 뮤지컬로 둔다)
-NOT_MUSICAL = re.compile(r"콘서트|갈라|GALA|concert|팬\s*미팅|토크|연극|낭독극|인사이드 더 플레이", re.I)
+NOT_MUSICAL = re.compile(r"콘서트|갈라|GALA|concert|팬\s*미팅|토크|연극|낭독극", re.I)
 # 제목이나 공지 본문에 이런 말이 하나도 없으면 예매처 분류가 뮤지컬이어도 뮤지컬로 보지 않는다
 MUSICAL_WORD = re.compile(r"뮤지컬|musical|음악극|가무극|넘버", re.I)
+# 공지에 뮤지컬이라는 말이 없어도 뮤지컬로 보는 공연
+ALWAYS_MUSICAL = re.compile(r"인사이드 더 플레이")
 CONCERT_VENUE = re.compile(r"콘서트홀|라이브홀")
 
 
@@ -176,7 +178,7 @@ def exclusion(title, age="", place="", mentions_musical=None):
 
     mentions_musical: 공지 본문에 뮤지컬이라는 말이 있는지. 본문을 못 본 경우(None)는 판단하지 않는다.
     """
-    if mentions_musical is False and not MUSICAL_WORD.search(title or ""):
+    if mentions_musical is False and not MUSICAL_WORD.search(title or "") and not ALWAYS_MUSICAL.search(title or ""):
         return "제목·공지에 뮤지컬 언급 없음"
     if is_kids(title):
         return "아동·가족(제목)"
