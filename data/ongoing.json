@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09T10:46+09:00",
+ "updatedAt": "2026-11-09T15:27+09:00",
  "ok": true,
  "items": [
   {
@@ -1350,6 +1350,34 @@
       "source": "",
       "name": "쇼노트",
       "url": "http://www.shownote.com/Ticket/Performance/Details?performanceId=378"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305735",
+   "title": "언제는 행복하지 않은 순간이 있었나요 (언행순)",
+   "area": "서울",
+   "start": "2026-11-11",
+   "end": "2027-01-31",
+   "place": "엠스테이지 (구.인사아트홀)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305735_261109_122839.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305735",
+   "detail": {
+    "age": "전체 관람가",
+    "child": "N",
+    "cast": "권오현, 김찬우, 김지수, 전소하, 유채린, 김연주, 최은화 등",
+    "runtime": "2시간 20분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015982"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1574890"
      }
     ]
    }
