@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-11-09T15:26+09:00",
+ "updatedAt": "2026-11-10T13:08+09:00",
  "sources": {
   "nol": {
    "ok": true,
-   "count": 12,
-   "at": "2026-11-09T15:26+09:00"
+   "count": 15,
+   "at": "2026-11-10T13:08+09:00"
   },
   "ticketlink": {
    "ok": true,
-   "count": 11,
-   "at": "2026-11-09T15:26+09:00"
+   "count": 13,
+   "at": "2026-11-10T13:08+09:00"
   },
   "yes24": {
    "ok": true,
    "count": 46,
-   "at": "2026-11-09T15:26+09:00"
+   "at": "2026-11-10T13:08+09:00"
   }
  },
  "items": [
@@ -624,7 +624,7 @@
    "url": "https://ticket.yes24.com/Perf/59694",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260825/20260825-59694.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-10-27",
     "end": "2026-11-15"
@@ -650,7 +650,7 @@
    "url": "https://ticket.yes24.com/Perf/60484",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261002/20261002-60484_2.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-12-15",
     "end": "2027-03-01"
@@ -676,7 +676,7 @@
    "url": "https://ticket.yes24.com/Perf/59596",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202611/20261102/20261102-59596.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-11-17",
     "end": "2026-11-29"
@@ -702,7 +702,7 @@
    "url": "https://ticket.yes24.com/Perf/59488",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59488.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2026-11-29"
@@ -728,7 +728,7 @@
    "url": "https://ticket.yes24.com/Perf/60524",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261008/20261008-60524.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-10-30",
     "end": "2026-11-01"
@@ -780,7 +780,7 @@
    "url": "https://ticket.yes24.com/Perf/59639",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202608/20260811/20260811-59639.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-09-16",
     "end": "2026-11-29"
@@ -806,7 +806,7 @@
    "url": "https://ticket.yes24.com/Perf/59239",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -832,7 +832,7 @@
    "url": "https://ticket.yes24.com/Perf/59239",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260928/20260928-59239.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-09-10",
     "end": "2026-11-29"
@@ -858,7 +858,7 @@
    "url": "https://ticket.yes24.com/Perf/60316",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260921/20260921-60316.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-11-03",
     "end": "2027-01-24"
@@ -884,7 +884,7 @@
    "url": "https://ticket.yes24.com/Perf/59852",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261026/20261026-59852.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-29"
@@ -910,7 +910,7 @@
    "url": "https://ticket.yes24.com/Perf/60645",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261014/20261014-60645.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-10-31",
     "end": "2026-10-31"
@@ -933,7 +933,7 @@
    "url": "https://ticket.yes24.com/Perf/60602",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261012/20261012-60602.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-11-10",
     "end": "2026-11-10"
@@ -956,7 +956,7 @@
    "url": "https://ticket.yes24.com/Perf/60128",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202609/20260916/20260916-60128.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-11-11",
     "end": "2027-02-08"
@@ -982,7 +982,7 @@
    "url": "https://ticket.yes24.com/Perf/60658",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-60658.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-12-16",
     "end": "2027-03-14"
@@ -1008,7 +1008,7 @@
    "url": "https://ticket.yes24.com/Perf/60658",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261019/20261019-60658.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-12-16",
     "end": "2027-03-14"
@@ -1181,7 +1181,7 @@
    "url": "https://ticket.yes24.com/Perf/60772",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202610/20261022/20261022-60772.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2027-03-07"
@@ -1313,7 +1313,7 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60836",
    "age": "",
@@ -1367,7 +1367,7 @@
    "url": "https://ticket.yes24.com/Perf/58563",
    "image": "https://tkfile.yes24.com/upload2/PerfBlog/202605/20260529/20260529-58563.jpg",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-12-08",
     "end": "2027-01-03"
@@ -1399,7 +1399,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60857",
    "age": "초등학생 이상 관람가",
@@ -1466,7 +1466,7 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60836",
    "age": "",
@@ -1544,7 +1544,7 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "59565",
    "age": "17세 이상 관람가 (2010년생 포함 이전 출생자)",
@@ -1570,7 +1570,7 @@
     "end": "2026-11-29"
    },
    "firstSeenAt": "2026-10-27T18:15+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "59239",
    "age": "8세 이상 (미취학 아동 관람불가)",
@@ -1618,7 +1618,7 @@
     "end": "2026-12-06"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "59694",
    "age": "14세 이상 관람가",
@@ -1663,7 +1663,7 @@
     "end": "2026-11-29"
    },
    "firstSeenAt": "2026-10-27T18:15+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "59239",
    "age": "8세 이상 (미취학 아동 관람불가)",
@@ -1711,7 +1711,7 @@
     "end": "2026-12-27"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60863",
    "age": "14세 이상 관람가",
@@ -1753,7 +1753,7 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-24T08:46+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "59565",
    "age": "17세 이상 관람가 (2010년생 포함 이전 출생자)",
@@ -1813,7 +1813,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-28T23:43+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60916",
    "age": "전체관람가",
@@ -1997,7 +1997,7 @@
     "end": "2026-12-20"
    },
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60940",
    "age": "12세 이상 (초등학교 5학년 이상 관람 가능 /",
@@ -2064,7 +2064,7 @@
     "end": "2026-12-20"
    },
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "59852",
    "age": "8세 이상 관람가",
@@ -2109,7 +2109,7 @@
     "end": "2027-02-05"
    },
    "firstSeenAt": "2026-10-27T09:15+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60521",
    "age": "8세 이상 관람가(2026년 기준, 2019년 포함 이전 출생자)",
@@ -2227,7 +2227,7 @@
    "round": "1차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-27T18:47+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60933",
    "age": "8세 이상(미취학아동 관람불가)",
@@ -2253,7 +2253,7 @@
     "end": "2026-12-13"
    },
    "firstSeenAt": "2026-10-28T23:43+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60967",
    "age": "14세 이상 관람가 (2026년 공연 기준 2013년 포함 이전 출생자 관람 가능)",
@@ -2534,7 +2534,7 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-11-03T12:29+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "age": "중학생 이상 관람가",
    "mentionsMusical": true,
@@ -2557,7 +2557,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-06T15:44+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60974",
    "age": "",
@@ -2600,7 +2600,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-06T15:44+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "만 8세 이상",
    "mentionsMusical": true
   },
@@ -2624,7 +2624,7 @@
     "end": "2027-01-10"
    },
    "firstSeenAt": "2026-11-04T11:21+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60484",
    "age": "14세 이상 관람가 (2026년 기준 2013년생 포함 이전 출생자 / 2027년 기준 2014년생 포함 이",
@@ -2647,7 +2647,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-06T15:44+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60974",
    "age": "",
@@ -2673,7 +2673,7 @@
     "end": "2026-12-20"
    },
    "firstSeenAt": "2026-11-03T15:46+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "14세 이상 관람가 (중학생 관람가 / 2026년 공연 기준, 2013년 포함 이전 출생자)",
    "mentionsMusical": true
   },
@@ -2697,7 +2697,7 @@
     "end": "2026-12-27"
    },
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "중학생 이상 관람가",
    "mentionsMusical": true
   },
@@ -2721,7 +2721,7 @@
     "end": "2026-12-27"
    },
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60316",
    "age": "중학생 이상 관람가",
@@ -2744,7 +2744,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-31T10:37+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "중학생이상 관람가"
   },
   {
@@ -2766,7 +2766,7 @@
    "age": "8세이상 관람가능",
    "mentionsMusical": null,
    "firstSeenAt": "2026-11-09T15:26+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00"
+   "lastSeenAt": "2026-11-10T13:08+09:00"
   },
   {
    "id": "ticketlink:66477",
@@ -2787,7 +2787,7 @@
    "age": "8세 이상 관람 가능",
    "mentionsMusical": true,
    "firstSeenAt": "2026-11-09T15:26+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00"
+   "lastSeenAt": "2026-11-10T13:08+09:00"
   },
   {
    "id": "yes24:18754",
@@ -2809,7 +2809,7 @@
     "end": "2027-01-16"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "age": "중학생 이상 관람가(2026년 기준 : 2013년 포함 이전 출생자 / 2027년 기준: 2014년 포함 이",
    "mentionsMusical": true
@@ -2831,7 +2831,7 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "중학생이상 관람가"
   },
   {
@@ -2854,11 +2854,32 @@
     "end": "2027-01-24"
    },
    "firstSeenAt": "2026-10-27T17:24+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "age": "중학생 이상 관람가(2027년 기준, 2014년 포함 이전 출생자)",
    "mentionsMusical": true,
    "perfId": "61037"
+  },
+  {
+   "id": "nol:15897-42155",
+   "source": "nol",
+   "title": "뮤지컬 〈오페라의 유령〉 40주년 스페셜 시즌 (Phantom of The Opera)",
+   "exclusive": false,
+   "label": "일반 예매일",
+   "openAt": "2026-11-12T11:00+09:00",
+   "place": "블루스퀘어 우리은행홀",
+   "url": "https://nol.yanolja.com/ticket/products/26013995",
+   "image": "https://ticketimage.interpark.com/Play/image/large/26/26013995_p.gif",
+   "period": {
+    "start": "2026-12-22",
+    "end": "2027-02-28"
+   },
+   "round": "",
+   "roundPeriod": null,
+   "age": "8세 이상 관람가(2027년 기준, 2020년 포함 이전 출생자)",
+   "mentionsMusical": null,
+   "firstSeenAt": "2026-11-10T13:08+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00"
   },
   {
    "id": "ticketlink:66441",
@@ -2880,7 +2901,7 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "14세 이상 (중학생 이상 관람가)",
    "mentionsMusical": true
   },
@@ -2904,10 +2925,36 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "age": "14세 이상 (중학생 이상 관람가)",
    "mentionsMusical": true
+  },
+  {
+   "id": "yes24:18815",
+   "source": "yes24",
+   "title": "뮤지컬 <오페라의 유령> 40주년 스페셜 시즌-추가 회차",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-11-12T11:00+09:00",
+   "place": "",
+   "url": "https://ticket.yes24.com/Perf/60521",
+   "image": "",
+   "period": {
+    "start": "2027-01-30",
+    "end": "2027-01-30"
+   },
+   "round": "",
+   "roundPeriod": {
+    "start": "2027-01-30",
+    "end": "2027-01-30"
+   },
+   "age": "8세 이상 관람가(2027년 기준, 2020년 포함 이전 출생자)",
+   "mentionsMusical": true,
+   "firstSeenAt": "2026-11-10T13:08+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
+   "detailV": 5,
+   "perfId": "60521"
   },
   {
    "id": "nol:15860-41982",
@@ -2926,11 +2973,11 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "14세 이상 관람가"
   },
   {
-   "id": "nol:15890-42113",
+   "id": "nol:15890-42148",
    "source": "nol",
    "title": "2026 뮤지컬 〈미드나잇:액터뮤지션〉 - THE FIANL",
    "exclusive": false,
@@ -2947,8 +2994,8 @@
    "roundPeriod": null,
    "age": "중학생 이상 관람가",
    "mentionsMusical": null,
-   "firstSeenAt": "2026-11-09T15:26+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00"
+   "firstSeenAt": "2026-11-10T13:08+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00"
   },
   {
    "id": "ticketlink:66475",
@@ -2972,7 +3019,7 @@
    "age": "중학생 이상 관람가",
    "mentionsMusical": true,
    "firstSeenAt": "2026-11-09T15:26+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00"
+   "lastSeenAt": "2026-11-10T13:08+09:00"
   },
   {
    "id": "nol:15860-41981",
@@ -2991,8 +3038,29 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-05T15:46+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "14세 이상 관람가"
+  },
+  {
+   "id": "ticketlink:66487",
+   "source": "ticketlink",
+   "title": "뮤지컬 < DMZ > 낭독공연",
+   "exclusive": true,
+   "label": "",
+   "openAt": "2026-11-12T15:00+09:00",
+   "place": "홍익대 대학로아트센터 대극장",
+   "url": "https://www.ticketlink.co.kr/help/notice/66487",
+   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/DMZ_open_1110.jpg",
+   "period": {
+    "start": "2026-12-03",
+    "end": "2026-12-03"
+   },
+   "round": "",
+   "roundPeriod": null,
+   "age": "12세 이상(2015년 포함) 관람가",
+   "mentionsMusical": true,
+   "firstSeenAt": "2026-11-10T13:08+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00"
   },
   {
    "id": "nol:15806-41629",
@@ -3011,7 +3079,7 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "10세 이상 관람가"
   },
   {
@@ -3031,7 +3099,7 @@
    "round": "마지막",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-06T11:29+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "8세 이상 관람가 (2018년 포함 이전 출생자 관람 가능)",
    "mentionsMusical": true
   },
@@ -3052,7 +3120,7 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "10세 이상 관람가"
   },
   {
@@ -3072,8 +3140,29 @@
    "round": "3차",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-06T15:44+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "8세 이상 관람가 (2026년 기준 2019년 포함 이전 출생자, 2027년 기준 2020년 포함 이전 출생"
+  },
+  {
+   "id": "ticketlink:66485",
+   "source": "ticketlink",
+   "title": "뮤지컬 <도둑맞은 책>",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-11-13T14:00+09:00",
+   "place": "세우아트센터 1관",
+   "url": "https://www.ticketlink.co.kr/help/notice/66485",
+   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_4/book_open_1110.jpg",
+   "period": {
+    "start": "2026-12-19",
+    "end": "2027-02-28"
+   },
+   "round": "",
+   "roundPeriod": null,
+   "age": "만 15세 이상 관람가",
+   "mentionsMusical": true,
+   "firstSeenAt": "2026-11-10T13:08+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00"
   },
   {
    "id": "yes24:18805",
@@ -3095,7 +3184,7 @@
     "end": "2027-01-03"
    },
    "firstSeenAt": "2026-11-06T15:44+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "60128",
    "age": "8세 이상 관람가 (2026년 기준 2019년 포함 이전 출생자, 2027년 기준 2020년 포함 이전 출생",
@@ -3118,8 +3207,29 @@
    "round": "2차",
    "roundPeriod": null,
    "firstSeenAt": "2026-10-30T14:48+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "10세 이상 관람가"
+  },
+  {
+   "id": "nol:15894-42144",
+   "source": "nol",
+   "title": "뮤지컬 바람으로의 여행",
+   "exclusive": false,
+   "label": "일반 예매일",
+   "openAt": "2026-11-16T09:00+09:00",
+   "place": "대학로 스튜디오 블루",
+   "url": "https://nol.yanolja.com/ticket/products/26008744",
+   "image": "https://ticketimage.interpark.com/Play/image/large/26/26008744_p.gif",
+   "period": {
+    "start": "2026-11-06",
+    "end": "2027-01-10"
+   },
+   "round": "2차",
+   "roundPeriod": null,
+   "age": "만 7세 이상",
+   "mentionsMusical": null,
+   "firstSeenAt": "2026-11-10T13:08+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00"
   },
   {
    "id": "yes24:18810",
@@ -3137,9 +3247,54 @@
    "age": "만 7세 이상",
    "mentionsMusical": true,
    "firstSeenAt": "2026-11-09T10:45+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "detailV": 5,
    "perfId": "59734"
+  },
+  {
+   "id": "nol:15896-42152",
+   "source": "nol",
+   "title": "뮤지컬 〈사춘기〉",
+   "exclusive": false,
+   "label": "일반 예매일",
+   "openAt": "2026-11-16T15:00+09:00",
+   "place": "예그린씨어터",
+   "url": "https://nol.yanolja.com/ticket/products/26013198",
+   "image": "https://ticketimage.interpark.com/Play/image/large/26/26013198_p.gif",
+   "period": {
+    "start": "2026-11-09",
+    "end": "2027-01-31"
+   },
+   "round": "3차",
+   "roundPeriod": null,
+   "age": "중학생 이상 관람가",
+   "mentionsMusical": null,
+   "firstSeenAt": "2026-11-10T13:08+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00"
+  },
+  {
+   "id": "ticketlink:66488",
+   "source": "ticketlink",
+   "title": "뮤지컬 <사춘기> 3차",
+   "exclusive": false,
+   "label": "",
+   "openAt": "2026-11-16T15:00+09:00",
+   "place": "예그린씨어터",
+   "url": "https://www.ticketlink.co.kr/help/notice/66488",
+   "image": "https://image.toast.com/aaaaab/ticketlink/TKL_7/sa_open_1013.jpg",
+   "period": {
+    "start": "2026-12-22",
+    "end": "2027-01-10"
+   },
+   "round": "3차",
+   "roundPeriod": {
+    "start": "2026-12-22",
+    "end": "2027-01-10"
+   },
+   "age": "100분",
+   "mentionsMusical": true,
+   "firstSeenAt": "2026-11-10T13:08+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00"
   },
   {
    "id": "ticketlink:66136",
@@ -3152,7 +3307,7 @@
    "url": "https://www.ticketlink.co.kr/help/notice/66136",
    "image": "https://image.toast.com/aaaaab/ticketlink/TKL_5/poster_dummy_list_240_320_1_Musical.png",
    "firstSeenAt": "2026-10-21T22:41+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "period": {
     "start": "2026-12-11",
     "end": "2026-12-11"
@@ -3177,8 +3332,29 @@
    "round": "",
    "roundPeriod": null,
    "firstSeenAt": "2026-11-06T11:29+09:00",
-   "lastSeenAt": "2026-11-09T15:26+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00",
    "age": "중학생이상 관람가"
+  },
+  {
+   "id": "nol:15895-42149",
+   "source": "nol",
+   "title": "카라마조프 패러다임",
+   "exclusive": false,
+   "label": "일반 예매일",
+   "openAt": "2026-11-19T14:00+09:00",
+   "place": "플랫폼74",
+   "url": "https://nol.yanolja.com/ticket/products/26016391",
+   "image": "https://ticketimage.interpark.com/Play/image/large/26/26016391_p.gif",
+   "period": {
+    "start": "2026-12-19",
+    "end": "2026-12-27"
+   },
+   "round": "",
+   "roundPeriod": null,
+   "age": "12세이상",
+   "mentionsMusical": null,
+   "firstSeenAt": "2026-11-10T13:08+09:00",
+   "lastSeenAt": "2026-11-10T13:08+09:00"
   }
  ]
 }

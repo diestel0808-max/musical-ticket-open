@@ -1,53 +1,7 @@
 {
- "updatedAt": "2026-11-09T15:27+09:00",
+ "updatedAt": "2026-11-10T13:09+09:00",
  "ok": true,
  "items": [
-  {
-   "id": "PF303292",
-   "title": "백야의 밤 리딩 쇼케이스",
-   "area": "대학로",
-   "start": "2026-11-09",
-   "end": "2026-11-09",
-   "place": "달밤엔씨어터",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303292_261014_131913.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303292",
-   "detail": {
-    "age": "만 15세 이상",
-    "child": "N",
-    "cast": "김나연, 이준우, 노서희, 이경민 등",
-    "runtime": "1시간 10분",
-    "links": [
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1749866"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF303878",
-   "title": "애프터 나인 쇼케이스",
-   "area": "",
-   "start": "2026-11-09",
-   "end": "2026-11-09",
-   "place": "XSCALA(엑스칼라)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303878_261020_131103.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303878",
-   "detail": {
-    "age": "만 11세 이상",
-    "child": "N",
-    "cast": "주민진, 정지은, 강찬, 윤미소, 이주찬, 심건우, 김동현 등",
-    "runtime": "1시간 40분",
-    "links": [
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/66353"
-     }
-    ]
-   }
-  },
   {
    "id": "PF301098",
    "title": "남벌",
@@ -1725,6 +1679,95 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF302516",
+   "title": "레베카",
+   "area": "서울",
+   "start": "2026-11-24",
+   "end": "2027-03-14",
+   "place": "충무아트센터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF302516_261006_134804.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302516",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "김우형, 김호경, 박성혁, 신영숙, 옥주현, 이아름솔, 김다혜 등",
+    "runtime": "2시간 50분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26013993"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66772"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1772218"
+     },
+     {
+      "source": "",
+      "name": "멜론티켓",
+      "url": "https://ticket.melon.com/performance/index.htm?prodId=213984"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF304042",
+   "title": "안녕! 크로아티아",
+   "area": "",
+   "start": "2026-11-24",
+   "end": "2026-11-29",
+   "place": "비유아트홀(구. 효천아트센터 그라운드씬)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304042_261021_144225.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304042",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "조은솔, 나서영, 조훈",
+    "runtime": "1시간 30분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014961"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF303673",
+   "title": "여신님이 보고 계셔",
+   "area": "대학로",
+   "start": "2026-11-24",
+   "end": "2027-03-01",
+   "place": "유니플렉스",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303673_261019_104705.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303673",
+   "detail": {
+    "age": "만 9세 이상",
+    "child": "N",
+    "cast": "조강현, 강기둥, 정욱진, 유현석, 김리현, 류동휘, 홍기범 등",
+    "runtime": "2시간",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014511"
+     },
+     {
+      "source": "",
+      "name": "클립서비스",
+      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79496"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
@@ -1754,6 +1797,15 @@
    "end": "2026-11-29",
    "place": "상상나라극장",
    "age": "24개월 이상"
+  },
+  {
+   "id": "PF302792",
+   "title": "Sounds of Autumn",
+   "reason": "콘서트 등 뮤지컬 아님",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "place": "롯데콘서트홀",
+   "age": ""
   },
   {
    "id": "PF302626",
@@ -1990,6 +2042,15 @@
    "age": ""
   },
   {
+   "id": "PF305803",
+   "title": "제7회 서울연극25페스티벌, 족두리가 돌아왔다",
+   "reason": "콘서트 등 뮤지컬 아님",
+   "start": "2026-11-24",
+   "end": "2026-11-26",
+   "place": "대학로 스카이씨어터",
+   "age": ""
+  },
+  {
    "id": "PF305505",
    "title": "서리풀악동문화공연, 빨간모자야 조심해 (11월)",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -2042,15 +2103,6 @@
    "end": "2026-11-22",
    "place": "롯데백화점 [영등포]",
    "age": "24개월 이상"
-  },
-  {
-   "id": "PF302792",
-   "title": "Sounds of Autumn",
-   "reason": "콘서트 등 뮤지컬 아님",
-   "start": "2026-11-10",
-   "end": "2026-11-10",
-   "place": "롯데콘서트홀",
-   "age": ""
   },
   {
    "id": "PF302037",
