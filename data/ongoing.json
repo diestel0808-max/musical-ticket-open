@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T16:18+09:00",
+ "updatedAt": "2026-11-11T10:57+09:00",
  "ok": true,
  "items": [
   {
@@ -1188,6 +1188,77 @@
    }
   },
   {
+   "id": "PF305735",
+   "title": "언제는 행복하지 않은 순간이 있었나요 (언행순)",
+   "area": "서울",
+   "start": "2026-11-11",
+   "end": "2027-01-31",
+   "place": "엠스테이지 (구.인사아트홀)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305735_261109_122839.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305735",
+   "detail": {
+    "age": "전체 관람가",
+    "child": "N",
+    "cast": "권오현, 김찬우, 김지수, 전소하, 유채린, 김연주, 최은화 등",
+    "runtime": "2시간 20분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015982"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1574890"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF300974",
+   "title": "두 도시 이야기",
+   "area": "",
+   "start": "2026-11-11",
+   "end": "2027-02-08",
+   "place": "광림아트센터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF300974_260915_132402.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF300974",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "정기열, 신성록, 고은성, 백형훈, 진태화, 노윤, 이선민 등",
+    "runtime": "2시간 50분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26013098"
+     },
+     {
+      "source": "yes24",
+      "name": "예스24",
+      "url": "https://ticket.yes24.com/Perf/60128"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1737045"
+     },
+     {
+      "source": "",
+      "name": "멜론티켓",
+      "url": "https://ticket.melon.com/performance/index.htm?prodId=213865"
+     },
+     {
+      "source": "",
+      "name": "쇼노트",
+      "url": "http://www.shownote.com/Ticket/Performance/Details?performanceId=378"
+     }
+    ]
+   }
+  },
+  {
    "id": "PF291533",
    "title": "빨래: 32차 프로덕션",
    "area": "",
@@ -1265,77 +1336,6 @@
   }
  ],
  "upcoming": [
-  {
-   "id": "PF300974",
-   "title": "두 도시 이야기",
-   "area": "",
-   "start": "2026-11-11",
-   "end": "2027-02-08",
-   "place": "광림아트센터",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF300974_260915_132402.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF300974",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "정기열, 신성록, 고은성, 백형훈, 진태화, 노윤, 이선민 등",
-    "runtime": "2시간 50분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26013098"
-     },
-     {
-      "source": "yes24",
-      "name": "예스24",
-      "url": "https://ticket.yes24.com/Perf/60128"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1737045"
-     },
-     {
-      "source": "",
-      "name": "멜론티켓",
-      "url": "https://ticket.melon.com/performance/index.htm?prodId=213865"
-     },
-     {
-      "source": "",
-      "name": "쇼노트",
-      "url": "http://www.shownote.com/Ticket/Performance/Details?performanceId=378"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF305735",
-   "title": "언제는 행복하지 않은 순간이 있었나요 (언행순)",
-   "area": "서울",
-   "start": "2026-11-11",
-   "end": "2027-01-31",
-   "place": "엠스테이지 (구.인사아트홀)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305735_261109_122839.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305735",
-   "detail": {
-    "age": "전체 관람가",
-    "child": "N",
-    "cast": "권오현, 김찬우, 김지수, 전소하, 유채린, 김연주, 최은화 등",
-    "runtime": "2시간 20분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26015982"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1574890"
-     }
-    ]
-   }
-  },
   {
    "id": "PF304765",
    "title": "붓다, 세상의 길을 묻다",
@@ -1822,15 +1822,6 @@
    "age": "24개월 이상"
   },
   {
-   "id": "PF302792",
-   "title": "Sounds of Autumn",
-   "reason": "콘서트 등 뮤지컬 아님",
-   "start": "2026-11-10",
-   "end": "2026-11-10",
-   "place": "롯데콘서트홀",
-   "age": ""
-  },
-  {
    "id": "PF302626",
    "title": "톡톡 라이브쇼, 헬로카봇: 카봇크루가 되어줘! [서울 마포]",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -1887,11 +1878,11 @@
   {
    "id": "PF294961",
    "title": "SEXY MEN STANDING 섹시 맨 스탠딩",
-   "reason": "19세 이상",
+   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
    "start": "2026-07-01",
    "end": "2026-11-29",
    "place": "레드루즈씨어터",
-   "age": "만 19세 이상"
+   "age": ""
   },
   {
    "id": "PF293005",
@@ -2121,11 +2112,11 @@
   {
    "id": "PF304788",
    "title": "1598 연안에서 [서울 노원]",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(관람연령)",
    "start": "2026-11-18",
    "end": "2026-11-18",
    "place": "노원문화예술회관",
-   "age": ""
+   "age": "48개월 이상"
   },
   {
    "id": "PF303229",
