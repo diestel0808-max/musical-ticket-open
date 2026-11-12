@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T15:19+09:00",
+ "updatedAt": "2026-11-12T12:02+09:00",
  "ok": true,
  "items": [
   {
@@ -226,6 +226,29 @@
       "source": "nol",
       "name": "NOL",
       "url": "https://nol.yanolja.com/ticket/products/26013144"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF303405",
+   "title": "서울어텀페스타, 콰르텟",
+   "area": "",
+   "start": "2026-11-12",
+   "end": "2026-11-22",
+   "place": "씨어터 쿰",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303405_261019_152347.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303405",
+   "detail": {
+    "age": "만 8세 이상",
+    "child": "N",
+    "cast": "김진철, 양상현, 고운, 박서린, 안동혁, 양성령",
+    "runtime": "2시간 10분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015085"
      }
     ]
    }
@@ -651,6 +674,29 @@
       "source": "",
       "name": "타임티켓",
       "url": "https://timeticket.co.kr/product/7427"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF304765",
+   "title": "붓다, 세상의 길을 묻다",
+   "area": "대학로",
+   "start": "2026-11-12",
+   "end": "2026-12-06",
+   "place": "후암스테이지",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304765_261028_163235.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304765",
+   "detail": {
+    "age": "만 12세 이상",
+    "child": "N",
+    "cast": "김현중, 김진만, 문정미, 윤석배, 김용현, 신현희, 최우성 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015595"
      }
     ]
    }
@@ -1337,52 +1383,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF304765",
-   "title": "붓다, 세상의 길을 묻다",
-   "area": "대학로",
-   "start": "2026-11-12",
-   "end": "2026-12-06",
-   "place": "후암스테이지",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304765_261028_163235.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304765",
-   "detail": {
-    "age": "만 12세 이상",
-    "child": "N",
-    "cast": "김현중, 김진만, 문정미, 윤석배, 김용현, 신현희, 최우성 등",
-    "runtime": "1시간 40분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26015595"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF303405",
-   "title": "서울어텀페스타, 콰르텟",
-   "area": "",
-   "start": "2026-11-12",
-   "end": "2026-11-22",
-   "place": "씨어터 쿰",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303405_261019_152347.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303405",
-   "detail": {
-    "age": "만 8세 이상",
-    "child": "N",
-    "cast": "김진철, 양상현, 고운, 박서린, 안동혁, 양성령",
-    "runtime": "2시간 10분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26015085"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF304266",
    "title": "우리의 마지막 순간들",
    "area": "대학로",
@@ -1791,9 +1791,74 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF304086",
+   "title": "닥터 두리틀",
+   "area": "대학로",
+   "start": "2026-11-26",
+   "end": "2027-01-24",
+   "place": "NOL 씨어터 대학로 (구. 대학로뮤지컬센터)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304086_261021_171131.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304086",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "홍성민, 김용구, 김준현, 김나윤, 구옥분, 손수아, 전대현 등",
+    "runtime": "1시간 50분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015064"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66449"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1761259"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF302748",
+   "title": "직소",
+   "area": "대학로",
+   "start": "2026-11-26",
+   "end": "2026-12-13",
+   "place": "브이씨어터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF302748_261007_151330.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302748",
+   "detail": {
+    "age": "만 11세 이상",
+    "child": "N",
+    "cast": "손채현, 이대현, 최정윤, 한재원, 권현빈, 오세아, 이소혜",
+    "runtime": "1시간 15분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66090"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
+  {
+   "id": "PF305144",
+   "title": "김정민 & 성찬경 뮤지컬 콘서트 Day.1 정찬콘 vol.1 쓰다",
+   "reason": "콘서트 등 뮤지컬 아님",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "place": "브릭스씨어터 (구. 콘텐츠 그라운드)",
+   "age": ""
+  },
   {
    "id": "PF304512",
    "title": "김동완의 뮤지컬 콘서트",
@@ -2065,6 +2130,15 @@
    "age": ""
   },
   {
+   "id": "PF305906",
+   "title": "마녀는 아이돌을 좋아해",
+   "reason": "아동(관람연령)",
+   "start": "2026-11-26",
+   "end": "2026-11-26",
+   "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
+   "age": "만 5세 이상"
+  },
+  {
    "id": "PF305803",
    "title": "제7회 서울연극25페스티벌, 족두리가 돌아왔다",
    "reason": "콘서트 등 뮤지컬 아님",
@@ -2097,15 +2171,6 @@
    "reason": "콘서트 등 뮤지컬 아님",
    "start": "2026-11-13",
    "end": "2026-11-13",
-   "place": "브릭스씨어터 (구. 콘텐츠 그라운드)",
-   "age": ""
-  },
-  {
-   "id": "PF305144",
-   "title": "김정민 & 성찬경 뮤지컬 콘서트 Day.1 정찬콘 vol.1 쓰다",
-   "reason": "콘서트 등 뮤지컬 아님",
-   "start": "2026-11-12",
-   "end": "2026-11-12",
    "place": "브릭스씨어터 (구. 콘텐츠 그라운드)",
    "age": ""
   },
