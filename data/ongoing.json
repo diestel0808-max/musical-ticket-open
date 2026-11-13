@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T16:10+09:00",
+ "updatedAt": "2026-11-13T11:39+09:00",
  "ok": true,
  "items": [
   {
@@ -320,6 +320,29 @@
       "source": "",
       "name": "타임티켓",
       "url": "https://timeticket.co.kr/product/7444"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF304266",
+   "title": "우리의 마지막 순간들",
+   "area": "대학로",
+   "start": "2026-11-13",
+   "end": "2026-11-22",
+   "place": "보라 아트홀(구. 지구인아트홀)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304266_261023_112733.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304266",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "석우성, 서은교",
+    "runtime": "1시간 15분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015338"
      }
     ]
    }
@@ -1383,29 +1406,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF304266",
-   "title": "우리의 마지막 순간들",
-   "area": "대학로",
-   "start": "2026-11-13",
-   "end": "2026-11-22",
-   "place": "보라 아트홀(구. 지구인아트홀)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304266_261023_112733.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304266",
-   "detail": {
-    "age": "만 13세 이상",
-    "child": "N",
-    "cast": "석우성, 서은교",
-    "runtime": "1시간 15분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26015338"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF295981",
    "title": "서울예술단, 백범",
    "area": "",
@@ -1847,15 +1847,61 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF305128",
+   "title": "긴긴밤",
+   "area": "",
+   "start": "2026-11-27",
+   "end": "2026-11-29",
+   "place": "예술나무씨어터(구. 상상나눔씨어터)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305128_261102_154135.png",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305128",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "이경섭, 이승환, 임용태, 강은비, 제수지, 송민영, 이용현 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66676"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305003",
+   "title": "소금빌레 리딩 쇼케이스",
+   "area": "",
+   "start": "2026-11-27",
+   "end": "2026-11-29",
+   "place": "더 서울라이티움 (갤러리아포레)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305003_261102_104207.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305003",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "정단비, 전하영",
+    "runtime": "1시간",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66636"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
   {
-   "id": "PF305144",
-   "title": "김정민 & 성찬경 뮤지컬 콘서트 Day.1 정찬콘 vol.1 쓰다",
+   "id": "PF305171",
+   "title": "김정민 & 성찬경 뮤지컬 콘서트: 정찬콘 Vol.1 쓰다, Day.2 여든여덟 개의 고통",
    "reason": "콘서트 등 뮤지컬 아님",
-   "start": "2026-11-12",
-   "end": "2026-11-12",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
    "place": "브릭스씨어터 (구. 콘텐츠 그라운드)",
    "age": ""
   },
@@ -2166,13 +2212,13 @@
    "age": ""
   },
   {
-   "id": "PF305171",
-   "title": "김정민 & 성찬경 뮤지컬 콘서트: 정찬콘 Vol.1 쓰다, Day.2 여든여덟 개의 고통",
-   "reason": "콘서트 등 뮤지컬 아님",
-   "start": "2026-11-13",
-   "end": "2026-11-13",
-   "place": "브릭스씨어터 (구. 콘텐츠 그라운드)",
-   "age": ""
+   "id": "PF304893",
+   "title": "와이헌터스: 위대한 숏맨과 북몬스터",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-27",
+   "end": "2026-11-28",
+   "place": "금천뮤지컬센터",
+   "age": "만 7세 이상"
   },
   {
    "id": "PF304788",
