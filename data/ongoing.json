@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T15:45+09:00",
+ "updatedAt": "2026-11-14T11:28+09:00",
  "ok": true,
  "items": [
   {
@@ -226,6 +226,44 @@
       "source": "nol",
       "name": "NOL",
       "url": "https://nol.yanolja.com/ticket/products/26013144"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF295981",
+   "title": "서울예술단, 백범",
+   "area": "",
+   "start": "2026-11-14",
+   "end": "2026-11-21",
+   "place": "국립극장",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF295981_261001_134601.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF295981",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "최병규, 김현아, 박소연, 안재홍, 고석진, 김백현, 금승훈 등",
+    "runtime": "2시간 15분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26013711"
+     },
+     {
+      "source": "",
+      "name": "국립극장",
+      "url": "https://www.ntok.go.kr/ntok/pm/prfmng/performanceDetail.do?mi=21008&perfId=267152"
+     },
+     {
+      "source": "",
+      "name": "나눔티켓",
+      "url": "https://www.nanumticket.or.kr/pe/detail.html?p_marking=&p_new=&start2=0&page_no2=1&p_idx=14130"
+     },
+     {
+      "source": "",
+      "name": "클립서비스",
+      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79505"
      }
     ]
    }
@@ -1406,44 +1444,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF295981",
-   "title": "서울예술단, 백범",
-   "area": "",
-   "start": "2026-11-14",
-   "end": "2026-11-21",
-   "place": "국립극장",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF295981_261001_134601.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF295981",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "최병규, 김현아, 박소연, 안재홍, 고석진, 김백현, 금승훈 등",
-    "runtime": "2시간 15분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26013711"
-     },
-     {
-      "source": "",
-      "name": "국립극장",
-      "url": "https://www.ntok.go.kr/ntok/pm/prfmng/performanceDetail.do?mi=21008&perfId=267152"
-     },
-     {
-      "source": "",
-      "name": "나눔티켓",
-      "url": "https://www.nanumticket.or.kr/pe/detail.html?p_marking=&p_new=&start2=0&page_no2=1&p_idx=14130"
-     },
-     {
-      "source": "",
-      "name": "클립서비스",
-      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79505"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF303127",
    "title": "플릭스! (Musical FLIX!)",
    "area": "",
@@ -1897,11 +1897,11 @@
  ],
  "excluded": [
   {
-   "id": "PF305171",
-   "title": "김정민 & 성찬경 뮤지컬 콘서트: 정찬콘 Vol.1 쓰다, Day.2 여든여덟 개의 고통",
+   "id": "PF305172",
+   "title": "김정민 & 성찬경 뮤지컬 콘서트: 정찬콘 Vol.1 쓰다, Day.3 발레뤼스",
    "reason": "콘서트 등 뮤지컬 아님",
-   "start": "2026-11-13",
-   "end": "2026-11-13",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
    "place": "브릭스씨어터 (구. 콘텐츠 그라운드)",
    "age": ""
   },
@@ -1944,11 +1944,11 @@
   {
    "id": "PF301113",
    "title": "조선 마법사관 진준",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2026-11-07",
    "end": "2026-12-31",
    "place": "국립중앙박물관 극장 용",
-   "age": ""
+   "age": "36개월 이상"
   },
   {
    "id": "PF300063",
@@ -2203,15 +2203,6 @@
    "age": "24개월 이상"
   },
   {
-   "id": "PF305172",
-   "title": "김정민 & 성찬경 뮤지컬 콘서트: 정찬콘 Vol.1 쓰다, Day.3 발레뤼스",
-   "reason": "콘서트 등 뮤지컬 아님",
-   "start": "2026-11-14",
-   "end": "2026-11-14",
-   "place": "브릭스씨어터 (구. 콘텐츠 그라운드)",
-   "age": ""
-  },
-  {
    "id": "PF304893",
    "title": "와이헌터스: 위대한 숏맨과 북몬스터",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -2230,6 +2221,15 @@
    "age": "48개월 이상"
   },
   {
+   "id": "PF303683",
+   "title": "겨울왕국: 겨울이야기 [서울 강북]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "place": "꿈의숲아트센터",
+   "age": "24개월 이상"
+  },
+  {
    "id": "PF303229",
    "title": "피터팬 [서울 영등포]",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -2246,6 +2246,15 @@
    "end": "2027-01-30",
    "place": "명륜아트홀",
    "age": ""
+  },
+  {
+   "id": "PF301364",
+   "title": "겨울왕국 [서울 노원]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "place": "노원구민의전당(구. 노원구민회관)",
+   "age": "20개월 이상"
   },
   {
    "id": "PF300886",
