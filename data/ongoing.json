@@ -1,45 +1,7 @@
 {
- "updatedAt": "2026-11-14T15:22+09:00",
+ "updatedAt": "2026-11-15T10:57+09:00",
  "ok": true,
  "items": [
-  {
-   "id": "PF301098",
-   "title": "남벌",
-   "area": "서울 광진",
-   "start": "2026-10-23",
-   "end": "2026-11-14",
-   "place": "티켓링크 1975 씨어터(구.능동 어린이회관)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF301098_260916_150959.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301098",
-   "detail": {
-    "age": "만 13세 이상",
-    "child": "N",
-    "cast": "오종혁, 선율, 박소은, 이재림, 김민철, 정시욱, 이종영 등",
-    "runtime": "2시간 30분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26012901"
-     },
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/65515"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1739401"
-     },
-     {
-      "source": "",
-      "name": "클립서비스",
-      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79507"
-     }
-    ]
-   }
-  },
   {
    "id": "PF295552",
    "title": "광화문연가",
@@ -1897,15 +1859,6 @@
  ],
  "excluded": [
   {
-   "id": "PF305172",
-   "title": "김정민 & 성찬경 뮤지컬 콘서트: 정찬콘 Vol.1 쓰다, Day.3 발레뤼스",
-   "reason": "콘서트 등 뮤지컬 아님",
-   "start": "2026-11-14",
-   "end": "2026-11-14",
-   "place": "브릭스씨어터 (구. 콘텐츠 그라운드)",
-   "age": ""
-  },
-  {
    "id": "PF304512",
    "title": "김동완의 뮤지컬 콘서트",
    "reason": "콘서트 등 뮤지컬 아님",
@@ -2264,6 +2217,15 @@
    "end": "2026-11-22",
    "place": "꿈의숲아트센터",
    "age": "24개월 이상"
+  },
+  {
+   "id": "PF300753",
+   "title": "호두까기 인형 [서울 강남]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "place": "현대백화점 문화홀 [압구정]",
+   "age": "전체 관람가"
   },
   {
    "id": "PF299783",
