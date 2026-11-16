@@ -1,197 +1,7 @@
 {
- "updatedAt": "2026-11-15T15:31+09:00",
+ "updatedAt": "2026-11-16T11:12+09:00",
  "ok": true,
  "items": [
-  {
-   "id": "PF295552",
-   "title": "광화문연가",
-   "area": "서울",
-   "start": "2026-09-06",
-   "end": "2026-11-15",
-   "place": "디큐브링크아트센터",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF295552_260708_103436.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF295552",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "손준호, 이석훈, 정용훈, 차지연, 서은광, 류승수, 민선예 등",
-    "runtime": "2시간 35분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26009625"
-     },
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/64251"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1693563"
-     },
-     {
-      "source": "",
-      "name": "클립서비스",
-      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79432"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF301912",
-   "title": "마제스티",
-   "area": "대학로",
-   "start": "2026-10-25",
-   "end": "2026-11-15",
-   "place": "NOL 씨어터 대학로 (구. 대학로뮤지컬센터)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF301912_260929_101243.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301912",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "엄기준, 박은석, 박정원, 김우석, 이정화, 허윤슬, 양승리 등",
-    "runtime": "2시간 40분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26013853"
-     },
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/65909"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1748258"
-     },
-     {
-      "source": "",
-      "name": "클립서비스",
-      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79464"
-     },
-     {
-      "source": "",
-      "name": "타임티켓",
-      "url": "https://timeticket.co.kr/product/7456"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF299169",
-   "title": "미드나잇: 앤틀러스",
-   "area": "대학로",
-   "start": "2026-10-04",
-   "end": "2026-11-15",
-   "place": "유니플렉스",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF299169_260824_113642.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF299169",
-   "detail": {
-    "age": "만 13세 이상",
-    "child": "N",
-    "cast": "김종구, 고상호, 김려원, 장보람, 박유덕, 이창용, 신수빈 등",
-    "runtime": "1시간 30분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26012145"
-     },
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/65093"
-     },
-     {
-      "source": "yes24",
-      "name": "예스24",
-      "url": "https://ticket.yes24.com/Perf/60524"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1724182"
-     },
-     {
-      "source": "",
-      "name": "클립서비스",
-      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79443"
-     },
-     {
-      "source": "",
-      "name": "타임티켓",
-      "url": "https://timeticket.co.kr/product/7428"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF294946",
-   "title": "엘리자벳",
-   "area": "",
-   "start": "2026-08-16",
-   "end": "2026-11-15",
-   "place": "블루스퀘어",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF294946_260701_134627.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF294946",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "이지연, 이지혜, 이지수, 정기열, 서경수, 고은성, 박은태 등",
-    "runtime": "2시간 50분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26009314"
-     },
-     {
-      "source": "yes24",
-      "name": "예스24",
-      "url": "https://ticket.yes24.com/Perf/60602"
-     },
-     {
-      "source": "melon",
-      "name": "멜론티켓",
-      "url": "https://ticket.melon.com/performance/index.htm?prodId=213527"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1756124"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF300890",
-   "title": "이상한 나라의 춘자씨",
-   "area": "서울 용산",
-   "start": "2026-10-16",
-   "end": "2026-11-15",
-   "place": "더 줌 아트센터",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF300890_260914_162535.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF300890",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "전국향, 백현주, 윤성원, 박현철, 전민준, 강나리, 양나은",
-    "runtime": "1시간 45분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26013144"
-     }
-    ]
-   }
-  },
   {
    "id": "PF295981",
    "title": "서울예술단, 백범",
@@ -1904,15 +1714,6 @@
    "age": "36개월 이상"
   },
   {
-   "id": "PF300063",
-   "title": "빨간 사과가 먹고 싶다면 [서울 서대문]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-10-24",
-   "end": "2026-11-15",
-   "place": "북아현아트홀",
-   "age": "24개월 이상"
-  },
-  {
    "id": "PF299302",
    "title": "호두까기 인형 [서울 양천]",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -2126,6 +1927,15 @@
    "start": "2024-01-03",
    "end": "2026-11-29",
    "place": "JTN 아트홀(구. 대학로예술마당)",
+   "age": ""
+  },
+  {
+   "id": "PF305951",
+   "title": "제11회 한국뮤지컬어워즈, 뮤이어 (MU: YEAR) 콘서트",
+   "reason": "콘서트 등 뮤지컬 아님",
+   "start": "2026-11-30",
+   "end": "2026-11-30",
+   "place": "이화여자대학교 삼성홀",
    "age": ""
   },
   {
