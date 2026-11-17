@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T15:29+09:00",
+ "updatedAt": "2026-11-17T13:31+09:00",
  "ok": true,
  "items": [
   {
@@ -186,6 +186,44 @@
       "source": "",
       "name": "코스타(Coaster)",
       "url": "https://ticket.co-star.kr/shop/item.php?it_id=1791773408"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF303127",
+   "title": "플릭스! (Musical FLIX!)",
+   "area": "",
+   "start": "2026-11-17",
+   "end": "2026-11-28",
+   "place": "강동아트센터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303127_261013_103504.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303127",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "조형균, 이창용, 임지홍, 정다희, 도율희, 전재현, 장두환 등",
+    "runtime": "2시간 20분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014529"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66161"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1753143"
+     },
+     {
+      "source": "",
+      "name": "클립서비스",
+      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79526"
      }
     ]
    }
@@ -1216,44 +1254,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF303127",
-   "title": "플릭스! (Musical FLIX!)",
-   "area": "",
-   "start": "2026-11-17",
-   "end": "2026-11-28",
-   "place": "강동아트센터",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303127_261013_103504.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303127",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "조형균, 이창용, 임지홍, 정다희, 도율희, 전재현, 장두환 등",
-    "runtime": "2시간 20분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26014529"
-     },
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/66161"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1753143"
-     },
-     {
-      "source": "",
-      "name": "클립서비스",
-      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79526"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF303594",
    "title": "브로큰 넘버스 (BROKEN NUMBERS)",
    "area": "",
@@ -1665,6 +1665,95 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF306469",
+   "title": "김의 나라 리딩 쇼케이스",
+   "area": "",
+   "start": "2026-12-01",
+   "end": "2026-12-01",
+   "place": "엔아트센터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF306469_261116_113944.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF306469",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "임진섭, 유낙원, 김대곤, 김현숙, 박유덕, 이은상, 윤현선 등",
+    "runtime": "1시간 50분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66987"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305670",
+   "title": "로미오와 줄리엣",
+   "area": "",
+   "start": "2026-12-01",
+   "end": "2027-01-31",
+   "place": "한전아트센터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305670_261106_131225.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305670",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "남우현, 하성운, 김희재, 박민혁, 이경윤, 이루원, 김수 등",
+    "runtime": "2시간 30분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015424"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66745"
+     },
+     {
+      "source": "yes24",
+      "name": "예스24",
+      "url": "https://ticket.yes24.com/Perf/60933"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1770516"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF306377",
+   "title": "미드나잇: 액터뮤지션 THE FINAL",
+   "area": "",
+   "start": "2026-12-01",
+   "end": "2026-12-13",
+   "place": "유니플렉스",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF306377_261113_142528.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF306377",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "임강성, 정지은, 조환지, 박선영, 박슬기, 박유덕, 김도하 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26016165"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66923"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
@@ -1871,7 +1960,7 @@
    "title": "아기돼지삼형제: 늑대숲 또옹돼지 원정대 [대학로]",
    "reason": "오픈런",
    "start": "2024-07-14",
-   "end": "2026-11-29",
+   "end": "2026-12-27",
    "place": "라온씨어터",
    "age": ""
   },
@@ -1955,6 +2044,15 @@
    "end": "2026-11-26",
    "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
    "age": "만 5세 이상"
+  },
+  {
+   "id": "PF305853",
+   "title": "호두까기인형 [서울 종로]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-12-01",
+   "end": "2027-01-03",
+   "place": "서연아트홀 (구. 인아소극장)",
+   "age": "24개월 이상"
   },
   {
    "id": "PF305803",
