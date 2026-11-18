@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T16:55+09:00",
+ "updatedAt": "2026-11-18T12:43+09:00",
  "ok": true,
  "items": [
   {
@@ -1133,6 +1133,34 @@
    }
   },
   {
+   "id": "PF303594",
+   "title": "브로큰 넘버스 (BROKEN NUMBERS)",
+   "area": "",
+   "start": "2026-11-18",
+   "end": "2027-02-07",
+   "place": "링크더스페이스(LINK THE SPACE)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303594_261016_134745.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303594",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "박영빈, 박주혁, 류찬열, 김현기, 김준식, 노혜성, 문진아 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66282"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1756533"
+     }
+    ]
+   }
+  },
+  {
    "id": "PF300974",
    "title": "두 도시 이야기",
    "area": "",
@@ -1253,34 +1281,6 @@
   }
  ],
  "upcoming": [
-  {
-   "id": "PF303594",
-   "title": "브로큰 넘버스 (BROKEN NUMBERS)",
-   "area": "",
-   "start": "2026-11-18",
-   "end": "2027-02-07",
-   "place": "링크더스페이스(LINK THE SPACE)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303594_261016_134745.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303594",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "박영빈, 박주혁, 류찬열, 김현기, 김준식, 노혜성, 문진아 등",
-    "runtime": "1시간 40분",
-    "links": [
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/66282"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1756533"
-     }
-    ]
-   }
-  },
   {
    "id": "PF305560",
    "title": "밤을 건너는 시인",
@@ -1758,6 +1758,24 @@
  ],
  "excluded": [
   {
+   "id": "PF305505",
+   "title": "서리풀악동문화공연, 빨간모자야 조심해 (11월)",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "place": "반포심산아트홀",
+   "age": "24개월 이상"
+  },
+  {
+   "id": "PF304788",
+   "title": "1598 연안에서 [서울 노원]",
+   "reason": "아동(관람연령)",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "place": "노원문화예술회관",
+   "age": "48개월 이상"
+  },
+  {
    "id": "PF304512",
    "title": "김동완의 뮤지컬 콘서트",
    "reason": "콘서트 등 뮤지컬 아님",
@@ -2057,11 +2075,11 @@
   {
    "id": "PF305853",
    "title": "호두까기인형 [서울 종로]",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2026-12-01",
    "end": "2027-01-03",
    "place": "서연아트홀 (구. 인아소극장)",
-   "age": ""
+   "age": "24개월 이상"
   },
   {
    "id": "PF305803",
@@ -2070,15 +2088,6 @@
    "start": "2026-11-24",
    "end": "2026-11-26",
    "place": "대학로 스카이씨어터",
-   "age": ""
-  },
-  {
-   "id": "PF305505",
-   "title": "서리풀악동문화공연, 빨간모자야 조심해 (11월)",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
-   "start": "2026-11-18",
-   "end": "2026-11-18",
-   "place": "반포심산아트홀",
    "age": ""
   },
   {
@@ -2091,13 +2100,22 @@
    "age": "만 7세 이상"
   },
   {
-   "id": "PF304788",
-   "title": "1598 연안에서 [서울 노원]",
-   "reason": "아동(관람연령)",
-   "start": "2026-11-18",
-   "end": "2026-11-18",
-   "place": "노원문화예술회관",
-   "age": "48개월 이상"
+   "id": "PF304181",
+   "title": "국립정동극장 예술단, 아리랑",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-12-02",
+   "end": "2026-12-27",
+   "place": "국립정동극장",
+   "age": "만 4세 이상"
+  },
+  {
+   "id": "PF304105",
+   "title": "아기상어 쿵짝쿵짝 뮤지컬 [서울 영등포]",
+   "reason": "아동·가족(제목)",
+   "start": "2026-12-02",
+   "end": "2027-03-28",
+   "place": "영등포 타임스퀘어",
+   "age": ""
   },
   {
    "id": "PF303683",
@@ -2136,6 +2154,15 @@
    "age": "20개월 이상"
   },
   {
+   "id": "PF300947",
+   "title": "산타와 루돌프 [서울 양천]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-12-02",
+   "end": "2026-12-27",
+   "place": "한국방송회관 코바코홀 (구. 브로드홀)",
+   "age": "24개월 이상"
+  },
+  {
    "id": "PF300886",
    "title": "백설공주 [서울 강북]",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -2170,6 +2197,15 @@
    "end": "2026-11-21",
    "place": "구로구민회관",
    "age": "전체 관람가"
+  },
+  {
+   "id": "PF282162",
+   "title": "서울시뮤지컬단, 크리스마스 캐럴",
+   "reason": "아동(관람연령)",
+   "start": "2026-12-02",
+   "end": "2026-12-27",
+   "place": "세종문화회관",
+   "age": "만 4세 이상"
   }
  ]
 }
