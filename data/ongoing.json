@@ -1,6 +1,6 @@
 {
  "updatedAt": "2026-11-18T16:29+09:00",
- "ok": true,
+ "ok": false,
  "items": [
   {
    "id": "PF295981",
@@ -2216,5 +2216,6 @@
    "place": "세종문화회관",
    "age": ""
   }
- ]
+ ],
+ "error": "HTTP Error 400: Bad Request"
 }
