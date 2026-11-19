@@ -1,7 +1,53 @@
 {
- "updatedAt": "2026-11-18T16:29+09:00",
- "ok": false,
+ "updatedAt": "2026-11-19T16:25+09:00",
+ "ok": true,
  "items": [
+  {
+   "id": "PF305966",
+   "title": "이솝이야기 낭독공연",
+   "area": "서울 성동",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
+   "place": "소월아트홀 (성동문화회관)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305966_261110_133931.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305966",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "김도빈, 김대현, 이형훈, 강연정, 전성우, 송나영, 송상은 등",
+    "runtime": "2시간",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66846"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305560",
+   "title": "밤을 건너는 시인",
+   "area": "",
+   "start": "2026-11-19",
+   "end": "2026-11-20",
+   "place": "호원아트홀",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305560_261105_133749.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305560",
+   "detail": {
+    "age": "만 12세 이상",
+    "child": "N",
+    "cast": "이어진, 이상택, 이미경, 김윤수, 유성진",
+    "runtime": "1시간 20분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015896"
+     }
+    ]
+   }
+  },
   {
    "id": "PF295981",
    "title": "서울예술단, 백범",
@@ -1282,52 +1328,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF305560",
-   "title": "밤을 건너는 시인",
-   "area": "",
-   "start": "2026-11-19",
-   "end": "2026-11-20",
-   "place": "호원아트홀",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305560_261105_133749.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305560",
-   "detail": {
-    "age": "만 12세 이상",
-    "child": "N",
-    "cast": "이어진, 이상택, 이미경, 김윤수, 유성진",
-    "runtime": "1시간 20분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26015896"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF305966",
-   "title": "이솝이야기 낭독공연",
-   "area": "서울 성동",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "place": "소월아트홀 (성동문화회관)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305966_261110_133931.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305966",
-   "detail": {
-    "age": "만 13세 이상",
-    "child": "N",
-    "cast": "김도빈, 김대현, 이형훈, 강연정, 전성우, 송나영, 송상은 등",
-    "runtime": "2시간",
-    "links": [
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/66846"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF303276",
    "title": "사의찬미",
    "area": "서울 영등포",
@@ -1732,7 +1732,7 @@
    "title": "미드나잇: 액터뮤지션 THE FINAL",
    "area": "",
    "start": "2026-12-01",
-   "end": "2026-12-13",
+   "end": "2027-01-31",
    "place": "유니플렉스",
    "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF306377_261113_142528.gif",
    "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF306377",
@@ -1754,27 +1754,65 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF306330",
+   "title": "DMZ 낭독공연",
+   "area": "",
+   "start": "2026-12-03",
+   "end": "2026-12-03",
+   "place": "홍익대 대학로 아트센터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF306330_261113_105132.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF306330",
+   "detail": {
+    "age": "만 11세 이상",
+    "child": "N",
+    "cast": "차지현, 박경호, 지현준, 강기둥, 김우성, 김민규, 김예환 등",
+    "runtime": "2시간 10분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66949"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF302677",
+   "title": "미세스 다웃파이어",
+   "area": "서울",
+   "start": "2026-12-03",
+   "end": "2027-02-21",
+   "place": "GS아트센터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF302677_261007_113759.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302677",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "황정민, 정성화, 정상훈, 박혜나, 장은아, 이지훈, 김다현 등",
+    "runtime": "2시간 55분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014015"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66039"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1749684"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
-  {
-   "id": "PF305505",
-   "title": "서리풀악동문화공연, 빨간모자야 조심해 (11월)",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-18",
-   "end": "2026-11-18",
-   "place": "반포심산아트홀",
-   "age": "24개월 이상"
-  },
-  {
-   "id": "PF304788",
-   "title": "1598 연안에서 [서울 노원]",
-   "reason": "아동(관람연령)",
-   "start": "2026-11-18",
-   "end": "2026-11-18",
-   "place": "노원문화예술회관",
-   "age": "48개월 이상"
-  },
   {
    "id": "PF304561",
    "title": "제7회 서울연극25페스티벌, 언브로큰 조선",
@@ -1796,28 +1834,37 @@
   {
    "id": "PF303893",
    "title": "눈의 여왕 [서울 금천]",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2026-10-24",
    "end": "2026-11-21",
    "place": "레미어린이극장 [금천]",
-   "age": ""
+   "age": "전체 관람가"
   },
   {
    "id": "PF302888",
    "title": "티시 태시",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2026-11-07",
    "end": "2026-11-29",
    "place": "상상나라극장",
-   "age": ""
+   "age": "24개월 이상"
   },
   {
    "id": "PF302626",
    "title": "톡톡 라이브쇼, 헬로카봇: 카봇크루가 되어줘! [서울 마포]",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2026-11-07",
    "end": "2026-11-29",
    "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
+   "age": "24개월 이상"
+  },
+  {
+   "id": "PF302037",
+   "title": "바울: 사랑으로 걷다 [대학로]",
+   "reason": "오픈런",
+   "start": "2026-11-19",
+   "end": "2027-01-30",
+   "place": "명륜아트홀",
    "age": ""
   },
   {
@@ -1868,29 +1915,29 @@
   {
    "id": "PF294961",
    "title": "SEXY MEN STANDING 섹시 맨 스탠딩",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "19세 이상",
    "start": "2026-07-01",
    "end": "2026-11-29",
    "place": "레드루즈씨어터",
-   "age": ""
+   "age": "만 19세 이상"
   },
   {
    "id": "PF293005",
    "title": "AI세계에서 살아남기",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2026-07-28",
    "end": "2026-12-31",
    "place": "더 서울라이티움 (갤러리아포레)",
-   "age": ""
+   "age": "12개월 이상"
   },
   {
    "id": "PF290797",
    "title": "Club 설화 [대학로]",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "19세 이상",
    "start": "2026-05-14",
    "end": "2026-11-29",
    "place": "극장 온 (ON) (구.CJ아지트)",
-   "age": ""
+   "age": "만 19세 이상"
   },
   {
    "id": "PF286497",
@@ -2064,6 +2111,15 @@
    "age": ""
   },
   {
+   "id": "PF306142",
+   "title": "루피의 크리스마스 [서울 은평]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-27",
+   "end": "2026-11-27",
+   "place": "은평문화예술회관",
+   "age": "전체 관람가"
+  },
+  {
    "id": "PF305951",
    "title": "제11회 한국뮤지컬어워즈, 뮤이어 (MU: YEAR) 콘서트",
    "reason": "콘서트 등 뮤지컬 아님",
@@ -2111,11 +2167,11 @@
   {
    "id": "PF304181",
    "title": "국립정동극장 예술단, 아리랑",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2026-12-02",
    "end": "2026-12-27",
    "place": "국립정동극장",
-   "age": ""
+   "age": "만 4세 이상"
   },
   {
    "id": "PF304105",
@@ -2129,11 +2185,11 @@
   {
    "id": "PF303683",
    "title": "겨울왕국: 겨울이야기 [서울 강북]",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2026-11-28",
    "end": "2026-11-28",
    "place": "꿈의숲아트센터",
-   "age": ""
+   "age": "24개월 이상"
   },
   {
    "id": "PF303229",
@@ -2143,15 +2199,6 @@
    "end": "2026-11-22",
    "place": "롯데백화점 [영등포]",
    "age": "24개월 이상"
-  },
-  {
-   "id": "PF302037",
-   "title": "바울: 사랑으로 걷다 [대학로]",
-   "reason": "오픈런",
-   "start": "2026-11-19",
-   "end": "2027-01-30",
-   "place": "명륜아트홀",
-   "age": ""
   },
   {
    "id": "PF301364",
@@ -2183,39 +2230,38 @@
   {
    "id": "PF300753",
    "title": "호두까기 인형 [서울 강남]",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2026-11-29",
    "end": "2026-11-29",
    "place": "현대백화점 문화홀 [압구정]",
-   "age": ""
+   "age": "전체 관람가"
   },
   {
    "id": "PF299783",
    "title": "호두까기 인형 [서울 구로]",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2026-11-21",
    "end": "2026-11-21",
    "place": "구로창의아트홀",
-   "age": ""
+   "age": "전체 관람가"
   },
   {
    "id": "PF299373",
    "title": "호두까기 인형 [서울 구로]",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2026-11-21",
    "end": "2026-11-21",
    "place": "구로구민회관",
-   "age": ""
+   "age": "전체 관람가"
   },
   {
    "id": "PF282162",
    "title": "서울시뮤지컬단, 크리스마스 캐럴",
-   "reason": "상세 조회 실패(다음 수집 때 다시 확인)",
+   "reason": "아동(관람연령)",
    "start": "2026-12-02",
    "end": "2026-12-27",
    "place": "세종문화회관",
-   "age": ""
+   "age": "만 4세 이상"
   }
- ],
- "error": "HTTP Error 400: Bad Request"
+ ]
 }
