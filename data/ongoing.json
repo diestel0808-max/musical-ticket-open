@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T12:21+09:00",
+ "updatedAt": "2026-11-20T16:14+09:00",
  "ok": true,
  "items": [
   {
@@ -1644,6 +1644,29 @@
    }
   },
   {
+   "id": "PF307031",
+   "title": "데카당스 경성",
+   "area": "",
+   "start": "2026-11-30",
+   "end": "2026-11-30",
+   "place": "일지아트홀",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF307031_261120_103137.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF307031",
+   "detail": {
+    "age": "14세 이상",
+    "child": "N",
+    "cast": "김소향, 이충주, 홍지희, 홍성원, 유소리, 김리, 이강준 등",
+    "runtime": "2시간 30분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/67096"
+     }
+    ]
+   }
+  },
+  {
    "id": "PF306469",
    "title": "김의 나라 리딩 쇼케이스",
    "area": "",
@@ -1943,12 +1966,12 @@
   },
   {
    "id": "PF294961",
-   "title": "SEXY MEN STANDING 섹시 맨 스탠딩",
-   "reason": "19세 이상",
+   "title": "맨틱: 더 넥스트 (섹시맨스탠딩)",
+   "reason": "오픈런",
    "start": "2026-07-01",
-   "end": "2026-11-29",
+   "end": "2027-01-31",
    "place": "레드루즈씨어터",
-   "age": "만 19세 이상"
+   "age": ""
   },
   {
    "id": "PF293005",
@@ -2027,7 +2050,7 @@
    "title": "알사탕",
    "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2025-03-29",
-   "end": "2026-11-29",
+   "end": "2027-01-03",
    "place": "더 서울라이티움 (갤러리아포레)",
    "age": "12개월 이상"
   },
@@ -2183,6 +2206,15 @@
    "end": "2026-11-26",
    "place": "대학로 스카이씨어터",
    "age": ""
+  },
+  {
+   "id": "PF305121",
+   "title": "빨간모자와 크리스마스",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-12-02",
+   "end": "2026-12-27",
+   "place": "경복궁아트홀",
+   "age": "36개월 이상"
   },
   {
    "id": "PF304893",
