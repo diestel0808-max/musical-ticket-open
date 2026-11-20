@@ -1,30 +1,7 @@
 {
- "updatedAt": "2026-11-19T16:25+09:00",
+ "updatedAt": "2026-11-20T12:21+09:00",
  "ok": true,
  "items": [
-  {
-   "id": "PF305966",
-   "title": "이솝이야기 낭독공연",
-   "area": "서울 성동",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "place": "소월아트홀 (성동문화회관)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305966_261110_133931.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305966",
-   "detail": {
-    "age": "만 13세 이상",
-    "child": "N",
-    "cast": "김도빈, 김대현, 이형훈, 강연정, 전성우, 송나영, 송상은 등",
-    "runtime": "2시간",
-    "links": [
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/66846"
-     }
-    ]
-   }
-  },
   {
    "id": "PF305560",
    "title": "밤을 건너는 시인",
@@ -44,6 +21,29 @@
       "source": "nol",
       "name": "NOL",
       "url": "https://nol.yanolja.com/ticket/products/26015896"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305106",
+   "title": "중섭 리딩 쇼케이스",
+   "area": "",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "place": "성수아트홀(성수문화복지회관)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305106_261102_145209.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305106",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "박민성, 조상웅, 임강희, 김윤하, 하유진, 석인모, 김송이",
+    "runtime": "1시간 25분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014962"
      }
     ]
    }
@@ -82,6 +82,29 @@
       "source": "",
       "name": "클립서비스",
       "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79505"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF303276",
+   "title": "사의찬미",
+   "area": "서울 영등포",
+   "start": "2026-11-20",
+   "end": "2026-11-22",
+   "place": "영등포아트홀",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303276_261014_111632.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303276",
+   "detail": {
+    "age": "만 12세 이상",
+    "child": "N",
+    "cast": "김종구, 온주완, 최수진, 최연우, 김려원, 정민, 원태민 등",
+    "runtime": "1시간 50분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26013816"
      }
     ]
    }
@@ -1324,31 +1347,6 @@
      }
     ]
    }
-  }
- ],
- "upcoming": [
-  {
-   "id": "PF303276",
-   "title": "사의찬미",
-   "area": "서울 영등포",
-   "start": "2026-11-20",
-   "end": "2026-11-22",
-   "place": "영등포아트홀",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303276_261014_111632.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303276",
-   "detail": {
-    "age": "만 12세 이상",
-    "child": "N",
-    "cast": "김종구, 온주완, 최수진, 최연우, 김려원, 정민, 원태민 등",
-    "runtime": "1시간 50분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26013816"
-     }
-    ]
-   }
   },
   {
    "id": "PF305142",
@@ -1382,30 +1380,9 @@
      }
     ]
    }
-  },
-  {
-   "id": "PF305106",
-   "title": "중섭 리딩 쇼케이스",
-   "area": "",
-   "start": "2026-11-20",
-   "end": "2026-11-20",
-   "place": "성수아트홀(성수문화복지회관)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305106_261102_145209.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305106",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "박민성, 조상웅, 임강희, 김윤하, 하유진, 석인모, 김송이",
-    "runtime": "1시간 25분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26014962"
-     }
-    ]
-   }
-  },
+  }
+ ],
+ "upcoming": [
   {
    "id": "PF304443",
    "title": "금희악기점",
@@ -1810,18 +1787,70 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF303043",
+   "title": "스위니토드 (SWEENEY TODD)",
+   "area": "",
+   "start": "2026-12-04",
+   "end": "2027-05-02",
+   "place": "디큐브링크아트센터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303043_261012_171201.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303043",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "조승우, 강필석, 김주택, 전미도, 김소현, 박지연, 서영주 등",
+    "runtime": "2시간 50분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014509"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66145"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1773733"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305676",
+   "title": "우주보다 멀고 빛보다 가까운",
+   "area": "대학로",
+   "start": "2026-12-04",
+   "end": "2026-12-20",
+   "place": "연우소극장",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305676_261106_132405.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305676",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "윤석원",
+    "runtime": "1시간 15분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66775"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1773144"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
-  {
-   "id": "PF304561",
-   "title": "제7회 서울연극25페스티벌, 언브로큰 조선",
-   "reason": "콘서트 등 뮤지컬 아님",
-   "start": "2026-11-17",
-   "end": "2026-11-19",
-   "place": "대학로 스카이씨어터",
-   "age": ""
-  },
   {
    "id": "PF304512",
    "title": "김동완의 뮤지컬 콘서트",
@@ -2190,6 +2219,15 @@
    "end": "2026-11-28",
    "place": "꿈의숲아트센터",
    "age": "24개월 이상"
+  },
+  {
+   "id": "PF303587",
+   "title": "호두까기 인형: 더 비기닝",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-12-04",
+   "end": "2026-12-26",
+   "place": "티켓링크 1975 씨어터(구.능동 어린이회관)",
+   "age": "36개월 이상"
   },
   {
    "id": "PF303229",
