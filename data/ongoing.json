@@ -1,53 +1,7 @@
 {
- "updatedAt": "2026-11-20T16:14+09:00",
+ "updatedAt": "2026-11-21T12:14+09:00",
  "ok": true,
  "items": [
-  {
-   "id": "PF305560",
-   "title": "밤을 건너는 시인",
-   "area": "",
-   "start": "2026-11-19",
-   "end": "2026-11-20",
-   "place": "호원아트홀",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305560_261105_133749.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305560",
-   "detail": {
-    "age": "만 12세 이상",
-    "child": "N",
-    "cast": "이어진, 이상택, 이미경, 김윤수, 유성진",
-    "runtime": "1시간 20분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26015896"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF305106",
-   "title": "중섭 리딩 쇼케이스",
-   "area": "",
-   "start": "2026-11-20",
-   "end": "2026-11-20",
-   "place": "성수아트홀(성수문화복지회관)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305106_261102_145209.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305106",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "박민성, 조상웅, 임강희, 김윤하, 하유진, 석인모, 김송이",
-    "runtime": "1시간 25분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26014962"
-     }
-    ]
-   }
-  },
   {
    "id": "PF295981",
    "title": "서울예술단, 백범",
@@ -1871,6 +1825,72 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF302015",
+   "title": "시카고",
+   "area": "서울",
+   "start": "2026-12-05",
+   "end": "2027-03-14",
+   "place": "LG아트센터 서울",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF302015_260929_151431.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302015",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "최정원, 윤공주, 이지연, 박은혜, 황미영, 김수하, 박건형 등",
+    "runtime": "2시간 25분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=L0000150"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/65846"
+     },
+     {
+      "source": "",
+      "name": "LG아트센터",
+      "url": "https://www.lgart.com/product/performance/252983"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1746995"
+     },
+     {
+      "source": "",
+      "name": "신시컴퍼니",
+      "url": "http://www.iseensee.com/Home/Perf/MakingDetail.aspx?IdPerf=1226"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305887",
+   "title": "어림없는 청춘",
+   "area": "대학로",
+   "start": "2026-12-05",
+   "end": "2026-12-13",
+   "place": "한예극장",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305887_261109_171617.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305887",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "김채승, 김태균, 김건우, 최주찬, 이제성",
+    "runtime": "2시간",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66828"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
@@ -1927,6 +1947,33 @@
    "end": "2026-12-31",
    "place": "국립중앙박물관 극장 용",
    "age": "36개월 이상"
+  },
+  {
+   "id": "PF300886",
+   "title": "백설공주 [서울 강북]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-21",
+   "end": "2026-11-22",
+   "place": "꿈의숲아트센터",
+   "age": "24개월 이상"
+  },
+  {
+   "id": "PF299783",
+   "title": "호두까기 인형 [서울 구로]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "place": "구로창의아트홀",
+   "age": "전체 관람가"
+  },
+  {
+   "id": "PF299373",
+   "title": "호두까기 인형 [서울 구로]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "place": "구로구민회관",
+   "age": "전체 관람가"
   },
   {
    "id": "PF299302",
@@ -2244,6 +2291,15 @@
    "age": ""
   },
   {
+   "id": "PF303993",
+   "title": "산타와 루돌프의 크리스마스 기적 [서울 강북]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-12-05",
+   "end": "2026-12-06",
+   "place": "꿈의숲아트센터",
+   "age": "24개월 이상"
+  },
+  {
    "id": "PF303683",
    "title": "겨울왕국: 겨울이야기 [서울 강북]",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -2289,39 +2345,12 @@
    "age": "24개월 이상"
   },
   {
-   "id": "PF300886",
-   "title": "백설공주 [서울 강북]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-21",
-   "end": "2026-11-22",
-   "place": "꿈의숲아트센터",
-   "age": "24개월 이상"
-  },
-  {
    "id": "PF300753",
    "title": "호두까기 인형 [서울 강남]",
    "reason": "아동(KOPIS 아동공연 표시)",
    "start": "2026-11-29",
    "end": "2026-11-29",
    "place": "현대백화점 문화홀 [압구정]",
-   "age": "전체 관람가"
-  },
-  {
-   "id": "PF299783",
-   "title": "호두까기 인형 [서울 구로]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-21",
-   "end": "2026-11-21",
-   "place": "구로창의아트홀",
-   "age": "전체 관람가"
-  },
-  {
-   "id": "PF299373",
-   "title": "호두까기 인형 [서울 구로]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-21",
-   "end": "2026-11-21",
-   "place": "구로구민회관",
    "age": "전체 관람가"
   },
   {
