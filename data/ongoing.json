@@ -1,45 +1,7 @@
 {
- "updatedAt": "2026-11-21T16:07+09:00",
+ "updatedAt": "2026-11-22T11:16+09:00",
  "ok": true,
  "items": [
-  {
-   "id": "PF295981",
-   "title": "서울예술단, 백범",
-   "area": "",
-   "start": "2026-11-14",
-   "end": "2026-11-21",
-   "place": "국립극장",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF295981_261001_134601.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF295981",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "최병규, 김현아, 박소연, 안재홍, 고석진, 김백현, 금승훈 등",
-    "runtime": "2시간 15분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26013711"
-     },
-     {
-      "source": "",
-      "name": "국립극장",
-      "url": "https://www.ntok.go.kr/ntok/pm/prfmng/performanceDetail.do?mi=21008&perfId=267152"
-     },
-     {
-      "source": "",
-      "name": "나눔티켓",
-      "url": "https://www.nanumticket.or.kr/pe/detail.html?p_marking=&p_new=&start2=0&page_no2=1&p_idx=14130"
-     },
-     {
-      "source": "",
-      "name": "클립서비스",
-      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79505"
-     }
-    ]
-   }
-  },
   {
    "id": "PF303276",
    "title": "사의찬미",
@@ -1891,6 +1853,29 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF305056",
+   "title": "Licht: Christmas Prelude",
+   "area": "",
+   "start": "2026-12-06",
+   "end": "2026-12-06",
+   "place": "푸르지오아트홀",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305056_261102_131537.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305056",
+   "detail": {
+    "age": "전체 관람가",
+    "child": "N",
+    "cast": "박은미, 김성식, 김리안, 장윤석, 강하온, 김수호",
+    "runtime": "1시간 55분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015550"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
@@ -1904,13 +1889,13 @@
    "age": ""
   },
   {
-   "id": "PF303893",
-   "title": "눈의 여왕 [서울 금천]",
+   "id": "PF303229",
+   "title": "피터팬 [서울 영등포]",
    "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-10-24",
-   "end": "2026-11-21",
-   "place": "레미어린이극장 [금천]",
-   "age": "전체 관람가"
+   "start": "2026-11-22",
+   "end": "2026-11-22",
+   "place": "롯데백화점 [영등포]",
+   "age": "24개월 이상"
   },
   {
    "id": "PF302888",
@@ -1956,24 +1941,6 @@
    "end": "2026-11-22",
    "place": "꿈의숲아트센터",
    "age": "24개월 이상"
-  },
-  {
-   "id": "PF299783",
-   "title": "호두까기 인형 [서울 구로]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-21",
-   "end": "2026-11-21",
-   "place": "구로창의아트홀",
-   "age": "전체 관람가"
-  },
-  {
-   "id": "PF299373",
-   "title": "호두까기 인형 [서울 구로]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-21",
-   "end": "2026-11-21",
-   "place": "구로구민회관",
-   "age": "전체 관람가"
   },
   {
    "id": "PF299302",
@@ -2237,6 +2204,15 @@
    "age": "만 5세 이상"
   },
   {
+   "id": "PF305859",
+   "title": "미녀와 야수 [서울 영등포]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-12-06",
+   "end": "2026-12-06",
+   "place": "롯데백화점 [영등포]",
+   "age": "24개월 이상"
+  },
+  {
    "id": "PF305853",
    "title": "호두까기인형 [서울 종로]",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -2316,15 +2292,6 @@
    "end": "2026-12-26",
    "place": "티켓링크 1975 씨어터(구.능동 어린이회관)",
    "age": "36개월 이상"
-  },
-  {
-   "id": "PF303229",
-   "title": "피터팬 [서울 영등포]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-22",
-   "end": "2026-11-22",
-   "place": "롯데백화점 [영등포]",
-   "age": "24개월 이상"
   },
   {
    "id": "PF301364",
