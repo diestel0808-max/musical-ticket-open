@@ -1,176 +1,72 @@
 {
- "updatedAt": "2026-11-22T15:46+09:00",
+ "updatedAt": "2026-11-23T11:49+09:00",
  "ok": true,
  "items": [
   {
-   "id": "PF303276",
-   "title": "사의찬미",
-   "area": "서울 영등포",
-   "start": "2026-11-20",
-   "end": "2026-11-22",
-   "place": "영등포아트홀",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303276_261014_111632.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303276",
+   "id": "PF304443",
+   "title": "금희악기점",
+   "area": "",
+   "start": "2026-11-23",
+   "end": "2026-11-23",
+   "place": "일지아트홀",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304443_261026_132927.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304443",
    "detail": {
     "age": "만 12세 이상",
     "child": "N",
-    "cast": "김종구, 온주완, 최수진, 최연우, 김려원, 정민, 원태민 등",
-    "runtime": "1시간 50분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26013816"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF303405",
-   "title": "서울어텀페스타, 콰르텟",
-   "area": "",
-   "start": "2026-11-12",
-   "end": "2026-11-22",
-   "place": "씨어터 쿰",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303405_261019_152347.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303405",
-   "detail": {
-    "age": "만 8세 이상",
-    "child": "N",
-    "cast": "김진철, 양상현, 고운, 박서린, 안동혁, 양성령",
-    "runtime": "2시간 10분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26015085"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF298792",
-   "title": "섬: 1933~2019",
-   "area": "",
-   "start": "2026-09-22",
-   "end": "2026-11-22",
-   "place": "국립정동극장",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF298792_260819_103024.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF298792",
-   "detail": {
-    "age": "만 11세 이상",
-    "child": "N",
-    "cast": "백은혜, 정연, 정운선, 이지숙, 고철순, 김대웅, 김리현 등",
-    "runtime": "1시간 55분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26011828"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1733568"
-     },
-     {
-      "source": "",
-      "name": "코스타(Coaster)",
-      "url": "https://ticket.co-star.kr/shop/item.php?it_id=1787718617"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF298171",
-   "title": "오셀로와 이아고",
-   "area": "대학로",
-   "start": "2026-09-08",
-   "end": "2026-11-22",
-   "place": "대학로 자유극장 (자유문화발전소)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF298171_260811_102627.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF298171",
-   "detail": {
-    "age": "만 13세 이상",
-    "child": "N",
-    "cast": "박규원, 변희상, 김지온, 양지원, 김경록, 곽민수",
+    "cast": "황민수, 임예진, 박선영, 문경초, 전하영, 김보근, 황성환 등",
     "runtime": "1시간 30분",
     "links": [
      {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26011611"
-     },
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/64855"
-     },
-     {
-      "source": "",
-      "name": "클립서비스",
-      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79375"
-     },
-     {
-      "source": "",
-      "name": "타임티켓",
-      "url": "https://timeticket.co.kr/product/7444"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF304266",
-   "title": "우리의 마지막 순간들",
-   "area": "대학로",
-   "start": "2026-11-13",
-   "end": "2026-11-22",
-   "place": "보라 아트홀(구. 지구인아트홀)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304266_261023_112733.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304266",
-   "detail": {
-    "age": "만 13세 이상",
-    "child": "N",
-    "cast": "석우성, 서은교",
-    "runtime": "1시간 15분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26015338"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF301634",
-   "title": "정신병동에도 아침이 와요",
-   "area": "",
-   "start": "2026-10-31",
-   "end": "2026-11-22",
-   "place": "이화여자대학교 삼성홀",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF301634_260923_103936.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301634",
-   "detail": {
-    "age": "만 13세 이상",
-    "child": "N",
-    "cast": "최태이, 유주연, 정동화, 염성연, 최민우, 조성태, 정혜은 등",
-    "runtime": "2시간 45분",
-    "links": [
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/65821"
-     },
-     {
       "source": "",
       "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1743767"
-     },
+      "url": "https://booking.naver.com/booking/12/bizes/1757484"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF304559",
+   "title": "더 퍼스트 에디션 낭독공연",
+   "area": "",
+   "start": "2026-11-23",
+   "end": "2026-11-23",
+   "place": "성수아트홀(성수문화복지회관)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304559_261027_111121.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304559",
+   "detail": {
+    "age": "만 11세 이상",
+    "child": "N",
+    "cast": "최민우, 고훈정, 최지혜, 홍륜희, 노희찬, 김우성, 김채은 등",
+    "runtime": "2시간 30분",
+    "links": [
      {
-      "source": "",
-      "name": "코스타(Coaster)",
-      "url": "https://ticket.co-star.kr/shop/item.php?it_id=1791773408"
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66448"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF304909",
+   "title": "봄 잠",
+   "area": "",
+   "start": "2026-11-23",
+   "end": "2026-11-23",
+   "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304909_261030_120155.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304909",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "김이후, 홍윤희, 정지우, 이효은, 임진섭, 고상호, 이현진 등",
+    "runtime": "2시간 15분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015562"
      }
     ]
    }
@@ -1300,75 +1196,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF304443",
-   "title": "금희악기점",
-   "area": "",
-   "start": "2026-11-23",
-   "end": "2026-11-23",
-   "place": "일지아트홀",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304443_261026_132927.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304443",
-   "detail": {
-    "age": "만 12세 이상",
-    "child": "N",
-    "cast": "황민수, 임예진, 박선영, 문경초, 전하영, 김보근, 황성환 등",
-    "runtime": "1시간 30분",
-    "links": [
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1757484"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF304559",
-   "title": "더 퍼스트 에디션 낭독공연",
-   "area": "",
-   "start": "2026-11-23",
-   "end": "2026-11-23",
-   "place": "성수아트홀(성수문화복지회관)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304559_261027_111121.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304559",
-   "detail": {
-    "age": "만 11세 이상",
-    "child": "N",
-    "cast": "최민우, 고훈정, 최지혜, 홍륜희, 노희찬, 김우성, 김채은 등",
-    "runtime": "2시간 30분",
-    "links": [
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/66448"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF304909",
-   "title": "봄 잠",
-   "area": "",
-   "start": "2026-11-23",
-   "end": "2026-11-23",
-   "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304909_261030_120155.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304909",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "김이후, 홍윤희, 정지우, 이효은, 임진섭, 고상호, 이현진 등",
-    "runtime": "2시간 15분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26015562"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF302516",
    "title": "레베카",
    "area": "서울",
@@ -1889,15 +1716,6 @@
    "age": ""
   },
   {
-   "id": "PF303229",
-   "title": "피터팬 [서울 영등포]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-22",
-   "end": "2026-11-22",
-   "place": "롯데백화점 [영등포]",
-   "age": "24개월 이상"
-  },
-  {
    "id": "PF302888",
    "title": "티시 태시",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -1932,15 +1750,6 @@
    "end": "2026-12-31",
    "place": "국립중앙박물관 극장 용",
    "age": "36개월 이상"
-  },
-  {
-   "id": "PF300886",
-   "title": "백설공주 [서울 강북]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-21",
-   "end": "2026-11-22",
-   "place": "꿈의숲아트센터",
-   "age": "24개월 이상"
   },
   {
    "id": "PF299302",
