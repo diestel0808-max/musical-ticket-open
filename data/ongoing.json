@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-24T15:06+09:00",
- "ok": false,
+ "updatedAt": "2026-11-25T17:33+09:00",
+ "ok": true,
  "items": [
   {
    "id": "PF303127",
@@ -1728,6 +1728,95 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF305507",
+   "title": "아가사 AGATHA",
+   "area": "대학로",
+   "start": "2026-12-09",
+   "end": "2027-02-28",
+   "place": "NOL 서경스퀘어(구. 서경대학교 공연예술센터)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305507_261105_103416.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305507",
+   "detail": {
+    "age": "만 11세 이상",
+    "child": "N",
+    "cast": "최수진, 백은혜, 이정화, 김재범, 고상호, 윤소호, 원형훈 등",
+    "runtime": "2시간 15분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015729"
+     },
+     {
+      "source": "yes24",
+      "name": "예스24",
+      "url": "https://ticket.yes24.com/Perf/60940"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1773797"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF306963",
+   "title": "제2회 N뮤즈페스티벌, 오늘도 빨간 불",
+   "area": "",
+   "start": "2026-12-09",
+   "end": "2026-12-13",
+   "place": "나인진홀 (구.청년극장)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF306963_261119_132342.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF306963",
+   "detail": {
+    "age": "12세 이상",
+    "child": "N",
+    "cast": "김근하, 김리, 정지영, 배하임, 이수연, 장수정, 성정문 등",
+    "runtime": "1시간 20분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26016688"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305499",
+   "title": "풍월주",
+   "area": "",
+   "start": "2026-12-09",
+   "end": "2027-03-01",
+   "place": "플러스씨어터(구. 컬처스페이스 엔유)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305499_261105_101442.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305499",
+   "detail": {
+    "age": "만 13세 이상",
+    "child": "N",
+    "cast": "임태현, 황건우, 홍성민, 윤석호, 황재하, 최하람, 송문선 등",
+    "runtime": "1시간 50분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66746"
+     },
+     {
+      "source": "yes24",
+      "name": "예스24",
+      "url": "https://ticket.yes24.com/Perf/60967"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1772476"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
@@ -2163,6 +2252,5 @@
    "place": "세종문화회관",
    "age": "만 4세 이상"
   }
- ],
- "error": "<urlopen error timed out>"
+ ]
 }
