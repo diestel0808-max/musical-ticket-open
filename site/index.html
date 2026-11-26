@@ -82,7 +82,7 @@ h1 { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; }
 .sb.nol { background: var(--nol); } .sb.ticketlink { background: var(--ticketlink); } .sb.yes24 { background: var(--yes24); }
 
 /* ── 회차·기간 ── */
-.rnd { display: inline-block; white-space: nowrap; font-size: 12px; font-weight: 700; color: var(--accent-text); background: var(--accent-soft); padding: 1px 8px; border-radius: 4px; }
+.rnd { display: inline-block; white-space: nowrap; user-select: none; -webkit-user-select: none; font-size: 12px; font-weight: 700; color: var(--accent-text); background: var(--accent-soft); padding: 1px 8px; border-radius: 4px; }
 .period { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 8px; margin-top: 6px; }
 .dates { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
 .dates .val { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 13.5px; user-select: all; -webkit-user-select: all; cursor: text; }
@@ -377,7 +377,7 @@ function periodHtml(g) {
   const name = `${g.round ? g.round + " " : ""}티켓오픈`;
   const dates = range(g.roundPeriod) || (g.round ? "" : range(g.period));
   if (!dates && !g.round) return "";
-  return `<div class="period"><span class="rnd">${esc(name)}</span>${dates ? `<span class="dates"><span class="val">${dates}</span><button class="copy" data-copy="${esc(name + " " + dates)}" title="회차·기간 복사">복사</button></span>` : ""}</div>`;
+  return `<div class="period"><span class="rnd">${esc(name)}</span>${dates ? `<span class="dates"><span class="val">${dates}</span><button class="copy" data-copy="${esc(dates)}" title="기간 복사">복사</button></span>` : ""}</div>`;
 }
 // '일반 예매일'처럼 기본값인 구분은 굳이 보여주지 않고 선예매 같은 것만
 const showLabel = (l) => l && !/^일반\s*예매/.test(l);

@@ -87,6 +87,8 @@ def _dates_to_period(window, ref_year):
         return None
     try:
         s, e = date(*start), date(*end)
+        if e < s:  # '2026년 12월 29일 - 2026년 1월 10일'처럼 끝 날짜 연도를 잘못 적은 공지
+            e = e.replace(year=e.year + 1)
     except ValueError:
         return None
     return {"start": s.isoformat(), "end": max(s, e).isoformat()}
@@ -109,9 +111,10 @@ def parse_period(text, ref_year=None):
 # 회차: 2차 / 마지막 / 프리뷰 / 첫. 낱말 회차는 '우리의 마지막 순간들'처럼 작품명에도 쓰이므로
 # 뒤에 '티켓/오픈'이 오거나 문자열 끝일 때만 회차로 본다.
 ROUND = re.compile(r"(\d{1,2})\s*차(?!\s*[가-힣])|(\d{1,2})\s*차(?=\s*(?:티켓|오픈))|(마지막|프리뷰|첫)(?=\s*(?:티켓|오픈|$))")
-# '2차 티켓 오픈 공연 기간 :', '프리뷰 오픈 기간 :', '티켓오픈 공연 기간:' (※ '티켓오픈 일정'은 판매 시각이라 제외)
+# '2차 티켓 오픈 공연 기간 :', '프리뷰 오픈 기간 :', '티켓오픈 공연 기간:', '마지막 티켓 공연기간:'
+# (※ '티켓오픈 일정'은 판매 시각이라 제외)
 ROUND_PERIOD_KEY = re.compile(
-    r"(?:((?:\d{1,2})\s*차|마지막|프리뷰|첫)\s*)?(티켓\s*)?오픈\s*(?:공연\s*)?기간\s*[:：]?"
+    r"(?:((?:\d{1,2})\s*차|마지막|프리뷰|첫)\s*)?(?:(티켓\s*)(?:오픈\s*)?|오픈\s*)(?:공연\s*)?기간\s*[:：]?"
 )
 
 
@@ -121,6 +124,17 @@ def norm_round(s):
         return ""
     num = m.group(1) or m.group(2)
     return f"{int(num)}차" if num else m.group(3)
+
+
+def reconcile_round(title, body_round, body_period):
+    """제목의 회차와 공지 본문의 회차가 다르면 본문을 다른 공지에서 복사해 둔 것으로 보고
+    제목 회차를 쓰고 본문의 회차 기간은 버린다(예: 제목 '마지막(3차)', 본문 '2차 티켓 오픈 공연기간')."""
+    title_round = norm_round(title)
+    if not body_round or not title_round:
+        return title_round or body_round, body_period
+    num = re.match(r"\d+", body_round)
+    same = re.search(rf"(?<!\d){num.group(0)}\s*차", title) if num else body_round in title
+    return (body_round, body_period) if same else (title_round, None)
 
 
 def parse_round_period(text, ref_year=None):
@@ -196,6 +210,7 @@ def make_item(source, source_id, title, open_at, url, place="", image="", label=
     title = clean_title(title)
     exclusive = bool(EXCLUSIVE.match(title))
     title = SUFFIX.sub("", EXCLUSIVE.sub("", title)) or title
+    round_, round_period = reconcile_round(title, round_, round_period)
     return {
         "id": f"{source}:{source_id}",
         "source": source,
@@ -207,7 +222,7 @@ def make_item(source, source_id, title, open_at, url, place="", image="", label=
         "url": url,
         "image": image or "",
         "period": period,  # 전체 공연기간 {"start","end"} 또는 None
-        "round": round_ or norm_round(title),  # 2차/마지막/프리뷰/첫 또는 ""
+        "round": round_,  # 2차/마지막/프리뷰/첫 또는 ""
         "roundPeriod": round_period,  # 이번 회차로 열리는 공연 기간 또는 None
         "age": age or "",  # 공지에 적힌 관람 연령
         "mentionsMusical": mentions_musical,  # 공지 본문에 뮤지컬 언급이 있는지(None: 확인 안 함)

@@ -7,7 +7,7 @@ import sys
 import traceback
 from pathlib import Path
 
-from .common import exclusion, now_kst
+from .common import exclusion, now_kst, reconcile_round
 from .sources import nol, ticketlink, yes24
 
 DATA = Path(__file__).resolve().parent.parent / "data" / "items.json"
@@ -48,6 +48,8 @@ def collect(db, log=print):
                 for k in ("period", "round", "roundPeriod", "image", "age"):  # 상세에서 채운 값은 비어 있는 값으로 덮지 않음
                     if it.get(k):
                         old[k] = it[k]
+                if name != "yes24":  # 목록에서 바로 읽는 사이트는 회차·회차 기간이 빠지거나 바뀐 것까지 그대로 반영
+                    old["round"], old["roundPeriod"] = it["round"], it["roundPeriod"]
                 if it.get("mentionsMusical") is not None:
                     old["mentionsMusical"] = it["mentionsMusical"]
                 if not old.get("perfId"):  # 예스24는 상세에서 상품 페이지 주소로 바꿔 둔 링크를 유지
@@ -82,7 +84,7 @@ def collect(db, log=print):
     return db, new_items
 
 
-DETAIL_VERSION = 5  # 상세에서 읽는 항목이 늘면 올려서 기존 항목도 다시 읽게 함
+DETAIL_VERSION = 6  # 상세에서 읽는 항목이 늘면 올려서 기존 항목도 다시 읽게 함
 
 
 def fill_yes24_details(items, log):
@@ -102,8 +104,7 @@ def fill_yes24_details(items, log):
                 continue
         d = cache[nid]
         it["period"] = d["period"]
-        it["roundPeriod"] = d["roundPeriod"]
-        it["round"] = d["round"] or it.get("round", "")
+        it["round"], it["roundPeriod"] = reconcile_round(it["title"], d["round"], d["roundPeriod"])
         it["detailV"] = DETAIL_VERSION
         it["age"] = d["age"]
         it["mentionsMusical"] = d["mentionsMusical"]
