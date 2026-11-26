@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T17:17+09:00",
+ "updatedAt": "2026-11-27T03:59+09:00",
  "ok": true,
  "items": [
   {
@@ -84,6 +84,29 @@
       "source": "",
       "name": "타임티켓",
       "url": "https://timeticket.co.kr/product/7399"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305128",
+   "title": "긴긴밤",
+   "area": "",
+   "start": "2026-11-27",
+   "end": "2026-11-29",
+   "place": "예술나무씨어터(구. 상상나눔씨어터)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305128_261102_154135.png",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305128",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "이경섭, 이승환, 임용태, 강은비, 제수지, 송민영, 이용현 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66676"
      }
     ]
    }
@@ -175,6 +198,29 @@
       "source": "",
       "name": "타임티켓",
       "url": "https://timeticket.co.kr/product/7302"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF305003",
+   "title": "소금빌레 리딩 쇼케이스",
+   "area": "",
+   "start": "2026-11-27",
+   "end": "2026-11-29",
+   "place": "더 서울라이티움 (갤러리아포레)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305003_261102_104207.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305003",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "정단비, 전하영",
+    "runtime": "1시간",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66636"
      }
     ]
    }
@@ -599,7 +645,7 @@
    "start": "2026-11-06",
    "end": "2026-12-31",
    "place": "한성아트홀(구. 인켈아트홀)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF300790_260914_121206.gif",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF300790_261126_173918.gif",
    "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF300790",
    "detail": {
     "age": "만 7세 이상",
@@ -1272,52 +1318,6 @@
  ],
  "upcoming": [
   {
-   "id": "PF305128",
-   "title": "긴긴밤",
-   "area": "",
-   "start": "2026-11-27",
-   "end": "2026-11-29",
-   "place": "예술나무씨어터(구. 상상나눔씨어터)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305128_261102_154135.png",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305128",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "이경섭, 이승환, 임용태, 강은비, 제수지, 송민영, 이용현 등",
-    "runtime": "1시간 40분",
-    "links": [
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/66676"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF305003",
-   "title": "소금빌레 리딩 쇼케이스",
-   "area": "",
-   "start": "2026-11-27",
-   "end": "2026-11-29",
-   "place": "더 서울라이티움 (갤러리아포레)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF305003_261102_104207.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305003",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "정단비, 전하영",
-    "runtime": "1시간",
-    "links": [
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/66636"
-     }
-    ]
-   }
-  },
-  {
    "id": "PF307151",
    "title": "그레이하우스 낭독공연",
    "area": "",
@@ -1863,26 +1863,105 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF307079",
+   "title": "선택할 수 없는 시대",
+   "area": "",
+   "start": "2026-12-11",
+   "end": "2026-12-13",
+   "place": "다케이씨어터 (구. 창조소극장)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF307079_261120_132724.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF307079",
+   "detail": {
+    "age": "12세 이상",
+    "child": "N",
+    "cast": "김보연, 김성아, 김영서, 박선우, 서영민, 오정석, 이준 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26016699"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF307590",
+   "title": "이상의 이상",
+   "area": "",
+   "start": "2026-12-11",
+   "end": "2026-12-12",
+   "place": "블라인드아트홀",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF307590_261126_162006.png",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF307590",
+   "detail": {
+    "age": "8세 이상",
+    "child": "N",
+    "cast": "박해성, 이성연, 손동진, 신경준, 조성인",
+    "runtime": "40분",
+    "links": [
+     {
+      "source": "",
+      "name": "플레이티켓",
+      "url": "http://playticket.co.kr/nav/detail.html?idx=4813"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF304574",
+   "title": "인간실격: 사양 편",
+   "area": "",
+   "start": "2026-12-11",
+   "end": "2027-03-07",
+   "place": "예스24 스테이지(구. DCF대명문화공장)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304574_261027_130640.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304574",
+   "detail": {
+    "age": "만 14세 이상",
+    "child": "N",
+    "cast": "안재영, 박정원, 정재환, 박수야, 김주연, 박세연, 강정우 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66527"
+     },
+     {
+      "source": "yes24",
+      "name": "예스24",
+      "url": "https://ticket.yes24.com/Perf/60772"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1764038"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
   {
-   "id": "PF305906",
-   "title": "마녀는 아이돌을 좋아해",
-   "reason": "아동(관람연령)",
-   "start": "2026-11-26",
-   "end": "2026-11-26",
-   "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
-   "age": "만 5세 이상"
+   "id": "PF306142",
+   "title": "루피의 크리스마스 [서울 은평]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-27",
+   "end": "2026-11-27",
+   "place": "은평문화예술회관",
+   "age": "전체 관람가"
   },
   {
-   "id": "PF305803",
-   "title": "제7회 서울연극25페스티벌, 족두리가 돌아왔다",
-   "reason": "콘서트 등 뮤지컬 아님",
-   "start": "2026-11-24",
-   "end": "2026-11-26",
-   "place": "대학로 스카이씨어터",
-   "age": ""
+   "id": "PF304893",
+   "title": "와이헌터스: 위대한 숏맨과 북몬스터",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-27",
+   "end": "2026-11-28",
+   "place": "금천뮤지컬센터",
+   "age": "만 7세 이상"
   },
   {
    "id": "PF304512",
@@ -2087,7 +2166,7 @@
    "title": "점프 JUMP",
    "reason": "오픈런",
    "start": "2024-10-01",
-   "end": "2026-12-31",
+   "end": "2027-02-28",
    "place": "명보아트홀",
    "age": ""
   },
@@ -2173,13 +2252,13 @@
    "age": ""
   },
   {
-   "id": "PF306142",
-   "title": "루피의 크리스마스 [서울 은평]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-27",
-   "end": "2026-11-27",
-   "place": "은평문화예술회관",
-   "age": "전체 관람가"
+   "id": "PF306323",
+   "title": "두들팝 [서울 광진]",
+   "reason": "오픈런",
+   "start": "2026-12-11",
+   "end": "2027-01-31",
+   "place": "상상나라극장",
+   "age": ""
   },
   {
    "id": "PF305951",
@@ -2216,15 +2295,6 @@
    "end": "2026-12-27",
    "place": "경복궁아트홀",
    "age": "36개월 이상"
-  },
-  {
-   "id": "PF304893",
-   "title": "와이헌터스: 위대한 숏맨과 북몬스터",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-27",
-   "end": "2026-11-28",
-   "place": "금천뮤지컬센터",
-   "age": "만 7세 이상"
   },
   {
    "id": "PF304181",
