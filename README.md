@@ -1,10 +1,10 @@
 # 🎭 뮤지컬 티켓오픈 모아보기
 
-NOL(구 인터파크), 티켓링크, 예스24의 **뮤지컬 티켓오픈 공지**를 매일 아침 모아 한 페이지(목록/캘린더)로 보여줍니다. 각 소식에는 **몇 차 티켓오픈인지와 이번 회차로 열리는 공연 기간**(예: `2차 티켓오픈 26.11.17 ~ 26.12.06`, 복사 버튼 포함)이 함께 나옵니다. 회차 기간이 공지에 없으면(NOL은 공지 상세가 없어 항상) 전체 공연기간으로 대신합니다.
+NOL(구 인터파크), 티켓링크, 예스24의 **뮤지컬 티켓오픈 공지**를 매일 아침 모아 한 페이지(목록/캘린더)로 보여줍니다. 각 소식에는 **몇 차 티켓오픈인지와 이번 회차로 열리는 공연 기간**(예: `2차 티켓오픈 26.11.17 ~ 26.12.06`, 복사 버튼 포함)이 함께 나옵니다. 회차 기간이 공지에 없으면 날짜를 비워 둡니다(회차 없이 한 번 여는 공연은 전체 공연기간).
 
 | 사이트 | 수집 위치 | 뮤지컬 판별 | 회차 / 기간 |
 |---|---|---|---|
-| NOL | `POST nol.yanolja.com/ticket/display/api/upcoming` | 장르 코드 `01011` | 회차는 `open_name`, 기간은 전체 공연기간만 |
+| NOL | `POST nol.yanolja.com/ticket/display/api/upcoming` | 장르 코드 `01011` | 회차는 `open_name`, 회차 기간은 `goods_info`의 "N차 티켓오픈 공연기간" 파싱 |
 | 티켓링크 | `GET ticketlink.co.kr/help/getNoticeList?noticeCategoryCode=TICKET_OPEN` | `subCategoryId == 16` 또는 제목에 "뮤지컬" | 공지 본문의 "N차 티켓 오픈 (공연) 기간" 파싱 |
 | 예스24 | `POST ticket.yes24.com/New/Notice/Ajax/axList.aspx` | 장르 `15457` | 상세(`axRead.aspx`) 본문 파싱, 공지당 1회 |
 
@@ -18,7 +18,7 @@ NOL(구 인터파크), 티켓링크, 예스24의 **뮤지컬 티켓오픈 공지
 - `scraper/` — 수집기. `python3 -m scraper.main`이 `data/items.json`을 갱신
 - `site/index.html` — 정적 페이지(빌드 단계 없음)
 - `api/refresh.py` — Vercel 함수. 사이트의 「↻ 지금 업데이트」 버튼이 호출
-- `.github/workflows/update.yml` — 매일 07:17 KST 예약(실제로는 2~3시간 늦게 시작돼 보통 11시 전 반영) 수집 후 커밋 → Vercel 자동 재배포
+- `.github/workflows/update.yml` — 하루 6번(07·09·12·15·18·21시 17분 KST) 예약 수집 후 커밋 → Vercel 재배포. 실제로는 2~3시간 늦게 시작돼 첫 반영은 보통 11시 전
 - `vercel.json` — `site/` + `data/`를 `public/`으로 복사해 서빙
 
 ## 로컬 실행
