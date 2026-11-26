@@ -13,7 +13,7 @@ def is_musical(r):
     return r.get("subCategoryId") == MUSICAL_SUBCATEGORY and not is_kids(r.get("title"))
 
 
-def fetch(max_pages=4):
+def fetch(max_pages=10):  # 모든 장르 공지가 한 목록이라 4쪽(60건)이 하루 이틀 만에 찬다
     items = []
     for page in range(1, max_pages + 1):
         d = json.loads(http(API.format(page=page)))["result"]

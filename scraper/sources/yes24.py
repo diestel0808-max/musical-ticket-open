@@ -20,7 +20,7 @@ def parse_date(s):
     return iso_kst(datetime(*map(int, m.groups()))) if m else None
 
 
-def fetch(pages=2, size=20):
+def fetch(pages=4, size=20):
     items = []
     for page in range(1, pages + 1):
         s = http(API, data={"page": page, "size": size, "genre": MUSICAL_GENRE, "province": "",

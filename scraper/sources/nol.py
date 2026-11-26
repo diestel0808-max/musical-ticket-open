@@ -3,7 +3,7 @@ import json
 import urllib.request
 from datetime import datetime
 
-from ..common import html_text, http, is_kids, iso_kst, make_item, norm_round, parse_age
+from ..common import html_text, http, is_kids, iso_kst, make_item, norm_round, parse_age, parse_round_period
 
 API = "https://nol.yanolja.com/ticket/display/api/upcoming"
 MUSICAL_GENRE = "01011"
@@ -42,8 +42,13 @@ def fetch(max_pages=10):
             period = ({"start": n["goods_start_date"], "end": n.get("goods_end_date") or n["goods_start_date"]}
                       if n.get("goods_start_date") else None)
             image = poster(n)
+            info = html_text(n.get("goods_info"))
             # 등급 필드가 비어 있는 공연이 많아 소개 글의 '관람연령:' 줄로 보완
-            age = n.get("goods_age_rating_name") or parse_age(html_text(n.get("goods_info")))
+            age = n.get("goods_age_rating_name") or parse_age(info)
+            # 회차 기간은 공연 정보 글에 '3차 티켓오픈 공연기간 : …'처럼 적혀 있다
+            open_at0 = (n.get("ticket_dates") or [{}])[0].get("ticket_open_date") or ""
+            info_round, round_period = parse_round_period(info, int(open_at0[:4]) if open_at0 else None)
+            round_ = norm_round(n.get("open_name") or "") or norm_round(n.get("open_type_name") or "") or info_round
             # 선예매/일반예매처럼 오픈 일정이 여러 개면 각각 따로 표시
             for t in n.get("ticket_dates") or [{}]:
                 open_at = t.get("ticket_open_date")
@@ -53,8 +58,7 @@ def fetch(max_pages=10):
                     "nol", sid, n["title"] or n.get("goods_name", ""),
                     iso_kst(datetime.fromisoformat(open_at)) if open_at else None,
                     url, place=n.get("venue_name", ""), image=image, label=label, period=period, age=age,
-                    # NOL은 공지 상세가 없어 회차별 기간을 알 수 없음 → 회차 이름만
-                    round_=norm_round(n.get("open_name") or "") or norm_round(n.get("open_type_name") or ""),
+                    round_=round_, round_period=round_period if not info_round or info_round == round_ else None,
                 ))
         cursor = d["summary"].get("next_cursor")
         if not cursor or not d["notices"]:

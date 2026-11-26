@@ -84,7 +84,7 @@ def collect(db, log=print):
     return db, new_items
 
 
-DETAIL_VERSION = 6  # 상세에서 읽는 항목이 늘면 올려서 기존 항목도 다시 읽게 함
+DETAIL_VERSION = 7  # 상세에서 읽는 항목이 늘면 올려서 기존 항목도 다시 읽게 함
 
 
 def fill_yes24_details(items, log):
