@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-11-25T17:33+09:00",
- "ok": false,
+ "updatedAt": "2026-11-26T17:17+09:00",
+ "ok": true,
  "items": [
   {
    "id": "PF303127",
@@ -542,6 +542,29 @@
    }
   },
   {
+   "id": "PF302748",
+   "title": "직소",
+   "area": "대학로",
+   "start": "2026-11-26",
+   "end": "2026-12-13",
+   "place": "브이씨어터",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF302748_261007_151330.jpg",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302748",
+   "detail": {
+    "age": "만 11세 이상",
+    "child": "N",
+    "cast": "손채현, 이대현, 최정윤, 한재원, 권현빈, 오세아, 이소혜",
+    "runtime": "1시간 15분",
+    "links": [
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66090"
+     }
+    ]
+   }
+  },
+  {
    "id": "PF285591",
    "title": "저항: 찬송이 된 사람들",
    "area": "",
@@ -869,6 +892,39 @@
       "source": "",
       "name": "네이버N예약",
       "url": "https://booking.naver.com/booking/12/bizes/1743331"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF304086",
+   "title": "닥터 두리틀",
+   "area": "대학로",
+   "start": "2026-11-26",
+   "end": "2027-01-24",
+   "place": "NOL 씨어터 대학로 (구. 대학로뮤지컬센터)",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304086_261021_171131.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304086",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "홍성민, 김용구, 김준현, 김나윤, 구옥분, 손수아, 전대현 등",
+    "runtime": "1시간 50분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015064"
+     },
+     {
+      "source": "ticketlink",
+      "name": "티켓링크",
+      "url": "https://www.ticketlink.co.kr/product/66449"
+     },
+     {
+      "source": "",
+      "name": "네이버N예약",
+      "url": "https://booking.naver.com/booking/12/bizes/1761259"
      }
     ]
    }
@@ -1215,62 +1271,6 @@
   }
  ],
  "upcoming": [
-  {
-   "id": "PF304086",
-   "title": "닥터 두리틀",
-   "area": "대학로",
-   "start": "2026-11-26",
-   "end": "2027-01-24",
-   "place": "NOL 씨어터 대학로 (구. 대학로뮤지컬센터)",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304086_261021_171131.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304086",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "홍성민, 김용구, 김준현, 김나윤, 구옥분, 손수아, 전대현 등",
-    "runtime": "1시간 50분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26015064"
-     },
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/66449"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1761259"
-     }
-    ]
-   }
-  },
-  {
-   "id": "PF302748",
-   "title": "직소",
-   "area": "대학로",
-   "start": "2026-11-26",
-   "end": "2026-12-13",
-   "place": "브이씨어터",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF302748_261007_151330.jpg",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302748",
-   "detail": {
-    "age": "만 11세 이상",
-    "child": "N",
-    "cast": "손채현, 이대현, 최정윤, 한재원, 권현빈, 오세아, 이소혜",
-    "runtime": "1시간 15분",
-    "links": [
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/66090"
-     }
-    ]
-   }
-  },
   {
    "id": "PF305128",
    "title": "긴긴밤",
@@ -1817,9 +1817,64 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF304889",
+   "title": "가장 보편의 환상",
+   "area": "",
+   "start": "2026-12-10",
+   "end": "2026-12-13",
+   "place": "오류아트홀",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF304889_261030_105757.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304889",
+   "detail": {
+    "age": "만 12세 이상",
+    "child": "N",
+    "cast": "강인수, 이수정, 임소라, 이성진, 홍준기, 권릴리",
+    "runtime": "1시간 30분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26015570"
+     }
+    ]
+   }
+  },
+  {
+   "id": "PF307234",
+   "title": "황금세계",
+   "area": "",
+   "start": "2026-12-10",
+   "end": "2026-12-13",
+   "place": "강서아트리움",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF307234_261123_151734.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF307234",
+   "detail": {
+    "age": "만 7세 이상",
+    "child": "N",
+    "cast": "백진우, 조미선, 김유나, 양동주, 권성민, 고민재, 이평 등",
+    "runtime": "1시간 40분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26016839"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
+  {
+   "id": "PF305906",
+   "title": "마녀는 아이돌을 좋아해",
+   "reason": "아동(관람연령)",
+   "start": "2026-11-26",
+   "end": "2026-11-26",
+   "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
+   "age": "만 5세 이상"
+  },
   {
    "id": "PF305803",
    "title": "제7회 서울연극25페스티벌, 족두리가 돌아왔다",
@@ -1863,6 +1918,15 @@
    "start": "2026-11-19",
    "end": "2027-01-30",
    "place": "명륜아트홀",
+   "age": ""
+  },
+  {
+   "id": "PF301985",
+   "title": "DRAG in 혜화 (드랙인혜화)",
+   "reason": "오픈런",
+   "start": "2026-10-09",
+   "end": "2027-01-02",
+   "place": "뮤지컬펍 커튼콜",
    "age": ""
   },
   {
@@ -2127,15 +2191,6 @@
    "age": ""
   },
   {
-   "id": "PF305906",
-   "title": "마녀는 아이돌을 좋아해",
-   "reason": "아동(관람연령)",
-   "start": "2026-11-26",
-   "end": "2026-11-26",
-   "place": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
-   "age": "만 5세 이상"
-  },
-  {
    "id": "PF305859",
    "title": "미녀와 야수 [서울 영등포]",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -2178,7 +2233,7 @@
    "start": "2026-12-02",
    "end": "2026-12-27",
    "place": "국립정동극장",
-   "age": "만 4세 이상"
+   "age": "5세 이상"
   },
   {
    "id": "PF304105",
@@ -2252,6 +2307,5 @@
    "place": "세종문화회관",
    "age": "만 4세 이상"
   }
- ],
- "error": "<urlopen error timed out>"
+ ]
 }
