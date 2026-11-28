@@ -1,45 +1,7 @@
 {
- "updatedAt": "2026-11-28T16:48+09:00",
- "ok": false,
+ "updatedAt": "2026-11-29T00:30+09:00",
+ "ok": true,
  "items": [
-  {
-   "id": "PF303127",
-   "title": "플릭스! (Musical FLIX!)",
-   "area": "",
-   "start": "2026-11-17",
-   "end": "2026-11-28",
-   "place": "강동아트센터",
-   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF303127_261013_103504.gif",
-   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303127",
-   "detail": {
-    "age": "만 7세 이상",
-    "child": "N",
-    "cast": "조형균, 이창용, 임지홍, 정다희, 도율희, 전재현, 장두환 등",
-    "runtime": "2시간 20분",
-    "links": [
-     {
-      "source": "nol",
-      "name": "NOL",
-      "url": "https://nol.yanolja.com/ticket/products/26014529"
-     },
-     {
-      "source": "ticketlink",
-      "name": "티켓링크",
-      "url": "https://www.ticketlink.co.kr/product/66161"
-     },
-     {
-      "source": "",
-      "name": "네이버N예약",
-      "url": "https://booking.naver.com/booking/12/bizes/1753143"
-     },
-     {
-      "source": "",
-      "name": "클립서비스",
-      "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79526"
-     }
-    ]
-   }
-  },
   {
    "id": "PF297912",
    "title": "곤 투모로우",
@@ -1993,6 +1955,29 @@
      }
     ]
    }
+  },
+  {
+   "id": "PF302399",
+   "title": "담배가게 아가씨",
+   "area": "",
+   "start": "2026-12-13",
+   "end": "2026-12-20",
+   "place": "한국콘텐츠진흥원 CKL스테이지",
+   "image": "https://kopis.or.kr/upload/pfmPoster/PF_PF302399_261002_145907.gif",
+   "url": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302399",
+   "detail": {
+    "age": "만 11세 이상",
+    "child": "N",
+    "cast": "신예준, 박태준, 오승희, 조윤슬, 손슬기, 이한울, 박형준 등",
+    "runtime": "1시간 30분",
+    "links": [
+     {
+      "source": "nol",
+      "name": "NOL",
+      "url": "https://nol.yanolja.com/ticket/products/26014045"
+     }
+    ]
+   }
   }
  ],
  "excluded": [
@@ -2006,15 +1991,6 @@
    "age": "전체 관람가"
   },
   {
-   "id": "PF304893",
-   "title": "와이헌터스: 위대한 숏맨과 북몬스터",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-27",
-   "end": "2026-11-28",
-   "place": "금천뮤지컬센터",
-   "age": "만 7세 이상"
-  },
-  {
    "id": "PF304512",
    "title": "김동완의 뮤지컬 콘서트",
    "reason": "콘서트 등 뮤지컬 아님",
@@ -2022,15 +1998,6 @@
    "end": "2026-12-11",
    "place": "웨스트브릿지 라이브홀",
    "age": ""
-  },
-  {
-   "id": "PF303683",
-   "title": "겨울왕국: 겨울이야기 [서울 강북]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-28",
-   "end": "2026-11-28",
-   "place": "꿈의숲아트센터",
-   "age": "24개월 이상"
   },
   {
    "id": "PF302888",
@@ -2069,15 +2036,6 @@
    "age": ""
   },
   {
-   "id": "PF301364",
-   "title": "겨울왕국 [서울 노원]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-28",
-   "end": "2026-11-28",
-   "place": "노원구민의전당(구. 노원구민회관)",
-   "age": "20개월 이상"
-  },
-  {
    "id": "PF301113",
    "title": "조선 마법사관 진준",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -2085,6 +2043,15 @@
    "end": "2026-12-31",
    "place": "국립중앙박물관 극장 용",
    "age": "36개월 이상"
+  },
+  {
+   "id": "PF300753",
+   "title": "호두까기 인형 [서울 강남]",
+   "reason": "아동(KOPIS 아동공연 표시)",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "place": "현대백화점 문화홀 [압구정]",
+   "age": "전체 관람가"
   },
   {
    "id": "PF299302",
@@ -2465,15 +2432,6 @@
    "age": "24개월 이상"
   },
   {
-   "id": "PF300753",
-   "title": "호두까기 인형 [서울 강남]",
-   "reason": "아동(KOPIS 아동공연 표시)",
-   "start": "2026-11-29",
-   "end": "2026-11-29",
-   "place": "현대백화점 문화홀 [압구정]",
-   "age": "전체 관람가"
-  },
-  {
    "id": "PF300663",
    "title": "호두까기인형 [서울 서대문]",
    "reason": "아동(KOPIS 아동공연 표시)",
@@ -2500,6 +2458,5 @@
    "place": "세종문화회관",
    "age": "만 4세 이상"
   }
- ],
- "error": "<urlopen error timed out>"
+ ]
 }
